@@ -1,26 +1,169 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: rgb(10, 10, 10);
+  --color-primary: rgb(250, 250, 250);
+  --color-primary-80: rgba(250, 250, 250, 0.8);
+  --color-primary-32: rgba(250, 250, 250, 0.32);
+  --color-rust: rgb(84, 27, 4);
+  --color-card: rgb(18, 18, 18);
+  --color-card-border: rgba(250, 250, 250, 0.07);
+  --color-glass: rgba(255, 255, 255, 0.12);
+  --color-secondary-btn: rgba(250, 250, 250, 0.18);
+
+  --font-sans: var(--font-inter);
+
+  --ease-smooth: cubic-bezier(0.44, 0, 0.56, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background: rgb(10, 10, 10);
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(10, 10, 10);
+  color: rgb(250, 250, 250);
+  font-family: var(--font-inter, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(250, 250, 250, 0.15);
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(10, 10, 10);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+/* Landscape card gradient — warm amber glow from below */
+.landscape-card {
+  background: radial-gradient(
+    ellipse 140% 55% at 50% 110%,
+    rgba(145, 55, 10, 0.95) 0%,
+    rgba(90, 32, 5, 0.85) 28%,
+    rgba(45, 16, 3, 0.92) 52%,
+    rgba(15, 8, 2, 0.97) 72%,
+    rgb(10, 10, 10) 90%
+  );
+}
+
+/* Section wrapper */
+.section-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: 32px;
+}
+
+/* Section padding utility */
+.section-pad {
+  padding: 80px 32px;
+}
+
+/* ─── Mobile overrides ─── */
+@media (max-width: 768px) {
+  .section-inner {
+    padding-inline: 20px;
+  }
+
+  .section-pad {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+/* ─── Hero animated texture — sine-curve stops = soft fibres, not hard stripes ─── */
+/*
+  Primary layer: period 280px at 137°.
+  Stops follow (1-cos(2π·x/280))/2 curve so transitions are perfectly smooth.
+  Seamless shift = (280·sin137°, 280·|cos137°|) = (191px, 205px)
+*/
+.hero-texture {
+  background-image: repeating-linear-gradient(
+    137deg,
+    rgb(28,  9, 2)   0px,
+    rgb(32, 11, 2)  14px,
+    rgb(45, 17, 3)  28px,
+    rgb(65, 25, 4)  42px,
+    rgb(91, 36, 5)  56px,
+    rgb(119,49, 6)  70px,
+    rgb(147,61, 7)  84px,
+    rgb(173,72, 8)  98px,
+    rgb(193,80, 9) 112px,
+    rgb(205,86,10) 126px,
+    rgb(210,88,10) 140px,
+    rgb(205,86,10) 154px,
+    rgb(193,80, 9) 168px,
+    rgb(173,72, 8) 182px,
+    rgb(147,61, 7) 196px,
+    rgb(119,49, 6) 210px,
+    rgb(91, 36, 5) 224px,
+    rgb(65, 25, 4) 238px,
+    rgb(45, 17, 3) 252px,
+    rgb(32, 11, 2) 266px,
+    rgb(28,  9, 2) 280px
+  );
+  animation: heroFlow 14s linear infinite;
+  will-change: background-position;
+}
+
+/*
+  Secondary layer: period 420px at 134°, lower amplitude — adds organic variation.
+  Seamless shift = (420·sin134°, 420·|cos134°|) = (302px, 292px)
+*/
+.hero-texture-2 {
+  background-image: repeating-linear-gradient(
+    134deg,
+    rgba(28, 9,2, 0)    0px,
+    rgba(38,14,3,0.18)  21px,
+    rgba(60,22,4,0.38)  42px,
+    rgba(90,35,5,0.52)  63px,
+    rgba(120,47,6,0.62) 84px,
+    rgba(148,58,7,0.68) 105px,
+    rgba(162,64,7,0.70) 126px,
+    rgba(155,61,7,0.66) 147px,
+    rgba(132,52,6,0.57) 168px,
+    rgba(100,39,5,0.44) 189px,
+    rgba(68, 26,4,0.28) 210px,
+    rgba(38, 14,3,0.10) 231px,
+    rgba(28,  9,2,0)    252px,
+    rgba(28,  9,2,0)    294px,
+    rgba(28,  9,2,0)    420px
+  );
+  animation: heroFlow2 22s linear infinite;
+  will-change: background-position;
+}
+
+@keyframes heroFlow  { from { background-position: 0 0; } to { background-position: 191px 205px; } }
+@keyframes heroFlow2 { from { background-position: 0 0; } to { background-position: 302px 292px; } }
+
+/* Eyebrow pill */
+.eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
