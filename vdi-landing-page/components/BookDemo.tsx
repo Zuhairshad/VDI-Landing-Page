@@ -2,21 +2,22 @@
 
 import { useState, useRef } from 'react'
 import { motion, useInView } from 'motion/react'
-import { Send, CheckCircle2, Building2, FileText, Sparkles, Mail } from 'lucide-react'
+import { Send, CheckCircle2, Building2, FileText, Sparkles } from 'lucide-react'
 
-// Copper color tokens
+// Site copper color tokens
 const COPPER_COLOR = 'rgb(194, 89, 24)'
 const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
 const COPPER_BORDER = 'rgba(194, 89, 24, 0.35)'
 
+// Only the 4 official industries
 const industries = [
   'Social Media and E-commerce',
   'Medical and Healthcare',
   'Logistics and Supply Chain',
-  'Education',
-  'Financial Services & Enterprise',
-  'Other / Custom Industry'
+  'Education'
 ]
+
+const MAX_WORDS = 400
 
 export default function BookDemo() {
   const [industry, setIndustry] = useState(industries[0])
@@ -26,6 +27,21 @@ export default function BookDemo() {
 
   const ref = useRef<HTMLElement>(null)
   const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
+
+  // Calculate current word count
+  const wordCount = description.trim() === '' ? 0 : description.trim().split(/\s+/).length
+
+  const handleDescriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const text = e.target.value
+    const words = text.trim().split(/\s+/).filter(Boolean)
+    if (words.length <= MAX_WORDS || text.length < description.length) {
+      setDescription(text)
+    } else {
+      // Limit to 400 words
+      const limitedText = words.slice(0, MAX_WORDS).join(' ')
+      setDescription(limitedText)
+    }
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -118,7 +134,7 @@ export default function BookDemo() {
                 Demo Request Submitted!
               </h3>
               <p className="text-[15px] text-white/80 max-w-[480px] leading-[24px] mb-6">
-                Your request details have been dispatched to <strong className="text-white">zuhairshad140@gmail.com</strong>. Our team will review your requirements and get back to you shortly.
+                Your request details have been dispatched. Our team will review your requirements and get back to you shortly.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
@@ -161,16 +177,21 @@ export default function BookDemo() {
 
               {/* Field 2: Description */}
               <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-semibold text-white/90 flex items-center gap-2">
-                  <FileText className="w-4 h-4" style={{ color: COPPER_COLOR }} />
-                  <span>2. Description</span>
-                </label>
+                <div className="flex items-center justify-between">
+                  <label className="text-[14px] font-semibold text-white/90 flex items-center gap-2">
+                    <FileText className="w-4 h-4" style={{ color: COPPER_COLOR }} />
+                    <span>2. Description</span>
+                  </label>
+                  <span className={`text-[12px] font-medium ${wordCount >= MAX_WORDS ? 'text-amber-400 font-bold' : 'text-white/40'}`}>
+                    {wordCount} / {MAX_WORDS} words
+                  </span>
+                </div>
                 <textarea
                   value={description}
-                  onChange={(e) => setDescription(e.target.value)}
+                  onChange={handleDescriptionChange}
                   required
-                  rows={4}
-                  placeholder="Tell us about your data verification needs, datasets, or specific workflows..."
+                  rows={5}
+                  placeholder="Tell us about your data verification needs, datasets, or specific workflows (max 400 words)..."
                   className="w-full px-4 py-3.5 rounded-xl bg-black/50 border text-[15px] text-white placeholder-white/40 outline-none transition-all resize-none"
                   style={{
                     borderColor: 'rgba(250, 250, 250, 0.15)',
@@ -178,12 +199,6 @@ export default function BookDemo() {
                   onFocus={(e) => (e.target.style.borderColor = COPPER_COLOR)}
                   onBlur={(e) => (e.target.style.borderColor = 'rgba(250, 250, 250, 0.15)')}
                 />
-              </div>
-
-              {/* Recipient Notice */}
-              <div className="flex items-center gap-2 text-[12px] text-white/50 pt-1">
-                <Mail className="w-3.5 h-3.5 shrink-0" style={{ color: COPPER_COLOR }} />
-                <span>Responses will be sent to <strong>zuhairshad140@gmail.com</strong></span>
               </div>
 
               {/* Submit Button */}
