@@ -2,163 +2,208 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'motion/react'
+import {
+  ArrowUpDown,
+  TrendingUp,
+  ShieldCheck,
+  Lock,
+  Zap,
+  CheckCircle2,
+  BellRing,
+  FileText,
+  Sparkles,
+  Bot
+} from 'lucide-react'
 
-function ClaimExtractionUI() {
+// --- Micro UI Previews ---
+
+function DataSortUI() {
   return (
     <div
-      className="rounded-xl p-4 w-full max-w-[260px] mx-auto"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
+      className="rounded-xl p-4 w-full max-w-[270px] mx-auto flex flex-col gap-2.5"
+      style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
     >
-      <p className="text-[11px] uppercase tracking-wider mb-3" style={{ color: 'rgba(250,250,250,0.32)' }}>Parsed → 4 claims</p>
-      {['Drug X reduces symptoms', 'Standard protocols apply', '12-week trial conducted', 'Peer-reviewed results'].map((c, i) => (
-        <div key={c} className="flex items-center gap-2 py-1">
-          <span className="text-[10px] px-1.5 py-0.5 rounded font-medium" style={{ background: 'rgba(84,27,4,0.5)', color: 'rgba(250,250,250,0.7)' }}>
-            {String(i + 1).padStart(2, '0')}
-          </span>
-          <span className="text-[12px]" style={{ color: 'rgba(250,250,250,0.65)' }}>{c}</span>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-function HumanSpecialistsUI() {
-  return (
-    <div
-      className="rounded-xl p-4 w-full max-w-[240px] mx-auto"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
-    >
-      <div className="flex items-center gap-2.5 mb-3">
-        <div className="w-10 h-10 rounded-full flex items-center justify-center text-[12px] font-semibold" style={{ background: 'rgba(84,27,4,0.6)', color: 'rgb(250,250,250)' }}>
-          PA
-        </div>
-        <div>
-          <p className="text-[13px] font-medium" style={{ color: 'rgb(250,250,250)' }}>Dr. P. Adeyemi</p>
-          <p className="text-[11px]" style={{ color: 'rgba(250,250,250,0.45)' }}>Clinical Pharmacology</p>
-        </div>
+      <div className="flex items-center justify-between">
+        <span className="text-[11px] font-semibold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+          <ArrowUpDown className="w-3.5 h-3.5" />
+          Raw Data Input
+        </span>
+        <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">
+          Auto-Detect
+        </span>
       </div>
-      <div className="flex items-center gap-1.5 px-3 py-2 rounded-lg" style={{ background: 'rgba(74,222,128,0.1)' }}>
-        <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'rgb(74,222,128)' }} />
-        <span className="text-[11px]" style={{ color: 'rgba(250,250,250,0.6)' }}>Reviewing primary sources</span>
-      </div>
-    </div>
-  )
-}
 
-function FactBankUI() {
-  return (
-    <div
-      className="rounded-xl p-5 w-full max-w-[220px] mx-auto text-center"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
-    >
-      <p className="text-[32px] font-medium" style={{ color: 'rgb(250,250,250)', letterSpacing: '-1px' }}>342k</p>
-      <p className="text-[13px] mb-3" style={{ color: 'rgba(250,250,250,0.5)' }}>verified claims</p>
-      <div className="flex gap-1 justify-center">
-        {[4, 6, 5, 7, 4, 6, 8, 5, 7, 6].map((h, i) => (
-          <div
-            key={i}
-            className="w-1.5 rounded-sm"
-            style={{
-              height: `${h * 4}px`,
-              background: i === 9 ? 'rgba(84,27,4,0.9)' : 'rgba(250,250,250,0.15)',
-            }}
-          />
+      <div className="p-2 rounded bg-white/[0.04] text-[11px] text-white/70 italic border border-white/5">
+        "Which specific attributes do you want to sort?"
+      </div>
+
+      <div className="space-y-1.5 pt-0.5">
+        {[
+          { label: 'Category & Price Rank', status: 'Sorted', indicator: '🟢 High' },
+          { label: 'Canonical Product ID', status: 'Organized', indicator: '⚡ 99.8%' }
+        ].map((item) => (
+          <div key={item.label} className="flex items-center justify-between text-[11px] px-2 py-1 rounded bg-white/[0.03]">
+            <span className="text-white/80 font-medium">{item.label}</span>
+            <span className="text-[10px] text-emerald-400 font-medium">{item.indicator}</span>
+          </div>
         ))}
       </div>
     </div>
   )
 }
 
-function VerificationRecordsUI() {
+function MarketIntelUI() {
   return (
     <div
-      className="rounded-xl overflow-hidden w-full max-w-[280px] mx-auto"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
+      className="rounded-xl p-4 w-full max-w-[270px] mx-auto flex flex-col gap-2.5"
+      style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
     >
-      {[
-        { k: 'Verdict', v: 'Verified', green: true },
-        { k: 'Source', v: 'PubMed 2024', green: false },
-        { k: 'Verifier', v: 'Dr. P. Adeyemi', green: false },
-        { k: 'Confidence', v: '99%', green: false },
-      ].map((row) => (
-        <div key={row.k} className="flex items-center justify-between px-4 py-2 border-b last:border-0" style={{ borderColor: 'rgba(250,250,250,0.06)' }}>
-          <span className="text-[11px]" style={{ color: 'rgba(250,250,250,0.32)' }}>{row.k}</span>
-          <span className="text-[12px] font-medium" style={{ color: row.green ? 'rgb(74,222,128)' : 'rgba(250,250,250,0.7)' }}>{row.v}</span>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-function EuActUI() {
-  return (
-    <div
-      className="rounded-xl p-4 w-full max-w-[240px] mx-auto"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
-    >
-      <div className="flex items-center gap-2 mb-3">
-        <div className="w-8 h-8 rounded flex items-center justify-center text-[10px] font-bold" style={{ background: 'rgba(84,27,4,0.7)', color: 'rgb(250,250,250)' }}>EU</div>
-        <div>
-          <p className="text-[12px] font-medium" style={{ color: 'rgb(250,250,250)' }}>AI Act Article 50</p>
-          <p className="text-[10px]" style={{ color: 'rgba(250,250,250,0.4)' }}>Compliance record</p>
-        </div>
-      </div>
-      <div className="px-3 py-2 rounded-lg" style={{ background: 'rgba(74,222,128,0.08)', border: '1px solid rgba(74,222,128,0.2)' }}>
-        <p className="text-[11px]" style={{ color: 'rgb(74,222,128)' }}>✓ Audit-grade retention</p>
-        <p className="text-[11px] mt-0.5" style={{ color: 'rgba(250,250,250,0.5)' }}>3yr record · Export ready</p>
-      </div>
-    </div>
-  )
-}
-
-function MultiSectorUI() {
-  const sectors = ['Medical', 'Logistics', 'Marketing', 'Education']
-  return (
-    <div className="flex flex-wrap gap-2 justify-center w-full max-w-[240px] mx-auto">
-      {sectors.map((s) => (
-        <span
-          key={s}
-          className="px-3 py-1.5 rounded-full text-[12px] font-medium"
-          style={{ background: 'rgba(84,27,4,0.45)', color: 'rgba(250,250,250,0.8)', border: '1px solid rgba(84,27,4,0.6)' }}
-        >
-          {s}
+      <div className="flex items-center justify-between">
+        <span className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+          <TrendingUp className="w-3.5 h-3.5" />
+          Live Market Intel
         </span>
-      ))}
+        <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 flex items-center gap-1">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          Daily Sync
+        </span>
+      </div>
+
+      <div className="flex items-center gap-2 p-2 rounded bg-emerald-500/10 border border-emerald-500/20 text-[11px]">
+        <BellRing className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+        <span className="text-emerald-200">Alert: Competitor promo shift detected</span>
+      </div>
+
+      <div className="flex items-center justify-between text-[10px] text-white/50 pt-1 border-t border-white/5">
+        <span className="flex items-center gap-1"><FileText className="w-3 h-3 text-amber-400" /> Export: PDF · DOC · Email</span>
+        <span className="text-emerald-400 font-medium">✓ Human Verified</span>
+      </div>
     </div>
   )
 }
+
+function AiClaimUI() {
+  return (
+    <div
+      className="rounded-xl p-4 w-full max-w-[270px] mx-auto flex flex-col gap-2.5"
+      style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
+    >
+      <div className="flex items-center justify-between">
+        <span className="text-[11px] font-semibold uppercase tracking-wider text-sky-400 flex items-center gap-1.5">
+          <Bot className="w-3.5 h-3.5" />
+          AI Claim Score
+        </span>
+        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 border border-sky-500/30">
+          98.4% Trust
+        </span>
+      </div>
+
+      {/* Model Badges */}
+      <div className="flex flex-wrap gap-1">
+        {['GPT-4', 'Gemini', 'Claude', 'Grok', 'DeepSeek'].map((llm) => (
+          <span key={llm} className="text-[9px] px-1.5 py-0.5 rounded bg-white/5 text-white/70 border border-white/10">
+            {llm}
+          </span>
+        ))}
+      </div>
+
+      <div className="flex items-center gap-2 p-2 rounded bg-white/[0.04] border border-white/5 text-[11px]">
+        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+        <span className="text-white/80">Cross-referenced with VDI dataset</span>
+      </div>
+    </div>
+  )
+}
+
+function PrivateBiUI() {
+  return (
+    <div
+      className="rounded-xl p-4 w-full max-w-[270px] mx-auto flex flex-col gap-2.5"
+      style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
+    >
+      <div className="flex items-center justify-between">
+        <span className="text-[11px] font-semibold uppercase tracking-wider text-purple-400 flex items-center gap-1.5">
+          <Lock className="w-3.5 h-3.5" />
+          Enterprise Private BI
+        </span>
+        <span className="text-[9px] px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30 font-medium">
+          Zero DB Storage
+        </span>
+      </div>
+
+      <div className="p-2 rounded bg-purple-500/10 border border-purple-500/20 text-[11px] text-purple-200">
+        🔒 Sensitive data processed in memory & purged immediately.
+      </div>
+
+      <div className="flex items-center justify-between text-[11px] text-white/80 pt-1">
+        <span>Business Forecast:</span>
+        <span className="text-purple-300 font-semibold">+24.5% Benchmark</span>
+      </div>
+    </div>
+  )
+}
+
+function DivergenceUI() {
+  return (
+    <div
+      className="rounded-xl p-4 w-full max-w-[270px] mx-auto flex flex-col gap-2.5"
+      style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
+    >
+      <div className="flex items-center justify-between">
+        <span className="text-[11px] font-semibold uppercase tracking-wider text-rose-400 flex items-center gap-1.5">
+          <Zap className="w-3.5 h-3.5" />
+          Divergence Alert
+        </span>
+        <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">
+          Action Required
+        </span>
+      </div>
+
+      <div className="p-2 rounded bg-rose-500/10 border border-rose-500/20 text-[11px] text-rose-200">
+        ⚡ Market trend divergence detected. Recommended decision ready.
+      </div>
+
+      <div className="text-[10px] text-white/60 flex items-center gap-1 pt-0.5">
+        <ShieldCheck className="w-3 h-3 text-emerald-400" />
+        <span>Based on 100% verified market evidence</span>
+      </div>
+    </div>
+  )
+}
+
+// --- Features Data ---
 
 const features = [
   {
-    title: 'Claim Extraction',
-    desc: 'Break content into individual, verifiable assertions automatically.',
-    UI: ClaimExtractionUI,
+    title: '1. Data Sort',
+    subtitle: 'Intelligent Raw Data Verification & Sorting',
+    desc: 'The core verification engine of Clarify Data. Upload raw datasets in any format — the system analyzes the structure, prompts for target sorting criteria, and sorts data with automated quality indicators.',
+    UI: DataSortUI
   },
   {
-    title: 'Human Specialists',
-    desc: 'Credentialed experts verify against primary sources — not another model.',
-    UI: HumanSpecialistsUI,
+    title: '2. Verified Market Intelligence',
+    subtitle: 'Dynamic Daily Upgrades & Trigger Alerts',
+    desc: 'Continuous market intelligence updated daily. Ask industry-critical queries, receive analytics reports backed by human verifier edge-case reviews, and get instant trigger alerts via email, PDF, or DOC formats.',
+    UI: MarketIntelUI
   },
   {
-    title: 'Fact Bank',
-    desc: 'Bank matches return in seconds. Coverage compounds with use.',
-    UI: FactBankUI,
+    title: '3. AI Claim Verification',
+    subtitle: 'Trust Scoring for Major LLMs',
+    desc: 'Verify claims generated from ChatGPT, Gemini, Claude, Grok, or DeepSeek. Clarify Data evaluates content against real-time industry databases, providing accuracy scores backed by expert human validation.',
+    UI: AiClaimUI
   },
   {
-    title: 'Verification Records',
-    desc: 'Every result ships with source, verifier, date, and confidence score.',
-    UI: VerificationRecordsUI,
+    title: '4. Enterprise Private Business Intelligence',
+    subtitle: 'Zero-Persistence Private Audit & Forecasts',
+    desc: 'Designed for enterprise and private businesses. Upload sensitive corporate data with a strict zero-database storage guarantee. Receive customized business audit reports and market comparison forecasts.',
+    UI: PrivateBiUI
   },
   {
-    title: 'EU AI Act Ready',
-    desc: 'Article 50 compliance records built in. Audit-grade retention included.',
-    UI: EuActUI,
-  },
-  {
-    title: 'Multi-sector',
-    desc: 'Medical, logistics, marketing, and education — each with its own specialist pool.',
-    UI: MultiSectorUI,
-  },
+    title: '5. Market Divergence Alerts & Guidance',
+    subtitle: 'Strategic Decision Frameworks',
+    desc: 'Stay ahead with real-time market divergence detection. Built on trusted, verified data streams, the system delivers strategic guidance and immediate actionable decisions for rapid business adoption.',
+    UI: DivergenceUI
+  }
 ]
 
 export default function Features() {
@@ -169,73 +214,93 @@ export default function Features() {
     <section
       ref={ref}
       id="features"
-      className="section-pad"
+      className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
-      <div className="section-inner">
+      {/* Background Glow */}
+      <div
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full pointer-events-none blur-[140px]"
+        style={{
+          background: 'radial-gradient(circle, rgba(84, 27, 4, 0.25) 0%, rgba(10, 10, 10, 0) 70%)'
+        }}
+      />
+
+      <div className="section-inner relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 14 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-12 md:mb-16"
         >
-          <span className="eyebrow-pill mb-6 inline-block">Features</span>
+          <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
+            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+            <span>Features & Modules</span>
+          </span>
           <h2
-            className="mb-3 md:mb-4 text-[28px] md:text-[48px]"
+            className="mb-4 text-[28px] md:text-[46px]"
             style={{
-              fontWeight: 500,
-              letterSpacing: '-1.44px',
+              fontWeight: 600,
+              letterSpacing: '-1.2px',
               lineHeight: '1.2',
-              color: 'rgb(250,250,250)',
+              color: 'rgb(250,250,250)'
             }}
           >
-            Everything you need to verify AI content.
+            Core Features & Verification Modules
           </h2>
           <p
-            className="max-w-[520px] mx-auto text-[15px] md:text-[18px]"
-            style={{ fontWeight: 500, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
+            className="max-w-[620px] mx-auto text-[15px] md:text-[18px]"
+            style={{ fontWeight: 450, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            A complete verification system built for teams publishing at scale.
+            Comprehensive data sorting, AI claim verification, dynamic market intelligence, and enterprise-grade private audits.
           </p>
         </motion.div>
 
-        {/* 2x3 grid */}
-        <div className="grid md:grid-cols-3 gap-4">
-          {features.map((feat, i) => (
-            <motion.div
-              key={feat.title}
-              initial={{ opacity: 0, y: 12 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.08 + i * 0.06 }}
-              className="landscape-card rounded-2xl overflow-hidden flex flex-col min-h-[240px] md:min-h-[320px]"
-              style={{
-                border: '1px solid rgba(250,250,250,0.07)',
-              }}
-            >
-              {/* Visual */}
-              <div className="flex-1 flex items-center justify-center p-6">
-                <feat.UI />
-              </div>
-              {/* Text */}
-              <div className="px-6 pb-6">
-                <h4
-                  className="mb-1.5"
-                  style={{
-                    fontSize: '18px',
-                    fontWeight: 500,
-                    letterSpacing: '-0.4px',
-                    color: 'rgb(250,250,250)',
-                  }}
-                >
-                  {feat.title}
-                </h4>
-                <p style={{ fontSize: '14px', color: 'rgba(250,250,250,0.6)', lineHeight: '21px' }}>
-                  {feat.desc}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {features.map((feat, i) => {
+            const isEnterprise = i === 3 // Feature 4 highlighted
+            return (
+              <motion.div
+                key={feat.title}
+                initial={{ opacity: 0, y: 16 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.08 + i * 0.07 }}
+                className={`landscape-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:border-amber-500/40 ${
+                  isEnterprise ? 'lg:col-span-2' : ''
+                }`}
+                style={{
+                  border: isEnterprise
+                    ? '1px solid rgba(192, 132, 252, 0.3)'
+                    : '1px solid rgba(250,250,250,0.08)'
+                }}
+              >
+                {/* Visual Header */}
+                <div className="flex-1 flex items-center justify-center p-6 min-h-[190px]">
+                  <feat.UI />
+                </div>
+
+                {/* Text Content */}
+                <div className="px-6 pb-6 pt-2">
+                  <span className="text-[11px] font-semibold text-amber-400/90 uppercase tracking-wider block mb-1">
+                    {feat.subtitle}
+                  </span>
+                  <h3
+                    className="mb-2 text-[20px] font-semibold tracking-tight"
+                    style={{ color: 'rgb(250,250,250)' }}
+                  >
+                    {feat.title}
+                  </h3>
+                  <p
+                    className="text-[14px] leading-[22px]"
+                    style={{ color: 'rgba(250,250,250,0.65)' }}
+                  >
+                    {feat.desc}
+                  </p>
+                </div>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>
