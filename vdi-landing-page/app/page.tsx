@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import Benefits from '@/components/Benefits'
 import Setup from '@/components/Setup'
 import Features from '@/components/Features'
+import Workflows from '@/components/Workflows'
 import UseCases from '@/components/UseCases'
 import Testimonials from '@/components/Testimonials'
 import Pricing from '@/components/Pricing'
@@ -18,6 +19,7 @@ export default function Home() {
         <Benefits />
         <Setup />
         <Features />
+        <Workflows />
         <UseCases />
         <Testimonials />
         <Pricing />
@@ -27,3 +29,4 @@ export default function Home() {
     </>
   )
 }
+
