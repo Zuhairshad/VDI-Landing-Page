@@ -3,26 +3,22 @@
 import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'motion/react'
 import {
-  XCircle,
+  AlertTriangle,
   CheckCircle2,
   Database,
   TrendingUp,
   FileCheck2,
   Lock,
   Zap,
-  ArrowRight,
   Sparkles,
   Shield,
-  RefreshCw,
-  BarChart3,
-  Cpu,
-  Layers
+  RefreshCw
 } from 'lucide-react'
 
-// Copper color tokens
+// Site copper color tokens
 const COPPER_COLOR = 'rgb(194, 89, 24)'
-const COPPER_BRIGHT = 'rgb(245, 158, 11)'
-const COPPER_BG = 'rgba(194, 89, 24, 0.12)'
+const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
+const COPPER_BORDER = 'rgba(194, 89, 24, 0.35)'
 
 const problems = [
   { title: 'Messy & Unstructured Data', desc: 'Duplicated formats, missing columns, and fragmented sources' },
@@ -91,7 +87,7 @@ export default function Benefits() {
                     ? 'shadow-lg text-white'
                     : 'text-white/60 hover:text-white'
                 }`}
-                style={activeTab === 'solution' ? { background: 'rgb(84, 27, 4)', border: '1px solid rgba(194, 89, 24, 0.5)' } : {}}
+                style={activeTab === 'solution' ? { background: 'rgb(84, 27, 4)', border: `1px solid ${COPPER_BORDER}` } : {}}
               >
                 <CheckCircle2 className="w-4 h-4" style={{ color: COPPER_COLOR }} />
                 <span>The Clarify Advantage</span>
@@ -103,9 +99,9 @@ export default function Benefits() {
                     ? 'shadow-lg text-white'
                     : 'text-white/60 hover:text-white'
                 }`}
-                style={activeTab === 'problem' ? { background: 'rgba(220, 38, 38, 0.25)', border: '1px solid rgba(220, 38, 38, 0.4)' } : {}}
+                style={activeTab === 'problem' ? { background: 'rgba(84, 27, 4, 0.65)', border: `1px solid ${COPPER_BORDER}` } : {}}
               >
-                <XCircle className="w-4 h-4 text-rose-400" />
+                <AlertTriangle className="w-4 h-4" style={{ color: COPPER_COLOR }} />
                 <span>Traditional Challenges</span>
               </button>
             </div>
@@ -115,7 +111,7 @@ export default function Benefits() {
         {/* Tab Content Display */}
         <AnimatePresence mode="wait">
           {activeTab === 'problem' ? (
-            /* Traditional Problems View */
+            /* Traditional Problems View - Copper Themed */
             <motion.div
               key="problem-view"
               initial={{ opacity: 0, y: 15 }}
@@ -127,24 +123,25 @@ export default function Benefits() {
               {problems.map((prob, i) => (
                 <div
                   key={prob.title}
-                  className="rounded-2xl p-6 relative overflow-hidden flex flex-col justify-between"
+                  className="rounded-2xl p-6 relative overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-[#c25918]/60"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(30,15,15,0.8) 0%, rgba(15,10,10,0.95) 100%)',
-                    border: '1px solid rgba(239, 68, 68, 0.25)'
+                    background: 'linear-gradient(135deg, rgba(84, 27, 4, 0.35) 0%, rgba(16, 16, 20, 0.95) 100%)',
+                    border: `1px solid ${COPPER_BORDER}`
                   }}
                 >
-                  <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-4 bg-rose-500/10 border border-rose-500/20">
-                    <XCircle className="w-5 h-5 text-rose-400" />
+                  <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-4 border border-white/10" style={{ background: COPPER_BG }}>
+                    <AlertTriangle className="w-5 h-5" style={{ color: COPPER_COLOR }} />
                   </div>
                   <div>
-                    <span className="text-[10px] font-bold tracking-wider text-rose-400/90 uppercase block mb-1">
-                      Problem 0{i + 1}
+                    <span className="text-[10px] font-bold tracking-wider uppercase block mb-1" style={{ color: COPPER_COLOR }}>
+                      Challenge 0{i + 1}
                     </span>
                     <h4 className="text-[17px] font-semibold text-white mb-2">{prob.title}</h4>
-                    <p className="text-[13px] text-white/60 leading-[20px]">{prob.desc}</p>
+                    <p className="text-[13px] text-white/70 leading-[20px]">{prob.desc}</p>
                   </div>
-                  <div className="pt-4 mt-4 border-t border-rose-500/10 text-[11px] text-rose-300/80 font-medium">
-                    ⚠️ High risk & manual overhead
+                  <div className="pt-4 mt-4 border-t border-white/10 text-[11px] font-medium flex items-center gap-1.5" style={{ color: COPPER_COLOR }}>
+                    <AlertTriangle className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
+                    <span>Unresolved Market Friction</span>
                   </div>
                 </div>
               ))}
@@ -164,7 +161,7 @@ export default function Benefits() {
                 className="md:col-span-7 rounded-2xl p-6 md:p-8 flex flex-col justify-between relative overflow-hidden group hover:border-[#c25918]/60 transition-all duration-300"
                 style={{
                   background: 'linear-gradient(135deg, rgba(84, 27, 4, 0.35) 0%, rgba(16, 16, 20, 0.95) 100%)',
-                  border: '1px solid rgba(194, 89, 24, 0.3)'
+                  border: `1px solid ${COPPER_BORDER}`
                 }}
               >
                 <div>
@@ -172,7 +169,7 @@ export default function Benefits() {
                     <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-white/10" style={{ background: COPPER_BG }}>
                       <Database className="w-5 h-5" style={{ color: COPPER_COLOR }} />
                     </div>
-                    <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full border uppercase tracking-wider" style={{ background: COPPER_BG, color: COPPER_COLOR, borderColor: 'rgba(194,89,24,0.3)' }}>
+                    <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full border uppercase tracking-wider" style={{ background: COPPER_BG, color: COPPER_COLOR, borderColor: COPPER_BORDER }}>
                       Core Module 01
                     </span>
                   </div>
@@ -188,7 +185,7 @@ export default function Benefits() {
                   <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex flex-col gap-2.5">
                     <div className="flex items-center justify-between text-[11px] text-white/60">
                       <span>Raw File: raw_inventory_2026.csv</span>
-                      <span className="text-emerald-400 font-medium">✓ 100% Cleaned</span>
+                      <span className="font-medium" style={{ color: COPPER_COLOR }}>✓ 100% Cleaned</span>
                     </div>
                     <div className="grid grid-cols-3 gap-2 text-[11px] font-medium text-center">
                       <div className="p-2 rounded bg-white/5 border border-white/5 text-white/80">
@@ -199,7 +196,7 @@ export default function Benefits() {
                         <span className="block text-[10px] text-white/40 uppercase">Mapping</span>
                         Auto-Matched
                       </div>
-                      <div className="p-2 rounded border" style={{ background: COPPER_BG, borderColor: 'rgba(194,89,24,0.3)', color: COPPER_COLOR }}>
+                      <div className="p-2 rounded border" style={{ background: COPPER_BG, borderColor: COPPER_BORDER, color: COPPER_COLOR }}>
                         <span className="block text-[10px] uppercase opacity-70">Quality Score</span>
                         99.8 / 100
                       </div>
@@ -221,7 +218,7 @@ export default function Benefits() {
                     <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-white/10" style={{ background: COPPER_BG }}>
                       <TrendingUp className="w-5 h-5" style={{ color: COPPER_COLOR }} />
                     </div>
-                    <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full border uppercase tracking-wider" style={{ background: COPPER_BG, color: COPPER_COLOR, borderColor: 'rgba(194,89,24,0.3)' }}>
+                    <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full border uppercase tracking-wider" style={{ background: COPPER_BG, color: COPPER_COLOR, borderColor: COPPER_BORDER }}>
                       Daily Sync
                     </span>
                   </div>
@@ -273,7 +270,7 @@ export default function Benefits() {
                 className="md:col-span-4 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden group hover:border-[#c25918]/60 transition-all duration-300"
                 style={{
                   background: 'linear-gradient(135deg, rgba(84, 27, 4, 0.25) 0%, rgba(16, 16, 20, 0.95) 100%)',
-                  border: '1px solid rgba(194, 89, 24, 0.25)'
+                  border: `1px solid ${COPPER_BORDER}`
                 }}
               >
                 <div>
@@ -287,7 +284,7 @@ export default function Benefits() {
                     Enterprise privacy with zero permanent DB storage. Custom business audit & forecast reports.
                   </p>
                 </div>
-                <div className="p-2.5 rounded-lg border flex items-center justify-between text-[11px]" style={{ background: COPPER_BG, borderColor: 'rgba(194,89,24,0.3)', color: COPPER_COLOR }}>
+                <div className="p-2.5 rounded-lg border flex items-center justify-between text-[11px]" style={{ background: COPPER_BG, borderColor: COPPER_BORDER, color: COPPER_COLOR }}>
                   <span className="flex items-center gap-1.5"><Shield className="w-3.5 h-3.5" /> Zero DB Retention</span>
                   <span className="font-semibold">Protected</span>
                 </div>
