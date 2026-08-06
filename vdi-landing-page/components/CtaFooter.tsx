@@ -65,13 +65,13 @@ export default function CtaFooter() {
 
             <div className="flex items-center justify-center gap-3 mb-6">
               <a
-                href="#pricing"
+                href="#book-demo"
                 className="px-6 py-3 rounded-full text-[16px] font-medium transition-all duration-200"
                 style={{ background: 'rgb(250,250,250)', color: 'rgb(10,10,10)' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.88)' }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(250,250,250)' }}
               >
-                Request early access
+                Book a Demo
               </a>
               <a
                 href="#overview"

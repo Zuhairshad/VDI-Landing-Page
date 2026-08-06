@@ -6,7 +6,7 @@ import Features from '@/components/Features'
 import Workflows from '@/components/Workflows'
 import UseCases from '@/components/UseCases'
 import Testimonials from '@/components/Testimonials'
-import Pricing from '@/components/Pricing'
+import BookDemo from '@/components/BookDemo'
 import Faq from '@/components/Faq'
 import CtaFooter from '@/components/CtaFooter'
 
@@ -22,11 +22,12 @@ export default function Home() {
         <Workflows />
         <UseCases />
         <Testimonials />
-        <Pricing />
+        <BookDemo />
         <Faq />
       </main>
       <CtaFooter />
     </>
   )
 }
+
 

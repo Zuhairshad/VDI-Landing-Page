@@ -9,7 +9,6 @@ const links = [
   { label: 'How it works', href: '/how-it-works' },
   { label: 'Workflows', href: '/#workflows' },
   { label: 'Industries', href: '/#usecases' },
-  { label: 'Pricing', href: '/#pricing' },
 ]
 
 export default function Nav() {
@@ -76,13 +75,13 @@ export default function Nav() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
             <Link
-              href="/#pricing"
+              href="/#book-demo"
               className="text-[16px] font-medium px-5 py-2 rounded-full transition-all duration-200"
               style={{ background: 'rgb(84,27,4)', color: 'rgb(250,250,250)' }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(84,27,4,0.85)' }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(84,27,4)' }}
             >
-              Contact now
+              Book a Demo
             </Link>
           </div>
 
@@ -147,12 +146,12 @@ export default function Nav() {
               ))}
             </div>
             <Link
-              href="/#pricing"
+              href="/#book-demo"
               onClick={() => setMobileOpen(false)}
               className="text-center py-3 rounded-full text-[15px] font-medium"
               style={{ background: 'rgb(84,27,4)', color: 'rgb(250,250,250)' }}
             >
-              Contact now
+              Book a Demo
             </Link>
           </motion.div>
         )}
