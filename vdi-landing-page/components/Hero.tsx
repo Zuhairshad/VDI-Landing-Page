@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'motion/react'
 import ShaderBackground from './ShaderBackground'
+import { Sparkles, ShieldCheck } from 'lucide-react'
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null)
@@ -17,7 +18,7 @@ export default function Hero() {
     >
       <ShaderBackground />
 
-      {/* Subtle vignette so text stays readable */}
+      {/* Subtle vignette */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -26,60 +27,62 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 flex flex-col items-center text-center px-5 py-24 md:py-32 max-w-[880px] mx-auto">
+      <div className="relative z-10 flex flex-col items-center text-center px-5 py-24 md:py-32 max-w-[920px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
           className="mb-8"
         >
-          <span className="eyebrow-pill">⬡ Human Verification Platform</span>
+          <span className="eyebrow-pill flex items-center gap-2">
+            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+            <span>Verified Data Intelligence</span>
+          </span>
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.08 }}
-          className="mb-6 text-[30px] md:text-[56px]"
-          style={{ fontWeight: 500, letterSpacing: '-1.68px', lineHeight: '1.2', color: 'rgb(250,250,250)' }}
+          className="mb-6 text-[32px] md:text-[58px]"
+          style={{ fontWeight: 600, letterSpacing: '-1.8px', lineHeight: '1.18', color: 'rgb(250,250,250)' }}
         >
-          The machine wrote it. Someone still has to stand behind it.
+          Verified Data Intelligence for Smarter Business Decisions
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.16 }}
-          className="mb-10 max-w-[560px] text-[15px] md:text-[18px]"
-          style={{ fontWeight: 500, lineHeight: '26px', color: 'rgba(250,250,250,0.8)' }}
+          className="mb-10 max-w-[680px] text-[16px] md:text-[19px]"
+          style={{ fontWeight: 450, lineHeight: '28px', color: 'rgba(250,250,250,0.85)' }}
         >
-          ClarifyData decomposes AI-generated content into individual claims and validates each
-          against human-verified facts.
+          Clarify Data combines automated data sorting, continuously updated market intelligence, AI claim verification, business benchmarking, and expert human review to transform raw information into structured, actionable insights.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.24 }}
-          className="flex flex-wrap items-center justify-center gap-3 mb-10"
+          className="flex flex-wrap items-center justify-center gap-3.5 mb-10"
         >
           <a
-            href="#pricing"
-            className="px-6 py-3 rounded-full text-[15px] md:text-[16px] font-medium transition-colors duration-200"
+            href="#features"
+            className="px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-medium transition-all duration-200 shadow-lg"
             style={{ background: 'rgb(250,250,250)', color: 'rgb(10,10,10)' }}
             onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.88)' }}
             onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(250,250,250)' }}
           >
-            Request early access
+            Explore Platform Modules
           </a>
           <a
-            href="#setup"
-            className="px-6 py-3 rounded-full text-[15px] md:text-[16px] font-medium transition-colors duration-200"
-            style={{ background: 'rgba(250,250,250,0.15)', color: 'rgb(250,250,250)', border: '1px solid rgba(250,250,250,0.2)' }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.22)' }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.15)' }}
+            href="#workflows"
+            className="px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-medium transition-all duration-200"
+            style={{ background: 'rgba(250,250,250,0.12)', color: 'rgb(250,250,250)', border: '1px solid rgba(250,250,250,0.2)' }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.2)' }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.12)' }}
           >
-            See the method
+            View Workflows & Market Default
           </a>
         </motion.div>
 
@@ -87,9 +90,10 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.32 }}
-          style={{ fontSize: '13px', color: 'rgba(250,250,250,0.32)' }}
+          className="flex items-center gap-2 text-[13px] text-white/40"
         >
-          SOC 2 ready · GDPR compliant · 120 specialists · EU AI Act Article 50
+          <ShieldCheck className="w-4 h-4 text-emerald-400" />
+          <span>Serving E-Commerce · Medical · Supply Chain · Education</span>
         </motion.p>
       </div>
     </section>

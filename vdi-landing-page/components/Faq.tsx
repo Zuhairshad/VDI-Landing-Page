@@ -6,28 +6,28 @@ import * as Accordion from '@radix-ui/react-accordion'
 
 const questions = [
   {
-    q: 'Do I need technical skills to use ClarifyData?',
-    a: 'No. Submit content via the dashboard directly. No integration is required during the pilot phase — just paste or upload your AI-generated content and ClarifyData handles the rest.',
+    q: 'What is Clarify Data and how does it help my business?',
+    a: 'Clarify Data is a data verification, market intelligence, and business benchmarking platform. It combines automated data processing, continuously updated market intelligence, AI claim verification, business benchmarking, dynamic reporting, and human expert review to help organizations make accurate, evidence-backed decisions.',
   },
   {
-    q: 'How fast is verification?',
-    a: 'Claims that match our verified fact bank return in seconds. Claims requiring specialist review typically return within hours. We do not use AI for the specialist step — a credentialed human verifies against primary sources.',
+    q: 'How does Data Sort clean and standardize messy data?',
+    a: 'Data Sort accepts raw data in CSV, Excel, documents, or API feeds. The system analyzes data fields, missing values, duplicates, and asks target questions (e.g., sorting rules, key columns, mapping preferences) to automatically standardize, clean, deduplicate, and export clean datasets.',
   },
   {
-    q: 'Which sectors do you cover?',
-    a: 'Medical & clinical, logistics & trade, social & marketing, and education. Each sector has its own specialist pool with relevant credentials. The education sector is launching first.',
+    q: 'How does AI Claim Verification work with ChatGPT, Gemini, Claude, Grok, and DeepSeek?',
+    a: 'You can paste or upload AI-generated content. Clarify Data parses the response into individual claims and cross-references each assertion against verified industry datasets, delivering confidence scores, verdicts (Verified, Misleading, Unsupported, etc.), and human verifier reviews when required.',
   },
   {
-    q: 'Is there a free plan?',
-    a: 'The education sector pilot is free, structured, and open now. No integration required — submit content directly via the dashboard. All other sectors start on the Starter plan at $99/month.',
+    q: 'Is private business data stored in the system for Business Benchmarking?',
+    a: 'No. Clarify Data is engineered with a strict zero-database storage policy for enterprise private data. Confidential metrics are processed in-memory solely for prediction, verification, and benchmark audit reports, and are purged immediately after analysis.',
   },
   {
-    q: "What's included in the Verified plan?",
-    a: 'All four sectors, unlimited bank lookups, 250 human verifications per month, exportable records in PDF and JSON, priority turnaround, up to 10 team members, and three-year record retention.',
+    q: 'When is Human Expert Review triggered?',
+    a: 'Human review is triggered for critical, uncertain, conflicting, low-confidence, or high-impact cases (such as sensitive medical statements, major executive decisions, or complex industry edge cases) to ensure 100% audit-grade reliability.',
   },
   {
-    q: 'Can teams use ClarifyData together?',
-    a: 'Yes. The Verified plan includes up to 10 seats. The Enterprise plan supports unlimited seats. Role-based access and shared dashboards are included in both.',
+    q: 'Which key industries are supported?',
+    a: 'Clarify Data serves four primary verticals: Social Media & E-commerce, Medical & Healthcare, Logistics & Supply Chain, and Education — each equipped with domain-specific verification rules and expert analyst pools.',
   },
 ]
 
@@ -40,10 +40,10 @@ export default function Faq() {
     <section
       ref={ref}
       id="faq"
-      className="section-pad"
+      className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
-      <div className="section-inner">
+      <div className="section-inner relative z-10">
         <div className="grid md:grid-cols-[2fr_3fr] gap-8 md:gap-16">
           {/* Left column */}
           <motion.div
@@ -51,20 +51,20 @@ export default function Faq() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            <span className="eyebrow-pill mb-6 inline-block">Common Question</span>
+            <span className="eyebrow-pill mb-6 inline-block">Common Questions</span>
             <h2
               className="mb-4 text-[26px] md:text-[40px]"
               style={{
-                fontWeight: 500,
+                fontWeight: 600,
                 letterSpacing: '-1.2px',
                 lineHeight: '1.2',
                 color: 'rgb(250,250,250)',
               }}
             >
-              Everything you need to know.
+              Everything you need to know about Clarify Data.
             </h2>
             <p style={{ fontSize: '16px', color: 'rgba(250,250,250,0.6)', lineHeight: '24px' }}>
-              Can&rsquo;t find what you&rsquo;re looking for? Our support team is one message away.
+              Have more questions about integration, data security, or custom enterprise deployments? Reach out to our team.
             </p>
           </motion.div>
 
@@ -124,7 +124,7 @@ export default function Faq() {
                         >
                           <p
                             className="pb-5 text-[15px] leading-6"
-                            style={{ color: 'rgba(250,250,250,0.55)' }}
+                            style={{ color: 'rgba(250,250,250,0.65)' }}
                           >
                             {item.a}
                           </p>

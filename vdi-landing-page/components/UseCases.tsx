@@ -2,93 +2,57 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'motion/react'
+import { ShoppingBag, Stethoscope, Truck, GraduationCap, Check } from 'lucide-react'
 
-function ClinicalUI() {
-  return (
-    <div
-      className="rounded-xl p-4 w-full max-w-[260px] mx-auto"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
-    >
-      <p className="text-[11px] uppercase tracking-wider mb-2" style={{ color: 'rgba(250,250,250,0.32)' }}>Clinical review</p>
-      {['Drug X: 40% symptom reduction', 'Dosing: 10mg twice daily', 'Trial: 12-week randomised'].map((c) => (
-        <div key={c} className="flex items-center justify-between py-1.5">
-          <span className="text-[12px]" style={{ color: 'rgba(250,250,250,0.65)' }}>{c}</span>
-          <span className="text-[10px] font-medium ml-2 shrink-0" style={{ color: 'rgb(74,222,128)' }}>✓</span>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-function TradeUI() {
-  return (
-    <div
-      className="rounded-xl p-4 w-full max-w-[260px] mx-auto"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
-    >
-      <p className="text-[11px] uppercase tracking-wider mb-2" style={{ color: 'rgba(250,250,250,0.32)' }}>Trade compliance</p>
-      {['HS Code: 3004.90 · ✓ Confirmed', 'DG Class III · ✓ Matched', 'Customs duty: 2.7% · ✓'].map((c) => (
-        <div key={c} className="py-1.5">
-          <span className="text-[12px]" style={{ color: 'rgba(250,250,250,0.65)' }}>{c}</span>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-function MarketingUI() {
-  return (
-    <div
-      className="rounded-xl p-4 w-full max-w-[260px] mx-auto"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
-    >
-      <p className="text-[11px] uppercase tracking-wider mb-2" style={{ color: 'rgba(250,250,250,0.32)' }}>Marketing claims</p>
-      {['ISO 9001 certified · ✓', '9/10 practitioners · ✓', '23% efficiency gain · ✓'].map((c) => (
-        <div key={c} className="py-1.5">
-          <span className="text-[12px]" style={{ color: 'rgba(250,250,250,0.65)' }}>{c}</span>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-function CurriculumUI() {
-  return (
-    <div
-      className="rounded-xl p-4 w-full max-w-[260px] mx-auto"
-      style={{ background: 'rgba(12,12,12,0.92)', border: '1px solid rgba(250,250,250,0.1)' }}
-    >
-      <p className="text-[11px] uppercase tracking-wider mb-2" style={{ color: 'rgba(250,250,250,0.32)' }}>Curriculum check</p>
-      {['A-Level Spec 2026 · ✓', 'Exam board: AQA · ✓', 'Prescribed text · ✓ Confirmed'].map((c) => (
-        <div key={c} className="py-1.5">
-          <span className="text-[12px]" style={{ color: 'rgba(250,250,250,0.65)' }}>{c}</span>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-const cases = [
+const industries = [
   {
-    title: 'Clinical Publications',
-    desc: 'Verify drug claims, trial data, and dosing references before they go public.',
-    UI: ClinicalUI,
+    icon: <ShoppingBag className="w-5 h-5 text-amber-400" />,
+    badgeColor: 'rgba(245, 158, 11, 0.15)',
+    title: '1. Social Media and E-commerce',
+    desc: 'Support social media platforms, online retailers, digital agencies, marketplaces, content creators, and e-commerce brands in organizing data and responding to changing customer behavior.',
+    useCases: [
+      'Social media trend & marketing claim verification',
+      'Product demand & category forecasting',
+      'Campaign performance & conversion rate benchmarking',
+      'Customer acquisition & sentiment analysis'
+    ]
   },
   {
-    title: 'Trade Compliance',
-    desc: 'Check tariff classifications, dangerous goods rules, and customs procedures.',
-    UI: TradeUI,
+    icon: <Stethoscope className="w-5 h-5 text-emerald-400" />,
+    badgeColor: 'rgba(16, 185, 129, 0.15)',
+    title: '2. Medical and Healthcare',
+    desc: 'Empower healthcare providers, clinical research teams, health tech platforms, and clinics with verified insights while maintaining strict boundaries between informational verification and clinical advice.',
+    useCases: [
+      'Medical data organization & research claim verification',
+      'AI-generated healthcare claim verification & human review',
+      'Healthcare market intelligence & service demand analytics',
+      'Evidence-based healthcare risk and trend alerts'
+    ]
   },
   {
-    title: 'Marketing Copy',
-    desc: 'Validate product specs, comparative claims, and statistics attribution.',
-    UI: MarketingUI,
+    icon: <Truck className="w-5 h-5 text-sky-400" />,
+    badgeColor: 'rgba(56, 189, 248, 0.15)',
+    title: '3. Logistics and Supply Chain',
+    desc: 'Help logistics operators, manufacturers, distributors, warehouses, and supply chain teams monitor operational performance and adapt quickly to market volatility.',
+    useCases: [
+      'Supply chain data cleaning & route performance reports',
+      'Delivery performance & cost trend benchmarking',
+      'Inventory movement & supplier performance verification',
+      'Forecast divergence detection & supply chain risk alerts'
+    ]
   },
   {
-    title: 'Curriculum Content',
-    desc: 'Confirm curriculum standards, exam specifications, and prescribed texts.',
-    UI: CurriculumUI,
-  },
+    icon: <GraduationCap className="w-5 h-5 text-purple-400" />,
+    badgeColor: 'rgba(192, 132, 252, 0.15)',
+    title: '4. Education',
+    desc: 'Assist schools, universities, ed-tech startups, researchers, and training providers with verified educational content, institutional benchmarks, and market intelligence.',
+    useCases: [
+      'Student & institutional data organization',
+      'AI-generated educational content & research claim verification',
+      'Student performance & course demand benchmarking',
+      'Institutional BI & dynamic learning trend alerts'
+    ]
+  }
 ]
 
 export default function UseCases() {
@@ -99,69 +63,87 @@ export default function UseCases() {
     <section
       ref={ref}
       id="usecases"
-      className="section-pad"
+      className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
-      <div className="section-inner">
+      <div className="section-inner relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 14 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <span className="eyebrow-pill mb-6 inline-block">Use Cases</span>
+          <span className="eyebrow-pill mb-4 inline-block">Industries Served</span>
           <h2
-            className="mb-3 md:mb-4 text-[28px] md:text-[48px]"
+            className="mb-4 text-[28px] md:text-[46px]"
             style={{
-              fontWeight: 500,
-              letterSpacing: '-1.44px',
+              fontWeight: 600,
+              letterSpacing: '-1.2px',
               lineHeight: '1.2',
               color: 'rgb(250,250,250)',
             }}
           >
-            Built for teams that can't afford to be wrong.
+            Built for Key Industry Verticals
           </h2>
           <p
-            className="max-w-[520px] mx-auto text-[15px] md:text-[18px]"
-            style={{ fontWeight: 500, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
+            className="max-w-[620px] mx-auto text-[15px] md:text-[18px]"
+            style={{ fontWeight: 450, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            Use ClarifyData across clinical, compliance, marketing, and education workflows.
+            Tailored data verification, market intelligence, benchmarking, and decision support for specialized sectors.
           </p>
         </motion.div>
 
-        {/* 2x2 grid */}
-        <div className="grid md:grid-cols-2 gap-4">
-          {cases.map((c, i) => (
+        {/* 2x2 Grid */}
+        <div className="grid md:grid-cols-2 gap-5">
+          {industries.map((ind, i) => (
             <motion.div
-              key={c.title}
-              initial={{ opacity: 0, y: 12 }}
+              key={ind.title}
+              initial={{ opacity: 0, y: 16 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
-              className="landscape-card rounded-2xl overflow-hidden flex flex-col min-h-[240px] md:min-h-[320px]"
+              className="landscape-card rounded-2xl p-6 md:p-8 flex flex-col justify-between"
               style={{
-                border: '1px solid rgba(250,250,250,0.07)',
+                border: '1px solid rgba(250,250,250,0.08)',
               }}
             >
-              {/* Visual */}
-              <div className="flex-1 flex items-center justify-center p-6">
-                <c.UI />
-              </div>
-              {/* Text */}
-              <div className="px-6 pb-6">
-                <h4
-                  className="mb-1.5 text-[16px] md:text-[22px]"
-                  style={{
-                    fontWeight: 500,
-                    letterSpacing: '-0.6px',
-                    color: 'rgb(250,250,250)',
-                  }}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+                    style={{
+                      background: ind.badgeColor,
+                      border: '1px solid rgba(255,255,255,0.1)',
+                    }}
+                  >
+                    {ind.icon}
+                  </div>
+                  <h3
+                    className="text-[20px] font-semibold tracking-tight"
+                    style={{ color: 'rgb(250,250,250)' }}
+                  >
+                    {ind.title}
+                  </h3>
+                </div>
+
+                <p
+                  className="text-[14px] leading-[22px] mb-5"
+                  style={{ color: 'rgba(250,250,250,0.7)' }}
                 >
-                  {c.title}
-                </h4>
-                <p style={{ fontSize: '15px', color: 'rgba(250,250,250,0.6)', lineHeight: '22px' }}>
-                  {c.desc}
+                  {ind.desc}
                 </p>
+              </div>
+
+              <div className="space-y-2 pt-3 border-t border-white/[0.07]">
+                <span className="text-[11px] uppercase tracking-wider font-semibold text-amber-400/80 block mb-2">
+                  Key Use Cases
+                </span>
+                {ind.useCases.map((uc) => (
+                  <div key={uc} className="flex items-start gap-2 text-[13px] text-white/85">
+                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <span>{uc}</span>
+                  </div>
+                ))}
               </div>
             </motion.div>
           ))}
