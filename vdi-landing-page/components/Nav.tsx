@@ -3,13 +3,13 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const links = [
-  { label: 'Overview', href: '#overview' },
-  { label: 'How it works', href: '#setup' },
-  { label: 'Workflows', href: '#workflows' },
-  { label: 'Industries', href: '#usecases' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'How it works', href: '/how-it-works' },
+  { label: 'Workflows', href: '/#workflows' },
+  { label: 'Industries', href: '/#usecases' },
+  { label: 'Pricing', href: '/#pricing' },
 ]
 
 export default function Nav() {
@@ -38,22 +38,29 @@ export default function Nav() {
           borderBottom: scrolled ? '1px solid rgba(250,250,250,0.07)' : '1px solid transparent',
         }}
       >
-        <div className="section-inner flex items-center justify-between h-16">
+        <div className="section-inner relative flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-1 select-none">
-            <Image src="/logo.png" alt="ClarifyData" width={130} height={130} className="rounded-2xl" style={{ marginRight: '-40px' }} />
+          <Link href="/" className="flex items-center gap-1 select-none">
+            <Image
+              src="/logo.png"
+              alt="ClarifyData"
+              width={130}
+              height={130}
+              className="rounded-2xl"
+              style={{ marginRight: '-40px' }}
+            />
             <span
               className="text-[20px] font-semibold tracking-tight"
               style={{ color: 'rgb(250,250,250)' }}
             >
               CLARIFYDATA
             </span>
-          </a>
+          </Link>
 
-          {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop links — absolutely centered */}
+          <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             {links.map((l) => (
-              <a
+              <Link
                 key={l.label}
                 href={l.href}
                 className="text-[16px] font-medium transition-colors duration-200"
@@ -62,21 +69,21 @@ export default function Nav() {
                 onMouseLeave={e => (e.currentTarget.style.color = 'rgba(250,250,250,0.8)')}
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
-            <a
-              href="#overview"
+            <Link
+              href="/#pricing"
               className="text-[16px] font-medium px-5 py-2 rounded-full transition-all duration-200"
               style={{ background: 'rgb(84,27,4)', color: 'rgb(250,250,250)' }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(84,27,4,0.85)' }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(84,27,4)' }}
             >
               Contact now
-            </a>
+            </Link>
           </div>
 
           {/* Hamburger */}
@@ -120,28 +127,33 @@ export default function Nav() {
           >
             <div className="flex flex-col gap-1 flex-1">
               {links.map((l, i) => (
-                <motion.a
+                <motion.div
                   key={l.label}
-                  href={l.href}
                   initial={{ opacity: 0, x: -12 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.06, duration: 0.25 }}
-                  onClick={() => setMobileOpen(false)}
-                  className="text-2xl font-medium py-3 border-b"
-                  style={{ color: 'rgb(250,250,250)', borderColor: 'rgba(250,250,250,0.07)' }}
+                  className="border-b"
+                  style={{ borderColor: 'rgba(250,250,250,0.07)' }}
                 >
-                  {l.label}
-                </motion.a>
+                  <Link
+                    href={l.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block text-2xl font-medium py-3"
+                    style={{ color: 'rgb(250,250,250)' }}
+                  >
+                    {l.label}
+                  </Link>
+                </motion.div>
               ))}
             </div>
-            <a
-              href="#overview"
+            <Link
+              href="/#pricing"
               onClick={() => setMobileOpen(false)}
               className="text-center py-3 rounded-full text-[15px] font-medium"
               style={{ background: 'rgb(84,27,4)', color: 'rgb(250,250,250)' }}
             >
               Contact now
-            </a>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
