@@ -5,6 +5,9 @@ import { motion, useInView } from 'motion/react'
 import ShaderBackground from './ShaderBackground'
 import { Sparkles, ShieldCheck } from 'lucide-react'
 
+// Site copper color token
+const COPPER_COLOR = 'rgb(194, 89, 24)'
+
 export default function Hero() {
   const ref = useRef<HTMLElement>(null)
   const inView = useInView(ref, { once: true })
@@ -35,7 +38,7 @@ export default function Hero() {
           className="mb-8"
         >
           <span className="eyebrow-pill flex items-center gap-2">
-            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+            <Sparkles className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
             <span>Verified Data Intelligence</span>
           </span>
         </motion.div>
@@ -92,7 +95,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.32 }}
           className="flex items-center gap-2 text-[13px] text-white/40"
         >
-          <ShieldCheck className="w-4 h-4 text-emerald-400" />
+          <ShieldCheck className="w-4 h-4" style={{ color: COPPER_COLOR }} />
           <span>Serving E-Commerce · Medical · Supply Chain · Education</span>
         </motion.p>
       </div>

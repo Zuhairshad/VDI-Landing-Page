@@ -13,6 +13,10 @@ import {
   ArrowRight
 } from 'lucide-react'
 
+// Site copper color token
+const COPPER_COLOR = 'rgb(194, 89, 24)'
+const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
+
 const problems = [
   'Messy, duplicated, and inconsistently formatted datasets',
   'Outdated market information and unverified AI assumptions',
@@ -23,27 +27,27 @@ const problems = [
 
 const advantages = [
   {
-    icon: <Database className="w-5 h-5 text-amber-400" />,
+    icon: <Database className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: 'Multi-Format Data Sorting & Cleaning',
     desc: 'Converts raw CSV, Excel, documents, and API data into clean, mapped, deduplicated datasets with automated quality indicators.'
   },
   {
-    icon: <TrendingUp className="w-5 h-5 text-emerald-400" />,
+    icon: <TrendingUp className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: 'Continuously Updated Market Intelligence',
     desc: 'Real-time market tracking that updates indicators daily and delivers automated trigger alerts when key trends shift.'
   },
   {
-    icon: <FileCheck2 className="w-5 h-5 text-sky-400" />,
+    icon: <FileCheck2 className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: 'AI Claim Verification & Scoring',
     desc: 'Evaluates content from ChatGPT, Gemini, Claude, Grok, and DeepSeek, providing confidence scores and evidence-backed verdicts.'
   },
   {
-    icon: <Lock className="w-5 h-5 text-purple-400" />,
+    icon: <Lock className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: 'Private Business Benchmarking & Audits',
     desc: 'Processes sensitive corporate metrics with zero permanent DB storage to generate custom BI reports and market performance comparisons.'
   },
   {
-    icon: <Zap className="w-5 h-5 text-rose-400" />,
+    icon: <Zap className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: 'Dynamic Reports & Divergence Alerts',
     desc: 'Version-controlled reports with "What Changed" sections and real-time alerts when actual market data diverges from expectations.'
   }
@@ -98,30 +102,30 @@ export default function Benefits() {
             className="lg:col-span-4 rounded-2xl p-6 md:p-8 flex flex-col justify-between"
             style={{
               background: 'rgba(28, 12, 10, 0.7)',
-              border: '1px solid rgba(245, 158, 11, 0.2)',
+              border: '1px solid rgba(194, 89, 24, 0.3)',
             }}
           >
             <div>
-              <div className="flex items-center gap-2 mb-4 text-amber-400">
-                <AlertTriangle className="w-5 h-5" />
-                <h3 className="text-[18px] font-semibold">Common Market Challenges</h3>
+              <div className="flex items-center gap-2 mb-4" style={{ color: COPPER_COLOR }}>
+                <AlertTriangle className="w-5 h-5" style={{ color: COPPER_COLOR }} />
+                <h3 className="text-[18px] font-semibold text-white">Common Market Challenges</h3>
               </div>
               <p className="text-[13px] text-white/60 mb-5 leading-[20px]">
                 Businesses struggle with unverified data, outdated reports, and risky AI assumptions:
               </p>
               <div className="space-y-3">
                 {problems.map((prob) => (
-                  <div key={prob} className="flex items-start gap-2.5 text-[13px] text-amber-100/80">
-                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 shrink-0" />
+                  <div key={prob} className="flex items-start gap-2.5 text-[13px] text-white/80">
+                    <span className="w-1.5 h-1.5 rounded-full mt-2 shrink-0" style={{ background: COPPER_COLOR }} />
                     <span>{prob}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="pt-6 mt-6 border-t border-amber-500/20 text-right">
-              <span className="text-[12px] text-amber-400/90 font-medium inline-flex items-center gap-1">
-                Clarify Data Solution <ArrowRight className="w-3.5 h-3.5" />
+            <div className="pt-6 mt-6 border-t border-white/10 text-right">
+              <span className="text-[12px] font-medium inline-flex items-center gap-1" style={{ color: COPPER_COLOR }}>
+                Clarify Data Solution <ArrowRight className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
               </span>
             </div>
           </motion.div>
@@ -133,7 +137,7 @@ export default function Benefits() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="lg:col-span-8 grid sm:grid-cols-2 gap-4"
           >
-            {advantages.map((adv, i) => (
+            {advantages.map((adv) => (
               <div
                 key={adv.title}
                 className="landscape-card rounded-2xl p-5 md:p-6 flex flex-col justify-between"
@@ -142,7 +146,7 @@ export default function Benefits() {
                 }}
               >
                 <div>
-                  <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-3.5 bg-white/5 border border-white/10">
+                  <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-3.5 border border-white/10" style={{ background: COPPER_BG }}>
                     {adv.icon}
                   </div>
                   <h4 className="text-[16px] font-semibold text-white mb-2">
@@ -152,8 +156,8 @@ export default function Benefits() {
                     {adv.desc}
                   </p>
                 </div>
-                <div className="pt-3 mt-3 border-t border-white/5 flex items-center gap-1.5 text-[11px] text-emerald-400 font-medium">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
+                <div className="pt-3 mt-3 border-t border-white/5 flex items-center gap-1.5 text-[11px] font-medium" style={{ color: COPPER_COLOR }}>
+                  <CheckCircle2 className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
                   <span>Verified Advantage</span>
                 </div>
               </div>

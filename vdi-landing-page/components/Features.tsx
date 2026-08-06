@@ -15,6 +15,10 @@ import {
   Bot
 } from 'lucide-react'
 
+// Site copper color token
+const COPPER_COLOR = 'rgb(194, 89, 24)'
+const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
+
 // --- Micro UI Previews ---
 
 function DataSortUI() {
@@ -24,11 +28,11 @@ function DataSortUI() {
       style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
     >
       <div className="flex items-center justify-between">
-        <span className="text-[11px] font-semibold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
-          <ArrowUpDown className="w-3.5 h-3.5" />
+        <span className="text-[11px] font-semibold uppercase tracking-wider flex items-center gap-1.5" style={{ color: COPPER_COLOR }}>
+          <ArrowUpDown className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
           Raw Data Input
         </span>
-        <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">
+        <span className="text-[10px] px-1.5 py-0.5 rounded font-medium" style={{ background: COPPER_BG, color: COPPER_COLOR, border: '1px solid rgba(194,89,24,0.3)' }}>
           Auto-Detect
         </span>
       </div>
@@ -44,7 +48,7 @@ function DataSortUI() {
         ].map((item) => (
           <div key={item.label} className="flex items-center justify-between text-[11px] px-2 py-1 rounded bg-white/[0.03]">
             <span className="text-white/80 font-medium">{item.label}</span>
-            <span className="text-[10px] text-emerald-400 font-medium">{item.indicator}</span>
+            <span className="text-[10px] font-medium" style={{ color: COPPER_COLOR }}>{item.indicator}</span>
           </div>
         ))}
       </div>
@@ -59,24 +63,24 @@ function MarketIntelUI() {
       style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
     >
       <div className="flex items-center justify-between">
-        <span className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
-          <TrendingUp className="w-3.5 h-3.5" />
+        <span className="text-[11px] font-semibold uppercase tracking-wider flex items-center gap-1.5" style={{ color: COPPER_COLOR }}>
+          <TrendingUp className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
           Live Market Intel
         </span>
-        <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 flex items-center gap-1">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+        <span className="text-[10px] px-1.5 py-0.5 rounded font-medium flex items-center gap-1" style={{ background: COPPER_BG, color: COPPER_COLOR, border: '1px solid rgba(194,89,24,0.3)' }}>
+          <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: COPPER_COLOR }} />
           Daily Sync
         </span>
       </div>
 
-      <div className="flex items-center gap-2 p-2 rounded bg-emerald-500/10 border border-emerald-500/20 text-[11px]">
-        <BellRing className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-        <span className="text-emerald-200">Alert: Competitor promo shift detected</span>
+      <div className="flex items-center gap-2 p-2 rounded text-[11px]" style={{ background: COPPER_BG, border: '1px solid rgba(194,89,24,0.3)' }}>
+        <BellRing className="w-3.5 h-3.5 shrink-0" style={{ color: COPPER_COLOR }} />
+        <span className="text-white/90">Alert: Competitor promo shift detected</span>
       </div>
 
       <div className="flex items-center justify-between text-[10px] text-white/50 pt-1 border-t border-white/5">
-        <span className="flex items-center gap-1"><FileText className="w-3 h-3 text-amber-400" /> Export: PDF · DOC · Email</span>
-        <span className="text-emerald-400 font-medium">✓ Human Verified</span>
+        <span className="flex items-center gap-1"><FileText className="w-3 h-3" style={{ color: COPPER_COLOR }} /> Export: PDF · DOC · Email</span>
+        <span className="font-medium" style={{ color: COPPER_COLOR }}>✓ Human Verified</span>
       </div>
     </div>
   )
@@ -89,16 +93,15 @@ function AiClaimUI() {
       style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
     >
       <div className="flex items-center justify-between">
-        <span className="text-[11px] font-semibold uppercase tracking-wider text-sky-400 flex items-center gap-1.5">
-          <Bot className="w-3.5 h-3.5" />
+        <span className="text-[11px] font-semibold uppercase tracking-wider flex items-center gap-1.5" style={{ color: COPPER_COLOR }}>
+          <Bot className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
           AI Claim Score
         </span>
-        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 border border-sky-500/30">
+        <span className="text-[10px] font-bold px-2 py-0.5 rounded" style={{ background: COPPER_BG, color: COPPER_COLOR, border: '1px solid rgba(194,89,24,0.3)' }}>
           98.4% Trust
         </span>
       </div>
 
-      {/* Model Badges */}
       <div className="flex flex-wrap gap-1">
         {['GPT-4', 'Gemini', 'Claude', 'Grok', 'DeepSeek'].map((llm) => (
           <span key={llm} className="text-[9px] px-1.5 py-0.5 rounded bg-white/5 text-white/70 border border-white/10">
@@ -108,7 +111,7 @@ function AiClaimUI() {
       </div>
 
       <div className="flex items-center gap-2 p-2 rounded bg-white/[0.04] border border-white/5 text-[11px]">
-        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+        <CheckCircle2 className="w-3.5 h-3.5 shrink-0" style={{ color: COPPER_COLOR }} />
         <span className="text-white/80">Cross-referenced with VDI dataset</span>
       </div>
     </div>
@@ -122,22 +125,22 @@ function PrivateBiUI() {
       style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
     >
       <div className="flex items-center justify-between">
-        <span className="text-[11px] font-semibold uppercase tracking-wider text-purple-400 flex items-center gap-1.5">
-          <Lock className="w-3.5 h-3.5" />
+        <span className="text-[11px] font-semibold uppercase tracking-wider flex items-center gap-1.5" style={{ color: COPPER_COLOR }}>
+          <Lock className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
           Enterprise Private BI
         </span>
-        <span className="text-[9px] px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30 font-medium">
+        <span className="text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ background: COPPER_BG, color: COPPER_COLOR, border: '1px solid rgba(194,89,24,0.3)' }}>
           Zero DB Storage
         </span>
       </div>
 
-      <div className="p-2 rounded bg-purple-500/10 border border-purple-500/20 text-[11px] text-purple-200">
+      <div className="p-2 rounded text-[11px]" style={{ background: COPPER_BG, border: '1px solid rgba(194,89,24,0.3)', color: 'rgba(250,250,250,0.9)' }}>
         🔒 Sensitive data processed in memory & purged immediately.
       </div>
 
       <div className="flex items-center justify-between text-[11px] text-white/80 pt-1">
         <span>Business Forecast:</span>
-        <span className="text-purple-300 font-semibold">+24.5% Benchmark</span>
+        <span className="font-semibold" style={{ color: COPPER_COLOR }}>+24.5% Benchmark</span>
       </div>
     </div>
   )
@@ -150,21 +153,21 @@ function DivergenceUI() {
       style={{ background: 'rgba(12,12,14,0.95)', border: '1px solid rgba(250,250,250,0.1)' }}
     >
       <div className="flex items-center justify-between">
-        <span className="text-[11px] font-semibold uppercase tracking-wider text-rose-400 flex items-center gap-1.5">
-          <Zap className="w-3.5 h-3.5" />
+        <span className="text-[11px] font-semibold uppercase tracking-wider flex items-center gap-1.5" style={{ color: COPPER_COLOR }}>
+          <Zap className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
           Divergence Alert
         </span>
-        <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">
+        <span className="text-[10px] font-medium px-1.5 py-0.5 rounded" style={{ background: COPPER_BG, color: COPPER_COLOR, border: '1px solid rgba(194,89,24,0.3)' }}>
           Action Required
         </span>
       </div>
 
-      <div className="p-2 rounded bg-rose-500/10 border border-rose-500/20 text-[11px] text-rose-200">
+      <div className="p-2 rounded text-[11px]" style={{ background: COPPER_BG, border: '1px solid rgba(194,89,24,0.3)', color: 'rgba(250,250,250,0.9)' }}>
         ⚡ Market trend divergence detected. Recommended decision ready.
       </div>
 
       <div className="text-[10px] text-white/60 flex items-center gap-1 pt-0.5">
-        <ShieldCheck className="w-3 h-3 text-emerald-400" />
+        <ShieldCheck className="w-3 h-3" style={{ color: COPPER_COLOR }} />
         <span>Based on 100% verified market evidence</span>
       </div>
     </div>
@@ -221,7 +224,7 @@ export default function Features() {
       <div
         className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full pointer-events-none blur-[140px]"
         style={{
-          background: 'radial-gradient(circle, rgba(84, 27, 4, 0.25) 0%, rgba(10, 10, 10, 0) 70%)'
+          background: 'radial-gradient(circle, rgba(194, 89, 24, 0.25) 0%, rgba(10, 10, 10, 0) 70%)'
         }}
       />
 
@@ -234,7 +237,7 @@ export default function Features() {
           className="text-center mb-12 md:mb-16"
         >
           <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
-            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+            <Sparkles className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
             <span>Features & Modules</span>
           </span>
           <h2
@@ -266,12 +269,12 @@ export default function Features() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.08 + i * 0.07 }}
-                className={`landscape-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:border-amber-500/40 ${
+                className={`landscape-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:border-[#c25918]/50 ${
                   isEnterprise ? 'lg:col-span-2' : ''
                 }`}
                 style={{
                   border: isEnterprise
-                    ? '1px solid rgba(192, 132, 252, 0.3)'
+                    ? '1px solid rgba(194, 89, 24, 0.4)'
                     : '1px solid rgba(250,250,250,0.08)'
                 }}
               >
@@ -282,7 +285,7 @@ export default function Features() {
 
                 {/* Text Content */}
                 <div className="px-6 pb-6 pt-2">
-                  <span className="text-[11px] font-semibold text-amber-400/90 uppercase tracking-wider block mb-1">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider block mb-1" style={{ color: COPPER_COLOR }}>
                     {feat.subtitle}
                   </span>
                   <h3

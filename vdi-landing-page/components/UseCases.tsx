@@ -4,10 +4,13 @@ import { useRef } from 'react'
 import { motion, useInView } from 'motion/react'
 import { ShoppingBag, Stethoscope, Truck, GraduationCap, Check } from 'lucide-react'
 
+// Site copper color token
+const COPPER_COLOR = 'rgb(194, 89, 24)'
+const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
+
 const industries = [
   {
-    icon: <ShoppingBag className="w-5 h-5 text-amber-400" />,
-    badgeColor: 'rgba(245, 158, 11, 0.15)',
+    icon: <ShoppingBag className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: '1. Social Media and E-commerce',
     desc: 'Support social media platforms, online retailers, digital agencies, marketplaces, content creators, and e-commerce brands in organizing data and responding to changing customer behavior.',
     useCases: [
@@ -18,8 +21,7 @@ const industries = [
     ]
   },
   {
-    icon: <Stethoscope className="w-5 h-5 text-emerald-400" />,
-    badgeColor: 'rgba(16, 185, 129, 0.15)',
+    icon: <Stethoscope className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: '2. Medical and Healthcare',
     desc: 'Empower healthcare providers, clinical research teams, health tech platforms, and clinics with verified insights while maintaining strict boundaries between informational verification and clinical advice.',
     useCases: [
@@ -30,8 +32,7 @@ const industries = [
     ]
   },
   {
-    icon: <Truck className="w-5 h-5 text-sky-400" />,
-    badgeColor: 'rgba(56, 189, 248, 0.15)',
+    icon: <Truck className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: '3. Logistics and Supply Chain',
     desc: 'Help logistics operators, manufacturers, distributors, warehouses, and supply chain teams monitor operational performance and adapt quickly to market volatility.',
     useCases: [
@@ -42,8 +43,7 @@ const industries = [
     ]
   },
   {
-    icon: <GraduationCap className="w-5 h-5 text-purple-400" />,
-    badgeColor: 'rgba(192, 132, 252, 0.15)',
+    icon: <GraduationCap className="w-5 h-5" style={{ color: COPPER_COLOR }} />,
     title: '4. Education',
     desc: 'Assist schools, universities, ed-tech startups, researchers, and training providers with verified educational content, institutional benchmarks, and market intelligence.',
     useCases: [
@@ -112,8 +112,8 @@ export default function UseCases() {
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
                     style={{
-                      background: ind.badgeColor,
-                      border: '1px solid rgba(255,255,255,0.1)',
+                      background: COPPER_BG,
+                      border: '1px solid rgba(194,89,24,0.3)',
                     }}
                   >
                     {ind.icon}
@@ -135,12 +135,12 @@ export default function UseCases() {
               </div>
 
               <div className="space-y-2 pt-3 border-t border-white/[0.07]">
-                <span className="text-[11px] uppercase tracking-wider font-semibold text-amber-400/80 block mb-2">
+                <span className="text-[11px] uppercase tracking-wider font-semibold block mb-2" style={{ color: COPPER_COLOR }}>
                   Key Use Cases
                 </span>
                 {ind.useCases.map((uc) => (
                   <div key={uc} className="flex items-start gap-2 text-[13px] text-white/85">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 shrink-0 mt-0.5" style={{ color: COPPER_COLOR }} />
                     <span>{uc}</span>
                   </div>
                 ))}

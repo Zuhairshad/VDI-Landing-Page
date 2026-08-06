@@ -15,16 +15,18 @@ import {
 interface WorkflowRow {
   user: string
   roleIcon: React.ReactNode
-  badgeColor: string
   primaryJob: string
   workflowSteps: string[]
 }
 
+// Site copper color token
+const COPPER_COLOR = 'rgb(194, 89, 24)'
+const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
+
 const tableData: WorkflowRow[] = [
   {
     user: 'Operations analyst',
-    roleIcon: <FileSpreadsheet className="w-4 h-4 text-amber-400" />,
-    badgeColor: 'rgba(245, 158, 11, 0.15)',
+    roleIcon: <FileSpreadsheet className="w-4 h-4" style={{ color: COPPER_COLOR }} />,
     primaryJob: 'Clean and organize external or internal data quickly',
     workflowSteps: [
       'Upload/connect data',
@@ -35,8 +37,7 @@ const tableData: WorkflowRow[] = [
   },
   {
     user: 'Brand or commerce manager',
-    roleIcon: <TrendingUp className="w-4 h-4 text-emerald-400" />,
-    badgeColor: 'rgba(16, 185, 129, 0.15)',
+    roleIcon: <TrendingUp className="w-4 h-4" style={{ color: COPPER_COLOR }} />,
     primaryJob: 'Understand price, promotion, stock, and competitor changes',
     workflowSteps: [
       'Monitor market',
@@ -46,8 +47,7 @@ const tableData: WorkflowRow[] = [
   },
   {
     user: 'Consultant / researcher',
-    roleIcon: <Search className="w-4 h-4 text-sky-400" />,
-    badgeColor: 'rgba(56, 189, 248, 0.15)',
+    roleIcon: <Search className="w-4 h-4" style={{ color: COPPER_COLOR }} />,
     primaryJob: 'Validate an AI-generated statement before presenting it',
     workflowSteps: [
       'Paste text',
@@ -58,8 +58,7 @@ const tableData: WorkflowRow[] = [
   },
   {
     user: 'Business owner',
-    roleIcon: <Building2 className="w-4 h-4 text-purple-400" />,
-    badgeColor: 'rgba(192, 132, 252, 0.15)',
+    roleIcon: <Building2 className="w-4 h-4" style={{ color: COPPER_COLOR }} />,
     primaryJob: 'Know how company performance compares with the market',
     workflowSteps: [
       'Connect business data',
@@ -70,8 +69,7 @@ const tableData: WorkflowRow[] = [
   },
   {
     user: 'VDI verifier',
-    roleIcon: <ShieldCheck className="w-4 h-4 text-rose-400" />,
-    badgeColor: 'rgba(251, 113, 133, 0.15)',
+    roleIcon: <ShieldCheck className="w-4 h-4" style={{ color: COPPER_COLOR }} />,
     primaryJob: 'Resolve uncertain evidence efficiently',
     workflowSteps: [
       'Open prioritized case',
@@ -93,11 +91,11 @@ export default function Workflows() {
       className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
-      {/* Background Subtle Ambient Glow */}
+      {/* Ambient Copper Glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] rounded-full pointer-events-none blur-[120px]"
         style={{
-          background: 'radial-gradient(circle, rgba(145, 55, 10, 0.18) 0%, rgba(10, 10, 10, 0) 70%)'
+          background: 'radial-gradient(circle, rgba(194, 89, 24, 0.2) 0%, rgba(10, 10, 10, 0) 70%)'
         }}
       />
 
@@ -110,7 +108,7 @@ export default function Workflows() {
           className="text-center mb-10 md:mb-14"
         >
           <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
-            <UserCheck className="w-3.5 h-3.5 text-amber-500" />
+            <UserCheck className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
             <span>Market & Workflows</span>
           </span>
           <h2
@@ -154,7 +152,7 @@ export default function Workflows() {
               <thead>
                 <tr
                   style={{
-                    background: 'linear-gradient(90deg, rgba(20, 32, 54, 0.95) 0%, rgba(15, 23, 42, 0.9) 100%)',
+                    background: 'linear-gradient(90deg, rgba(84, 27, 4, 0.6) 0%, rgba(20, 15, 12, 0.9) 100%)',
                     borderBottom: '1px solid rgba(250,250,250,0.12)'
                   }}
                 >
@@ -170,7 +168,7 @@ export default function Workflows() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/[0.07]">
-                {tableData.map((row, idx) => (
+                {tableData.map((row) => (
                   <tr
                     key={row.user}
                     className="group transition-colors duration-200 hover:bg-white/[0.035]"
@@ -181,14 +179,14 @@ export default function Workflows() {
                         <div
                           className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
                           style={{
-                            background: row.badgeColor,
-                            border: '1px solid rgba(255,255,255,0.1)'
+                            background: COPPER_BG,
+                            border: '1px solid rgba(194, 89, 24, 0.3)'
                           }}
                         >
                           {row.roleIcon}
                         </div>
                         <span
-                          className="text-[15px] font-semibold group-hover:text-amber-400 transition-colors duration-200"
+                          className="text-[15px] font-semibold transition-colors duration-200"
                           style={{ color: 'rgb(250,250,250)' }}
                         >
                           {row.user}
@@ -222,7 +220,7 @@ export default function Workflows() {
                               {step}
                             </span>
                             {sIdx < row.workflowSteps.length - 1 && (
-                              <ArrowRight className="w-3.5 h-3.5 text-amber-500/70 shrink-0" />
+                              <ArrowRight className="w-3.5 h-3.5 shrink-0" style={{ color: COPPER_COLOR }} />
                             )}
                           </div>
                         ))}
@@ -234,17 +232,16 @@ export default function Workflows() {
             </table>
           </div>
 
-          {/* Mobile & Tablet Card Layout */}
+          {/* Mobile Layout */}
           <div className="block lg:hidden divide-y divide-white/[0.08]">
-            {tableData.map((row, idx) => (
+            {tableData.map((row) => (
               <div key={row.user} className="p-5 flex flex-col gap-3">
-                {/* User Header */}
                 <div className="flex items-center gap-3">
                   <div
                     className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
                     style={{
-                      background: row.badgeColor,
-                      border: '1px solid rgba(255,255,255,0.1)'
+                      background: COPPER_BG,
+                      border: '1px solid rgba(194, 89, 24, 0.3)'
                     }}
                   >
                     {row.roleIcon}
@@ -259,7 +256,6 @@ export default function Workflows() {
                   </div>
                 </div>
 
-                {/* Primary Job */}
                 <div className="pl-11">
                   <span className="text-[11px] uppercase tracking-wider text-white/40 block mb-0.5">
                     Primary Job
@@ -269,7 +265,6 @@ export default function Workflows() {
                   </p>
                 </div>
 
-                {/* First Workflow */}
                 <div className="pl-11 pt-1">
                   <span className="text-[11px] uppercase tracking-wider text-white/40 block mb-1.5">
                     First Workflow
@@ -288,7 +283,7 @@ export default function Workflows() {
                           {step}
                         </span>
                         {sIdx < row.workflowSteps.length - 1 && (
-                          <ArrowRight className="w-3 h-3 text-amber-500/70 shrink-0" />
+                          <ArrowRight className="w-3 h-3 shrink-0" style={{ color: COPPER_COLOR }} />
                         )}
                       </div>
                     ))}

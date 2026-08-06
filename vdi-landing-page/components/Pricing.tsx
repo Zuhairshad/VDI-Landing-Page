@@ -5,6 +5,10 @@ import { motion, useInView, AnimatePresence } from 'motion/react'
 import * as Switch from '@radix-ui/react-switch'
 import { Layers, ShieldCheck, CheckCircle2 } from 'lucide-react'
 
+// Site copper color token
+const COPPER_COLOR = 'rgb(194, 89, 24)'
+const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
+
 const overviewData = [
   {
     module: '1. Data Sort',
@@ -12,7 +16,7 @@ const overviewData = [
     humanReview: 'None by default',
     output: 'CSV, Excel, API output, and data quality report',
     price: 'Lowest (Foundation)',
-    priceBadge: 'bg-amber-500/20 text-amber-300 border-amber-500/30'
+    priceBadge: 'bg-[rgba(194,89,24,0.15)] text-[rgb(194,89,24)] border-[rgba(194,89,24,0.3)]'
   },
   {
     module: '2. Verified Market Intelligence',
@@ -20,7 +24,7 @@ const overviewData = [
     humanReview: 'Critical and uncertain cases',
     output: 'Trusted dataset, alerts, and weekly report',
     price: 'Premium',
-    priceBadge: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
+    priceBadge: 'bg-[rgba(194,89,24,0.15)] text-[rgb(194,89,24)] border-[rgba(194,89,24,0.3)]'
   },
   {
     module: '3. AI Claim Verification',
@@ -28,7 +32,7 @@ const overviewData = [
     humanReview: 'Low-confidence or high-impact claims',
     output: 'Verdict, evidence, confidence score, and recommendation',
     price: 'Add-on / Usage-based',
-    priceBadge: 'bg-sky-500/20 text-sky-300 border-sky-500/30'
+    priceBadge: 'bg-[rgba(194,89,24,0.15)] text-[rgb(194,89,24)] border-[rgba(194,89,24,0.3)]'
   },
   {
     module: '4. Business Benchmarking',
@@ -36,7 +40,7 @@ const overviewData = [
     humanReview: 'Conflicts, sensitive analysis, material gaps',
     output: 'Benchmark dashboard, business audit, and customized report',
     price: 'Premium / Enterprise',
-    priceBadge: 'bg-purple-500/20 text-purple-300 border-purple-500/30'
+    priceBadge: 'bg-[rgba(194,89,24,0.15)] text-[rgb(194,89,24)] border-[rgba(194,89,24,0.3)]'
   },
   {
     module: '5. Dynamic Reports',
@@ -44,7 +48,7 @@ const overviewData = [
     humanReview: 'Exceptional market shifts',
     output: 'Versioned report, alerts, and "What Changed" section',
     price: 'Included in Verified Tiers',
-    priceBadge: 'bg-rose-500/20 text-rose-300 border-rose-500/30'
+    priceBadge: 'bg-[rgba(194,89,24,0.15)] text-[rgb(194,89,24)] border-[rgba(194,89,24,0.3)]'
   }
 ]
 
@@ -120,7 +124,7 @@ export default function Pricing() {
           className="text-center mb-12"
         >
           <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
-            <Layers className="w-3.5 h-3.5 text-amber-500" />
+            <Layers className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
             <span>Modules & Pricing</span>
           </span>
           <h2
@@ -178,7 +182,7 @@ export default function Pricing() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -8 }}
                   className="text-[12px] font-medium px-2.5 py-1 rounded-full"
-                  style={{ background: 'rgba(74,222,128,0.15)', color: 'rgb(74,222,128)' }}
+                  style={{ background: COPPER_BG, color: COPPER_COLOR }}
                 >
                   20% off
                 </motion.span>
@@ -199,14 +203,14 @@ export default function Pricing() {
               style={{
                 background: 'rgb(16,16,18)',
                 border: plan.highlight
-                  ? '1px solid rgba(245,158,11,0.4)'
+                  ? '1px solid rgba(194, 89, 24, 0.4)'
                   : '1px solid rgba(250,250,250,0.08)',
               }}
             >
               {plan.badge && (
                 <span
                   className="absolute -top-3 left-1/2 -translate-x-1/2 text-[11px] font-semibold px-3.5 py-1 rounded-full whitespace-nowrap shadow-md"
-                  style={{ background: 'rgb(245,158,11)', color: 'rgb(10,10,10)' }}
+                  style={{ background: 'rgb(84, 27, 4)', color: 'rgb(250,250,250)', border: '1px solid rgba(194, 89, 24, 0.5)' }}
                 >
                   {plan.badge}
                 </span>
@@ -252,7 +256,7 @@ export default function Pricing() {
               <ul className="flex flex-col gap-3 flex-1 mb-8">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5" style={{ color: COPPER_COLOR }} />
                     <span className="text-[14px] leading-5" style={{ color: 'rgba(250,250,250,0.75)' }}>{f}</span>
                   </li>
                 ))}
@@ -290,7 +294,7 @@ export default function Pricing() {
           }}
         >
           <div className="flex items-center gap-2 mb-6">
-            <ShieldCheck className="w-5 h-5 text-amber-400" />
+            <ShieldCheck className="w-5 h-5" style={{ color: COPPER_COLOR }} />
             <h3 className="text-[20px] font-semibold text-white">Clarify Data Module Overview</h3>
           </div>
 
