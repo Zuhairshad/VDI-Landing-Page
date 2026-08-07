@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Nav from '@/components/Nav'
 import CtaFooter from '@/components/CtaFooter'
+import PageHeroHeader from '@/components/PageHeroHeader'
 import { Sparkles, Calendar, User, ArrowRight, Search, X, BookOpen } from 'lucide-react'
 
 const COPPER = 'rgb(194, 89, 24)'
@@ -106,26 +107,12 @@ export default function BlogPage() {
     <div className="bg-[#0a0a0a] min-h-screen text-white">
       <Nav />
 
-      {/* Hero Header */}
-      <section className="relative pt-32 pb-16 px-5 overflow-hidden">
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] rounded-full pointer-events-none blur-[140px]"
-          style={{ background: 'radial-gradient(circle, rgba(194, 89, 24, 0.25) 0%, transparent 70%)' }}
-        />
-
-        <div className="max-w-[900px] mx-auto text-center relative z-10">
-          <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
-            <Sparkles className="w-3.5 h-3.5" style={{ color: COPPER }} />
-            <span>Clarify Engineering & Research Hub</span>
-          </span>
-          <h1 className="text-[36px] md:text-[56px] font-semibold tracking-tight mb-4">
-            Verified Data Intelligence Blog
-          </h1>
-          <p className="text-[17px] text-white/70 max-w-[650px] mx-auto leading-[26px]">
-            In-depth engineering insights, market divergence analysis, and technical guides on multi-agent data verification pipelines.
-          </p>
-        </div>
-      </section>
+      {/* Hero Header using Home Shader Background */}
+      <PageHeroHeader
+        eyebrow="Clarify Engineering & Research Hub"
+        title="Verified Data Intelligence Blog"
+        subtitle="In-depth engineering insights, market divergence analysis, and technical guides on multi-agent data verification pipelines."
+      />
 
       {/* Filter & Search Bar */}
       <section className="pb-10 px-5 max-w-[1100px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">

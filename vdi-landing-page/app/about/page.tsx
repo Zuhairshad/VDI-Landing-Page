@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import CtaFooter from '@/components/CtaFooter'
-import { ShieldCheck, Target, Users, Zap, Award, Sparkles } from 'lucide-react'
+import PageHeroHeader from '@/components/PageHeroHeader'
+import { ShieldCheck, Target, Users, Sparkles } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About Clarify Data | Verified Data Intelligence Platform',
@@ -16,26 +17,12 @@ export default function AboutPage() {
     <div className="bg-[#0a0a0a] min-h-screen text-white">
       <Nav />
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-5 overflow-hidden">
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] rounded-full pointer-events-none blur-[140px]"
-          style={{ background: 'radial-gradient(circle, rgba(194, 89, 24, 0.25) 0%, transparent 70%)' }}
-        />
-
-        <div className="max-w-[900px] mx-auto text-center relative z-10">
-          <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
-            <Sparkles className="w-3.5 h-3.5" style={{ color: COPPER }} />
-            <span>Our Mission</span>
-          </span>
-          <h1 className="text-[36px] md:text-[56px] font-semibold tracking-tight leading-[1.15] mb-6">
-            Building the Foundation for Verified Market Intelligence
-          </h1>
-          <p className="text-[17px] md:text-[20px] text-white/80 max-w-[760px] mx-auto leading-[30px]">
-            Clarify Data was founded to transform raw, noisy information into accurate, structured, and actionable market intelligence that modern enterprises can trust.
-          </p>
-        </div>
-      </section>
+      {/* Hero Section using Home Shader Background */}
+      <PageHeroHeader
+        eyebrow="Our Mission"
+        title="Building the Foundation for Verified Market Intelligence"
+        subtitle="Clarify Data was founded to transform raw, noisy information into accurate, structured, and actionable market intelligence that modern enterprises can trust."
+      />
 
       {/* Core Values / Pillars Grid */}
       <section className="py-16 px-5 border-t border-white/10">
@@ -92,7 +79,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-[20px] font-semibold mb-3">Human Expert Review</h3>
               <p className="text-white/70 text-[15px] leading-[24px]">
-                Automated models are combined with domain experts for edge-case verification, ensuring zero halluciated metrics in critical reports.
+                Automated models are combined with domain experts for edge-case verification, ensuring zero hallucinated metrics in critical reports.
               </p>
             </div>
           </div>

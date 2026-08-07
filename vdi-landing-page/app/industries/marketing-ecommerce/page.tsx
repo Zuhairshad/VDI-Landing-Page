@@ -2,15 +2,11 @@ import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import CtaFooter from '@/components/CtaFooter'
 import BookDemo from '@/components/BookDemo'
+import PageHeroHeader from '@/components/PageHeroHeader'
 import {
-  Sparkles,
   ShoppingCart,
   ShieldCheck,
-  CheckCircle2,
-  TrendingUp,
-  Tag,
-  AlertCircle,
-  Eye
+  Tag
 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -26,26 +22,13 @@ export default function EcommerceIndustryPage() {
     <div className="bg-[#0a0a0a] min-h-screen text-white">
       <Nav />
 
-      {/* Hero Header */}
-      <section className="relative pt-32 pb-20 px-5 overflow-hidden">
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full pointer-events-none blur-[160px]"
-          style={{ background: 'radial-gradient(circle, rgba(194, 89, 24, 0.28) 0%, transparent 70%)' }}
-        />
-
-        <div className="max-w-[950px] mx-auto text-center relative z-10">
-          <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
-            <ShoppingCart className="w-4 h-4" style={{ color: COPPER }} />
-            <span>Social Media & E-Commerce Intelligence</span>
-          </span>
-          <h1 className="text-[38px] md:text-[60px] font-semibold tracking-tight leading-[1.14] mb-6">
-            Verified Competitor Pricing & Ad Claim Intelligence
-          </h1>
-          <p className="text-[17px] md:text-[20px] text-white/80 max-w-[780px] mx-auto leading-[30px] mb-8">
-            Filter out fake social engagement, track competitor price drops in real time, and audit digital ad claims against verified ground truth product specifications.
-          </p>
-        </div>
-      </section>
+      {/* Hero Header using Home Shader Background */}
+      <PageHeroHeader
+        eyebrow="Social Media & E-Commerce Intelligence"
+        icon={<ShoppingCart className="w-4 h-4" style={{ color: COPPER }} />}
+        title="Verified Competitor Pricing & Ad Claim Intelligence"
+        subtitle="Filter out fake social engagement, track competitor price drops in real time, and audit digital ad claims against verified ground truth product specifications."
+      />
 
       {/* Capabilities */}
       <section className="py-20 px-5 border-t border-white/10">
