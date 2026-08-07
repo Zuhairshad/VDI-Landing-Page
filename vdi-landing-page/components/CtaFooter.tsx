@@ -3,23 +3,44 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'motion/react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const footerCols = [
   {
     heading: 'Company',
-    links: ['About', 'Blog', 'Careers', 'Contact'],
+    links: [
+      { label: 'About', href: '/about' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Careers', href: '/careers' },
+      { label: 'Contact', href: '/contact' },
+    ],
   },
   {
     heading: 'Legal',
-    links: ['Privacy policy', 'Terms of use', 'Cookie policy', 'Data processing agreement'],
+    links: [
+      { label: 'Privacy policy', href: '/privacy-policy' },
+      { label: 'Terms of use', href: '/terms-of-use' },
+      { label: 'Cookie policy', href: '/cookie-policy' },
+      { label: 'Data processing agreement', href: '/dpa' },
+    ],
   },
   {
     heading: 'Industries',
-    links: ['Medical & clinical', 'Logistics & trade', 'Marketing', 'Education'],
+    links: [
+      { label: 'Medical & clinical', href: '/industries/medical-clinical' },
+      { label: 'Logistics & trade', href: '/industries/logistics-trade' },
+      { label: 'Marketing & E-commerce', href: '/industries/marketing-ecommerce' },
+      { label: 'Education', href: '/industries/education' },
+    ],
   },
   {
-    heading: 'Social',
-    links: ['LinkedIn', 'Twitter / X', 'GitHub', 'Newsletter'],
+    heading: 'Social & Digest',
+    links: [
+      { label: 'Newsletter', href: '/newsletter' },
+      { label: 'LinkedIn', href: 'https://linkedin.com', external: true },
+      { label: 'Twitter / X', href: 'https://x.com', external: true },
+      { label: 'GitHub', href: 'https://github.com', external: true },
+    ],
   },
 ]
 
@@ -64,28 +85,15 @@ export default function CtaFooter() {
             </p>
 
             <div className="flex items-center justify-center gap-3 mb-6">
-              <a
-                href="#book-demo"
+              <Link
+                href="/#book-demo"
                 className="px-6 py-3 rounded-full text-[16px] font-medium transition-all duration-200"
                 style={{ background: 'rgb(250,250,250)', color: 'rgb(10,10,10)' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.88)' }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(250,250,250)' }}
               >
                 Book a Demo
-              </a>
-              <a
-                href="#overview"
-                className="px-6 py-3 rounded-full text-[16px] font-medium transition-all duration-200"
-                style={{
-                  background: 'rgba(250,250,250,0.18)',
-                  color: 'rgb(250,250,250)',
-                  border: '1px solid rgba(250,250,250,0.18)',
-                }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.24)' }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.18)' }}
-              >
-                Book a Demo
-              </a>
+              </Link>
             </div>
 
             <p style={{ fontSize: '14px', color: 'rgba(250,250,250,0.32)' }}>
@@ -102,7 +110,7 @@ export default function CtaFooter() {
           <div className="flex flex-col md:flex-row items-start justify-between gap-8 mb-12">
             {/* Brand */}
             <div className="max-w-[240px]">
-              <div className="flex items-center gap-2 mb-3">
+              <Link href="/" className="flex items-center gap-2 mb-3">
                 <Image src="/logo.png" alt="ClarifyData" width={36} height={36} className="rounded-lg" />
                 <span
                   className="text-[18px] font-semibold tracking-tight"
@@ -110,7 +118,7 @@ export default function CtaFooter() {
                 >
                   CLARIFYDATA
                 </span>
-              </div>
+              </Link>
               <p style={{ fontSize: '13px', color: 'rgba(250,250,250,0.4)', lineHeight: '20px' }}>
                 Human-verified fact checking for modern teams.
               </p>
@@ -127,17 +135,31 @@ export default function CtaFooter() {
                     {col.heading}
                   </p>
                   <ul className="flex flex-col gap-2.5">
-                    {col.links.map((link) => (
-                      <li key={link}>
-                        <a
-                          href="#"
-                          className="text-[14px] transition-colors duration-200"
-                          style={{ color: 'rgba(250,250,250,0.5)' }}
-                          onMouseEnter={e => (e.currentTarget.style.color = 'rgb(250,250,250)')}
-                          onMouseLeave={e => (e.currentTarget.style.color = 'rgba(250,250,250,0.5)')}
-                        >
-                          {link}
-                        </a>
+                    {col.links.map((item) => (
+                      <li key={item.label}>
+                        {item.external ? (
+                          <a
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[14px] transition-colors duration-200"
+                            style={{ color: 'rgba(250,250,250,0.5)' }}
+                            onMouseEnter={e => (e.currentTarget.style.color = 'rgb(250,250,250)')}
+                            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(250,250,250,0.5)')}
+                          >
+                            {item.label}
+                          </a>
+                        ) : (
+                          <Link
+                            href={item.href}
+                            className="text-[14px] transition-colors duration-200"
+                            style={{ color: 'rgba(250,250,250,0.5)' }}
+                            onMouseEnter={e => (e.currentTarget.style.color = 'rgb(250,250,250)')}
+                            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(250,250,250,0.5)')}
+                          >
+                            {item.label}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>
