@@ -4,8 +4,8 @@ export async function POST(req: Request) {
   try {
     const { industry, description } = await req.json()
 
-    // Send email directly to zuhairshad140@gmail.com via FormSubmit AJAX service
-    const response = await fetch('https://formsubmit.co/ajax/zuhairshad140@gmail.com', {
+    // Send email directly to Usman@geniusmindzone.com via FormSubmit AJAX service
+    const response = await fetch('https://formsubmit.co/ajax/Usman@geniusmindzone.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -62,7 +62,7 @@ export default function BookDemo() {
 
       if (!res.ok) {
         // Fallback direct POST to formsubmit
-        await fetch('https://formsubmit.co/ajax/zuhairshad140@gmail.com', {
+        await fetch('https://formsubmit.co/ajax/Usman@geniusmindzone.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
