@@ -2,7 +2,7 @@
 
 import { useState, useRef } from 'react'
 import { motion, useInView } from 'motion/react'
-import { Send, CheckCircle2, Building2, FileText, Sparkles } from 'lucide-react'
+import { Send, CheckCircle2, Building2, FileText, Sparkles, Loader2 } from 'lucide-react'
 
 // Site copper color tokens
 const COPPER_COLOR = 'rgb(194, 89, 24)'
@@ -47,20 +47,37 @@ export default function BookDemo() {
     e.preventDefault()
     setLoading(true)
 
-    // Construct mailto URL to send directly to zuhairshad140@gmail.com
-    const subject = encodeURIComponent(`Clarify Data Demo Request: ${industry}`)
-    const body = encodeURIComponent(
-      `Industry: ${industry}\n\nProject / Data Description:\n${description}\n\nSubmitted via Clarify Data Demo Form.`
-    )
-    const mailtoUrl = `mailto:zuhairshad140@gmail.com?subject=${subject}&body=${body}`
+    try {
+      // Send directly via API in background without opening Apple Mail
+      const res = await fetch('/api/demo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          industry,
+          description,
+        }),
+      })
 
-    // Trigger mailto client
-    window.location.href = mailtoUrl
-
-    setTimeout(() => {
+      if (!res.ok) {
+        // Fallback direct POST to formsubmit
+        await fetch('https://formsubmit.co/ajax/zuhairshad140@gmail.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            _subject: `New Clarify Data Demo Request: ${industry}`,
+            Industry: industry,
+            Description: description,
+          }),
+        })
+      }
+    } catch (err) {
+      console.error('Demo request submission:', err)
+    } finally {
       setLoading(false)
       setSubmitted(true)
-    }, 600)
+    }
   }
 
   return (
@@ -134,10 +151,13 @@ export default function BookDemo() {
                 Demo Request Submitted!
               </h3>
               <p className="text-[15px] text-white/80 max-w-[480px] leading-[24px] mb-6">
-                Your request details have been dispatched. Our team will review your requirements and get back to you shortly.
+                Your demo request has been sent successfully. Our team will review your requirements and contact you shortly.
               </p>
               <button
-                onClick={() => setSubmitted(false)}
+                onClick={() => {
+                  setSubmitted(false)
+                  setDescription('')
+                }}
                 className="px-6 py-2.5 rounded-full text-[14px] font-medium text-white/80 hover:text-white border border-white/10 bg-white/5 transition-all"
               >
                 Submit another request
@@ -205,7 +225,7 @@ export default function BookDemo() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-4 rounded-full text-[16px] font-semibold transition-all duration-200 shadow-xl flex items-center justify-center gap-2 mt-2 cursor-pointer"
+                className="w-full py-4 rounded-full text-[16px] font-semibold transition-all duration-200 shadow-xl flex items-center justify-center gap-2 mt-2 cursor-pointer disabled:opacity-50"
                 style={{
                   background: 'rgb(84, 27, 4)',
                   color: 'rgb(250, 250, 250)',
@@ -214,8 +234,17 @@ export default function BookDemo() {
                 onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = 'rgba(84, 27, 4, 0.85)')}
                 onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = 'rgb(84, 27, 4)')}
               >
-                <Send className="w-4 h-4" />
-                <span>{loading ? 'Sending Request...' : 'Book a Demo'}</span>
+                {loading ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    <span>Submitting Request...</span>
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-4 h-4" />
+                    <span>Book a Demo</span>
+                  </>
+                )}
               </button>
             </form>
           )}
