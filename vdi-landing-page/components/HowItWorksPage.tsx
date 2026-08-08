@@ -230,7 +230,7 @@ function QueryResultMock() {
 function HeroSection() {
   return (
     <section
-      className="relative overflow-hidden pt-32 pb-20 md:pt-44 md:pb-28"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
       <div className="absolute inset-0 hero-texture opacity-25 pointer-events-none" />
@@ -242,7 +242,7 @@ function HeroSection() {
         }}
       />
 
-      <div className="section-inner relative z-10 text-center">
+      <div className="section-inner relative z-10 py-24 md:py-32 text-center">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -250,27 +250,27 @@ function HeroSection() {
         >
           <span className="eyebrow-pill mb-6 inline-block">Platform Overview</span>
           <h1
-            className="mb-6 text-[30px] md:text-[58px] max-w-[820px] mx-auto"
+            className="mb-6 text-[32px] md:text-[58px] max-w-[820px] mx-auto"
             style={{
-              fontWeight: 500,
-              letterSpacing: '-1.74px',
-              lineHeight: '1.12',
+              fontWeight: 600,
+              letterSpacing: '-1.8px',
+              lineHeight: '1.18',
               color: 'rgb(250,250,250)',
             }}
           >
             How Clarify Data Works
           </h1>
           <p
-            className="max-w-[580px] mx-auto text-[15px] md:text-[18px]"
+            className="max-w-[680px] mx-auto text-[16px] md:text-[19px]"
             style={{
-              fontWeight: 500,
-              color: 'rgba(250,250,250,0.7)',
+              fontWeight: 450,
+              color: 'rgba(250,250,250,0.85)',
               lineHeight: '28px',
             }}
           >
             A data verification and business intelligence platform that combines AI models,
             continuously updated market data, automated analytics, and human-verified results
-            — helping organizations make accurate, confident decisions.
+            to help organizations make accurate, confident decisions.
           </p>
         </motion.div>
       </div>

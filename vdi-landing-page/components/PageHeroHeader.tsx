@@ -25,7 +25,7 @@ export default function PageHeroHeader({
 }: PageHeroHeaderProps) {
   return (
     <section
-      className={`relative min-h-[440px] md:min-h-[500px] flex flex-col items-center justify-center pt-28 pb-20 px-5 overflow-hidden text-center ${className}`}
+      className={`relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-center ${className}`}
       style={{ background: 'rgb(28,9,2)' }}
     >
       {/* Animated Home Shader Background */}
@@ -40,20 +40,20 @@ export default function PageHeroHeader({
         }}
       />
 
-      <div className="max-w-[950px] mx-auto relative z-10 flex flex-col items-center">
+      <div className="relative z-10 flex w-full max-w-[920px] flex-col items-center px-5 py-24 md:py-32 mx-auto">
         {eyebrow && (
-          <span className="eyebrow-pill mb-5 inline-flex items-center gap-2">
+          <span className="eyebrow-pill mb-8 inline-flex items-center gap-2">
             {icon || <Sparkles className="w-3.5 h-3.5" style={{ color: COPPER }} />}
             <span>{eyebrow}</span>
           </span>
         )}
 
-        <h1 className="text-[34px] md:text-[54px] font-semibold tracking-tight leading-[1.15] text-white mb-5 max-w-[850px]">
+        <h1 className="mb-6 max-w-[850px] text-[32px] md:text-[58px] font-semibold tracking-[-1.8px] leading-[1.18] text-white">
           {title}
         </h1>
 
         {subtitle && (
-          <p className="text-[16px] md:text-[19px] text-white/85 max-w-[760px] mx-auto leading-[28px] mb-6">
+          <p className="text-[16px] md:text-[19px] text-white/85 max-w-[680px] mx-auto leading-[28px] mb-6">
             {subtitle}
           </p>
         )}
