@@ -155,38 +155,36 @@ export default function IndustryPage({ data }: { data: IndustryPageData }) {
 
         <section className="section-pad border-t border-white/10">
           <div className="section-inner">
-            <div className="grid lg:grid-cols-2 border-y border-white/10">
+            <div className="border-y border-white/10 divide-y divide-white/10">
               {[data.context, data.problem].map((section, index) => (
                 <article
                   key={section.title}
-                  className={`py-10 md:py-12 ${
-                    index === 0
-                      ? 'lg:pr-14'
-                      : 'border-t lg:border-t-0 lg:border-l border-white/10 lg:pl-14'
-                  }`}
+                  className="grid gap-7 py-10 md:py-12 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:items-start lg:gap-16"
                 >
-                  <div className="flex items-center gap-4 mb-7">
-                    <span
-                      className="w-11 h-11 rounded-xl inline-flex items-center justify-center shrink-0"
-                      style={{
-                        background: 'rgba(194, 89, 24, 0.13)',
-                        border: `1px solid ${COPPER_BORDER}`,
-                      }}
-                    >
-                      {index === 0 ? (
-                        <SearchCheck className="w-5 h-5" style={{ color: COPPER }} />
-                      ) : (
-                        <ShieldCheck className="w-5 h-5" style={{ color: COPPER }} />
-                      )}
-                    </span>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.13em] text-white/42">
-                      {index === 0 ? 'Industry context' : 'Information-quality problem'}
-                    </p>
+                  <div>
+                    <div className="flex items-center gap-4 mb-7">
+                      <span
+                        className="w-11 h-11 rounded-xl inline-flex items-center justify-center shrink-0"
+                        style={{
+                          background: 'rgba(194, 89, 24, 0.13)',
+                          border: `1px solid ${COPPER_BORDER}`,
+                        }}
+                      >
+                        {index === 0 ? (
+                          <SearchCheck className="w-5 h-5" style={{ color: COPPER }} />
+                        ) : (
+                          <ShieldCheck className="w-5 h-5" style={{ color: COPPER }} />
+                        )}
+                      </span>
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.13em] text-white/42">
+                        {index === 0 ? 'Industry context' : 'Information-quality problem'}
+                      </p>
+                    </div>
+                    <h2 className="text-[26px] md:text-[34px] font-semibold tracking-tight leading-[1.22] max-w-[500px]">
+                      {section.title}
+                    </h2>
                   </div>
-                  <h2 className="text-[26px] md:text-[34px] font-semibold tracking-tight leading-[1.22] mb-6 max-w-[500px]">
-                    {section.title}
-                  </h2>
-                  <div className="space-y-4 text-[15px] md:text-[16px] leading-[27px] text-white/64">
+                  <div className="space-y-4 text-[15px] md:text-[16px] leading-[27px] text-white/64 lg:pt-1">
                     {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                   </div>
                 </article>
