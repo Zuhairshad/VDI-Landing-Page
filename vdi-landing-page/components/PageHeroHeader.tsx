@@ -36,7 +36,7 @@ export default function PageHeroHeader({
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'linear-gradient(to bottom, rgba(10,3,1,0.3) 0%, rgba(10,3,1,0.0) 30%, rgba(10,3,1,0.0) 70%, rgba(10,3,1,0.5) 100%)',
+            'linear-gradient(to bottom, rgba(10,3,1,0.28) 0%, rgba(10,3,1,0.0) 28%, rgba(10,3,1,0.0) 68%, rgba(10,3,1,0.38) 100%)',
         }}
       />
 

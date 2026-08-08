@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'motion/react'
+import PageHeroHeader from './PageHeroHeader'
 
 // ─── Mock UI Components ───────────────────────────────────────────────────────
 
@@ -229,52 +230,11 @@ function QueryResultMock() {
 
 function HeroSection() {
   return (
-    <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ background: 'rgb(10,10,10)' }}
-    >
-      <div className="absolute inset-0 hero-texture opacity-25 pointer-events-none" />
-      <div className="absolute inset-0 hero-texture-2 opacity-20 pointer-events-none" />
-      <div
-        className="absolute bottom-0 inset-x-0 h-40 pointer-events-none"
-        style={{
-          background: 'linear-gradient(to bottom, transparent, rgb(10,10,10))',
-        }}
-      />
-
-      <div className="section-inner relative z-10 py-24 md:py-32 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, ease: [0.44, 0, 0.56, 1] }}
-        >
-          <span className="eyebrow-pill mb-6 inline-block">Platform Overview</span>
-          <h1
-            className="mb-6 text-[32px] md:text-[58px] max-w-[820px] mx-auto"
-            style={{
-              fontWeight: 600,
-              letterSpacing: '-1.8px',
-              lineHeight: '1.18',
-              color: 'rgb(250,250,250)',
-            }}
-          >
-            How Clarify Data Works
-          </h1>
-          <p
-            className="max-w-[680px] mx-auto text-[16px] md:text-[19px]"
-            style={{
-              fontWeight: 450,
-              color: 'rgba(250,250,250,0.85)',
-              lineHeight: '28px',
-            }}
-          >
-            A data verification and business intelligence platform that combines AI models,
-            continuously updated market data, automated analytics, and human-verified results
-            to help organizations make accurate, confident decisions.
-          </p>
-        </motion.div>
-      </div>
-    </section>
+    <PageHeroHeader
+      eyebrow="Platform Overview"
+      title="How Clarify Data Works"
+      subtitle="A data verification and business intelligence platform that combines AI models, continuously updated market data, automated analytics, and human-verified results to help organizations make accurate, confident decisions."
+    />
   )
 }
 
