@@ -43,64 +43,69 @@ const footerCols = [
   },
 ]
 
-export default function CtaFooter() {
+interface CtaFooterProps {
+  showCta?: boolean
+}
+
+export default function CtaFooter({ showCta = true }: CtaFooterProps) {
   const ref = useRef<HTMLElement>(null)
   const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
 
   return (
     <footer ref={ref}>
-      {/* CTA section */}
-      <section
-        id="early-access"
-        className="landscape-card relative overflow-hidden py-24 md:py-32 text-center"
-      >
-        <div className="section-inner relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-          >
-            <span className="eyebrow-pill mb-8 inline-block">Start Today</span>
-            <h2
-              className="mb-3 md:mb-4 max-w-[700px] mx-auto text-[28px] md:text-[48px]"
-              style={{
-                fontWeight: 500,
-                letterSpacing: '-1.44px',
-                lineHeight: '1.2',
-                color: 'rgb(250,250,250)',
-              }}
+      {showCta && (
+        <section
+          id="early-access"
+          className="landscape-card relative overflow-hidden py-24 md:py-32 text-center"
+        >
+          <div className="section-inner relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5 }}
             >
-              Let verification handle the risk.
-            </h2>
-            <p
-              className="max-w-[520px] mx-auto mb-10 text-[15px] md:text-[18px]"
-              style={{
-                fontWeight: 500,
-                color: 'rgba(250,250,250,0.8)',
-                lineHeight: '26px',
-              }}
-            >
-              Create your first verification record, connect your content, and publish with confidence every week.
-            </p>
-
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Link
-                href="/#book-demo"
-                className="px-6 py-3 rounded-full text-[16px] font-medium transition-all duration-200"
-                style={{ background: 'rgb(250,250,250)', color: 'rgb(10,10,10)' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.88)' }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(250,250,250)' }}
+              <span className="eyebrow-pill mb-8 inline-block">Start a Conversation</span>
+              <h2
+                className="mb-3 md:mb-4 max-w-[700px] mx-auto text-[28px] md:text-[48px]"
+                style={{
+                  fontWeight: 500,
+                  letterSpacing: '-1.44px',
+                  lineHeight: '1.2',
+                  color: 'rgb(250,250,250)',
+                }}
               >
-                Book a Demo
-              </Link>
-            </div>
+                Bring important claims back to evidence.
+              </h2>
+              <p
+                className="max-w-[520px] mx-auto mb-10 text-[15px] md:text-[18px]"
+                style={{
+                  fontWeight: 500,
+                  color: 'rgba(250,250,250,0.8)',
+                  lineHeight: '26px',
+                }}
+              >
+                Tell us about the sources, decisions, and review responsibilities in your information-quality workflow.
+              </p>
 
-            <p style={{ fontSize: '14px', color: 'rgba(250,250,250,0.32)' }}>
-              No credit card required · Cancel anytime
-            </p>
-          </motion.div>
-        </div>
-      </section>
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <Link
+                  href="/#book-demo"
+                  className="px-6 py-3 rounded-full text-[16px] font-medium transition-all duration-200"
+                  style={{ background: 'rgb(250,250,250)', color: 'rgb(10,10,10)' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.88)' }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(250,250,250)' }}
+                >
+                  Book a Demo
+                </Link>
+              </div>
+
+              <p style={{ fontSize: '14px', color: 'rgba(250,250,250,0.32)' }}>
+                Share a real use case through the existing demo request form
+              </p>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* Footer nav */}
       <div style={{ background: 'rgb(10,10,10)', borderTop: '1px solid rgba(250,250,250,0.07)' }}>
@@ -119,7 +124,7 @@ export default function CtaFooter() {
                 </span>
               </Link>
               <p style={{ fontSize: '13px', color: 'rgba(250,250,250,0.4)', lineHeight: '20px' }}>
-                Human-verified fact checking for modern teams.
+                Traceable information-quality workflows for modern teams.
               </p>
             </div>
 
@@ -178,7 +183,7 @@ export default function CtaFooter() {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full" style={{ background: 'rgb(74,222,128)' }} />
               <span style={{ fontSize: '13px', color: 'rgba(250,250,250,0.4)' }}>
-                All systems operational
+                Designed for responsible human review
               </span>
             </div>
           </div>
