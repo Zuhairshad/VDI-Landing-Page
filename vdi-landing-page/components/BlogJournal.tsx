@@ -444,7 +444,10 @@ export default function BlogJournal() {
               </button>
             </div>
 
-            <article className="min-h-0 overflow-y-auto overscroll-contain px-6 md:px-12 pt-1 pb-10 md:pb-14">
+            <article
+              data-lenis-prevent
+              className="min-h-0 overflow-y-auto overscroll-contain px-6 md:px-12 pt-1 pb-10 md:pb-14"
+            >
               <p className="text-[12px] font-semibold uppercase tracking-[0.12em] mb-3" style={{ color: 'rgb(224, 133, 76)' }}>
                 {selectedArticle.category} · {selectedArticle.readTime}
               </p>
