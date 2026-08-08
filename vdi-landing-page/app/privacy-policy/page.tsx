@@ -1,62 +1,146 @@
 import type { Metadata } from 'next'
-import Nav from '@/components/Nav'
-import CtaFooter from '@/components/CtaFooter'
-import PageHeroHeader from '@/components/PageHeroHeader'
 import { ShieldCheck } from 'lucide-react'
+import LegalPage, {
+  LegalLink,
+  LegalList,
+  LegalListItem,
+  LegalSection,
+} from '@/components/LegalPage'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Clarify Data',
-  description: 'Privacy Policy for Clarify Data verified intelligence platform.',
+  title: 'Privacy Policy | ClarifyData',
+  description:
+    'A working privacy notice for the ClarifyData public website, demo request form, and newsletter form.',
 }
 
 const COPPER = 'rgb(194, 89, 24)'
+const CONTACT_EMAIL = 'Usman@geniusmindzone.com'
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="bg-[#0a0a0a] min-h-screen text-white">
-      <Nav />
+    <LegalPage
+      eyebrow="Privacy notice"
+      icon={<ShieldCheck className="w-4 h-4" style={{ color: COPPER }} />}
+      title="Privacy Policy"
+      summary="This notice explains the limited information handled through the current ClarifyData public website and its demo and newsletter forms. It does not describe user accounts, customer dataset uploads, or an authenticated platform because those features are not present in the current website code."
+      lastUpdated="August 8, 2026"
+      notice="The registered company entity, controller identity, business address, applicable legal bases, retention schedule, hosting details, international-transfer safeguards, and supervisory authority must be confirmed by the owner and legal counsel before this notice is treated as final."
+    >
+      <LegalSection title="1. Scope and who is responsible">
+        <p>
+          This policy applies to visitors who browse the public website, submit the “Book a Demo” form, or submit an email address through the newsletter page.
+        </p>
+        <p>
+          The organization legally responsible for deciding how this information is used should be identified here as the data controller. The ClarifyData registered entity, address, and jurisdiction have not been established from the website code and require owner confirmation.
+        </p>
+      </LegalSection>
 
-      {/* Hero Header using Home Shader Background */}
-      <PageHeroHeader
-        eyebrow="Legal Compliance"
-        icon={<ShieldCheck className="w-3.5 h-3.5" style={{ color: COPPER }} />}
-        title="Privacy Policy"
-        subtitle="Last updated: August 6, 2026"
-      />
+      <LegalSection title="2. Information the current website handles">
+        <LegalList>
+          <LegalListItem>
+            <strong className="text-white">Demo requests:</strong> the selected industry and the free-text description entered by the visitor. The current form does not ask for a name or email address.
+          </LegalListItem>
+          <LegalListItem>
+            <strong className="text-white">Newsletter requests:</strong> the email address entered on the newsletter page. The website sends it through the same submission endpoint used for demo requests.
+          </LegalListItem>
+          <LegalListItem>
+            <strong className="text-white">Technical request information:</strong> hosting, network, and form-delivery infrastructure may process information such as IP address, user agent, request time, referring page, and diagnostic or security records when a page is requested or a form is submitted.
+          </LegalListItem>
+          <LegalListItem>
+            <strong className="text-white">Correspondence:</strong> information included in later email or other communications with the contact shown on this site.
+          </LegalListItem>
+        </LegalList>
+        <p>
+          Do not include passwords, payment data, patient information, government identifiers, confidential customer data, or other sensitive information in the free-text demo field.
+        </p>
+      </LegalSection>
 
-      <main className="max-w-[850px] mx-auto py-16 px-5">
-        <div className="space-y-8 text-white/80 text-[15px] leading-[26px]">
-          <section>
-            <h2 className="text-[20px] font-semibold text-white mb-3">1. Information We Collect</h2>
-            <p>
-              Clarify Data collects information that you provide directly when registering an account, submitting data verification requests, or scheduling a demo. This includes contact details (such as name and business email address), organization name, and dataset metadata uploaded to our platform.
-            </p>
-          </section>
+      <LegalSection title="3. How information is collected">
+        <p>
+          Demo and newsletter information is supplied directly by the visitor. Technical information may be generated automatically by the visitor’s browser, network, hosting provider, security tools, and FormSubmit when they deliver pages or process a form request.
+        </p>
+      </LegalSection>
 
-          <section>
-            <h2 className="text-[20px] font-semibold text-white mb-3">2. How We Use Information</h2>
-            <p>
-              We use collected information to operate, maintain, and enhance our verification platform; execute market intelligence queries; generate divergence alerts; and communicate platform updates or security notices to authorized organizational contacts.
-            </p>
-          </section>
+      <LegalSection title="4. Why information is used">
+        <LegalList>
+          <LegalListItem>To receive, review, and respond to a demo or product enquiry.</LegalListItem>
+          <LegalListItem>To record and manage a requested newsletter subscription.</LegalListItem>
+          <LegalListItem>To operate, secure, troubleshoot, and improve the public website and form-delivery process.</LegalListItem>
+          <LegalListItem>To maintain appropriate business records and respond to lawful requests or disputes.</LegalListItem>
+        </LegalList>
+        <p>
+          The final lawful basis for each purpose depends on the responsible entity and applicable law. Depending on those facts, it may include taking steps at a visitor’s request, legitimate interests in operating and securing the site, consent for electronic marketing where required, or compliance with law. The owner must confirm and document those bases.
+        </p>
+      </LegalSection>
 
-          <section>
-            <h2 className="text-[20px] font-semibold text-white mb-3">3. Data Security & Storage</h2>
-            <p>
-              Clarify Data implements strict enterprise-grade encryption (TLS 1.3 in transit and AES-256 at rest) across all customer verification datasets. Uploaded datasets are strictly segmented and never used to train public foundational AI models without explicit enterprise consent.
-            </p>
-          </section>
+      <LegalSection title="5. FormSubmit and other service providers">
+        <p>
+          The current website sends demo and newsletter submissions to FormSubmit so the contents can be delivered by email to {CONTACT_EMAIL}. The server route uses FormSubmit, and the demo form can also send directly to FormSubmit from the browser if the server response is unsuccessful.
+        </p>
+        <p>
+          FormSubmit therefore receives the submitted industry, description, or newsletter email address and may receive related technical request information. Its current published terms describe its role in forwarding form information. Review the{' '}
+          <LegalLink href="https://formsubmit.co/privacy.pdf">FormSubmit privacy information</LegalLink>{' '}
+          before submitting.
+        </p>
+        <p>
+          Hosting, email, network, and security providers may also process information as needed to provide their services. The final provider list and contractual roles require owner confirmation.
+        </p>
+      </LegalSection>
 
-          <section>
-            <h2 className="text-[20px] font-semibold text-white mb-3">4. Contact Us</h2>
-            <p>
-              If you have any questions regarding this Privacy Policy or your data rights, please contact our Data Protection Officer at <strong>Usman@geniusmindzone.com</strong>.
-            </p>
-          </section>
-        </div>
-      </main>
+      <LegalSection title="6. Sharing and disclosure">
+        <p>
+          Information may be shared with the service providers needed to host the site, deliver form submissions, operate email, maintain security, or provide professional support. It may also be disclosed when reasonably necessary to comply with law, protect rights or safety, investigate abuse, or manage a business transaction, subject to applicable requirements.
+        </p>
+        <p>The website code does not show a sale of personal information or disclosure to advertising networks.</p>
+      </LegalSection>
 
-      <CtaFooter />
-    </div>
+      <LegalSection title="7. Retention">
+        <p>
+          No fixed retention period is implemented or documented in the current website code. Form submissions may be retained in delivery records, recipient mailboxes, backups, and provider logs for periods controlled by the relevant organization or provider.
+        </p>
+        <p>
+          The owner should adopt documented periods based on the purpose of the enquiry, whether a business relationship follows, legal obligations, security needs, and the need to establish or defend claims. Information should be deleted or anonymized when it is no longer reasonably needed, subject to lawful exceptions.
+        </p>
+      </LegalSection>
+
+      <LegalSection title="8. Security">
+        <p>
+          Reasonable technical and organizational safeguards should be selected for the nature and risk of the information processed. No internet transmission, email delivery, or storage method is completely secure.
+        </p>
+        <p>
+          This notice does not claim specific encryption standards, security certifications, or audited controls because those details are not established by the current code. Visitors should avoid sending sensitive or confidential information through the public forms.
+        </p>
+      </LegalSection>
+
+      <LegalSection title="9. International processing">
+        <p>
+          Hosting, network, FormSubmit, email, or support infrastructure may process information in countries other than the visitor’s own. Applicable transfer restrictions and safeguards depend on the confirmed providers, locations, responsible entity, and law. Those details require an owner-led vendor and transfer assessment.
+        </p>
+      </LegalSection>
+
+      <LegalSection title="10. Privacy choices and requests">
+        <p>
+          Depending on applicable law, an individual may have rights to request access, correction, deletion, restriction, portability, or an objection to certain processing, and to withdraw consent where consent is the basis. Rights are not absolute and may be subject to verification and lawful exceptions.
+        </p>
+        <p>
+          Requests can be sent to <LegalLink href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</LegalLink>. The responsible entity and any applicable supervisory-authority information must be added once confirmed.
+        </p>
+      </LegalSection>
+
+      <LegalSection title="11. Children’s privacy">
+        <p>
+          The website and its business enquiry forms are not directed to children. Visitors should not submit information about a child through the demo description. If the responsible organization learns that it has received a child’s personal information without appropriate authorization, it should assess and address the record under applicable law.
+        </p>
+      </LegalSection>
+
+      <LegalSection title="12. Changes and contact">
+        <p>
+          This notice may be updated when the website, providers, processing activities, or legal requirements change. The revised date should be shown at the top, and material changes should be brought to affected people’s attention where required.
+        </p>
+        <p>
+          Questions or privacy requests can be sent to <LegalLink href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</LegalLink>. This address is presented as the current website contact, not as a formally appointed Data Protection Officer.
+        </p>
+      </LegalSection>
+    </LegalPage>
   )
 }
