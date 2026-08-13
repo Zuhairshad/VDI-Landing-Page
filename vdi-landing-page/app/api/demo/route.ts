@@ -4,15 +4,15 @@ export async function POST(req: Request) {
   try {
     const { industry, description } = await req.json()
 
-    // Send email directly to Usman@geniusmindzone.com via FormSubmit AJAX service
-    const response = await fetch('https://formsubmit.co/ajax/Usman@geniusmindzone.com', {
+    // Send email directly to grow@clerifydata.com via FormSubmit AJAX service
+    const response = await fetch('https://formsubmit.co/ajax/grow@clerifydata.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
       body: JSON.stringify({
-        _subject: `New Clarify Data Demo Request: ${industry}`,
+        _subject: `New Clerify Data Demo Request: ${industry}`,
         _captcha: 'false',
         Industry: industry,
         Description: description,

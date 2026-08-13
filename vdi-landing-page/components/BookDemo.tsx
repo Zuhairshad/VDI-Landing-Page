@@ -62,11 +62,11 @@ export default function BookDemo() {
 
       if (!res.ok) {
         // Fallback direct POST to formsubmit
-        await fetch('https://formsubmit.co/ajax/Usman@geniusmindzone.com', {
+        await fetch('https://formsubmit.co/ajax/grow@clerifydata.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            _subject: `New Clarify Data Demo Request: ${industry}`,
+            _subject: `New Clerify Data Demo Request: ${industry}`,
             Industry: industry,
             Description: description,
           }),
@@ -122,7 +122,7 @@ export default function BookDemo() {
             className="max-w-[600px] mx-auto text-[15px] md:text-[17px]"
             style={{ fontWeight: 450, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            See how Clarify Data cleans your raw datasets, verifies AI claims, and delivers live market benchmarking.
+            See how Clerify Data cleans your raw datasets, verifies AI claims, and delivers live market benchmarking.
           </p>
         </motion.div>
 

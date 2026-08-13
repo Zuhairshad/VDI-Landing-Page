@@ -180,7 +180,7 @@ const features = [
   {
     title: '1. Data Sort',
     subtitle: 'Intelligent Raw Data Verification & Sorting',
-    desc: 'The core verification engine of Clarify Data. Upload raw datasets in any format — the system analyzes the structure, prompts for target sorting criteria, and sorts data with automated quality indicators.',
+    desc: 'The core verification engine of Clerify Data. Upload raw datasets in any format — the system analyzes the structure, prompts for target sorting criteria, and sorts data with automated quality indicators.',
     UI: DataSortUI
   },
   {
@@ -192,7 +192,7 @@ const features = [
   {
     title: '3. AI Claim Verification',
     subtitle: 'Trust Scoring for Major LLMs',
-    desc: 'Verify claims generated from ChatGPT, Gemini, Claude, Grok, or DeepSeek. Clarify Data evaluates content against real-time industry databases, providing accuracy scores backed by expert human validation.',
+    desc: 'Verify claims generated from ChatGPT, Gemini, Claude, Grok, or DeepSeek. Clerify Data evaluates content against real-time industry databases, providing accuracy scores backed by expert human validation.',
     UI: AiClaimUI
   },
   {

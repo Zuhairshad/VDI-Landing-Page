@@ -28,7 +28,7 @@ function TrustScoreMock() {
         style={{ borderColor: 'rgba(250,250,250,0.07)' }}
       >
         <span className="text-[13px] font-medium" style={{ color: 'rgb(250,250,250)' }}>
-          Clarify Data Trust Index
+          Clerify Data Trust Index
         </span>
         <span className="text-[11px] uppercase tracking-widest" style={{ color: 'rgba(250,250,250,0.32)' }}>
           Live
@@ -232,7 +232,7 @@ function HeroSection() {
   return (
     <PageHeroHeader
       eyebrow="Platform Overview"
-      title="How Clarify Data Works"
+      title="How Clerify Data Works"
       subtitle="A data verification and business intelligence platform that combines AI models, continuously updated market data, automated analytics, and human-verified results to help organizations make accurate, confident decisions."
     />
   )
@@ -245,7 +245,7 @@ const layers = [
     num: '01',
     label: 'Layer 1',
     title: 'AI Model Integration',
-    desc: 'Supported AI models are connected to the Clarify Data system. When a user submits a query, claim, report, or AI-generated response, the system collects the relevant output and prepares it for comparison against current market data.',
+    desc: 'Supported AI models are connected to the Clerify Data system. When a user submits a query, claim, report, or AI-generated response, the system collects the relevant output and prepares it for comparison against current market data.',
     detail:
       'The purpose of this layer is to understand what the AI model is claiming and identify the facts, statistics, assumptions, predictions, and recommendations that require verification.',
     tags: [
@@ -262,7 +262,7 @@ const layers = [
     num: '02',
     label: 'Layer 2',
     title: 'Current Market Data Collection',
-    desc: 'Clarify Data collects current information from relevant and permitted online market sources for a specific industry — identifying developments that may not yet be available within general AI models or may have changed since last update.',
+    desc: 'Clerify Data collects current information from relevant and permitted online market sources for a specific industry — identifying developments that may not yet be available within general AI models or may have changed since last update.',
     detail:
       'Collected data is cleaned, structured, categorized, and stored according to the platform\'s data governance and retention policies. The system focuses on industry-specific information so verification is relevant to the user\'s business and market.',
     tags: [
@@ -279,7 +279,7 @@ const layers = [
     num: '03',
     label: 'Layer 3',
     title: 'AI Data and Market Data Comparison',
-    desc: 'Clarify Data compares AI-generated information with the latest market data, analyzing whether the AI response is accurate, partially accurate, outdated, unsupported, misleading, inconsistent, or unable to be verified.',
+    desc: 'Clerify Data compares AI-generated information with the latest market data, analyzing whether the AI response is accurate, partially accurate, outdated, unsupported, misleading, inconsistent, or unable to be verified.',
     detail:
       'Automated comparison jobs can run on a scheduled basis. When new data becomes available, the system updates its analysis, recalculates results, and identifies whether a previous conclusion is still accurate.',
     tags: [
@@ -438,7 +438,7 @@ const continuousItems = [
   },
   {
     title: 'Revise the Trust Index',
-    desc: 'The Clarify Data Trust Index is recalculated to reflect the latest verified information and current market conditions.',
+    desc: 'The Clerify Data Trust Index is recalculated to reflect the latest verified information and current market conditions.',
   },
   {
     title: 'Trigger Alerts and Report Updates',
@@ -487,7 +487,7 @@ function ContinuousUpdatesSection() {
                 flexShrink: 0,
               }}
             >
-              Clarify Data reports are not limited to a single point in time. They evolve
+              Clerify Data reports are not limited to a single point in time. They evolve
               as the market changes and as additional verified data becomes available.
             </p>
           </div>
@@ -548,7 +548,7 @@ const queryOutputs = [
   'Difference between AI data and current market data',
   'Supporting evidence',
   'Confidence score',
-  'Clarify Data Trust Index',
+  'Clerify Data Trust Index',
   'Verified Data Index',
   'Market change indicators',
   'Risk warnings',
@@ -587,7 +587,7 @@ function QueryVerificationSection() {
               style={{ color: 'rgba(250,250,250,0.6)', lineHeight: '25px' }}
             >
               When a registered user submits a query, document, claim, dataset, or
-              AI-generated response, Clarify Data compares it against verified datasets
+              AI-generated response, Clerify Data compares it against verified datasets
               and returns a structured result showing not only whether a statement is
               correct, but how reliable the available evidence is.
             </p>
@@ -676,7 +676,7 @@ function TrustIndexSection() {
                 color: 'rgb(250,250,250)',
               }}
             >
-              The Clarify Data Trust Index
+              The Clerify Data Trust Index
             </h2>
             <p
               className="mb-6 text-[15px] md:text-[16px]"
@@ -761,7 +761,7 @@ function VDISection() {
               className="mb-6 text-[15px] md:text-[16px]"
               style={{ color: 'rgba(250,250,250,0.6)', lineHeight: '25px' }}
             >
-              In addition to the Trust Index, Clarify Data provides a Verified Data Index
+              In addition to the Trust Index, Clerify Data provides a Verified Data Index
               — indicating the level of confirmation achieved through automated verification
               and human review. It makes complex verification results easier for business
               owners, managers, analysts, and decision-makers to understand at a glance.
@@ -979,7 +979,7 @@ const reportContents = [
   'Executive summary',
   'Query verification results',
   'Data accuracy percentage',
-  'Clarify Data Trust Index',
+  'Clerify Data Trust Index',
   'Verified Data Index',
   'Market comparison',
   'Industry trend analysis',
@@ -993,7 +993,7 @@ const reportContents = [
 ]
 
 const deliveryFormats = [
-  'Clarify Data Dashboard',
+  'Clerify Data Dashboard',
   'Email',
   'PDF',
   'Microsoft Word',
@@ -1032,7 +1032,7 @@ function BIReportsSection() {
             className="max-w-[520px] mx-auto text-[15px] md:text-[18px]"
             style={{ fontWeight: 500, color: 'rgba(250,250,250,0.7)', lineHeight: '26px' }}
           >
-            Clarify Data converts verified information into practical business intelligence
+            Clerify Data converts verified information into practical business intelligence
             and structured reports — ready for decision-makers.
           </p>
         </motion.div>
@@ -1153,11 +1153,11 @@ const workflowSteps = [
   'A user submits a query, claim, document, dataset, or AI-generated response.',
   'The system identifies the information that requires verification.',
   'Connected AI models provide the relevant AI-generated data.',
-  'Clarify Data collects current industry-specific market information.',
+  'Clerify Data collects current industry-specific market information.',
   'The system cleans and structures the available data.',
   'AI results are compared with current and historical market data.',
   'Accuracy, difference, and confidence levels are calculated.',
-  'The initial Clarify Data Trust Index is generated.',
+  'The initial Clerify Data Trust Index is generated.',
   'Edge cases and high-impact queries are sent to a human verifier.',
   'An experienced business analyst reviews the evidence.',
   'The Trust Index and Verified Data Index are confirmed or updated.',
@@ -1301,7 +1301,7 @@ function AdvantageSection() {
               color: 'rgb(250,250,250)',
             }}
           >
-            The Clarify Data Advantage
+            The Clerify Data Advantage
           </h2>
           <p
             className="max-w-[520px] mx-auto text-[15px] md:text-[18px]"

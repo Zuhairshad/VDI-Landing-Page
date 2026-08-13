@@ -4,9 +4,9 @@ import HowItWorksPage from '@/components/HowItWorksPage'
 import CtaFooter from '@/components/CtaFooter'
 
 export const metadata: Metadata = {
-  title: 'How Clarify Data Works | ClarifyData',
+  title: 'How Clerify Data Works | ClarifyData',
   description:
-    'Learn how Clarify Data combines AI model integration, current market data collection, automated comparison, and human verification to deliver trusted business intelligence.',
+    'Learn how Clerify Data combines AI model integration, current market data collection, automated comparison, and human verification to deliver trusted business intelligence.',
   keywords: [
     'data verification',
     'business intelligence',

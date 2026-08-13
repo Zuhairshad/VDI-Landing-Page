@@ -6,8 +6,8 @@ import * as Accordion from '@radix-ui/react-accordion'
 
 const questions = [
   {
-    q: 'What is Clarify Data and how does it help my business?',
-    a: 'Clarify Data is a data verification, market intelligence, and business benchmarking platform. It combines automated data processing, continuously updated market intelligence, AI claim verification, business benchmarking, dynamic reporting, and human expert review to help organizations make accurate, evidence-backed decisions.',
+    q: 'What is Clerify Data and how does it help my business?',
+    a: 'Clerify Data is a data verification, market intelligence, and business benchmarking platform. It combines automated data processing, continuously updated market intelligence, AI claim verification, business benchmarking, dynamic reporting, and human expert review to help organizations make accurate, evidence-backed decisions.',
   },
   {
     q: 'How does Data Sort clean and standardize messy data?',
@@ -15,11 +15,11 @@ const questions = [
   },
   {
     q: 'How does AI Claim Verification work with ChatGPT, Gemini, Claude, Grok, and DeepSeek?',
-    a: 'You can paste or upload AI-generated content. Clarify Data parses the response into individual claims and cross-references each assertion against verified industry datasets, delivering confidence scores, verdicts (Verified, Misleading, Unsupported, etc.), and human verifier reviews when required.',
+    a: 'You can paste or upload AI-generated content. Clerify Data parses the response into individual claims and cross-references each assertion against verified industry datasets, delivering confidence scores, verdicts (Verified, Misleading, Unsupported, etc.), and human verifier reviews when required.',
   },
   {
     q: 'Is private business data stored in the system for Business Benchmarking?',
-    a: 'No. Clarify Data is engineered with a strict zero-database storage policy for enterprise private data. Confidential metrics are processed in-memory solely for prediction, verification, and benchmark audit reports, and are purged immediately after analysis.',
+    a: 'No. Clerify Data is engineered with a strict zero-database storage policy for enterprise private data. Confidential metrics are processed in-memory solely for prediction, verification, and benchmark audit reports, and are purged immediately after analysis.',
   },
   {
     q: 'When is Human Expert Review triggered?',
@@ -27,7 +27,7 @@ const questions = [
   },
   {
     q: 'Which key industries are supported?',
-    a: 'Clarify Data serves four primary verticals: Social Media & E-commerce, Medical & Healthcare, Logistics & Supply Chain, and Education — each equipped with domain-specific verification rules and expert analyst pools.',
+    a: 'Clerify Data serves four primary verticals: Social Media & E-commerce, Medical & Healthcare, Logistics & Supply Chain, and Education — each equipped with domain-specific verification rules and expert analyst pools.',
   },
 ]
 
@@ -61,7 +61,7 @@ export default function Faq() {
                 color: 'rgb(250,250,250)',
               }}
             >
-              Everything you need to know about Clarify Data.
+              Everything you need to know about Clerify Data.
             </h2>
             <p style={{ fontSize: '16px', color: 'rgba(250,250,250,0.6)', lineHeight: '24px' }}>
               Have more questions about integration, data security, or custom enterprise deployments? Reach out to our team.

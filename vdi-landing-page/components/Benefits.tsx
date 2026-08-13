@@ -57,7 +57,7 @@ export default function Benefits() {
         >
           <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
             <Sparkles className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
-            <span>The Clarify Data Advantage</span>
+            <span>The Clerify Data Advantage</span>
           </span>
           <h2
             className="mb-4 text-[30px] md:text-[50px]"
@@ -74,7 +74,7 @@ export default function Benefits() {
             className="max-w-[680px] mx-auto text-[15px] md:text-[18px]"
             style={{ fontWeight: 450, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            More raw data doesn't equal better decisions. Discover how Clarify Data eliminates uncertainty, verifies AI claims, and delivers live market benchmarking.
+            More raw data doesn't equal better decisions. Discover how Clerify Data eliminates uncertainty, verifies AI claims, and delivers live market benchmarking.
           </p>
 
           {/* Interactive Problem vs Solution Toggle */}
@@ -147,7 +147,7 @@ export default function Benefits() {
               ))}
             </motion.div>
           ) : (
-            /* Clarify Data Advantage Bento Grid */
+            /* Clerify Data Advantage Bento Grid */
             <motion.div
               key="solution-view"
               initial={{ opacity: 0, y: 15 }}

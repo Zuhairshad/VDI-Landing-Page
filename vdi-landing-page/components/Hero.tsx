@@ -60,7 +60,7 @@ export default function Hero() {
           className="mb-10 max-w-[680px] text-[16px] md:text-[19px]"
           style={{ fontWeight: 450, lineHeight: '28px', color: 'rgba(250,250,250,0.85)' }}
         >
-          Clarify Data combines automated data sorting, continuously updated market intelligence, AI claim verification, business benchmarking, and expert human review to transform raw information into structured, actionable insights.
+          Clerify Data combines automated data sorting, continuously updated market intelligence, AI claim verification, business benchmarking, and expert human review to transform raw information into structured, actionable insights.
         </motion.p>
 
         <motion.div
