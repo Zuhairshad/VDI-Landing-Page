@@ -59,7 +59,7 @@ export default function WhySection() {
               initial={{ opacity: 0, y: 16 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.06 + i * 0.06 }}
-              className="rounded-2xl p-5"
+              className="rounded-2xl p-7"
               style={{
                 background: i % 3 === 0
                   ? 'linear-gradient(135deg, rgba(84, 27, 4, 0.25) 0%, rgba(16,16,20,0.95) 100%)'
@@ -69,11 +69,11 @@ export default function WhySection() {
                   : '1px solid rgba(250,250,250,0.07)',
               }}
             >
-              <div className="w-9 h-9 rounded-lg flex items-center justify-center mb-3" style={{ background: COPPER_BG, border: `1px solid ${COPPER_BORDER}` }}>
-                <reason.icon className="w-4.5 h-4.5" style={{ color: COPPER_COLOR }} />
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{ background: COPPER_BG, border: `1px solid ${COPPER_BORDER}` }}>
+                <reason.icon className="w-5 h-5" style={{ color: COPPER_COLOR }} />
               </div>
-              <h3 className="text-[16px] font-semibold text-white mb-1">{reason.title}</h3>
-              <p className="text-[13px] text-white/60 leading-[19px]">{reason.desc}</p>
+              <h3 className="text-[18px] font-semibold text-white mb-2">{reason.title}</h3>
+              <p className="text-[14px] text-white/60 leading-[22px]">{reason.desc}</p>
             </motion.div>
           ))}
         </div>

@@ -75,8 +75,8 @@ export default function HumanVerification() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="rounded-2xl p-7"
             style={{
-              background: 'rgba(16,16,20,0.95)',
-              border: '1px solid rgba(250,250,250,0.08)',
+              background: 'linear-gradient(135deg, rgba(84, 27, 4, 0.3) 0%, rgba(16,16,20,0.95) 100%)',
+              border: `1px solid ${COPPER_BORDER}`,
             }}
           >
             <h3 className="text-[18px] font-semibold text-white mb-3">When Human Review Is Used</h3>
