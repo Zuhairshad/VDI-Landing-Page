@@ -3,7 +3,7 @@ import { GraduationCap } from 'lucide-react'
 import IndustryPage, { type IndustryPageData } from '@/components/IndustryPage'
 
 export const metadata: Metadata = {
-  title: 'Education & Research Information Quality | ClarifyData',
+  title: 'Education & Research Information Quality | Clarify Data',
   description:
     'Workflows for literature discovery, citation checking, research comparison, institutional benchmarking, and responsible academic review.',
 }
@@ -181,7 +181,7 @@ const data: IndustryPageData = {
     },
   ],
   limitations: [
-    'ClarifyData does not claim direct access to or integration with academic databases, publishers, or institutional systems unless separately established.',
+    'Clarify Data does not claim direct access to or integration with academic databases, publishers, or institutional systems unless separately established.',
     'Search coverage depends on the sources, access rights, language, date range, and criteria supplied or available for the workflow.',
     'The workflow cannot guarantee that a citation is substantively correct without reading and interpreting the relevant source in context.',
     'Generated summaries and comparison tables require human academic review and must not be used to fabricate citations, conceal authorship, or bypass plagiarism and attribution rules.',

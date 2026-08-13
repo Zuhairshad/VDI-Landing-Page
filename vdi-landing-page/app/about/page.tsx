@@ -19,9 +19,9 @@ import Nav from '@/components/Nav'
 import PageHeroHeader from '@/components/PageHeroHeader'
 
 export const metadata: Metadata = {
-  title: 'About ClarifyData | Information Quality Workflows',
+  title: 'About Clarify Data | Information Quality Workflows',
   description:
-    'Learn why ClarifyData is building traceable workflows for claim checking, source comparison, provenance, and responsible human review.',
+    'Learn why Clarify Data is building traceable workflows for claim checking, source comparison, provenance, and responsible human review.',
 }
 
 const COPPER = 'rgb(194, 89, 24)'
@@ -94,7 +94,7 @@ export default function AboutPage() {
           eyebrow="Our mission"
           icon={<Compass className="w-4 h-4" style={{ color: COPPER }} />}
           title="Make important information easier to verify, explain, and revisit"
-          subtitle="ClarifyData is building workflows that connect claims to evidence, preserve provenance, expose uncertainty, and keep responsible human review at the center of consequential decisions."
+          subtitle="Clarify Data is building workflows that connect claims to evidence, preserve provenance, expose uncertainty, and keep responsible human review at the center of consequential decisions."
         />
 
         <section className="section-pad border-t border-white/10">
@@ -125,9 +125,9 @@ export default function AboutPage() {
               style={{ background: CARD_BACKGROUND, border: `1px solid ${COPPER_BORDER}` }}
             >
               <ShieldCheck className="w-8 h-8 mb-5" style={{ color: COPPER }} />
-              <h2 className="text-[27px] md:text-[35px] font-semibold tracking-tight mb-5">What ClarifyData is building</h2>
+              <h2 className="text-[27px] md:text-[35px] font-semibold tracking-tight mb-5">What Clarify Data is building</h2>
               <p className="text-[15px] md:text-[16px] leading-[27px] text-white/70 mb-5">
-                ClarifyData is developing an information-quality workflow for decomposing material into checkable claims, organizing source evidence, comparing conflicting records, and preparing reviewable outputs.
+                Clarify Data is developing an information-quality workflow for decomposing material into checkable claims, organizing source evidence, comparing conflicting records, and preparing reviewable outputs.
               </p>
               <p className="text-[15px] md:text-[16px] leading-[27px] text-white/70">
                 The product direction emphasizes traceable records and repeatable methods. Capabilities described on this site are workflows and design goals unless a specific implementation is demonstrated; they are not guarantees of accuracy, coverage, integrations, or outcomes.
@@ -183,7 +183,7 @@ export default function AboutPage() {
               <h2 className="text-[29px] md:text-[40px] font-semibold tracking-tight mb-5">Verification is a process, not a promise of certainty</h2>
               <div className="space-y-4 text-[15px] md:text-[16px] leading-[27px] text-white/68">
                 <p>Sources can be wrong, incomplete, biased, unavailable, or superseded. Automated extraction can miss context, and different reviewers can reasonably interpret the same evidence differently.</p>
-                <p>Outputs should communicate scope, freshness, assumptions, and unresolved questions. ClarifyData should not be used as the sole basis for medical, legal, regulatory, safety, employment, credit, or other high-impact decisions.</p>
+                <p>Outputs should communicate scope, freshness, assumptions, and unresolved questions. Clarify Data should not be used as the sole basis for medical, legal, regulatory, safety, employment, credit, or other high-impact decisions.</p>
               </div>
             </article>
             <article

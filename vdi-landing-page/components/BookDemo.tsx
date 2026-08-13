@@ -2,24 +2,29 @@
 
 import { useState, useRef } from 'react'
 import { motion, useInView } from 'motion/react'
-import { Send, CheckCircle2, Building2, FileText, Sparkles, Loader2 } from 'lucide-react'
+import { Send, CheckCircle2, Building2, FileText, Sparkles, Loader2, Mail, User } from 'lucide-react'
 
-// Site copper color tokens
 const COPPER_COLOR = 'rgb(194, 89, 24)'
 const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
 const COPPER_BORDER = 'rgba(194, 89, 24, 0.35)'
 
-// Only the 4 official industries
 const industries = [
   'Social Media and E-commerce',
   'Medical and Healthcare',
   'Logistics and Supply Chain',
-  'Education'
+  'Education',
+  'Other',
 ]
 
 const MAX_WORDS = 400
 
+const inputStyle = {
+  borderColor: 'rgba(250, 250, 250, 0.15)',
+}
+
 export default function BookDemo() {
+  const [email, setEmail] = useState('')
+  const [company, setCompany] = useState('')
   const [industry, setIndustry] = useState(industries[0])
   const [description, setDescription] = useState('')
   const [submitted, setSubmitted] = useState(false)
@@ -28,7 +33,6 @@ export default function BookDemo() {
   const ref = useRef<HTMLElement>(null)
   const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
 
-  // Calculate current word count
   const wordCount = description.trim() === '' ? 0 : description.trim().split(/\s+/).length
 
   const handleDescriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -37,9 +41,7 @@ export default function BookDemo() {
     if (words.length <= MAX_WORDS || text.length < description.length) {
       setDescription(text)
     } else {
-      // Limit to 400 words
-      const limitedText = words.slice(0, MAX_WORDS).join(' ')
-      setDescription(limitedText)
+      setDescription(words.slice(0, MAX_WORDS).join(' '))
     }
   }
 
@@ -48,25 +50,20 @@ export default function BookDemo() {
     setLoading(true)
 
     try {
-      // Send directly via API in background without opening Apple Mail
       const res = await fetch('/api/demo', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          industry,
-          description,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, company, industry, description }),
       })
 
       if (!res.ok) {
-        // Fallback direct POST to formsubmit
         await fetch('https://formsubmit.co/ajax/grow@clerifydata.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            _subject: `New Clerify Data Demo Request: ${industry}`,
+            _subject: `New Clarify Data Demo Request: ${industry} — ${company}`,
+            Email: email,
+            Company: company,
             Industry: industry,
             Description: description,
           }),
@@ -87,16 +84,12 @@ export default function BookDemo() {
       className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
-      {/* Ambient Copper Background Glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[400px] rounded-full pointer-events-none blur-[150px]"
-        style={{
-          background: 'radial-gradient(circle, rgba(194, 89, 24, 0.22) 0%, rgba(10, 10, 10, 0) 70%)'
-        }}
+        style={{ background: 'radial-gradient(circle, rgba(194, 89, 24, 0.22) 0%, rgba(10, 10, 10, 0) 70%)' }}
       />
 
       <div className="section-inner relative z-10 max-w-[800px] mx-auto">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -109,12 +102,7 @@ export default function BookDemo() {
           </span>
           <h2
             className="mb-4 text-[30px] md:text-[46px]"
-            style={{
-              fontWeight: 600,
-              letterSpacing: '-1.2px',
-              lineHeight: '1.18',
-              color: 'rgb(250,250,250)',
-            }}
+            style={{ fontWeight: 600, letterSpacing: '-1.2px', lineHeight: '1.18', color: 'rgb(250,250,250)' }}
           >
             Schedule a Personalized Platform Demo
           </h2>
@@ -122,11 +110,10 @@ export default function BookDemo() {
             className="max-w-[600px] mx-auto text-[15px] md:text-[17px]"
             style={{ fontWeight: 450, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            See how Clerify Data cleans your raw datasets, verifies AI claims, and delivers live market benchmarking.
+            See how Clarify Data cleans your raw datasets, verifies AI claims, and delivers live market benchmarking.
           </p>
         </motion.div>
 
-        {/* Demo Form Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -135,7 +122,7 @@ export default function BookDemo() {
           style={{
             background: 'linear-gradient(135deg, rgba(84, 27, 4, 0.35) 0%, rgba(16, 16, 20, 0.95) 100%)',
             backdropFilter: 'blur(16px)',
-            border: `1px solid ${COPPER_BORDER}`
+            border: `1px solid ${COPPER_BORDER}`,
           }}
         >
           {submitted ? (
@@ -144,18 +131,21 @@ export default function BookDemo() {
               animate={{ opacity: 1, scale: 1 }}
               className="text-center py-10 flex flex-col items-center"
             >
-              <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4" style={{ background: COPPER_BG, border: `1px solid ${COPPER_BORDER}` }}>
+              <div
+                className="w-14 h-14 rounded-full flex items-center justify-center mb-4"
+                style={{ background: COPPER_BG, border: `1px solid ${COPPER_BORDER}` }}
+              >
                 <CheckCircle2 className="w-8 h-8" style={{ color: COPPER_COLOR }} />
               </div>
-              <h3 className="text-[24px] font-semibold text-white mb-2">
-                Demo Request Submitted!
-              </h3>
+              <h3 className="text-[24px] font-semibold text-white mb-2">Demo Request Submitted!</h3>
               <p className="text-[15px] text-white/80 max-w-[480px] leading-[24px] mb-6">
                 Your demo request has been sent successfully. Our team will review your requirements and contact you shortly.
               </p>
               <button
                 onClick={() => {
                   setSubmitted(false)
+                  setEmail('')
+                  setCompany('')
                   setDescription('')
                 }}
                 className="px-6 py-2.5 rounded-full text-[14px] font-medium text-white/80 hover:text-white border border-white/10 bg-white/5 transition-all"
@@ -165,45 +155,82 @@ export default function BookDemo() {
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-              {/* Field 1: Industry */}
+              {/* Row: Email + Company */}
+              <div className="grid md:grid-cols-2 gap-5">
+                {/* Field 1: Work Email */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-semibold text-white/90 flex items-center gap-2">
+                    <Mail className="w-4 h-4" style={{ color: COPPER_COLOR }} />
+                    <span>Work Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    required
+                    placeholder="you@company.com"
+                    className="w-full px-4 py-3.5 rounded-xl bg-black/50 border text-[15px] text-white placeholder-white/40 outline-none transition-all"
+                    style={inputStyle}
+                    onFocus={e => (e.target.style.borderColor = COPPER_COLOR)}
+                    onBlur={e => (e.target.style.borderColor = 'rgba(250, 250, 250, 0.15)')}
+                  />
+                </div>
+
+                {/* Field 2: Company */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-semibold text-white/90 flex items-center gap-2">
+                    <User className="w-4 h-4" style={{ color: COPPER_COLOR }} />
+                    <span>Company Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={company}
+                    onChange={e => setCompany(e.target.value)}
+                    required
+                    placeholder="Your company"
+                    className="w-full px-4 py-3.5 rounded-xl bg-black/50 border text-[15px] text-white placeholder-white/40 outline-none transition-all"
+                    style={inputStyle}
+                    onFocus={e => (e.target.style.borderColor = COPPER_COLOR)}
+                    onBlur={e => (e.target.style.borderColor = 'rgba(250, 250, 250, 0.15)')}
+                  />
+                </div>
+              </div>
+
+              {/* Field 3: Industry */}
               <div className="flex flex-col gap-2">
                 <label className="text-[14px] font-semibold text-white/90 flex items-center gap-2">
                   <Building2 className="w-4 h-4" style={{ color: COPPER_COLOR }} />
-                  <span>1. Industry</span>
+                  <span>Industry</span>
                 </label>
                 <div className="relative">
                   <select
                     value={industry}
-                    onChange={(e) => setIndustry(e.target.value)}
+                    onChange={e => setIndustry(e.target.value)}
                     required
                     className="w-full px-4 py-3.5 rounded-xl bg-black/50 border text-[15px] text-white outline-none transition-all appearance-none cursor-pointer"
-                    style={{
-                      borderColor: 'rgba(250, 250, 250, 0.15)',
-                    }}
-                    onFocus={(e) => (e.target.style.borderColor = COPPER_COLOR)}
-                    onBlur={(e) => (e.target.style.borderColor = 'rgba(250, 250, 250, 0.15)')}
+                    style={inputStyle}
+                    onFocus={e => (e.target.style.borderColor = COPPER_COLOR)}
+                    onBlur={e => (e.target.style.borderColor = 'rgba(250, 250, 250, 0.15)')}
                   >
-                    {industries.map((ind) => (
+                    {industries.map(ind => (
                       <option key={ind} value={ind} className="bg-neutral-900 text-white">
                         {ind}
                       </option>
                     ))}
                   </select>
-                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/40 text-xs">
-                    ▼
-                  </div>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/40 text-xs">▼</div>
                 </div>
               </div>
 
-              {/* Field 2: Description */}
+              {/* Field 4: Description */}
               <div className="flex flex-col gap-2">
                 <div className="flex items-center justify-between">
                   <label className="text-[14px] font-semibold text-white/90 flex items-center gap-2">
                     <FileText className="w-4 h-4" style={{ color: COPPER_COLOR }} />
-                    <span>2. Description</span>
+                    <span>What would you like to verify or analyze?</span>
                   </label>
                   <span className={`text-[12px] font-medium ${wordCount >= MAX_WORDS ? 'text-amber-400 font-bold' : 'text-white/40'}`}>
-                    {wordCount} / {MAX_WORDS} words
+                    {wordCount} / {MAX_WORDS}
                   </span>
                 </div>
                 <textarea
@@ -211,28 +238,22 @@ export default function BookDemo() {
                   onChange={handleDescriptionChange}
                   required
                   rows={5}
-                  placeholder="Tell us about your data verification needs, datasets, or specific workflows (max 400 words)..."
+                  placeholder="Tell us about your data verification needs, datasets, AI-generated content, or specific workflows..."
                   className="w-full px-4 py-3.5 rounded-xl bg-black/50 border text-[15px] text-white placeholder-white/40 outline-none transition-all resize-none"
-                  style={{
-                    borderColor: 'rgba(250, 250, 250, 0.15)',
-                  }}
-                  onFocus={(e) => (e.target.style.borderColor = COPPER_COLOR)}
-                  onBlur={(e) => (e.target.style.borderColor = 'rgba(250, 250, 250, 0.15)')}
+                  style={inputStyle}
+                  onFocus={e => (e.target.style.borderColor = COPPER_COLOR)}
+                  onBlur={e => (e.target.style.borderColor = 'rgba(250, 250, 250, 0.15)')}
                 />
               </div>
 
-              {/* Submit Button */}
+              {/* Submit */}
               <button
                 type="submit"
                 disabled={loading}
                 className="w-full py-4 rounded-full text-[16px] font-semibold transition-all duration-200 shadow-xl flex items-center justify-center gap-2 mt-2 cursor-pointer disabled:opacity-50"
-                style={{
-                  background: 'rgb(84, 27, 4)',
-                  color: 'rgb(250, 250, 250)',
-                  border: `1px solid ${COPPER_BORDER}`
-                }}
-                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = 'rgba(84, 27, 4, 0.85)')}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = 'rgb(84, 27, 4)')}
+                style={{ background: 'rgb(84, 27, 4)', color: 'rgb(250, 250, 250)', border: `1px solid ${COPPER_BORDER}` }}
+                onMouseEnter={e => ((e.currentTarget as HTMLElement).style.background = 'rgba(84, 27, 4, 0.85)')}
+                onMouseLeave={e => ((e.currentTarget as HTMLElement).style.background = 'rgb(84, 27, 4)')}
               >
                 {loading ? (
                   <>
@@ -242,7 +263,7 @@ export default function BookDemo() {
                 ) : (
                   <>
                     <Send className="w-4 h-4" />
-                    <span>Book a Demo</span>
+                    <span>Book My Demo</span>
                   </>
                 )}
               </button>

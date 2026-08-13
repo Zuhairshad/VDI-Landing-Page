@@ -9,7 +9,7 @@ const testimonials = [
     id: 0,
     cardTitle: 'From AI-generated content to verified, exportable records.',
     quote:
-      'ClarifyData helped our clinical team verify content at scale without growing our fact-checking headcount. What used to take days now runs automatically in the background.',
+      'Clarify Data helped our clinical team verify content at scale without growing our fact-checking headcount. What used to take days now runs automatically in the background.',
     name: 'Dr. Amara Osei-Bonsu',
     role: 'Head of Clinical Publications, Meridian Health',
     avatar: 'AO',
@@ -27,7 +27,7 @@ const testimonials = [
     id: 2,
     cardTitle: 'From bottlenecked fact-checking to minutes-per-piece turnaround.',
     quote:
-      'AI-written content was fast but needed human eyes on every fact before going live. That was the bottleneck. ClarifyData moved that check from hours to minutes.',
+      'AI-written content was fast but needed human eyes on every fact before going live. That was the bottleneck. Clarify Data moved that check from hours to minutes.',
     name: 'Rachel Stenberg',
     role: 'VP Marketing, Formstack',
     avatar: 'RS',
@@ -77,7 +77,7 @@ export default function Testimonials() {
             className="max-w-[420px] mx-auto text-[15px] md:text-[18px]"
             style={{ fontWeight: 500, color: 'rgba(250,250,250,0.75)', lineHeight: '26px' }}
           >
-            See how teams use ClarifyData to publish AI content they can stand behind.
+            See how teams use Clarify Data to publish AI content they can stand behind.
           </p>
         </div>
 

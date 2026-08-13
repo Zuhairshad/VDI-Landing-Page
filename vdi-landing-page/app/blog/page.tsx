@@ -6,7 +6,7 @@ import Nav from '@/components/Nav'
 import PageHeroHeader from '@/components/PageHeroHeader'
 
 export const metadata: Metadata = {
-  title: 'Information Quality Journal | ClarifyData',
+  title: 'Information Quality Journal | Clarify Data',
   description:
     'Practical articles on evidence trails, data provenance, human review, and repeatable market-research workflows.',
 }

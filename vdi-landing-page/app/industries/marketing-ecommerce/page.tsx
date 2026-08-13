@@ -3,7 +3,7 @@ import { ShoppingCart } from 'lucide-react'
 import IndustryPage, { type IndustryPageData } from '@/components/IndustryPage'
 
 export const metadata: Metadata = {
-  title: 'Marketing & E-commerce Research Workflows | ClarifyData',
+  title: 'Marketing & E-commerce Research Workflows | Clarify Data',
   description:
     'Traceable workflows for competitor, product, price, campaign, catalogue, review, sentiment, and market-positioning research.',
 }
@@ -181,7 +181,7 @@ const data: IndustryPageData = {
     },
   ],
   limitations: [
-    'ClarifyData does not claim live integrations with Amazon, Walmart, Shopify, advertising platforms, pricing systems, social networks, or marketplaces unless separately established.',
+    'Clarify Data does not claim live integrations with Amazon, Walmart, Shopify, advertising platforms, pricing systems, social networks, or marketplaces unless separately established.',
     'Observed prices, promotions, shipping costs, availability, reviews, and claims are time- and context-specific and require refresh before use.',
     'Automated matching and sentiment grouping can be wrong; uncertain SKU links, sarcasm, language, sample bias, and platform effects require human review.',
     'Research output is not legal approval, advertising substantiation, marketplace authorization, or a guarantee of campaign or commercial performance.',

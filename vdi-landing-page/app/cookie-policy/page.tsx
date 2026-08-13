@@ -8,9 +8,9 @@ import LegalPage, {
 } from '@/components/LegalPage'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | ClarifyData',
+  title: 'Cookie Policy | Clarify Data',
   description:
-    'A code-informed working notice about cookies and similar technologies on the current ClarifyData website.',
+    'A code-informed working notice about cookies and similar technologies on the current Clarify Data website.',
 }
 
 const COPPER = 'rgb(194, 89, 24)'
@@ -22,7 +22,7 @@ export default function CookiePolicyPage() {
       eyebrow="Storage technologies"
       icon={<Cookie className="w-4 h-4" style={{ color: COPPER }} />}
       title="Cookie Policy"
-      summary="The current ClarifyData application code does not intentionally set advertising, analytics, authentication-session, preference, or other non-essential cookies, and it does not use localStorage or sessionStorage. This page explains that finding and the limits of a code-only review."
+      summary="The current Clarify Data application code does not intentionally set advertising, analytics, authentication-session, preference, or other non-essential cookies, and it does not use localStorage or sessionStorage. This page explains that finding and the limits of a code-only review."
       lastUpdated="August 8, 2026"
       notice="The production hosting configuration, network/security services, domain settings, and provider dashboards were not established from the application code. The owner should perform a production cookie and storage audit before treating this notice as final."
     >

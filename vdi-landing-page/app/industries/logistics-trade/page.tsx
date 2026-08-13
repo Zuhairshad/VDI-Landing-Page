@@ -3,7 +3,7 @@ import { Truck } from 'lucide-react'
 import IndustryPage, { type IndustryPageData } from '@/components/IndustryPage'
 
 export const metadata: Metadata = {
-  title: 'Logistics & Trade Research Workflows | ClarifyData',
+  title: 'Logistics & Trade Research Workflows | Clarify Data',
   description:
     'Traceable workflows for supplier, carrier, trade-lane, tariff, shipment, risk, and market-signal research with human operational review.',
 }
@@ -181,7 +181,7 @@ const data: IndustryPageData = {
     },
   ],
   limitations: [
-    'ClarifyData does not claim live connections to customs, ports, carriers, suppliers, shipment systems, or trade databases unless separately established.',
+    'Clarify Data does not claim live connections to customs, ports, carriers, suppliers, shipment systems, or trade databases unless separately established.',
     'Schedules, prices, capacity, tariff treatment, and disruption information must be rechecked with authoritative parties before use.',
     'Research outputs are not bookings, customs rulings, legal advice, safety approvals, insurance advice, or contractual commitments.',
     'Customer-supplied operational data may be incomplete or inconsistent; structured output does not make the underlying record accurate.',

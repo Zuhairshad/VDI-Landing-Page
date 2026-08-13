@@ -98,7 +98,7 @@ function AiClaimUI() {
           AI Claim Score
         </span>
         <span className="text-[10px] font-bold px-2 py-0.5 rounded" style={{ background: COPPER_BG, color: COPPER_COLOR, border: '1px solid rgba(194,89,24,0.3)' }}>
-          98.4% Trust
+          Module 03
         </span>
       </div>
 
@@ -112,7 +112,7 @@ function AiClaimUI() {
 
       <div className="flex items-center gap-2 p-2 rounded bg-white/[0.04] border border-white/5 text-[11px]">
         <CheckCircle2 className="w-3.5 h-3.5 shrink-0" style={{ color: COPPER_COLOR }} />
-        <span className="text-white/80">Cross-referenced with VDI dataset</span>
+        <span className="text-white/80">Cross-referenced with verified datasets</span>
       </div>
     </div>
   )
@@ -127,20 +127,20 @@ function PrivateBiUI() {
       <div className="flex items-center justify-between">
         <span className="text-[11px] font-semibold uppercase tracking-wider flex items-center gap-1.5" style={{ color: COPPER_COLOR }}>
           <Lock className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
-          Enterprise Private BI
+          Business Intelligence
         </span>
         <span className="text-[9px] px-1.5 py-0.5 rounded font-medium" style={{ background: COPPER_BG, color: COPPER_COLOR, border: '1px solid rgba(194,89,24,0.3)' }}>
-          Zero DB Storage
+          Module 04
         </span>
       </div>
 
       <div className="p-2 rounded text-[11px]" style={{ background: COPPER_BG, border: '1px solid rgba(194,89,24,0.3)', color: 'rgba(250,250,250,0.9)' }}>
-        🔒 Sensitive data processed in memory & purged immediately.
+        Internal metrics compared with market behavior and industry indicators.
       </div>
 
       <div className="flex items-center justify-between text-[11px] text-white/80 pt-1">
-        <span>Business Forecast:</span>
-        <span className="font-semibold" style={{ color: COPPER_COLOR }}>+24.5% Benchmark</span>
+        <span>Performance vs Market</span>
+        <span className="font-semibold" style={{ color: COPPER_COLOR }}>Analysis Ready</span>
       </div>
     </div>
   )
@@ -178,33 +178,33 @@ function DivergenceUI() {
 
 const features = [
   {
-    title: '1. Data Sort',
-    subtitle: 'Intelligent Raw Data Verification & Sorting',
-    desc: 'The core verification engine of Clerify Data. Upload raw datasets in any format — the system analyzes the structure, prompts for target sorting criteria, and sorts data with automated quality indicators.',
+    title: 'Data Sort',
+    subtitle: 'Module 01',
+    desc: 'Upload raw data from CSV files, Excel spreadsheets, documents, APIs, or other supported sources. Clarify Data analyzes the structure and helps clean, map, standardize, organize, and deduplicate the information.',
     UI: DataSortUI
   },
   {
-    title: '2. Verified Market Intelligence',
-    subtitle: 'Dynamic Daily Upgrades & Trigger Alerts',
-    desc: 'Continuous market intelligence updated daily. Ask industry-critical queries, receive analytics reports backed by human verifier edge-case reviews, and get instant trigger alerts via email, PDF, or DOC formats.',
+    title: 'Verified Market Intelligence',
+    subtitle: 'Module 02',
+    desc: 'Clarify Data continuously processes relevant market information so businesses can understand important changes in their industries. Ask business and market questions and receive answers supported by available evidence.',
     UI: MarketIntelUI
   },
   {
-    title: '3. AI Claim Verification',
-    subtitle: 'Trust Scoring for Major LLMs',
-    desc: 'Verify claims generated from ChatGPT, Gemini, Claude, Grok, or DeepSeek. Clerify Data evaluates content against real-time industry databases, providing accuracy scores backed by expert human validation.',
+    title: 'AI Claim Verification',
+    subtitle: 'Module 03',
+    desc: 'Clarify Data breaks AI-generated content into individual claims and evaluates those claims against available evidence, verified datasets, market intelligence, and relevant benchmarks. Supports ChatGPT, Gemini, Claude, Grok, DeepSeek, and other AI systems.',
     UI: AiClaimUI
   },
   {
-    title: '4. Enterprise Private Business Intelligence',
-    subtitle: 'Zero-Persistence Private Audit & Forecasts',
-    desc: 'Designed for enterprise and private businesses. Upload sensitive corporate data with a strict zero-database storage guarantee. Receive customized business audit reports and market comparison forecasts.',
+    title: 'Business Intelligence & Benchmarking',
+    subtitle: 'Module 04',
+    desc: 'Organizations can compare relevant internal performance metrics with market behavior, industry indicators, and verified external information. Internal business data tells you what happened inside your company. Market intelligence tells you what happened outside it.',
     UI: PrivateBiUI
   },
   {
-    title: '5. Market Divergence Alerts & Guidance',
-    subtitle: 'Strategic Decision Frameworks',
-    desc: 'Stay ahead with real-time market divergence detection. Built on trusted, verified data streams, the system delivers strategic guidance and immediate actionable decisions for rapid business adoption.',
+    title: 'Dynamic Reports & Market Divergence Alerts',
+    subtitle: 'Module 05',
+    desc: 'A traditional report represents one point in time. Markets continue moving after the report is delivered. Clarify Data can maintain versioned reports and identify when new verified information changes a previous conclusion, trend, indicator, or forecast.',
     UI: DivergenceUI
   }
 ]
@@ -238,7 +238,7 @@ export default function Features() {
         >
           <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
             <Sparkles className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
-            <span>Features & Modules</span>
+            <span>Platform</span>
           </span>
           <h2
             className="mb-4 text-[28px] md:text-[46px]"
@@ -249,13 +249,13 @@ export default function Features() {
               color: 'rgb(250,250,250)'
             }}
           >
-            Core Features & Verification Modules
+            Five Core Modules. One Verified Data Layer.
           </h2>
           <p
             className="max-w-[620px] mx-auto text-[15px] md:text-[18px]"
             style={{ fontWeight: 450, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            Comprehensive data sorting, AI claim verification, dynamic market intelligence, and enterprise-grade private audits.
+            Reliable business intelligence begins before the dashboard. Clarify Data covers the journey from preparing raw information to verifying claims, understanding markets, and comparing business performance.
           </p>
         </motion.div>
 

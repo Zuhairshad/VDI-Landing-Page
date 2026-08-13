@@ -74,7 +74,7 @@ export default function UseCases() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <span className="eyebrow-pill mb-4 inline-block">Industries Served</span>
+          <span className="eyebrow-pill mb-4 inline-block">Industries</span>
           <h2
             className="mb-4 text-[28px] md:text-[46px]"
             style={{
@@ -84,13 +84,13 @@ export default function UseCases() {
               color: 'rgb(250,250,250)',
             }}
           >
-            Built for Key Industry Verticals
+            Verification Requires Industry Context
           </h2>
           <p
-            className="max-w-[620px] mx-auto text-[15px] md:text-[18px]"
+            className="max-w-[680px] mx-auto text-[15px] md:text-[18px]"
             style={{ fontWeight: 450, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            Tailored data verification, market intelligence, benchmarking, and decision support for specialized sectors.
+            The evidence needed to evaluate an e-commerce demand forecast is different from the evidence required to evaluate a healthcare research claim. Clarify Data is designed around industry-specific information and context.
           </p>
         </motion.div>
 

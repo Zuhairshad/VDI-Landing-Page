@@ -6,9 +6,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const links = [
-  { label: 'How it works', href: '/how-it-works' },
-  { label: 'Workflows', href: '/#workflows' },
+  { label: 'How It Works', href: '/how-it-works' },
   { label: 'Industries', href: '/#usecases' },
+  { label: 'Pricing', href: '/#pricing' },
 ]
 
 export default function Nav() {
@@ -42,7 +42,7 @@ export default function Nav() {
           <Link href="/" className="flex items-center gap-1 select-none">
             <Image
               src="/logo.png"
-              alt="ClarifyData"
+              alt="Clarify Data"
               width={130}
               height={130}
               className="rounded-2xl"
@@ -52,7 +52,7 @@ export default function Nav() {
               className="text-[20px] font-semibold tracking-tight"
               style={{ color: 'rgb(250,250,250)' }}
             >
-              CLARIFYDATA
+              CLARIFY DATA
             </span>
           </Link>
 

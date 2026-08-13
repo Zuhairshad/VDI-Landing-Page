@@ -257,7 +257,7 @@ export default function IndustryPage({ data }: { data: IndustryPageData }) {
         <section className="section-pad border-t border-white/10 bg-black/25">
           <div className="section-inner">
             <SectionHeading
-              eyebrow="ClarifyData capabilities"
+              eyebrow="Clarify Data capabilities"
               title="Modules designed around the workflow"
               description="These are intended workflow capabilities, not claims of a live third-party integration or guaranteed result."
             />

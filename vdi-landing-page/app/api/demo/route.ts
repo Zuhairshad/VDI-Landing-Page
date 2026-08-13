@@ -2,9 +2,8 @@ import { NextResponse } from 'next/server'
 
 export async function POST(req: Request) {
   try {
-    const { industry, description } = await req.json()
+    const { email, company, industry, description } = await req.json()
 
-    // Send email directly to grow@clerifydata.com via FormSubmit AJAX service
     const response = await fetch('https://formsubmit.co/ajax/grow@clerifydata.com', {
       method: 'POST',
       headers: {
@@ -12,8 +11,10 @@ export async function POST(req: Request) {
         Accept: 'application/json',
       },
       body: JSON.stringify({
-        _subject: `New Clerify Data Demo Request: ${industry}`,
+        _subject: `New Clarify Data Demo Request: ${industry} — ${company}`,
         _captcha: 'false',
+        Email: email,
+        Company: company,
         Industry: industry,
         Description: description,
       }),
@@ -23,11 +24,9 @@ export async function POST(req: Request) {
       return NextResponse.json({ success: true })
     }
 
-    // Fallback if third-party service rate limits
     return NextResponse.json({ success: true, status: 'dispatched' })
   } catch (error) {
     console.error('Demo submission error:', error)
-    // Return success to UI so user sees positive feedback
     return NextResponse.json({ success: true })
   }
 }

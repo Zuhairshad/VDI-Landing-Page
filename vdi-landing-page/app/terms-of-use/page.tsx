@@ -8,8 +8,8 @@ import LegalPage, {
 } from '@/components/LegalPage'
 
 export const metadata: Metadata = {
-  title: 'Terms of Use | ClarifyData',
-  description: 'Working terms for use of the current ClarifyData public website and enquiry forms.',
+  title: 'Terms of Use | Clarify Data',
+  description: 'Working terms for use of the current Clarify Data public website and enquiry forms.',
 }
 
 const COPPER = 'rgb(194, 89, 24)'
@@ -21,7 +21,7 @@ export default function TermsOfUsePage() {
       eyebrow="Website terms"
       icon={<FileText className="w-4 h-4" style={{ color: COPPER }} />}
       title="Terms of Use"
-      summary="These terms are drafted for the ClarifyData public marketing website, educational content, demo request form, and newsletter form as they exist today. They do not create access rights to an authenticated software platform or govern a paid service that is not currently offered through this website."
+      summary="These terms are drafted for the Clarify Data public marketing website, educational content, demo request form, and newsletter form as they exist today. They do not create access rights to an authenticated software platform or govern a paid service that is not currently offered through this website."
       lastUpdated="August 8, 2026"
       notice="The contracting entity, business address, governing law, courts, enforceability, liability allocation, age threshold, and any commercial service terms require confirmation and legal review before these terms are treated as final."
     >
@@ -36,7 +36,7 @@ export default function TermsOfUsePage() {
 
       <LegalSection title="2. Website purpose">
         <p>
-          The website describes ClarifyData’s product direction and intended information-quality workflows, publishes educational material, and lets visitors submit demo and newsletter requests. Descriptions of capabilities, workflows, or intended outcomes are informational and do not guarantee present availability, integrations, accuracy, coverage, performance, or future delivery.
+          The website describes Clarify Data’s product direction and intended information-quality workflows, publishes educational material, and lets visitors submit demo and newsletter requests. Descriptions of capabilities, workflows, or intended outcomes are informational and do not guarantee present availability, integrations, accuracy, coverage, performance, or future delivery.
         </p>
         <p>
           Any future software access, trial, professional service, subscription, or customer data processing should be governed by separate written terms agreed with the confirmed entity.
@@ -46,7 +46,7 @@ export default function TermsOfUsePage() {
       <LegalSection title="3. Permitted use">
         <p>You may browse and use the website for lawful personal or internal business evaluation, including:</p>
         <LegalList>
-          <LegalListItem>Learning about the proposed ClarifyData workflows and focused markets.</LegalListItem>
+          <LegalListItem>Learning about the proposed Clarify Data workflows and focused markets.</LegalListItem>
           <LegalListItem>Reading and sharing links to the educational journal with appropriate attribution.</LegalListItem>
           <LegalListItem>Submitting a genuine demo request or newsletter subscription for yourself or an organization you are authorized to represent.</LegalListItem>
           <LegalListItem>Contacting the listed address about legitimate product, privacy, legal, or business questions.</LegalListItem>
@@ -85,7 +85,7 @@ export default function TermsOfUsePage() {
 
       <LegalSection title="7. Third-party services and links">
         <p>
-          The website uses FormSubmit to forward demo and newsletter information by email and includes links to third-party websites. Third parties operate under their own terms, privacy practices, availability, and security controls. ClarifyData does not control and does not endorse third-party content merely by linking to it.
+          The website uses FormSubmit to forward demo and newsletter information by email and includes links to third-party websites. Third parties operate under their own terms, privacy practices, availability, and security controls. Clarify Data does not control and does not endorse third-party content merely by linking to it.
         </p>
       </LegalSection>
 

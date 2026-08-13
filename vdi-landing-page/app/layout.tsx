@@ -11,10 +11,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'ClarifyData — Human-verified fact checking for AI content',
+  title: 'Data Verification & Business Intelligence Platform | Clarify Data',
   description:
-    'ClarifyData decomposes AI-generated content into individual claims and validates each against human-verified facts — producing exportable records or flagging inaccuracies.',
-  keywords: ['AI verification', 'fact checking', 'EU AI Act', 'hallucination', 'human review'],
+    'Clarify Data verifies AI-generated claims, cleans and validates data, delivers market intelligence, and turns trusted information into actionable business intelligence.',
+  keywords: ['data verification', 'business intelligence', 'AI claim verification', 'data intelligence', 'market intelligence', 'data validation', 'data sorting', 'business analytics'],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

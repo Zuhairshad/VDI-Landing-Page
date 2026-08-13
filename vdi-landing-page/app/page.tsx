@@ -3,11 +3,18 @@ import Hero from '@/components/Hero'
 import Benefits from '@/components/Benefits'
 import Setup from '@/components/Setup'
 import Features from '@/components/Features'
-import Workflows from '@/components/Workflows'
+import DataVerification from '@/components/DataVerification'
+import TrustIndex from '@/components/TrustIndex'
+import BusinessAnalytics from '@/components/BusinessAnalytics'
+import BuiltFor from '@/components/BuiltFor'
 import UseCases from '@/components/UseCases'
-import Testimonials from '@/components/Testimonials'
-import BookDemo from '@/components/BookDemo'
+import HumanVerification from '@/components/HumanVerification'
+import SecurityData from '@/components/SecurityData'
+import VerificationDemo from '@/components/VerificationDemo'
+import WhySection from '@/components/WhySection'
+import SeoHub from '@/components/SeoHub'
 import Faq from '@/components/Faq'
+import BookDemo from '@/components/BookDemo'
 import CtaFooter from '@/components/CtaFooter'
 
 export default function Home() {
@@ -19,15 +26,20 @@ export default function Home() {
         <Benefits />
         <Setup />
         <Features />
-        <Workflows />
+        <DataVerification />
+        <TrustIndex />
+        <BusinessAnalytics />
+        <BuiltFor />
         <UseCases />
-        <Testimonials />
-        <BookDemo />
+        <HumanVerification />
+        <SecurityData />
+        <VerificationDemo />
+        <WhySection />
+        <SeoHub />
         <Faq />
+        <BookDemo />
       </main>
       <CtaFooter />
     </>
   )
 }
-
-

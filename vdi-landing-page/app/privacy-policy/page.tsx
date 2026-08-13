@@ -8,9 +8,9 @@ import LegalPage, {
 } from '@/components/LegalPage'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | ClarifyData',
+  title: 'Privacy Policy | Clarify Data',
   description:
-    'A working privacy notice for the ClarifyData public website, demo request form, and newsletter form.',
+    'A working privacy notice for the Clarify Data public website, demo request form, and newsletter form.',
 }
 
 const COPPER = 'rgb(194, 89, 24)'
@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
       eyebrow="Privacy notice"
       icon={<ShieldCheck className="w-4 h-4" style={{ color: COPPER }} />}
       title="Privacy Policy"
-      summary="This notice explains the limited information handled through the current ClarifyData public website and its demo and newsletter forms. It does not describe user accounts, customer dataset uploads, or an authenticated platform because those features are not present in the current website code."
+      summary="This notice explains the limited information handled through the current Clarify Data public website and its demo and newsletter forms. It does not describe user accounts, customer dataset uploads, or an authenticated platform because those features are not present in the current website code."
       lastUpdated="August 8, 2026"
       notice="The registered company entity, controller identity, business address, applicable legal bases, retention schedule, hosting details, international-transfer safeguards, and supervisory authority must be confirmed by the owner and legal counsel before this notice is treated as final."
     >
@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
           This policy applies to visitors who browse the public website, submit the “Book a Demo” form, or submit an email address through the newsletter page.
         </p>
         <p>
-          The organization legally responsible for deciding how this information is used should be identified here as the data controller. The ClarifyData registered entity, address, and jurisdiction have not been established from the website code and require owner confirmation.
+          The organization legally responsible for deciding how this information is used should be identified here as the data controller. The Clarify Data registered entity, address, and jurisdiction have not been established from the website code and require owner confirmation.
         </p>
       </LegalSection>
 

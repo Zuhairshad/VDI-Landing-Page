@@ -45,7 +45,7 @@ export default function Why() {
           transition={{ duration: 0.6, ease: [0.44, 0, 0.56, 1] }}
         >
           <p className="text-[12px] font-medium uppercase tracking-[0.07em] mb-4" style={{ color: 'rgba(255,255,255,0.3)' }}>
-            Why ClarifyData
+            Why Clarify Data
           </p>
           <h2 className="text-[36px] md:text-[40px] font-medium leading-[1.2] tracking-[-1.6px] max-w-2xl" style={{ color: 'rgb(255,243,240)' }}>
             Five things that make human verification work at scale.

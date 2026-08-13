@@ -8,9 +8,9 @@ import LegalPage, {
 } from '@/components/LegalPage'
 
 export const metadata: Metadata = {
-  title: 'Data Processing Information & DPA Requests | ClarifyData',
+  title: 'Data Processing Information & DPA Requests | Clarify Data',
   description:
-    'Information about when a data processing agreement may be needed and how to request customer-specific terms from ClarifyData.',
+    'Information about when a data processing agreement may be needed and how to request customer-specific terms from Clarify Data.',
 }
 
 const COPPER = 'rgb(194, 89, 24)'
@@ -24,7 +24,7 @@ export default function DpaPage() {
       title="Request a Data Processing Agreement"
       summary="This page explains the purpose and typical contents of a data processing agreement (DPA). It is not a DPA, is not signed, and does not create a controller–processor relationship merely because someone views or uses the public website."
       lastUpdated="August 8, 2026"
-      notice="A binding DPA requires the confirmed ClarifyData legal entity, customer identity, service description, jurisdiction, processing details, security measures, subprocessors, transfer mechanism, retention instructions, liability terms, and authorized signatures. None of those customer-specific terms should be inferred from this page."
+      notice="A binding DPA requires the confirmed Clarify Data legal entity, customer identity, service description, jurisdiction, processing details, security measures, subprocessors, transfer mechanism, retention instructions, liability terms, and authorized signatures. None of those customer-specific terms should be inferred from this page."
     >
       <LegalSection title="1. What a DPA is">
         <p>
@@ -43,7 +43,7 @@ export default function DpaPage() {
           A DPA may be needed when a customer engages a provider to process personal data on the customer’s documented instructions. Whether it is required depends on the actual service, the parties’ roles, the data, the people concerned, processing locations, and applicable law.
         </p>
         <p>
-          Browsing this public website or sending an ordinary business enquiry does not by itself establish that ClarifyData is acting as the visitor’s processor. A proposed product trial, customer dataset workflow, or other service must be assessed separately before personal data is supplied.
+          Browsing this public website or sending an ordinary business enquiry does not by itself establish that Clarify Data is acting as the visitor’s processor. A proposed product trial, customer dataset workflow, or other service must be assessed separately before personal data is supplied.
         </p>
       </LegalSection>
 
@@ -52,7 +52,7 @@ export default function DpaPage() {
           A controller generally determines why and how personal data is processed. A processor generally handles personal data on behalf of a controller and under documented instructions. The same organization can have different roles for different activities.
         </p>
         <p>
-          The parties must determine and document their roles from the real service arrangement. This page does not declare ClarifyData a processor for every interaction and does not shift a customer’s responsibility for lawful collection, instructions, notices, rights handling, or high-impact decisions.
+          The parties must determine and document their roles from the real service arrangement. This page does not declare Clarify Data a processor for every interaction and does not shift a customer’s responsibility for lawful collection, instructions, notices, rights handling, or high-impact decisions.
         </p>
       </LegalSection>
 
@@ -111,7 +111,7 @@ export default function DpaPage() {
         </p>
         <LegalList>
           <LegalListItem>Customer legal name, contact, and relevant jurisdiction.</LegalListItem>
-          <LegalListItem>Proposed ClarifyData service, use case, and expected duration.</LegalListItem>
+          <LegalListItem>Proposed Clarify Data service, use case, and expected duration.</LegalListItem>
           <LegalListItem>Categories and approximate volume of personal data and data subjects.</LegalListItem>
           <LegalListItem>Whether health, biometric, children’s, financial, employment, or other sensitive data is involved.</LegalListItem>
           <LegalListItem>Required locations, retention or deletion instructions, security requirements, and vendor-review materials.</LegalListItem>
@@ -123,13 +123,13 @@ export default function DpaPage() {
 
       <LegalSection title="9. Details still requiring confirmation">
         <p>
-          The registered ClarifyData entity, business address, governing law, signing authority, service architecture, security schedule, approved subprocessors, transfer terms, incident commitments, audit process, liability allocation, and final deletion or return terms all require owner, technical, customer, and legal confirmation.
+          The registered Clarify Data entity, business address, governing law, signing authority, service architecture, security schedule, approved subprocessors, transfer terms, incident commitments, audit process, liability allocation, and final deletion or return terms all require owner, technical, customer, and legal confirmation.
         </p>
       </LegalSection>
 
       <LegalSection title="10. No agreement by page view">
         <p>
-          Viewing, linking to, or submitting a request through this page does not execute a DPA, amend any contract, or authorize ClarifyData to process customer personal data. A DPA becomes effective only when the correct agreement is completed and accepted by authorized parties in the manner stated in that agreement.
+          Viewing, linking to, or submitting a request through this page does not execute a DPA, amend any contract, or authorize Clarify Data to process customer personal data. A DPA becomes effective only when the correct agreement is completed and accepted by authorized parties in the manner stated in that agreement.
         </p>
       </LegalSection>
     </LegalPage>

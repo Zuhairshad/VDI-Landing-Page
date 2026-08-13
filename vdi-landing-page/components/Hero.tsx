@@ -50,7 +50,7 @@ export default function Hero() {
           className="mb-6 text-[32px] md:text-[58px]"
           style={{ fontWeight: 600, letterSpacing: '-1.8px', lineHeight: '1.18', color: 'rgb(250,250,250)' }}
         >
-          Verified Data Intelligence for Smarter Business Decisions
+          Turn Uncertain Data and AI Content Into Verified Business Intelligence
         </motion.h1>
 
         <motion.p
@@ -60,32 +60,32 @@ export default function Hero() {
           className="mb-10 max-w-[680px] text-[16px] md:text-[19px]"
           style={{ fontWeight: 450, lineHeight: '28px', color: 'rgba(250,250,250,0.85)' }}
         >
-          Clerify Data combines automated data sorting, continuously updated market intelligence, AI claim verification, business benchmarking, and expert human review to transform raw information into structured, actionable insights.
+          Clarify Data helps businesses sort, validate, analyze, and verify information before it reaches an important decision. Upload raw business data or AI-generated content — Clarify Data structures the information, checks claims against available evidence, measures confidence, and routes uncertain findings to human specialists when needed.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.24 }}
-          className="flex flex-wrap items-center justify-center gap-3.5 mb-10"
+          className="flex flex-wrap items-center justify-center gap-3.5 mb-6"
         >
           <a
-            href="#features"
+            href="#book-demo"
             className="px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-medium transition-all duration-200 shadow-lg"
             style={{ background: 'rgb(250,250,250)', color: 'rgb(10,10,10)' }}
             onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.88)' }}
             onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(250,250,250)' }}
           >
-            Explore Platform Modules
+            Book a Demo
           </a>
           <a
-            href="#workflows"
+            href="/how-it-works"
             className="px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-medium transition-all duration-200"
             style={{ background: 'rgba(250,250,250,0.12)', color: 'rgb(250,250,250)', border: '1px solid rgba(250,250,250,0.2)' }}
             onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.2)' }}
             onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.12)' }}
           >
-            View Workflows & Market Default
+            See How Verification Works
           </a>
         </motion.div>
 
@@ -93,10 +93,19 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.32 }}
+          className="text-[13px] text-white/40 mb-3"
+        >
+          Data Verification · AI Claim Verification · Business Intelligence · Market Intelligence · Human Review
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.5, delay: 0.38 }}
           className="flex items-center gap-2 text-[13px] text-white/40"
         >
           <ShieldCheck className="w-4 h-4" style={{ color: COPPER_COLOR }} />
-          <span>Serving E-Commerce · Medical · Supply Chain · Education</span>
+          <span>Built for: E-commerce · Healthcare · Logistics · Education</span>
         </motion.p>
       </div>
     </section>

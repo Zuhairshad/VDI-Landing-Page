@@ -458,7 +458,7 @@ export default function BlogJournal() {
                 {selectedArticle.summary}
               </p>
               <div className="flex flex-wrap items-center gap-3 text-[13px] text-white/45 pb-8 mb-9 border-b border-white/10">
-                <span>ClarifyData Editorial</span>
+                <span>Clarify Data Editorial</span>
                 <span aria-hidden="true">•</span>
                 <span>{selectedArticle.published}</span>
               </div>

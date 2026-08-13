@@ -6,8 +6,8 @@ import PageHeroHeader from '@/components/PageHeroHeader'
 import { Sparkles, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Clerify Data',
-  description: 'Get in touch with the Clerify Data team for enterprise verification queries, partnerships, or platform demos.',
+  title: 'Contact Us | Clarify Data',
+  description: 'Get in touch with the Clarify Data team for enterprise verification queries, partnerships, or platform demos.',
 }
 
 const COPPER = 'rgb(194, 89, 24)'

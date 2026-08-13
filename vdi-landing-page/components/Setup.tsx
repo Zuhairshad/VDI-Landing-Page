@@ -2,92 +2,39 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'motion/react'
+import { ArrowDown } from 'lucide-react'
 
-function SetupMockUI() {
-  return (
-    <div
-      className="rounded-2xl overflow-hidden w-full max-w-[680px] mx-auto"
-      style={{
-        background: 'rgba(12,12,12,0.92)',
-        border: '1px solid rgba(250,250,250,0.1)',
-        backdropFilter: 'blur(8px)',
-      }}
-    >
-      {/* Header */}
-      <div
-        className="px-5 py-4 border-b"
-        style={{ borderColor: 'rgba(250,250,250,0.07)' }}
-      >
-        <div className="flex items-center gap-2">
-          <div
-            className="w-8 h-8 rounded-full flex items-center justify-center text-[11px] font-semibold"
-            style={{ background: 'rgba(84,27,4,0.7)', color: 'rgb(250,250,250)' }}
-          >
-            PN
-          </div>
-          <div>
-            <p className="text-[13px] font-medium" style={{ color: 'rgb(250,250,250)' }}>
-              Dr. Priya Nair
-            </p>
-            <p className="text-[11px]" style={{ color: 'rgba(250,250,250,0.5)' }}>
-              Head of Clinical Content, Helix Medical
-            </p>
-          </div>
-        </div>
-      </div>
+const COPPER_COLOR = 'rgb(194, 89, 24)'
+const COPPER_BG = 'rgba(194, 89, 24, 0.15)'
+const COPPER_BORDER = 'rgba(194, 89, 24, 0.35)'
 
-      {/* Body */}
-      <div className="grid grid-cols-2 gap-px" style={{ background: 'rgba(250,250,250,0.07)' }}>
-        {/* Left: sectors */}
-        <div className="p-5" style={{ background: 'rgba(12,12,12,0.92)' }}>
-          <p className="text-[11px] uppercase tracking-wider mb-4" style={{ color: 'rgba(250,250,250,0.32)' }}>
-            Connect sectors
-          </p>
-          {['Medical', 'Logistics', 'Education', 'Marketing'].map((s) => (
-            <div key={s} className="flex items-center justify-between py-1.5">
-              <span className="text-[13px]" style={{ color: 'rgba(250,250,250,0.7)' }}>{s}</span>
-              <span className="text-[11px] font-medium" style={{ color: 'rgb(74,222,128)' }}>✓</span>
-            </div>
-          ))}
-        </div>
-
-        {/* Right: activity */}
-        <div className="p-5" style={{ background: 'rgba(12,12,12,0.92)' }}>
-          <p className="text-[11px] uppercase tracking-wider mb-4" style={{ color: 'rgba(250,250,250,0.32)' }}>
-            Activity
-          </p>
-          {[
-            { event: 'Claim extracted', time: '0:01' },
-            { event: 'Bank match found', time: '0:02' },
-            { event: 'Routing to specialist', time: '0:03' },
-            { event: 'Record generated', time: '0:18' },
-          ].map((item) => (
-            <div key={item.event} className="flex items-center justify-between py-1.5">
-              <span className="text-[12px]" style={{ color: 'rgba(250,250,250,0.6)' }}>{item.event}</span>
-              <span className="text-[11px]" style={{ color: 'rgba(250,250,250,0.32)' }}>{item.time}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
+const workflowSteps = [
+  'Raw Data',
+  'Data Sorting & Cleaning',
+  'Data Validation',
+  'Data Verification',
+  'Market Intelligence',
+  'Data Analytics',
+  'Business Intelligence',
+  'Human Verification When Needed',
+  'Business Decision',
+]
 
 const steps = [
   {
     num: '01/',
-    title: 'Extract claims',
-    desc: 'Submit AI-generated content. ClarifyData breaks it into individual, checkable assertions.',
+    title: 'Submit Your Data or Content',
+    desc: 'Upload CSV, Excel, documents, AI-generated content, business reports, or API data. Clarify Data identifies the structure and determines what requires cleaning, analysis, or verification.',
   },
   {
     num: '02/',
-    title: 'Match & route',
-    desc: 'Claims hit the fact bank instantly. Unmatched ones go to the right specialist.',
+    title: 'Structure, Analyze and Verify',
+    desc: 'The platform cleans datasets, identifies individual claims, and compares information with verified datasets, current market intelligence, and relevant benchmarks.',
   },
   {
     num: '03/',
-    title: 'Get your record',
-    desc: 'Receive verdicts with source, verifier, and export-ready documentation.',
+    title: 'Get Actionable Output',
+    desc: 'Receive clean datasets, verification reports, business intelligence, market indicators, benchmark reports, risk analysis, dynamic reports, and recommended actions.',
   },
 ]
 
@@ -103,45 +50,60 @@ export default function Setup() {
       style={{ background: 'rgb(10,10,10)' }}
     >
       <div className="section-inner">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <span className="eyebrow-pill mb-6 inline-block">Simple Setup</span>
+          <span className="eyebrow-pill mb-6 inline-block">From Raw Data to Trusted Decisions</span>
           <h2
             className="mb-3 md:mb-4 text-[28px] md:text-[48px]"
-            style={{
-              fontWeight: 500,
-              letterSpacing: '-1.44px',
-              lineHeight: '1.2',
-              color: 'rgb(250,250,250)',
-            }}
+            style={{ fontWeight: 500, letterSpacing: '-1.44px', lineHeight: '1.2', color: 'rgb(250,250,250)' }}
           >
-            Verify in three steps.
+            One Connected Data Intelligence Workflow
           </h2>
           <p
-            className="max-w-[520px] mx-auto text-[15px] md:text-[18px]"
+            className="max-w-[560px] mx-auto text-[15px] md:text-[18px]"
             style={{ fontWeight: 500, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            Connect your content, select your sectors, and let ClarifyData route every claim to the right specialist.
+            Clarify Data connects the stages that businesses normally handle through separate tools and manual processes.
           </p>
         </motion.div>
 
-        {/* Large card */}
+        {/* Workflow visual */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="landscape-card rounded-2xl overflow-hidden mb-8 flex items-center justify-center min-h-[320px] md:min-h-[480px]"
-          style={{
-            border: '1px solid rgba(250,250,250,0.07)',
-            padding: '40px 32px',
-          }}
+          className="landscape-card rounded-2xl overflow-hidden mb-8 flex items-center justify-center"
+          style={{ border: '1px solid rgba(250,250,250,0.07)', padding: '40px 32px' }}
         >
-          <SetupMockUI />
+          <div className="flex flex-col items-center gap-1 w-full max-w-[420px]">
+            {workflowSteps.map((step, i) => (
+              <div key={step} className="flex flex-col items-center w-full">
+                <div
+                  className="w-full text-center px-5 py-2.5 rounded-xl text-[13px] font-medium"
+                  style={{
+                    background: i === 0 || i === workflowSteps.length - 1
+                      ? COPPER_BG
+                      : 'rgba(250,250,250,0.04)',
+                    border: i === 0 || i === workflowSteps.length - 1
+                      ? `1px solid ${COPPER_BORDER}`
+                      : '1px solid rgba(250,250,250,0.08)',
+                    color: i === 0 || i === workflowSteps.length - 1
+                      ? COPPER_COLOR
+                      : 'rgba(250,250,250,0.8)',
+                  }}
+                >
+                  {step}
+                </div>
+                {i < workflowSteps.length - 1 && (
+                  <ArrowDown className="w-3.5 h-3.5 my-0.5" style={{ color: 'rgba(250,250,250,0.2)' }} />
+                )}
+              </div>
+            ))}
+          </div>
         </motion.div>
 
         {/* Steps */}

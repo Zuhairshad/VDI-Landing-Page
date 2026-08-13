@@ -75,7 +75,7 @@ const plans = [
     yearly: 399,
     badge: 'MOST POPULAR',
     features: [
-      'All 5 Clerify Data Modules',
+      'All 5 Clarify Data Modules',
       'Continuous daily market intelligence',
       'AI Claim Verification & Scoring',
       'Dynamic reports with "What Changed"',
@@ -136,7 +136,7 @@ export default function Pricing() {
               color: 'rgb(250,250,250)',
             }}
           >
-            Clerify Data Module Overview & Pricing
+            Clarify Data Module Overview & Pricing
           </h2>
           <p
             className="max-w-[600px] mx-auto mb-8 text-[15px] md:text-[18px]"
@@ -295,7 +295,7 @@ export default function Pricing() {
         >
           <div className="flex items-center gap-2 mb-6">
             <ShieldCheck className="w-5 h-5" style={{ color: COPPER_COLOR }} />
-            <h3 className="text-[20px] font-semibold text-white">Clerify Data Module Overview</h3>
+            <h3 className="text-[20px] font-semibold text-white">Clarify Data Module Overview</h3>
           </div>
 
           <div className="overflow-x-auto">

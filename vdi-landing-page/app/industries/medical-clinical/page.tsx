@@ -3,7 +3,7 @@ import { Stethoscope } from 'lucide-react'
 import IndustryPage, { type IndustryPageData } from '@/components/IndustryPage'
 
 export const metadata: Metadata = {
-  title: 'Medical & Clinical Evidence Workflows | ClarifyData',
+  title: 'Medical & Clinical Evidence Workflows | Clarify Data',
   description:
     'Careful workflows for literature review, claim-to-source mapping, study comparison, evidence hierarchy, and required clinical or regulatory review.',
 }
@@ -181,13 +181,13 @@ const data: IndustryPageData = {
     },
   ],
   limitations: [
-    'ClarifyData is not a medical device, does not provide medical advice, and is not intended to diagnose, treat, cure, prevent, monitor, or manage any disease or individual patient.',
-    'ClarifyData does not claim regulatory approval, clinical accuracy, physician review, or direct integration with medical literature, clinical, regulatory, safety, or patient databases.',
+    'Clarify Data is not a medical device, does not provide medical advice, and is not intended to diagnose, treat, cure, prevent, monitor, or manage any disease or individual patient.',
+    'Clarify Data does not claim regulatory approval, clinical accuracy, physician review, or direct integration with medical literature, clinical, regulatory, safety, or patient databases.',
     'Searches and summaries can be incomplete, outdated, or wrong; source access, terminology, publication bias, language, and review scope all affect the result.',
     'Do not submit identifiable patient information, protected health information, or other sensitive data unless an appropriate service arrangement and safeguards have been formally established.',
   ],
   criticalNote:
-    'ClarifyData must not replace qualified clinical, medical, scientific, legal, regulatory, ethics, or safety review. Any organization using the workflow is responsible for ensuring that appropriately qualified professionals make and approve every high-impact decision.',
+    'Clarify Data must not replace qualified clinical, medical, scientific, legal, regulatory, ethics, or safety review. Any organization using the workflow is responsible for ensuring that appropriately qualified professionals make and approve every high-impact decision.',
 }
 
 export default function MedicalIndustryPage() {
