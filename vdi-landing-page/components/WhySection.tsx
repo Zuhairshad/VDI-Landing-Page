@@ -11,12 +11,12 @@ const COPPER_BORDER = 'rgba(194, 89, 24, 0.35)'
 const reasons = [
   { icon: Database, title: 'Clean the Data', desc: 'Turn raw information into structured datasets.' },
   { icon: CheckCircle2, title: 'Validate the Structure', desc: 'Identify quality and consistency issues.' },
-  { icon: Shield, title: 'Verify the Information', desc: 'Evaluate important claims against available evidence.' },
+  { icon: Shield, title: 'Verify the Information', desc: 'Evaluate claims against available evidence.' },
   { icon: TrendingUp, title: 'Understand the Market', desc: 'Use continuously updated market intelligence.' },
   { icon: BarChart3, title: 'Analyze the Business', desc: 'Turn information into business analytics and BI reports.' },
-  { icon: Star, title: 'Measure Confidence', desc: 'Use verification verdicts, confidence indicators, and the Trust Index.' },
-  { icon: Users, title: 'Add Human Judgment', desc: 'Escalate uncertain or high-impact findings when additional expertise is required.' },
-  { icon: Bell, title: 'Monitor Change', desc: 'Update reports and alerts when important market information changes.' },
+  { icon: Star, title: 'Measure Confidence', desc: 'Use verification verdicts and the Trust Index.' },
+  { icon: Users, title: 'Add Human Judgment', desc: 'Escalate uncertain findings when additional expertise is required.' },
+  { icon: Bell, title: 'Monitor Change', desc: 'Update reports and alerts when market information changes.' },
 ]
 
 export default function WhySection() {
@@ -59,7 +59,7 @@ export default function WhySection() {
               initial={{ opacity: 0, y: 16 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.06 + i * 0.06 }}
-              className="rounded-2xl p-7"
+              className="rounded-2xl p-7 flex flex-col h-full"
               style={{
                 background: i % 3 === 0
                   ? 'linear-gradient(135deg, rgba(84, 27, 4, 0.25) 0%, rgba(16,16,20,0.95) 100%)'
