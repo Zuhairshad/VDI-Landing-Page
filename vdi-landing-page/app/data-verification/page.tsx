@@ -229,21 +229,16 @@ export default function DataVerificationPage() {
                     'Score confidence and flag conflicts',
                     'Route uncertain findings to human review',
                   ].map((step, i) => (
-                    <div key={i} className="flex items-start gap-3">
+                    <div key={i} className="flex items-center gap-3">
                       <div
-                        className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold mt-0.5"
+                        className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold"
                         style={{ background: COPPER_BG, border: `1px solid ${COPPER_BORDER}`, color: COPPER }}
                       >
                         {i + 1}
                       </div>
-                      <div>
-                        <p className="text-[13px] text-white/50 font-medium uppercase tracking-wider mb-0.5">
-                          Step {i + 1}
-                        </p>
-                        <p className="text-[15px]" style={{ color: 'rgba(250,250,250,0.85)' }}>
-                          {step}
-                        </p>
-                      </div>
+                      <p className="text-[14px]" style={{ color: 'rgba(250,250,250,0.85)' }}>
+                        {step}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -378,19 +373,19 @@ export default function DataVerificationPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s3.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <Shield className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Use Cases</span>
               </span>
               <h2
-                className="mb-5 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-5 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[700px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 Verification is critical when the cost of a wrong decision is high
               </h2>
-              <div className="max-w-[760px] flex flex-col gap-4" style={{ color: 'rgba(250,250,250,0.68)', fontSize: '16px', lineHeight: '26px' }}>
+              <div className="max-w-[680px] mx-auto flex flex-col gap-4 text-left" style={{ color: 'rgba(250,250,250,0.68)', fontSize: '16px', lineHeight: '26px' }}>
                 <p>
                   Not every dataset or report requires the same level of verification rigor. An internal operations dashboard updated with first-party transactional data carries different verification requirements than a market entry analysis built on AI-generated competitive intelligence. The question is not whether verification matters, but how much is appropriate for the decision being made.
                 </p>
@@ -448,19 +443,19 @@ export default function DataVerificationPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s4.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <Shield className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>How It Works</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 A structured path from claim to verified evidence
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[600px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Verification is not a single step — it is a sequence of decisions, each of which must be documented. The process below describes how Clarify Data approaches each piece of information from initial claim identification to final status assignment.
               </p>
             </motion.div>
@@ -505,19 +500,19 @@ export default function DataVerificationPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s5.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <Shield className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Verification Methods</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 Different information requires different verification approaches
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[600px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Verification is not a single technique applied uniformly. The method appropriate for checking a specific statistic differs from the method used to evaluate whether a source is authoritative, or whether information is current enough for a time-sensitive decision.
               </p>
             </motion.div>
@@ -617,19 +612,19 @@ export default function DataVerificationPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s7.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <Shield className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>The Platform</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 Five connected modules that support end-to-end data verification
               </h2>
-              <p className="max-w-[700px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[620px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Verification does not begin with the verification step. It begins with data that is clean enough to verify and ends with a human reviewer who can act on findings with confidence. Clarify Data provides each layer of this process as part of a connected platform.
               </p>
             </motion.div>

@@ -377,19 +377,19 @@ export default function TrustIndexPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s3.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Score Ranges</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 What a Trust Index score tells you and what it does not
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Score ranges provide guidance for how to proceed with a finding — but they are not verdicts. The appropriate action depends on the combination of the score, the specific factors driving it, and the decision context it is being used in.
               </p>
             </motion.div>
@@ -432,19 +432,19 @@ export default function TrustIndexPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s4.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <Shield className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Classification System</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 Eight classification statuses that provide additional context beyond the score
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 The Verified Data Index classification provides a qualitative label that sits alongside the numeric Trust Index score. Together, they give a more complete picture of the evidence situation than either alone.
               </p>
             </motion.div>
@@ -617,19 +617,19 @@ export default function TrustIndexPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s7.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Practical Application</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 A confidence score is only useful if teams know what to do with it
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 The Trust Index is not a passive label attached to findings — it is an active decision-support tool. These six practices help teams use it to improve the quality and defensibility of their analytical outputs.
               </p>
             </motion.div>

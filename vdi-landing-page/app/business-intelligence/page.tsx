@@ -306,19 +306,19 @@ export default function BusinessIntelligencePage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s3.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <BarChart3 className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Analytics Types</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 Understanding what happened is only the beginning
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 The four types of business intelligence represent a maturity progression. Most organizations operate primarily in descriptive and diagnostic BI. Organizations with strong data foundations can move reliably into predictive and decision support territory — but only when the underlying data quality supports it.
               </p>
             </motion.div>
@@ -428,19 +428,19 @@ export default function BusinessIntelligencePage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s5.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <Layers className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Deliverables</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 Reports your team can act on with confidence
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Each deliverable from Clarify Data is designed to connect conclusions to evidence in a form that survives scrutiny — from internal review to board presentation to regulatory audit.
               </p>
             </motion.div>
@@ -484,19 +484,19 @@ export default function BusinessIntelligencePage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s6.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <Users className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Built For</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 BI across every function that depends on reliable information
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Business intelligence is not the exclusive domain of the BI team. Every function that uses data to make decisions benefits from a verified foundation — and from knowing which parts of that foundation are strong and which carry uncertainty.
               </p>
             </motion.div>

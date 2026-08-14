@@ -345,19 +345,19 @@ export default function DataAnalyticsPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s3.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <TrendingUp className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Analytics Workflow</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 From raw data to a result you can stand behind
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Each step in this workflow produces a documented output that feeds the next step. The final analytical result carries with it the full record of how it was produced — making it reproducible, auditable, and updatable.
               </p>
             </motion.div>
@@ -402,19 +402,19 @@ export default function DataAnalyticsPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s4.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <BarChart3 className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Analytics Maturity</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 Analytics evolves from describing the past to shaping the future
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Each level of analytics maturity builds on the one before it. You cannot reliably diagnose causes in noisy data. You cannot reliably predict from unverified baselines. And you cannot responsibly prescribe action from predictions you cannot trace to trustworthy inputs.
               </p>
             </motion.div>
@@ -454,19 +454,19 @@ export default function DataAnalyticsPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s5.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <AlertTriangle className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Challenges</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 The obstacles that reduce the value of analytics programs
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Most analytics failures are not failures of analytical method. They are failures of data quality, source documentation, or the review process that should catch errors before they reach decision-makers.
               </p>
             </motion.div>

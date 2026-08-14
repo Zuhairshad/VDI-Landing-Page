@@ -225,18 +225,18 @@ export default function BusinessAnalysisPage() {
               animate={s2.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
             >
-              <div className="mb-12">
+              <div className="text-center mb-12">
                 <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                   <Search className="w-3.5 h-3.5" style={{ color: COPPER }} />
                   <span>The Problem</span>
                 </span>
                 <h2
-                  className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                  className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                   style={{ color: 'rgb(250,250,250)' }}
                 >
                   Most business analysis fails at the information stage, not the analysis stage
                 </h2>
-                <p className="max-w-[700px] text-[16px]" style={{ color: 'rgba(250,250,250,0.62)', lineHeight: '26px' }}>
+                <p className="max-w-[700px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.62)', lineHeight: '26px' }}>
                   The logical structure of a business analysis can be sound while the information it is built on is unreliable. This is the most common failure pattern — not faulty reasoning, but faulty inputs.
                 </p>
               </div>
@@ -309,19 +309,19 @@ export default function BusinessAnalysisPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s3.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <ClipboardList className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Step by Step</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 From business question to defensible recommendation
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 Each step in this workflow produces a documented output that carries forward into the next step. The goal is not just a recommendation — it is a recommendation that can be explained, challenged, and updated as new information becomes available.
               </p>
             </motion.div>
@@ -366,19 +366,19 @@ export default function BusinessAnalysisPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={s4.inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5 }}
-              className="mb-12"
+              className="text-center mb-12"
             >
               <span className="eyebrow-pill mb-6 inline-flex items-center gap-2">
                 <Search className="w-3.5 h-3.5" style={{ color: COPPER }} />
                 <span>Analysis Types</span>
               </span>
               <h2
-                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2]"
+                className="mb-4 text-[26px] md:text-[38px] font-semibold tracking-tight leading-[1.2] max-w-[640px] mx-auto"
                 style={{ color: 'rgb(250,250,250)' }}
               >
                 Different questions require different analytical approaches
               </h2>
-              <p className="max-w-[680px] text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
+              <p className="max-w-[680px] mx-auto text-[16px]" style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '26px' }}>
                 The information quality requirements differ by analysis type — but the principle remains constant: every material claim must be traceable to a source, and every source must meet the reliability standard appropriate for the decision context.
               </p>
             </motion.div>
