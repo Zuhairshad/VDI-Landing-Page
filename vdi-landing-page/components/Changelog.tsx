@@ -7,7 +7,7 @@ const entries = [
   {
     date: 'Apr 15, 2026',
     title: 'Education sector launch',
-    body: 'Curriculum verification is now live. Coverage spans exam specifications, grade sequencing, prescribed texts, and assessment criteria. Pilot access is free — no integration required.',
+    body: 'Curriculum verification is part of the product direction. Potential scope includes exam specifications, grade sequencing, prescribed texts, and assessment criteria.',
     tag: 'New sector',
   },
   {

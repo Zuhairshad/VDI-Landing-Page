@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { FileText } from 'lucide-react'
 import LegalPage, {
   LegalLink,
@@ -6,14 +5,12 @@ import LegalPage, {
   LegalListItem,
   LegalSection,
 } from '@/components/LegalPage'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Terms of Use | Clarify Data',
-  description: 'Working terms for use of the current Clarify Data public website and enquiry forms.',
-}
+export const metadata = pageMetadata({ title: 'Terms of Use', description: 'Working terms for use of the current Clarify Data public website and enquiry form.', path: '/terms-of-use', noIndex: true })
 
 const COPPER = 'rgb(194, 89, 24)'
-const CONTACT_EMAIL = 'Usman@geniusmindzone.com'
+const CONTACT_EMAIL = 'grow@clerifydata.com'
 
 export default function TermsOfUsePage() {
   return (
@@ -21,7 +18,7 @@ export default function TermsOfUsePage() {
       eyebrow="Website terms"
       icon={<FileText className="w-4 h-4" style={{ color: COPPER }} />}
       title="Terms of Use"
-      summary="These terms are drafted for the Clarify Data public marketing website, educational content, demo request form, and newsletter form as they exist today. They do not create access rights to an authenticated software platform or govern a paid service that is not currently offered through this website."
+      summary="These terms are drafted for the Clarify Data public marketing website, educational content, and demo request form as they exist today. They do not create access rights to an authenticated software platform or govern a paid service that is not currently offered through this website."
       lastUpdated="August 8, 2026"
       notice="The contracting entity, business address, governing law, courts, enforceability, liability allocation, age threshold, and any commercial service terms require confirmation and legal review before these terms are treated as final."
     >
@@ -36,7 +33,7 @@ export default function TermsOfUsePage() {
 
       <LegalSection title="2. Website purpose">
         <p>
-          The website describes Clarify Data’s product direction and intended information-quality workflows, publishes educational material, and lets visitors submit demo and newsletter requests. Descriptions of capabilities, workflows, or intended outcomes are informational and do not guarantee present availability, integrations, accuracy, coverage, performance, or future delivery.
+          The website describes Clarify Data’s product direction and intended information-quality workflows, publishes educational material, and lets visitors submit demo requests. Descriptions of capabilities, workflows, or intended outcomes are informational and do not guarantee present availability, integrations, accuracy, coverage, performance, or future delivery.
         </p>
         <p>
           Any future software access, trial, professional service, subscription, or customer data processing should be governed by separate written terms agreed with the confirmed entity.
@@ -48,7 +45,7 @@ export default function TermsOfUsePage() {
         <LegalList>
           <LegalListItem>Learning about the proposed Clarify Data workflows and focused markets.</LegalListItem>
           <LegalListItem>Reading and sharing links to the educational journal with appropriate attribution.</LegalListItem>
-          <LegalListItem>Submitting a genuine demo request or newsletter subscription for yourself or an organization you are authorized to represent.</LegalListItem>
+          <LegalListItem>Submitting a genuine demo request for yourself or an organization you are authorized to represent.</LegalListItem>
           <LegalListItem>Contacting the listed address about legitimate product, privacy, legal, or business questions.</LegalListItem>
         </LegalList>
       </LegalSection>
@@ -74,9 +71,9 @@ export default function TermsOfUsePage() {
         </p>
       </LegalSection>
 
-      <LegalSection title="6. Demo and newsletter submissions">
+      <LegalSection title="6. Demo submissions">
         <p>
-          The demo form currently accepts an industry selection and free-text description. The newsletter form accepts an email address. By submitting, you represent that the information is accurate enough for the request, that you are authorized to provide it, and that it does not contain unlawful, infringing, confidential, or sensitive information that should not be sent through a public form.
+          The demo form currently accepts a work email, company name, industry selection, and free-text description. By submitting, you represent that the information is accurate enough for the request, that you are authorized to provide it, and that it does not contain unlawful, infringing, confidential, or sensitive information that should not be sent through a public form.
         </p>
         <p>
           A submission permits the information to be used to deliver and respond to the request as described in the Privacy Policy. Submission does not guarantee a response, meeting, subscription delivery, product access, or commercial relationship.
@@ -85,7 +82,7 @@ export default function TermsOfUsePage() {
 
       <LegalSection title="7. Third-party services and links">
         <p>
-          The website uses FormSubmit to forward demo and newsletter information by email and includes links to third-party websites. Third parties operate under their own terms, privacy practices, availability, and security controls. Clarify Data does not control and does not endorse third-party content merely by linking to it.
+          The website uses FormSubmit to forward demo information by email and includes links to third-party websites. Third parties operate under their own terms, privacy practices, availability, and security controls. Clarify Data does not control and does not endorse third-party content merely by linking to it.
         </p>
       </LegalSection>
 

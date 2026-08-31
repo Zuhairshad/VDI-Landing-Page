@@ -1,7 +1,5 @@
 import type { ReactNode } from 'react'
 import { AlertCircle, CheckCircle2 } from 'lucide-react'
-import CtaFooter from '@/components/CtaFooter'
-import Nav from '@/components/Nav'
 import PageHeroHeader from '@/components/PageHeroHeader'
 
 const COPPER = 'rgb(194, 89, 24)'
@@ -69,22 +67,17 @@ export default function LegalPage({
   children,
 }: LegalPageProps) {
   return (
-    <div className="bg-[#0a0a0a] min-h-screen text-white">
-      <Nav />
-
-      <main>
+      <main id="main-content" className="legal-page">
         <PageHeroHeader
           eyebrow={eyebrow}
           icon={icon}
           title={title}
-          subtitle={`Last updated: ${lastUpdated}`}
+          subtitle={summary}
+          noteLabel="Document status"
+          note={`Last updated: ${lastUpdated}. This document remains a professional working draft until legal review is complete.`}
         />
 
         <div className="max-w-[900px] mx-auto py-14 md:py-20 px-5">
-          <p className="text-[17px] md:text-[19px] leading-[30px] text-white/80 mb-8">
-            {summary}
-          </p>
-
           <aside
             className="rounded-2xl p-5 md:p-6 mb-12 flex items-start gap-4"
             style={{ background: 'rgba(194, 89, 24, 0.1)', border: `1px solid ${COPPER_BORDER}` }}
@@ -100,8 +93,5 @@ export default function LegalPage({
           <div className="space-y-11">{children}</div>
         </div>
       </main>
-
-      <CtaFooter showCta={false} />
-    </div>
   )
 }

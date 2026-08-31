@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView } from 'motion/react'
 import { ArrowDown } from 'lucide-react'
 
 const COPPER_COLOR = 'rgb(194, 89, 24)'
@@ -10,7 +6,7 @@ const COPPER_BORDER = 'rgba(194, 89, 24, 0.35)'
 
 const workflowSteps = [
   'Raw Data',
-  'Data Sorting & Cleaning',
+  'Data Preparation & Cleaning',
   'Data Validation',
   'Data Verification',
   'Market Intelligence',
@@ -39,21 +35,14 @@ const steps = [
 ]
 
 export default function Setup() {
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
-
   return (
     <section
-      ref={ref}
-      id="setup"
+      id="data-preparation"
       className="section-pad"
       style={{ background: 'rgb(10,10,10)' }}
     >
       <div className="section-inner">
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+        <div
           className="text-center mb-10"
         >
           <span className="eyebrow-pill mb-6 inline-block">From Raw Data to Trusted Decisions</span>
@@ -69,13 +58,10 @@ export default function Setup() {
           >
             Clarify Data connects the stages that businesses normally handle through separate tools and manual processes.
           </p>
-        </motion.div>
+        </div>
 
         {/* Workflow visual */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.1 }}
+        <div
           className="landscape-card rounded-2xl overflow-hidden mb-8 flex items-center justify-center"
           style={{ border: '1px solid rgba(250,250,250,0.07)', padding: '40px 32px' }}
         >
@@ -104,16 +90,13 @@ export default function Setup() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
 
         {/* Steps */}
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-          {steps.map((step, i) => (
-            <motion.div
+          {steps.map((step) => (
+            <div
               key={step.num}
-              initial={{ opacity: 0, y: 12 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 + i * 0.08 }}
             >
               <p className="text-[14px] font-medium mb-2" style={{ color: 'rgba(250,250,250,0.32)' }}>
                 {step.num}
@@ -127,7 +110,7 @@ export default function Setup() {
               <p style={{ fontSize: '15px', color: 'rgba(250,250,250,0.6)', lineHeight: '22px' }}>
                 {step.desc}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

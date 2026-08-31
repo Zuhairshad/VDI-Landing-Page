@@ -1,0 +1,9 @@
+listing_id,title,brand,color,size,price,currency,gtin,source
+L1,Acme Runner 2 - Black / 42,ACME,Black,42,89.00,USD,0123456789012,site-a
+L2,ACME Runner II Black 42,Acme,blk,EU 42,89,USD,123456789012,site-b
+L3,Acme Runner 2,acme,Black,8.5 US,79.00,USD,,site-c
+L4,Acme Runner 2 White 42,ACME,White,42,89.00,USD,0123456789029,site-a
+L5,Runner 2 Black Size 42,ACME Inc,Black,42,"89,00",EUR,0123456789012,site-d
+L6,Acme  Runner  2 black 42,ACME,BLACK,42,89.00,usd,0123456789012,site-a
+L7,Northpeak Trail 9,Northpeak,Green,41,110.00,USD,5550001112223,site-b
+L8,North Peak Trail9 Green 41,NORTHPEAK,grn,41,110,USD,5550001112223,site-c

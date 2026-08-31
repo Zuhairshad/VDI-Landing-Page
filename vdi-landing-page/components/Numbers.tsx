@@ -8,7 +8,7 @@ const stats = [
     value: '69–88',
     suffix: '%',
     label: 'hallucination rate',
-    sub: 'Leading AI models answering legal queries — Stanford RegLab & HAI',
+    sub: 'Leading AI models answering legal queries, as reported by Stanford RegLab and HAI',
   },
   {
     value: '4.3',
@@ -31,17 +31,15 @@ const stats = [
 ]
 
 function CountUp({ value, inView }: { value: string; inView: boolean }) {
-  const [display, setDisplay] = useState('0')
+  const isRange = value.includes('–')
+  const [display, setDisplay] = useState(isRange ? value : '0')
 
   useEffect(() => {
-    if (!inView) return
-    if (value.includes('–')) {
-      setDisplay(value)
-      return
-    }
+    if (!inView || isRange) return
     const num = parseFloat(value)
     const duration = 1800
     const start = performance.now()
+    let animationFrame = 0
 
     const tick = (now: number) => {
       const elapsed = now - start
@@ -49,11 +47,12 @@ function CountUp({ value, inView }: { value: string; inView: boolean }) {
       const eased = 1 - Math.pow(1 - progress, 3)
       const current = num * eased
       setDisplay(current % 1 === 0 ? Math.floor(current).toString() : current.toFixed(1))
-      if (progress < 1) requestAnimationFrame(tick)
+      if (progress < 1) animationFrame = requestAnimationFrame(tick)
       else setDisplay(value)
     }
-    requestAnimationFrame(tick)
-  }, [inView, value])
+    animationFrame = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(animationFrame)
+  }, [inView, isRange, value])
 
   return <>{display}</>
 }

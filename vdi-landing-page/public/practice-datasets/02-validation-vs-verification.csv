@@ -1,0 +1,9 @@
+record_id,claim,field_value,schema_rule,source_title,source_url,source_date,expected_check
+V-01,Average session duration is 4m 12s,4:12,duration format HH:MM or MM:SS,Internal analytics export,,2025-11-02,validation
+V-02,European market grew 34% in 2024,34%,percentage 0-100,Industry blog roundup,https://example.com/roundup,2023-01-08,verification
+V-03,SKU count is 128,128,integer > 0,Product catalog v7,,2026-01-15,validation
+V-04,The category TAM is $4.2B,$4.2B,currency with unit,Generative summary,https://example.com/ai-brief,2026-04-01,verification
+V-05,Email is present,ops@brand.test,email pattern,CRM contact,,2026-02-20,validation
+V-06,Return rate is 2.1%,2.1%,percentage,Warehouse SOP 2019,,2019-06-01,verification
+V-07,Country code is DE,DE,ISO-3166 alpha-2,Checkout form,,2026-03-03,validation
+V-08,Competitor X has 18% share,18%,percentage 0-100,Unnamed slide deck,,2024-09-12,verification

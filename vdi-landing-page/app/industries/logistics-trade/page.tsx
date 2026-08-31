@@ -1,12 +1,8 @@
-import type { Metadata } from 'next'
 import { Truck } from 'lucide-react'
 import IndustryPage, { type IndustryPageData } from '@/components/IndustryPage'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Logistics & Trade Research Workflows | Clarify Data',
-  description:
-    'Traceable workflows for supplier, carrier, trade-lane, tariff, shipment, risk, and market-signal research with human operational review.',
-}
+export const metadata = pageMetadata({ title: 'Logistics and Trade Research Workflows', description: 'Traceable workflows for supplier, carrier, trade-lane, tariff, shipment, risk, and market-signal research with human operational review.', path: '/industries/logistics-trade' })
 
 const COPPER = 'rgb(194, 89, 24)'
 

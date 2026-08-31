@@ -1,0 +1,7 @@
+item,value,as_of_date,decision_needed_by,max_age_days,source
+VAT rate DE,19%,2021-01-01,2026-05-01,365,Old tax cheat sheet
+Shipping SLA,2-day,2026-04-20,2026-05-01,14,Carrier contract
+App store rank,12,2026-04-30,2026-05-01,2,Store console
+Clinical guideline citation,v3.1,2018-06-01,2026-05-01,180,Internal binder
+FX USD/EUR,0.92,2026-04-28,2026-05-01,3,Treasury desk
+Headcount,64,2025-12-31,2026-05-01,90,Year-end board pack

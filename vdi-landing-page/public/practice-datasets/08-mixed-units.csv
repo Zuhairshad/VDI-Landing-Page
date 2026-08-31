@@ -1,0 +1,8 @@
+sku,weight,weight_unit,length,width,height,dim_unit,price,price_currency,country
+W1,1.2,kg,30,20,10,cm,19.99,USD,US
+W2,2.6,lb,12,8,4,in,19.99,USD,US
+W3,450,g,0.3,0.2,0.1,m,18.50,EUR,DE
+W4,1,kg,300,200,100,mm,£16.00,GBP,UK
+W5,2.2,lbs,11.8,7.9,3.9,inch,25.00,CAD,CA
+W6,1200,grams,30cm,20,10,cm,1999,JPY,JP
+W7,1.20,KG,30,20,10,CM,19.99,usd,us

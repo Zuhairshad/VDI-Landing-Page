@@ -7,7 +7,7 @@ const posts = [
   {
     category: 'Research',
     title: 'Why 69% of AI Legal Answers Contain Hallucinations',
-    excerpt: 'Stanford RegLab and HAI published the number. We looked at what it actually means for every team that uses AI to draft legal content — and why the rate is almost certainly higher in clinical and compliance contexts.',
+    excerpt: 'Stanford RegLab and HAI published the number. We looked at what it means for teams that use AI to draft legal content and why context matters in clinical and compliance work.',
     date: 'Mar 2026',
     readTime: '6 min',
   },
@@ -21,7 +21,7 @@ const posts = [
   {
     category: 'Product',
     title: 'How Verification Coverage Compounds Over Time',
-    excerpt: 'The fact bank gets more useful with every engagement. Here is the mechanics of how that works — why the tenth client benefits from what the first nine verified, and what it means for turnaround times at scale.',
+    excerpt: 'Here is how a reusable evidence record can support later work while preserving scope, source dates, and customer boundaries.',
     date: 'Jan 2026',
     readTime: '5 min',
   },

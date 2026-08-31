@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { Lock } from 'lucide-react'
 import LegalPage, {
   LegalLink,
@@ -6,15 +5,12 @@ import LegalPage, {
   LegalListItem,
   LegalSection,
 } from '@/components/LegalPage'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Data Processing Information & DPA Requests | Clarify Data',
-  description:
-    'Information about when a data processing agreement may be needed and how to request customer-specific terms from Clarify Data.',
-}
+export const metadata = pageMetadata({ title: 'Data Processing Information and DPA Requests', description: 'Information about when a data processing agreement may be needed and how to request customer-specific terms from Clarify Data.', path: '/dpa', noIndex: true })
 
 const COPPER = 'rgb(194, 89, 24)'
-const CONTACT_EMAIL = 'Usman@geniusmindzone.com'
+const CONTACT_EMAIL = 'grow@clerifydata.com'
 
 export default function DpaPage() {
   return (

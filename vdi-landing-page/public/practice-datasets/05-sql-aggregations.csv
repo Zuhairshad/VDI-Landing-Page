@@ -1,0 +1,13 @@
+order_id,customer_id,order_date,category,qty,net_revenue,is_new_customer
+A-100,C01,2026-01-03,Accessories,2,39.98,true
+A-101,C01,2026-01-18,Accessories,1,19.99,false
+A-102,C02,2026-01-04,Furniture,1,245.00,true
+A-103,C03,2026-01-05,Accessories,4,48.00,true
+A-104,C02,2026-02-01,Furniture,1,-245.00,false
+A-105,C04,2026-02-02,Electronics,1,890.00,true
+A-106,C03,2026-02-11,Accessories,2,24.00,false
+A-107,C05,2026-02-14,Electronics,1,120.00,true
+A-108,C05,2026-02-20,Accessories,3,59.97,false
+A-109,C01,2026-03-01,Electronics,1,120.00,false
+A-110,C06,2026-03-03,Furniture,2,510.00,true
+A-111,C04,2026-03-08,Electronics,1,890.00,false

@@ -1,0 +1,7 @@
+field,previous_value,current_value,previous_source,current_source,change_type,reviewer
+Category size,USD 2.1B,USD 2.4B,2024 analyst note,2025 analyst note,revised,A. Shah
+Vendor count,18,16,Directory scrape Jan,Directory scrape Apr,removed,A. Shah
+Lead vendor,Northline,Harbor,Win/loss sheet,Win/loss sheet,revised,M. Cole
+Average price,$49,$49,Public pricing,Public pricing,unchanged,M. Cole
+Mobile share,41%,n/a,Survey 2023,Source withdrawn,removed,A. Shah
+New entrant,,Pebble,,Launch announcement,added,M. Cole

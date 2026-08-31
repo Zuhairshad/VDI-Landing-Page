@@ -1,31 +1,13 @@
-import type { Metadata } from 'next'
-import Nav from '@/components/Nav'
-import HowItWorksPage from '@/components/HowItWorksPage'
-import CtaFooter from '@/components/CtaFooter'
+import ContentPage from '@/components/ContentPage'
+import { howItWorksPage } from '@/lib/page-content'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'How Clarify Data Works | Clarify Data',
-  description:
-    'Learn how Clarify Data combines AI model integration, current market data collection, automated comparison, and human verification to deliver trusted business intelligence.',
-  keywords: [
-    'data verification',
-    'business intelligence',
-    'AI verification',
-    'trust index',
-    'verified data index',
-    'human verification',
-    'market data',
-  ],
-}
+export const metadata = pageMetadata({
+  title: 'How It Works',
+  description: 'Follow the Clarify Data workflow from scoped questions and prepared inputs to traceable evidence, analysis, and human review.',
+  path: '/how-it-works',
+})
 
 export default function HowItWorksRoute() {
-  return (
-    <>
-      <Nav />
-      <main>
-        <HowItWorksPage />
-      </main>
-      <CtaFooter />
-    </>
-  )
+  return <ContentPage data={howItWorksPage} />
 }

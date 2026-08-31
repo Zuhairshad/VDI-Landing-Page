@@ -20,22 +20,12 @@ const resources = [
     href: '/business-intelligence',
   },
   {
-    title: 'Data Analytics',
-    desc: 'Understand the processes, techniques, and roles involved in turning raw data into meaningful insights.',
-    href: '/data-analytics',
-  },
-  {
-    title: 'Business Analysis',
-    desc: 'Learn how business analysts use data, market intelligence, and evidence to evaluate problems and opportunities.',
-    href: '/business-analysis',
-  },
-  {
     title: 'Data Validation',
     desc: 'Understand validation methods, tools, examples, and the difference between validation and verification.',
     href: '/data-validation',
   },
   {
-    title: 'Data Sorting',
+    title: 'Data Preparation',
     desc: 'Learn how to clean, organize, standardize, deduplicate, and prepare raw data for analysis.',
     href: '/data-sorting',
   },

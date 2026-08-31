@@ -5,21 +5,21 @@ import { motion, useInView } from 'motion/react'
 
 const rows = [
   {
-    eyebrow: 'What you get — 01',
+    eyebrow: 'What you get: 01',
     title: 'Verification records you can stake your name on.',
-    body: 'Every claim carries a source URL, a verifier name, a review date, and a confidence rating. When a client, regulator, or editor asks how you know what you know, you hand them the record — not an explanation.',
+    body: 'Every claim carries a source URL, a verifier name, a review date, and a confidence rating. When a client, regulator, or editor asks how you know what you know, you can provide the record, not just an explanation.',
     side: 'right',
     visual: <RecordVisual />,
   },
   {
-    eyebrow: 'What you get — 02',
+    eyebrow: 'What you get: 02',
     title: 'Human specialists who check what no model can.',
-    body: 'Unmatched claims don\'t go to a second model for a second opinion. They go to a credentialed specialist in the relevant domain, who verifies against primary sources — clinical trials, regulatory filings, official curricula.',
+    body: 'Unmatched claims do not go to a second model for a second opinion. They can go to a qualified specialist in the relevant domain for review against primary sources such as clinical trials, regulatory filings, or official curricula.',
     side: 'left',
     visual: <SpecialistVisual />,
   },
   {
-    eyebrow: 'What you get — 03',
+    eyebrow: 'What you get: 03',
     title: 'Coverage that grows with every engagement.',
     body: 'Every new claim we verify becomes part of the shared fact bank. New clients benefit from every verification we\'ve done before. The more the bank is used, the faster and more complete it becomes.',
     side: 'right',

@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { Cookie } from 'lucide-react'
 import LegalPage, {
   LegalLink,
@@ -6,15 +5,12 @@ import LegalPage, {
   LegalListItem,
   LegalSection,
 } from '@/components/LegalPage'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Cookie Policy | Clarify Data',
-  description:
-    'A code-informed working notice about cookies and similar technologies on the current Clarify Data website.',
-}
+export const metadata = pageMetadata({ title: 'Cookie Policy', description: 'A code-informed working notice about cookies and similar technologies on the current Clarify Data website.', path: '/cookie-policy', noIndex: true })
 
 const COPPER = 'rgb(194, 89, 24)'
-const CONTACT_EMAIL = 'Usman@geniusmindzone.com'
+const CONTACT_EMAIL = 'grow@clerifydata.com'
 
 export default function CookiePolicyPage() {
   return (
@@ -58,7 +54,7 @@ export default function CookiePolicyPage() {
 
       <LegalSection title="4. Forms and FormSubmit">
         <p>
-          When a visitor submits the demo or newsletter form, the website sends the submitted information to FormSubmit for email delivery. FormSubmit and the surrounding hosting or network infrastructure may receive technical request information. The demo form may contact FormSubmit directly from the browser if the site’s server submission is unsuccessful.
+          When a visitor submits the demo form, the website sends the submitted information to FormSubmit through a server route for email delivery. FormSubmit and the surrounding hosting or network infrastructure may receive technical request information. The browser does not contact FormSubmit directly.
         </p>
         <p>
           Review the <LegalLink href="https://formsubmit.co/privacy.pdf">FormSubmit privacy information</LegalLink> for its own published practices. This policy does not claim that third-party websites opened through external links use no cookies.

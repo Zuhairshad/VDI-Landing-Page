@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView } from 'motion/react'
 import {
   ArrowUpDown,
   TrendingUp,
@@ -38,13 +34,13 @@ function DataSortUI() {
       </div>
 
       <div className="p-2 rounded bg-white/[0.04] text-[11px] text-white/70 italic border border-white/5">
-        "Which specific attributes do you want to sort?"
+        &ldquo;Which specific attributes do you want to sort?&rdquo;
       </div>
 
       <div className="space-y-1.5 pt-0.5">
         {[
           { label: 'Category & Price Rank', status: 'Sorted', indicator: '🟢 High' },
-          { label: 'Canonical Product ID', status: 'Organized', indicator: '⚡ 99.8%' }
+          { label: 'Canonical Product ID', status: 'Organized', indicator: 'Review ready' }
         ].map((item) => (
           <div key={item.label} className="flex items-center justify-between text-[11px] px-2 py-1 rounded bg-white/[0.03]">
             <span className="text-white/80 font-medium">{item.label}</span>
@@ -65,11 +61,11 @@ function MarketIntelUI() {
       <div className="flex items-center justify-between">
         <span className="text-[11px] font-semibold uppercase tracking-wider flex items-center gap-1.5" style={{ color: COPPER_COLOR }}>
           <TrendingUp className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
-          Live Market Intel
+          Market Research
         </span>
         <span className="text-[10px] px-1.5 py-0.5 rounded font-medium flex items-center gap-1" style={{ background: COPPER_BG, color: COPPER_COLOR, border: '1px solid rgba(194,89,24,0.3)' }}>
           <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: COPPER_COLOR }} />
-          Daily Sync
+          Versioned
         </span>
       </div>
 
@@ -168,7 +164,7 @@ function DivergenceUI() {
 
       <div className="text-[10px] text-white/60 flex items-center gap-1 pt-0.5">
         <ShieldCheck className="w-3 h-3" style={{ color: COPPER_COLOR }} />
-        <span>Based on 100% verified market evidence</span>
+        <span>Evidence and review notes attached</span>
       </div>
     </div>
   )
@@ -178,30 +174,35 @@ function DivergenceUI() {
 
 const features = [
   {
-    title: 'Data Sort',
+    id: 'data-sort',
+    title: 'Data Preparation',
     subtitle: 'Module 01',
     desc: 'Upload raw data from CSV files, Excel spreadsheets, documents, APIs, or other supported sources. Clarify Data analyzes the structure and helps clean, map, standardize, organize, and deduplicate the information.',
     UI: DataSortUI
   },
   {
+    id: 'verified-market-intelligence',
     title: 'Verified Market Intelligence',
     subtitle: 'Module 02',
-    desc: 'Clarify Data continuously processes relevant market information so businesses can understand important changes in their industries. Ask business and market questions and receive answers supported by available evidence.',
+    desc: 'Clarify Data is designed to organize relevant market information so businesses can review important changes in their industries. Ask business and market questions and receive answers supported by available evidence.',
     UI: MarketIntelUI
   },
   {
+    id: 'ai-claim-verification-overview',
     title: 'AI Claim Verification',
     subtitle: 'Module 03',
-    desc: 'Clarify Data breaks AI-generated content into individual claims and evaluates those claims against available evidence, verified datasets, market intelligence, and relevant benchmarks. Supports ChatGPT, Gemini, Claude, Grok, DeepSeek, and other AI systems.',
+    desc: 'Clarify Data is designed to break AI-generated content into individual claims and evaluate those claims against available evidence, verified datasets, market intelligence, and relevant benchmarks. The workflow can be applied to output from widely used AI systems.',
     UI: AiClaimUI
   },
   {
+    id: 'business-intelligence-overview',
     title: 'Business Intelligence & Benchmarking',
     subtitle: 'Module 04',
     desc: 'Organizations can compare relevant internal performance metrics with market behavior, industry indicators, and verified external information. Internal business data tells you what happened inside your company. Market intelligence tells you what happened outside it.',
     UI: PrivateBiUI
   },
   {
+    id: 'dynamic-reports',
     title: 'Dynamic Reports & Market Divergence Alerts',
     subtitle: 'Module 05',
     desc: 'A traditional report represents one point in time. Markets continue moving after the report is delivered. Clarify Data can maintain versioned reports and identify when new verified information changes a previous conclusion, trend, indicator, or forecast.',
@@ -210,12 +211,8 @@ const features = [
 ]
 
 export default function Features() {
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
-
   return (
     <section
-      ref={ref}
       id="features"
       className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
@@ -230,10 +227,7 @@ export default function Features() {
 
       <div className="section-inner relative z-10">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+        <div
           className="text-center mb-12 md:mb-16"
         >
           <span className="eyebrow-pill mb-4 inline-flex items-center gap-2">
@@ -257,18 +251,16 @@ export default function Features() {
           >
             Reliable business intelligence begins before the dashboard. Clarify Data covers the journey from preparing raw information to verifying claims, understanding markets, and comparing business performance.
           </p>
-        </motion.div>
+        </div>
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((feat, i) => {
             const isEnterprise = i === 3 // Feature 4 highlighted
             return (
-              <motion.div
+              <div
                 key={feat.title}
-                initial={{ opacity: 0, y: 16 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.08 + i * 0.07 }}
+                id={feat.id}
                 className={`landscape-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:border-[#c25918]/50 ${
                   isEnterprise ? 'lg:col-span-2' : ''
                 }`}
@@ -301,7 +293,7 @@ export default function Features() {
                     {feat.desc}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             )
           })}
         </div>

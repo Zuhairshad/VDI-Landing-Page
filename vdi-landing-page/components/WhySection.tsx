@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView } from 'motion/react'
 import { Database, CheckCircle2, Shield, TrendingUp, BarChart3, Star, Users, Bell } from 'lucide-react'
 
 const COPPER_COLOR = 'rgb(194, 89, 24)'
@@ -12,7 +8,7 @@ const reasons = [
   { icon: Database, title: 'Clean the Data', desc: 'Turn raw information into structured datasets.' },
   { icon: CheckCircle2, title: 'Validate the Structure', desc: 'Identify quality and consistency issues.' },
   { icon: Shield, title: 'Verify the Information', desc: 'Evaluate claims against available evidence.' },
-  { icon: TrendingUp, title: 'Understand the Market', desc: 'Use continuously updated market intelligence.' },
+  { icon: TrendingUp, title: 'Understand the Market', desc: 'Use dated, source-aware market intelligence.' },
   { icon: BarChart3, title: 'Analyze the Business', desc: 'Turn information into business analytics and BI reports.' },
   { icon: Star, title: 'Measure Confidence', desc: 'Use verification verdicts and the Trust Index.' },
   { icon: Users, title: 'Add Human Judgment', desc: 'Escalate uncertain findings when additional expertise is required.' },
@@ -20,21 +16,14 @@ const reasons = [
 ]
 
 export default function WhySection() {
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
-
   return (
     <section
-      ref={ref}
       id="why-clarify"
       className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
       <div className="section-inner relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+        <div
           className="text-center mb-12"
         >
           <span className="eyebrow-pill mb-4 inline-block">Why Clarify Data</span>
@@ -50,15 +39,12 @@ export default function WhySection() {
           >
             Clarify Data is designed to combine several capabilities that are often separated across different workflows.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {reasons.map((reason, i) => (
-            <motion.div
+            <div
               key={reason.title}
-              initial={{ opacity: 0, y: 16 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.06 + i * 0.06 }}
               className="rounded-2xl p-7 flex flex-col h-full"
               style={{
                 background: i % 3 === 0
@@ -74,7 +60,7 @@ export default function WhySection() {
               </div>
               <h3 className="text-[18px] font-semibold text-white mb-2">{reason.title}</h3>
               <p className="text-[14px] text-white/60 leading-[22px]">{reason.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

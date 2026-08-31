@@ -1,12 +1,8 @@
-import type { Metadata } from 'next'
 import { GraduationCap } from 'lucide-react'
 import IndustryPage, { type IndustryPageData } from '@/components/IndustryPage'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Education & Research Information Quality | Clarify Data',
-  description:
-    'Workflows for literature discovery, citation checking, research comparison, institutional benchmarking, and responsible academic review.',
-}
+export const metadata = pageMetadata({ title: 'Education and Research Information Quality', description: 'Workflows for literature discovery, citation checking, research comparison, institutional benchmarking, and responsible academic review.', path: '/industries/education' })
 
 const COPPER = 'rgb(194, 89, 24)'
 

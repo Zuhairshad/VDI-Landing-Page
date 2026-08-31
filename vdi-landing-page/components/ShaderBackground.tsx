@@ -92,6 +92,8 @@ export default function ShaderBackground({ className = '' }: { className?: strin
     const canvas = ref.current
     if (!canvas) return
 
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+
     const gl = canvas.getContext('webgl', { antialias: false, powerPreference: 'low-power' })
     if (!gl) return
 
@@ -122,24 +124,65 @@ export default function ShaderBackground({ className = '' }: { className?: strin
     const ro = new ResizeObserver(resize)
     ro.observe(canvas)
 
-    let rafId: number
+    let rafId = 0
     const start = performance.now()
     let last = 0
+    let inView = true
+    let pageVisible = document.visibilityState === 'visible'
+
+    const shouldAnimate = () => inView && pageVisible && !reducedMotion.matches
 
     const frame = (now: number) => {
+      if (!shouldAnimate()) {
+        rafId = 0
+        return
+      }
+
       rafId = requestAnimationFrame(frame)
-      /* ~30 fps cap — background doesn't need 60 */
+      /* A restrained frame rate is sufficient for the slow background movement. */
       if (now - last < 32) return
       last = now
       gl.uniform1f(uTime, (now - start) * 0.001)
       gl.uniform2f(uRes,  canvas.width, canvas.height)
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4)
     }
-    rafId = requestAnimationFrame(frame)
+
+    const drawStill = () => {
+      gl.uniform1f(uTime, 0)
+      gl.uniform2f(uRes, canvas.width, canvas.height)
+      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4)
+    }
+
+    const syncAnimation = () => {
+      if (shouldAnimate() && !rafId) rafId = requestAnimationFrame(frame)
+      if (!shouldAnimate() && rafId) {
+        cancelAnimationFrame(rafId)
+        rafId = 0
+      }
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting
+      syncAnimation()
+    }, { threshold: 0.01 })
+
+    const handleVisibility = () => {
+      pageVisible = document.visibilityState === 'visible'
+      syncAnimation()
+    }
+
+    observer.observe(canvas)
+    document.addEventListener('visibilitychange', handleVisibility)
+    reducedMotion.addEventListener('change', syncAnimation)
+    drawStill()
+    syncAnimation()
 
     return () => {
-      cancelAnimationFrame(rafId)
+      if (rafId) cancelAnimationFrame(rafId)
       ro.disconnect()
+      observer.disconnect()
+      document.removeEventListener('visibilitychange', handleVisibility)
+      reducedMotion.removeEventListener('change', syncAnimation)
       gl.deleteProgram(prog)
       gl.deleteBuffer(buf)
     }
@@ -148,6 +191,7 @@ export default function ShaderBackground({ className = '' }: { className?: strin
   return (
     <canvas
       ref={ref}
+      aria-hidden="true"
       className={`absolute inset-0 w-full h-full ${className}`}
       style={{ display: 'block' }}
     />

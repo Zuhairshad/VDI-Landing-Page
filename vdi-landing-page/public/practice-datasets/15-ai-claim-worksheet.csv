@@ -1,0 +1,7 @@
+claim_id,claim_text,numbers_or_entities,proposed_source_type,source_title,source_url,source_date,verdict,notes
+AI-01,The global last-mile delivery market reached $168 billion in 2024,168 billion; 2024,industry report,,,,,
+AI-02,The market is growing at 11.4% CAGR through 2030,11.4%; 2030,industry report,,,,,
+AI-03,Same-day delivery now accounts for 29% of urban parcels in North America,29%; North America,regulator or carrier data,,,,,
+AI-04,Failed first attempts cost carriers $21 per parcel on average,$21,operations study,,,,,
+AI-05,Retailers that verify address quality before dispatch cut those failures by half,half; address quality,controlled study,,,,,
+AI-06,Two regional carriers quietly raised surcharges 18% in Q1 2026,18%; Q1 2026,carrier notices,,,,,

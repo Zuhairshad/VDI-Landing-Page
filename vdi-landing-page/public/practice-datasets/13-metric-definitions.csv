@@ -1,0 +1,6 @@
+stakeholder_quote,candidate_metric,ambiguous_term,possible_definitions
+We need to see if marketing is working,conversion rate,conversion,purchase / signup / demo request
+Retention looks soft,retention,retention,logo / revenue / product activity at 30 or 90 days
+Churn is too high,churn rate,churn,voluntary cancel / failed payment / seat reduction
+The pipeline is healthy,pipeline,healthy,coverage ratio / stage velocity / win rate
+Users love the new module,adoption,users,WAU / paid seats / accounts with 1+ event

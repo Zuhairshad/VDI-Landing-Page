@@ -67,7 +67,7 @@ export default function TrustIndex() {
             className="max-w-[620px] mx-auto text-[15px] md:text-[17px]"
             style={{ fontWeight: 450, color: 'rgba(250,250,250,0.8)', lineHeight: '26px' }}
           >
-            The Clarify Data Trust Index communicates how strongly available evidence supports a claim, report, or dataset. The goal is not to replace uncertainty with another black box — it is to make uncertainty visible.
+            The Clarify Data Trust Index communicates how strongly available evidence supports a claim, report, or dataset. The goal is to make uncertainty visible, not replace it with another black box.
           </p>
         </motion.div>
 

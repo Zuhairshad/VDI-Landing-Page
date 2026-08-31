@@ -171,7 +171,7 @@ function QueryResultMock() {
           Query Verification Result
         </p>
         <p className="text-[11px] mt-0.5" style={{ color: 'rgba(250,250,250,0.4)' }}>
-          Q3 2025 Market Analysis — AI-generated report
+          Q3 2025 Market Analysis: AI-generated report
         </p>
       </div>
       <div
@@ -218,7 +218,7 @@ function QueryResultMock() {
             style={{ color: 'rgba(250,250,250,0.65)', lineHeight: '18px' }}
           >
             AI projections align with current market actuals. Minor divergence in supply
-            chain metrics — recommend monitoring through Q4.
+            chain metrics. Recommend monitoring through Q4.
           </p>
         </div>
       </div>
@@ -262,7 +262,7 @@ const layers = [
     num: '02',
     label: 'Layer 2',
     title: 'Current Market Data Collection',
-    desc: 'Clarify Data collects current information from relevant and permitted online market sources for a specific industry — identifying developments that may not yet be available within general AI models or may have changed since last update.',
+    desc: 'Clarify Data collects current information from relevant and permitted online market sources for a specific industry. This can identify developments that may not yet be available within general AI models or may have changed since the last update.',
     detail:
       'Collected data is cleaned, structured, categorized, and stored according to the platform\'s data governance and retention policies. The system focuses on industry-specific information so verification is relevant to the user\'s business and market.',
     tags: [
@@ -327,7 +327,7 @@ function LayersSection() {
               lineHeight: '26px',
             }}
           >
-            Each layer adds precision, context, and confidence — building toward a result
+            Each layer adds precision, context, and confidence, building toward a result
             you can act on with certainty.
           </p>
         </motion.div>
@@ -762,7 +762,7 @@ function VDISection() {
               style={{ color: 'rgba(250,250,250,0.6)', lineHeight: '25px' }}
             >
               In addition to the Trust Index, Clarify Data provides a Verified Data Index
-              — indicating the level of confirmation achieved through automated verification
+              and indicates the level of confirmation achieved through automated verification
               and human review. It makes complex verification results easier for business
               owners, managers, analysts, and decision-makers to understand at a glance.
             </p>
@@ -864,7 +864,7 @@ function HumanVerificationSection() {
             className="max-w-[580px] mx-auto text-[15px] md:text-[18px]"
             style={{ fontWeight: 500, color: 'rgba(250,250,250,0.7)', lineHeight: '26px' }}
           >
-            Automated systems process large amounts of information quickly — but not every
+            Automated systems process large amounts of information quickly, but not every
             business question can be resolved through automation alone.
           </p>
         </motion.div>
@@ -1033,7 +1033,7 @@ function BIReportsSection() {
             style={{ fontWeight: 500, color: 'rgba(250,250,250,0.7)', lineHeight: '26px' }}
           >
             Clarify Data converts verified information into practical business intelligence
-            and structured reports — ready for decision-makers.
+            and structured reports that are ready for decision-makers.
           </p>
         </motion.div>
 
@@ -1107,7 +1107,7 @@ function BIReportsSection() {
               className="mb-6 text-[14px]"
               style={{ color: 'rgba(250,250,250,0.48)', lineHeight: '22px' }}
             >
-              Reports are delivered through any format your team already uses — no
+              Reports are delivered through formats your team already uses, with no
               integration work required.
             </p>
             <div className="space-y-0">
@@ -1195,7 +1195,7 @@ function WorkflowSection() {
             className="max-w-[480px] mx-auto text-[15px] md:text-[18px]"
             style={{ fontWeight: 500, color: 'rgba(250,250,250,0.7)', lineHeight: '26px' }}
           >
-            From initial submission to final verified report — every step, every time.
+            From initial submission to final verified report, every step remains connected.
           </p>
         </motion.div>
 
@@ -1259,22 +1259,22 @@ const advantages = [
   {
     label: 'Input Processing',
     title: 'Artificial Intelligence',
-    desc: 'AI models help process questions, identify claims, analyze content, and organize information at scale — forming the foundation of every verification workflow and enabling fast, broad-coverage analysis.',
+    desc: 'AI models help process questions, identify claims, analyze content, and organize information at scale. They form part of the verification workflow and enable broad-coverage analysis.',
   },
   {
     label: 'Data Currency',
     title: 'Current Market Data',
-    desc: 'Continuously updated industry data helps identify developments that may not yet appear in general AI model responses — keeping results relevant, timely, and grounded in real market conditions.',
+    desc: 'Versioned industry data can identify developments that may not yet appear in general AI model responses, helping reviewers keep results timely and grounded in market conditions.',
   },
   {
     label: 'Automation',
     title: 'Automated Business Analytics',
-    desc: 'The system compares datasets, detects differences, calculates accuracy, identifies trends, and generates business intelligence automatically — reducing manual effort and human error.',
+    desc: 'The proposed workflow compares datasets, detects differences, identifies trends, and prepares business intelligence for review, which can reduce repetitive manual effort.',
   },
   {
     label: 'Expert Review',
     title: 'Human Verification',
-    desc: 'Experienced business analysts review edge cases, confirm critical results, and add industry-specific judgment — providing the professional layer that automation alone cannot replicate.',
+    desc: 'Experienced business analysts can review edge cases, assess critical results, and add industry-specific judgment that automation alone cannot provide.',
   },
 ]
 

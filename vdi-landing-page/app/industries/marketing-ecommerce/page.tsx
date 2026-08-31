@@ -1,12 +1,8 @@
-import type { Metadata } from 'next'
 import { ShoppingCart } from 'lucide-react'
 import IndustryPage, { type IndustryPageData } from '@/components/IndustryPage'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Marketing & E-commerce Research Workflows | Clarify Data',
-  description:
-    'Traceable workflows for competitor, product, price, campaign, catalogue, review, sentiment, and market-positioning research.',
-}
+export const metadata = pageMetadata({ title: 'Marketing and E-commerce Research Workflows', description: 'Traceable workflows for competitor, product, price, campaign, catalogue, review, sentiment, and market-positioning research.', path: '/industries/marketing-ecommerce' })
 
 const COPPER = 'rgb(194, 89, 24)'
 

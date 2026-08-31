@@ -14,7 +14,7 @@ const statements = [
   },
   {
     line: 'Verification is the gap between shipping and standing behind it.',
-    sub: 'Clarify Data closes that gap — claim by claim, specialist by specialist.',
+    sub: 'Clarify Data is designed to address that gap, claim by claim and reviewer by reviewer.',
   },
 ]
 

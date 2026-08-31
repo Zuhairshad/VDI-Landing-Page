@@ -1,113 +1,66 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView } from 'motion/react'
-import ShaderBackground from './ShaderBackground'
 import { Sparkles, ShieldCheck } from 'lucide-react'
+import ShaderHero from './ShaderHero'
 
 // Site copper color token
 const COPPER_COLOR = 'rgb(194, 89, 24)'
 
 export default function Hero() {
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref, { once: true })
-
   return (
-    <section
-      ref={ref}
-      id="overview"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
-      style={{ background: 'rgb(28,9,2)' }}
-    >
-      <ShaderBackground />
-
-      {/* Subtle vignette */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            'linear-gradient(to bottom, rgba(10,3,1,0.28) 0%, rgba(10,3,1,0.0) 28%, rgba(10,3,1,0.0) 68%, rgba(10,3,1,0.38) 100%)',
-        }}
-      />
-
-      <div className="relative z-10 flex flex-col items-center text-center px-5 py-24 md:py-32 max-w-[920px] mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+    <ShaderHero id="overview">
+        <div
           className="mb-8"
         >
           <span className="eyebrow-pill flex items-center gap-2">
             <Sparkles className="w-3.5 h-3.5" style={{ color: COPPER_COLOR }} />
             <span>Verified Data Intelligence</span>
           </span>
-        </motion.div>
+        </div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 12 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.08 }}
+        <h1
           className="mb-6 text-[32px] md:text-[58px]"
           style={{ fontWeight: 600, letterSpacing: '-1.8px', lineHeight: '1.18', color: 'rgb(250,250,250)' }}
         >
           Turn Uncertain Data and AI Content Into Verified Business Intelligence
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.16 }}
+        <p
           className="mb-10 max-w-[680px] text-[16px] md:text-[19px]"
           style={{ fontWeight: 450, lineHeight: '28px', color: 'rgba(250,250,250,0.85)' }}
         >
-          Clarify Data helps businesses sort, validate, analyze, and verify information before it reaches an important decision. Upload raw business data or AI-generated content — Clarify Data structures the information, checks claims against available evidence, measures confidence, and routes uncertain findings to human specialists when needed.
-        </motion.p>
+          Clarify Data helps businesses sort, validate, analyze, and verify information before it reaches an important decision. Bring raw business data or AI-generated content. Clarify Data is designed to structure the information, check claims against available evidence, communicate confidence, and route uncertain findings to human review when needed.
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.24 }}
+        <div
           className="flex flex-wrap items-center justify-center gap-3.5 mb-6"
         >
           <a
             href="#book-demo"
-            className="px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-medium transition-all duration-200 shadow-lg"
+            className="px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-medium transition-opacity duration-200 shadow-lg hover:opacity-90"
             style={{ background: 'rgb(250,250,250)', color: 'rgb(10,10,10)' }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.88)' }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(250,250,250)' }}
           >
             Book a Demo
           </a>
           <a
             href="/how-it-works"
-            className="px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-medium transition-all duration-200"
+            className="px-7 py-3.5 rounded-full text-[15px] md:text-[16px] font-medium transition-colors duration-200 hover:bg-white/20"
             style={{ background: 'rgba(250,250,250,0.12)', color: 'rgb(250,250,250)', border: '1px solid rgba(250,250,250,0.2)' }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.2)' }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(250,250,250,0.12)' }}
           >
             See How Verification Works
           </a>
-        </motion.div>
+        </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5, delay: 0.32 }}
+        <p
           className="text-[13px] text-white/40 mb-3"
         >
           Data Verification · AI Claim Verification · Business Intelligence · Market Intelligence · Human Review
-        </motion.p>
+        </p>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5, delay: 0.38 }}
+        <p
           className="flex items-center gap-2 text-[13px] text-white/40"
         >
           <ShieldCheck className="w-4 h-4" style={{ color: COPPER_COLOR }} />
           <span>Built for: E-commerce · Healthcare · Logistics · Education</span>
-        </motion.p>
-      </div>
-    </section>
+        </p>
+    </ShaderHero>
   )
 }

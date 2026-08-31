@@ -1,0 +1,15 @@
+event_id,user_id,event_name,event_time,device,utm_source,amount
+e1,u-18,page_view,2026-05-01T09:01:00Z,mobile,paid,
+e2,u-18,add_to_cart,2026-05-01T09:04:12Z,mobile,paid,
+e3,u-18,purchase,2026-05-01T09:11:40Z,mobile,paid,49.00
+e4,u-22,page_view,2026-05-01T10:02:00Z,desktop,organic,
+e5,u-22,checkout_start,2026-05-01T10:08:00Z,desktop,organic,
+e6,u-31,add_to_cart,2026-05-01T11:20:00Z,mobile,email,
+e7,u-31,purchase,2026-05-01T11:33:00Z,mobile,,72.00
+e8,u-44,page_view,2026-05-01T12:00:00Z,desktop,paid,
+e9,u-44,page_view,2026-05-01T12:00:00Z,desktop,paid,
+e10,u-18,page_view,2026-05-02T08:14:00Z,desktop,direct,
+e11,u-55,purchase,2026-05-02T15:41:00Z,tablet,affiliate,19.00
+e12,u-61,page_view,2026-05-02T16:02:00Z,mobile,organic,
+e13,u-61,add_to_cart,2026-05-02T16:05:00Z,mobile,organic,
+e14,u-61,checkout_start,2026-05-02T16:09:00Z,mobile,organic,

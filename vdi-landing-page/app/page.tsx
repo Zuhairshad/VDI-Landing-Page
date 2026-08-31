@@ -1,4 +1,3 @@
-import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import Benefits from '@/components/Benefits'
 import Setup from '@/components/Setup'
@@ -9,14 +8,12 @@ import HumanVerification from '@/components/HumanVerification'
 import VerificationDemo from '@/components/VerificationDemo'
 import WhySection from '@/components/WhySection'
 import Faq from '@/components/Faq'
+import Pricing from '@/components/Pricing'
 import BookDemo from '@/components/BookDemo'
-import CtaFooter from '@/components/CtaFooter'
 
 export default function Home() {
   return (
-    <>
-      <Nav />
-      <main>
+      <main id="main-content">
         <Hero />
         <Benefits />
         <Setup />
@@ -27,9 +24,8 @@ export default function Home() {
         <VerificationDemo />
         <WhySection />
         <Faq />
+        <Pricing />
         <BookDemo />
       </main>
-      <CtaFooter />
-    </>
   )
 }

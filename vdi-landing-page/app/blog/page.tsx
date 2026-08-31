@@ -1,32 +1,26 @@
-import type { Metadata } from 'next'
-import { BookOpen } from 'lucide-react'
 import BlogJournal from '@/components/BlogJournal'
-import CtaFooter from '@/components/CtaFooter'
-import Nav from '@/components/Nav'
-import PageHeroHeader from '@/components/PageHeroHeader'
+import FinalCta from '@/components/FinalCta'
+import PageHero from '@/components/PageHero'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Information Quality Journal | Clarify Data',
-  description:
-    'Practical articles on evidence trails, data provenance, human review, and repeatable market-research workflows.',
-}
-
-const COPPER = 'rgb(194, 89, 24)'
+export const metadata = pageMetadata({
+  title: 'Information Quality Journal',
+  description: 'Practical guides to evidence trails, provenance, confidence, human review, and repeatable market research.',
+  path: '/blog',
+})
 
 export default function BlogPage() {
   return (
-    <div className="bg-[#0a0a0a] min-h-screen text-white">
-      <Nav />
-      <main>
-        <PageHeroHeader
-          eyebrow="Information Quality Journal"
-          icon={<BookOpen className="w-4 h-4" style={{ color: COPPER }} />}
-          title="Evidence, provenance, and responsible review"
-          subtitle="Original, practical guidance for teams designing research and verification workflows that people can inspect, challenge, and repeat."
-        />
-        <BlogJournal />
-      </main>
-      <CtaFooter />
-    </div>
+    <main id="main-content">
+      <PageHero
+        eyebrow="Resources / Journal"
+        title="Better methods for information people need to trust"
+        intro="Detailed, practical guidance for making research, AI output, and analytical work more traceable and reviewable."
+        noteLabel="Editorial standard"
+        note="Each article separates observed evidence, workflow guidance, limitations, and decisions that still require accountable human judgment."
+      />
+      <BlogJournal />
+      <FinalCta />
+    </main>
   )
 }

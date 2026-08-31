@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView } from 'motion/react'
 import { CheckCircle2, AlertCircle, Clock, HelpCircle } from 'lucide-react'
 
 const COPPER_COLOR = 'rgb(194, 89, 24)'
@@ -18,12 +14,8 @@ const claims = [
 ]
 
 export default function VerificationDemo() {
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
-
   return (
     <section
-      ref={ref}
       id="verification-demo"
       className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
@@ -34,10 +26,7 @@ export default function VerificationDemo() {
       />
 
       <div className="section-inner relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+        <div
           className="text-center mb-12"
         >
           <span className="eyebrow-pill mb-4 inline-block">See Verification in Action</span>
@@ -53,13 +42,10 @@ export default function VerificationDemo() {
           >
             Instead of a generic promise, here is how the verification workflow applies to a realistic AI-generated paragraph.
           </p>
-          <p className="text-[12px]" style={{ color: 'rgba(250,250,250,0.3)' }}>Illustrative example — not actual production results</p>
-        </motion.div>
+          <p className="text-[12px]" style={{ color: 'rgba(250,250,250,0.3)' }}>Illustrative example, not actual production results</p>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.1 }}
+        <div
           className="rounded-2xl overflow-hidden"
           style={{
             background: 'rgba(14,14,18,0.98)',
@@ -72,7 +58,7 @@ export default function VerificationDemo() {
             style={{ borderColor: 'rgba(250,250,250,0.06)' }}
           >
             <span className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: COPPER_COLOR }}>
-              Clarify Data — Verification Workflow
+              Clarify Data: Verification Workflow
             </span>
             <span className="text-[11px] px-2.5 py-1 rounded-full" style={{ background: COPPER_BG, color: COPPER_COLOR, border: `1px solid ${COPPER_BORDER}` }}>
               Illustrative example
@@ -166,7 +152,7 @@ export default function VerificationDemo() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

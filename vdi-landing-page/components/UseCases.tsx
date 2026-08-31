@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView } from 'motion/react'
 import { ShoppingBag, Stethoscope, Truck, GraduationCap, Check } from 'lucide-react'
 
 // Site copper color token
@@ -56,22 +52,15 @@ const industries = [
 ]
 
 export default function UseCases() {
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
-
   return (
     <section
-      ref={ref}
       id="usecases"
       className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
       <div className="section-inner relative z-10">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+        <div
           className="text-center mb-12"
         >
           <span className="eyebrow-pill mb-4 inline-block">Industries</span>
@@ -92,16 +81,13 @@ export default function UseCases() {
           >
             The evidence needed to evaluate an e-commerce demand forecast is different from the evidence required to evaluate a healthcare research claim. Clarify Data is designed around industry-specific information and context.
           </p>
-        </motion.div>
+        </div>
 
         {/* 2x2 Grid */}
         <div className="grid md:grid-cols-2 gap-5">
-          {industries.map((ind, i) => (
-            <motion.div
+          {industries.map((ind) => (
+            <div
               key={ind.title}
-              initial={{ opacity: 0, y: 16 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
               className="landscape-card rounded-2xl p-6 md:p-8 flex flex-col justify-between"
               style={{
                 border: '1px solid rgba(250,250,250,0.08)',
@@ -145,7 +131,7 @@ export default function UseCases() {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

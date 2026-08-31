@@ -1,0 +1,7 @@
+claim_id,claim_text,source_type,publisher,published,accessed,directness,notes
+C1,Renewal rate was 91% in FY2025,primary,Customer annual report,2026-03-12,2026-04-01,direct,Figure 4
+C2,Renewal rate was 91% in FY2025,secondary,Trade newsletter,2026-03-20,2026-04-01,indirect,Cites the annual report
+C3,The category will double by 2028,model,Vendor webinar,2026-02-02,2026-04-01,weak,Forward-looking, no methodology
+C4,Average contract is 14 months,internal,CRM export,2026-04-01,2026-04-01,direct,Filtered to closed-won only
+C5,Competitor headcount is 500,unknown,Anonymous forum,2024-07-07,2026-04-01,weak,No corroboration
+C6,Churn improved after the 2024 pricing change,secondary,Blog commentary,2025-01-09,2026-04-01,partial,Does not define churn

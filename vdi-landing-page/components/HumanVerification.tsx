@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView } from 'motion/react'
 import { Users, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
@@ -19,12 +15,8 @@ const points = [
 ]
 
 export default function HumanVerification() {
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
-
   return (
     <section
-      ref={ref}
       id="human-verification"
       className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
@@ -32,11 +24,7 @@ export default function HumanVerification() {
       <div className="section-inner relative z-10">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Left: text */}
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-          >
+          <div>
             <span className="eyebrow-pill mb-4 inline-block">Human + AI</span>
             <h2
               className="mb-4 text-[28px] md:text-[40px]"
@@ -53,20 +41,15 @@ export default function HumanVerification() {
             </p>
             <Link
               href="/how-it-works"
-              className="inline-flex items-center gap-2 text-[14px] font-medium"
+              className="inline-flex items-center gap-2 text-[14px] font-medium transition-opacity hover:opacity-80"
               style={{ color: COPPER_COLOR }}
-              onMouseEnter={e => (e.currentTarget.style.opacity = '0.8')}
-              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
               Learn About Human Verification <ArrowRight className="w-4 h-4" />
             </Link>
-          </motion.div>
+          </div>
 
           {/* Right: card */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.12 }}
+          <div
             className="rounded-2xl p-7"
             style={{
               background: 'linear-gradient(135deg, rgba(84, 27, 4, 0.3) 0%, rgba(16,16,20,0.95) 100%)',
@@ -85,7 +68,7 @@ export default function HumanVerification() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { ShieldCheck } from 'lucide-react'
 import LegalPage, {
   LegalLink,
@@ -6,15 +5,12 @@ import LegalPage, {
   LegalListItem,
   LegalSection,
 } from '@/components/LegalPage'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy | Clarify Data',
-  description:
-    'A working privacy notice for the Clarify Data public website, demo request form, and newsletter form.',
-}
+export const metadata = pageMetadata({ title: 'Privacy Policy', description: 'A working privacy notice for the Clarify Data public website and demo request form.', path: '/privacy-policy', noIndex: true })
 
 const COPPER = 'rgb(194, 89, 24)'
-const CONTACT_EMAIL = 'Usman@geniusmindzone.com'
+const CONTACT_EMAIL = 'grow@clerifydata.com'
 
 export default function PrivacyPolicyPage() {
   return (
@@ -22,13 +18,13 @@ export default function PrivacyPolicyPage() {
       eyebrow="Privacy notice"
       icon={<ShieldCheck className="w-4 h-4" style={{ color: COPPER }} />}
       title="Privacy Policy"
-      summary="This notice explains the limited information handled through the current Clarify Data public website and its demo and newsletter forms. It does not describe user accounts, customer dataset uploads, or an authenticated platform because those features are not present in the current website code."
+      summary="This notice explains the limited information handled through the current Clarify Data public website and its demo request form. It does not describe user accounts, customer dataset uploads, or an authenticated platform because those features are not present in the current website code."
       lastUpdated="August 8, 2026"
       notice="The registered company entity, controller identity, business address, applicable legal bases, retention schedule, hosting details, international-transfer safeguards, and supervisory authority must be confirmed by the owner and legal counsel before this notice is treated as final."
     >
       <LegalSection title="1. Scope and who is responsible">
         <p>
-          This policy applies to visitors who browse the public website, submit the “Book a Demo” form, or submit an email address through the newsletter page.
+          This policy applies to visitors who browse the public website or submit the “Book a Demo” form.
         </p>
         <p>
           The organization legally responsible for deciding how this information is used should be identified here as the data controller. The Clarify Data registered entity, address, and jurisdiction have not been established from the website code and require owner confirmation.
@@ -38,10 +34,7 @@ export default function PrivacyPolicyPage() {
       <LegalSection title="2. Information the current website handles">
         <LegalList>
           <LegalListItem>
-            <strong className="text-white">Demo requests:</strong> the selected industry and the free-text description entered by the visitor. The current form does not ask for a name or email address.
-          </LegalListItem>
-          <LegalListItem>
-            <strong className="text-white">Newsletter requests:</strong> the email address entered on the newsletter page. The website sends it through the same submission endpoint used for demo requests.
+            <strong className="text-white">Demo requests:</strong> the work email, company name, selected industry, and free-text description entered by the visitor.
           </LegalListItem>
           <LegalListItem>
             <strong className="text-white">Technical request information:</strong> hosting, network, and form-delivery infrastructure may process information such as IP address, user agent, request time, referring page, and diagnostic or security records when a page is requested or a form is submitted.
@@ -57,14 +50,13 @@ export default function PrivacyPolicyPage() {
 
       <LegalSection title="3. How information is collected">
         <p>
-          Demo and newsletter information is supplied directly by the visitor. Technical information may be generated automatically by the visitor’s browser, network, hosting provider, security tools, and FormSubmit when they deliver pages or process a form request.
+          Demo information is supplied directly by the visitor. Technical information may be generated automatically by the visitor’s browser, network, hosting provider, security tools, and FormSubmit when they deliver pages or process a form request.
         </p>
       </LegalSection>
 
       <LegalSection title="4. Why information is used">
         <LegalList>
           <LegalListItem>To receive, review, and respond to a demo or product enquiry.</LegalListItem>
-          <LegalListItem>To record and manage a requested newsletter subscription.</LegalListItem>
           <LegalListItem>To operate, secure, troubleshoot, and improve the public website and form-delivery process.</LegalListItem>
           <LegalListItem>To maintain appropriate business records and respond to lawful requests or disputes.</LegalListItem>
         </LegalList>
@@ -75,10 +67,10 @@ export default function PrivacyPolicyPage() {
 
       <LegalSection title="5. FormSubmit and other service providers">
         <p>
-          The current website sends demo and newsletter submissions to FormSubmit so the contents can be delivered by email to {CONTACT_EMAIL}. The server route uses FormSubmit, and the demo form can also send directly to FormSubmit from the browser if the server response is unsuccessful.
+          The current website sends demo submissions to FormSubmit through a server route so the contents can be delivered by email to {CONTACT_EMAIL}. The browser does not submit directly to FormSubmit.
         </p>
         <p>
-          FormSubmit therefore receives the submitted industry, description, or newsletter email address and may receive related technical request information. Its current published terms describe its role in forwarding form information. Review the{' '}
+          FormSubmit therefore receives the submitted work email, company name, industry, and description and may receive related technical request information. Its current published terms describe its role in forwarding form information. Review the{' '}
           <LegalLink href="https://formsubmit.co/privacy.pdf">FormSubmit privacy information</LegalLink>{' '}
           before submitting.
         </p>

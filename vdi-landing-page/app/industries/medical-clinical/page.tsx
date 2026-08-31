@@ -1,12 +1,8 @@
-import type { Metadata } from 'next'
 import { Stethoscope } from 'lucide-react'
 import IndustryPage, { type IndustryPageData } from '@/components/IndustryPage'
+import { pageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Medical & Clinical Evidence Workflows | Clarify Data',
-  description:
-    'Careful workflows for literature review, claim-to-source mapping, study comparison, evidence hierarchy, and required clinical or regulatory review.',
-}
+export const metadata = pageMetadata({ title: 'Medical and Clinical Evidence Workflows', description: 'Careful workflows for literature review, claim-to-source mapping, study comparison, evidence hierarchy, and required clinical or regulatory review.', path: '/industries/medical-clinical' })
 
 const COPPER = 'rgb(194, 89, 24)'
 

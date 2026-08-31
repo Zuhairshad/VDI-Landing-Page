@@ -1,161 +1,73 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'motion/react'
-import Image from 'next/image'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
-
-const links = [
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'Industries', href: '/#usecases' },
-  { label: 'Pricing', href: '/#pricing' },
-]
+import Brand from './Brand'
+import { headerNavigation } from '@/lib/site'
 
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false)
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const [open, setOpen] = useState(false)
+  const buttonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 48)
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+    if (!open) return
 
-  useEffect(() => {
-    if (mobileOpen) document.body.style.overflow = 'hidden'
-    else document.body.style.overflow = ''
-    return () => { document.body.style.overflow = '' }
-  }, [mobileOpen])
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setOpen(false)
+        buttonRef.current?.focus()
+      }
+    }
+
+    document.addEventListener('keydown', handleEscape)
+    return () => document.removeEventListener('keydown', handleEscape)
+  }, [open])
 
   return (
-    <>
+    <header className="site-header">
+      <div className="section-inner site-header-inner">
+        <Brand eager />
+
+        <nav className="desktop-nav" aria-label="Primary navigation">
+          {headerNavigation.map((item) => (
+            <Link key={item.label} href={item.href}>{item.label}</Link>
+          ))}
+        </nav>
+
+        <Link href="/#book-demo" className="button button-copper desktop-cta">Book a Demo</Link>
+
+        <button
+          ref={buttonRef}
+          type="button"
+          className="menu-button"
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
+          aria-label={open ? 'Close navigation' : 'Open navigation'}
+          onClick={() => setOpen((value) => !value)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+
       <nav
-        className="fixed top-0 inset-x-0 z-50 transition-all duration-300"
-        style={{
-          background: scrolled ? 'rgba(10,10,10,0.9)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(6px)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(250,250,250,0.07)' : '1px solid transparent',
-        }}
+        id="mobile-navigation"
+        className="mobile-nav"
+        aria-label="Mobile navigation"
+        data-open={open}
       >
-        <div className="section-inner relative flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-1 select-none">
-            <Image
-              src="/logo.png"
-              alt="Clarify Data"
-              width={130}
-              height={130}
-              className="rounded-2xl"
-              style={{ marginRight: '-40px' }}
-            />
-            <span
-              className="text-[20px] font-semibold tracking-tight"
-              style={{ color: 'rgb(250,250,250)' }}
-            >
-              CLARIFY DATA
-            </span>
-          </Link>
-
-          {/* Desktop links — absolutely centered */}
-          <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
-            {links.map((l) => (
-              <Link
-                key={l.label}
-                href={l.href}
-                className="text-[16px] font-medium transition-colors duration-200"
-                style={{ color: 'rgba(250,250,250,0.8)' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'rgb(250,250,250)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(250,250,250,0.8)')}
-              >
-                {l.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center">
-            <Link
-              href="/#book-demo"
-              className="text-[16px] font-medium px-5 py-2 rounded-full transition-all duration-200"
-              style={{ background: 'rgb(84,27,4)', color: 'rgb(250,250,250)' }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(84,27,4,0.85)' }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgb(84,27,4)' }}
-            >
-              Book a Demo
+        <div className="section-inner">
+          {headerNavigation.map((item) => (
+            <Link key={item.label} href={item.href} onClick={() => setOpen(false)}>
+              {item.label}
             </Link>
-          </div>
-
-          {/* Hamburger */}
-          <button
-            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
-            onClick={() => setMobileOpen(v => !v)}
-            aria-label="Toggle menu"
-          >
-            <motion.span
-              animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-              className="block w-5 h-px"
-              style={{ background: 'rgb(250,250,250)' }}
-              transition={{ duration: 0.25 }}
-            />
-            <motion.span
-              animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
-              className="block w-5 h-px"
-              style={{ background: 'rgb(250,250,250)' }}
-              transition={{ duration: 0.15 }}
-            />
-            <motion.span
-              animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-              className="block w-5 h-px"
-              style={{ background: 'rgb(250,250,250)' }}
-              transition={{ duration: 0.25 }}
-            />
-          </button>
+          ))}
+          <Link href="/#book-demo" className="button button-copper" onClick={() => setOpen(false)}>
+            Book a Demo
+          </Link>
         </div>
       </nav>
-
-      {/* Mobile drawer */}
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.25, ease: [0.44, 0, 0.56, 1] }}
-            className="fixed inset-0 z-40 flex flex-col pt-20 px-6 pb-8"
-            style={{ background: 'rgba(10,10,10,0.98)', backdropFilter: 'blur(16px)' }}
-          >
-            <div className="flex flex-col gap-1 flex-1">
-              {links.map((l, i) => (
-                <motion.div
-                  key={l.label}
-                  initial={{ opacity: 0, x: -12 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.06, duration: 0.25 }}
-                  className="border-b"
-                  style={{ borderColor: 'rgba(250,250,250,0.07)' }}
-                >
-                  <Link
-                    href={l.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="block text-2xl font-medium py-3"
-                    style={{ color: 'rgb(250,250,250)' }}
-                  >
-                    {l.label}
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-            <Link
-              href="/#book-demo"
-              onClick={() => setMobileOpen(false)}
-              className="text-center py-3 rounded-full text-[15px] font-medium"
-              style={{ background: 'rgb(84,27,4)', color: 'rgb(250,250,250)' }}
-            >
-              Book a Demo
-            </Link>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
+    </header>
   )
 }

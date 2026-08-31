@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView } from 'motion/react'
 import { LineChart, Database, BarChart3, FileSearch, Briefcase } from 'lucide-react'
 
 const COPPER_COLOR = 'rgb(194, 89, 24)'
@@ -37,21 +33,14 @@ const personas = [
 ]
 
 export default function BuiltFor() {
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-8%' })
-
   return (
     <section
-      ref={ref}
       id="built-for"
       className="section-pad relative overflow-hidden"
       style={{ background: 'rgb(10,10,10)' }}
     >
       <div className="section-inner relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
+        <div
           className="text-center mb-12"
         >
           <span className="eyebrow-pill mb-4 inline-block">Built For</span>
@@ -61,15 +50,12 @@ export default function BuiltFor() {
           >
             Better Information for the People Making Important Decisions
           </h2>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {personas.map((persona, i) => (
-            <motion.div
+          {personas.map((persona) => (
+            <div
               key={persona.title}
-              initial={{ opacity: 0, y: 16 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.08 + i * 0.07 }}
               className="rounded-2xl p-6"
               style={{
                 background: 'rgba(16,16,20,0.95)',
@@ -81,7 +67,7 @@ export default function BuiltFor() {
               </div>
               <h3 className="text-[18px] font-semibold text-white mb-2">{persona.title}</h3>
               <p className="text-[13px] text-white/65 leading-[20px]">{persona.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

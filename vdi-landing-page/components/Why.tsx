@@ -12,7 +12,7 @@ const features = [
   {
     eyebrow: '02',
     title: 'Hours for new claims',
-    body: 'Unmatched claims go to human specialists. Not another model — a credentialed domain expert working from primary sources. Typical return: a few hours.',
+    body: 'Unmatched claims can be routed to human specialists instead of another model. Review scope and timing depend on the domain and evidence required.',
   },
   {
     eyebrow: '03',
@@ -53,7 +53,7 @@ export default function Why() {
         </motion.div>
       </div>
 
-      {/* Feature grid — full bleed */}
+      {/* Full-bleed feature grid */}
       <div
         className="grid grid-cols-1 md:grid-cols-5 border-t"
         style={{ borderColor: 'rgba(255,255,255,0.06)' }}
