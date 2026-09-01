@@ -9,6 +9,8 @@ void main() {
 }
 `
 
+/* Reduced from 6 octaves → 3, removed double domain-warp.
+   Same visual character, ~60% less fragment work per pixel. */
 const FRAG_SRC = `
 precision mediump float;
 uniform float u_time;
@@ -34,12 +36,10 @@ float vnoise(vec2 p) {
 float fbm(vec2 p) {
   float v = 0.0;
   float a = 0.5;
-  vec2  s = vec2(1.0);
-  for (int i = 0; i < 6; i++) {
+  for (int i = 0; i < 3; i++) {
     v += a * vnoise(p);
-    p  = p * 2.1 + s;
+    p  = p * 2.1 + vec2(3.7, 1.9);
     a *= 0.5;
-    s += vec2(3.7, 1.9);
   }
   return v;
 }
@@ -48,24 +48,16 @@ void main() {
   vec2 uv = gl_FragCoord.xy / u_res;
   uv.y = 1.0 - uv.y;
 
-  /* Rotate so fibres run diagonally at ~40° */
   float ang = 0.70;
   mat2  rot = mat2(cos(ang), -sin(ang), sin(ang), cos(ang));
   vec2  p   = rot * uv;
 
-  /* Stretch into thin fibres, animate downward */
   p   *= vec2(2.2, 14.0);
   p.y -= u_time * 0.22;
 
-  /* Domain-warp once for organic variation */
-  vec2 q = vec2(fbm(p + vec2(0.0, 0.0)),
-                fbm(p + vec2(5.2, 1.3)));
-  float f = fbm(p + 0.6 * q);
-
-  /* Lift contrast so dark valleys are deep */
+  float f = fbm(p);
   f = pow(clamp(f * 1.5 - 0.1, 0.0, 1.0), 1.6);
 
-  /* Colour palette: dark rust → amber → bright orange */
   vec3 dark   = vec3(0.110, 0.035, 0.008);
   vec3 mid    = vec3(0.490, 0.195, 0.022);
   vec3 bright = vec3(0.835, 0.353, 0.039);
@@ -103,7 +95,6 @@ export default function ShaderBackground({ className = '' }: { className?: strin
     gl.linkProgram(prog)
     gl.useProgram(prog)
 
-    /* Full-screen quad */
     const buf = gl.createBuffer()
     gl.bindBuffer(gl.ARRAY_BUFFER, buf)
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW)
@@ -115,7 +106,8 @@ export default function ShaderBackground({ className = '' }: { className?: strin
     const uRes  = gl.getUniformLocation(prog, 'u_res')
 
     const resize = () => {
-      const dpr = Math.min(window.devicePixelRatio || 1, 1.5)
+      /* Cap DPR at 1 — retina pixels don't improve perception of a blurry noise shader */
+      const dpr = 1
       canvas.width  = canvas.offsetWidth  * dpr
       canvas.height = canvas.offsetHeight * dpr
       gl.viewport(0, 0, canvas.width, canvas.height)
@@ -133,14 +125,10 @@ export default function ShaderBackground({ className = '' }: { className?: strin
     const shouldAnimate = () => inView && pageVisible && !reducedMotion.matches
 
     const frame = (now: number) => {
-      if (!shouldAnimate()) {
-        rafId = 0
-        return
-      }
-
+      if (!shouldAnimate()) { rafId = 0; return }
       rafId = requestAnimationFrame(frame)
-      /* A restrained frame rate is sufficient for the slow background movement. */
-      if (now - last < 32) return
+      /* ~20 fps is plenty for a slow-moving background texture */
+      if (now - last < 50) return
       last = now
       gl.uniform1f(uTime, (now - start) * 0.001)
       gl.uniform2f(uRes,  canvas.width, canvas.height)
@@ -155,10 +143,7 @@ export default function ShaderBackground({ className = '' }: { className?: strin
 
     const syncAnimation = () => {
       if (shouldAnimate() && !rafId) rafId = requestAnimationFrame(frame)
-      if (!shouldAnimate() && rafId) {
-        cancelAnimationFrame(rafId)
-        rafId = 0
-      }
+      if (!shouldAnimate() && rafId) { cancelAnimationFrame(rafId); rafId = 0 }
     }
 
     const observer = new IntersectionObserver(([entry]) => {

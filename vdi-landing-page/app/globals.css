@@ -156,7 +156,7 @@ a {
     rgb(28,  9, 2) 280px
   );
   animation: heroFlow 14s linear infinite;
-  will-change: background-position;
+  will-change: transform;
 }
 
 /*
@@ -183,11 +183,18 @@ a {
     rgba(28,  9,2,0)    420px
   );
   animation: heroFlow2 22s linear infinite;
-  will-change: background-position;
+  will-change: transform;
 }
 
-@keyframes heroFlow  { from { background-position: 0 0; } to { background-position: 191px 205px; } }
-@keyframes heroFlow2 { from { background-position: 0 0; } to { background-position: 302px 292px; } }
+@keyframes heroFlow  { from { transform: translate(0, 0); } to { transform: translate(191px, 205px); } }
+@keyframes heroFlow2 { from { transform: translate(0, 0); } to { transform: translate(302px, 292px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-texture-1,
+  .hero-texture-2 {
+    animation: none;
+  }
+}
 
 /* Eyebrow pill */
 .eyebrow-pill {
@@ -1480,5 +1487,13 @@ a {
   .article-body p,
   .article-body li {
     font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
