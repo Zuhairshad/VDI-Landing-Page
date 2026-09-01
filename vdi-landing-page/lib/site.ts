@@ -20,7 +20,7 @@ export const headerNavigation = [
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'Industries', href: '/industries' },
   { label: 'Journal', href: '/blog' },
-  { label: 'AI Updates', href: '/ai-updates' },
+  { label: 'BI Exercises', href: '/business-intelligence-exercises' },
   { label: 'Pricing', href: '/#pricing' },
 ] as const
 
