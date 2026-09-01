@@ -43,7 +43,7 @@ export const footerNavigation = [
       { label: 'Data Preparation Guide', href: '/data-sorting' },
       { label: 'Data Validation Guide', href: '/data-validation' },
       { label: 'Trust Index Methodology', href: '/trust-index' },
-      { label: 'BI Practice Exercises', href: '/business-intelligence-exercises' },
+      { label: 'Business Intelligence Exercises', href: '/business-intelligence-exercises' },
       { label: 'Information Quality Journal', href: '/blog' },
       { label: 'AI Data Updates', href: '/ai-updates' },
     ],
