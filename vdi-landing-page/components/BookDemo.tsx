@@ -85,15 +85,15 @@ export default function BookDemo() {
               <div className="field-grid">
                 <label>
                   <span>Work email</span>
-                  <input name="email" type="email" autoComplete="email" maxLength={254} required />
+                  <input name="email" type="email" autoComplete="email" maxLength={254} placeholder="you@company.com" required />
                 </label>
                 <label>
                   <span>Company</span>
-                  <input name="company" type="text" autoComplete="organization" minLength={2} maxLength={120} required />
+                  <input name="company" type="text" autoComplete="organization" minLength={2} maxLength={120} placeholder="Company name" required />
                 </label>
                 <label>
                   <span>Phone number <span style={{ opacity: 0.5, fontWeight: 400 }}>(optional)</span></span>
-                  <input name="phone" type="tel" autoComplete="tel" maxLength={30} />
+                  <input name="phone" type="tel" autoComplete="tel" maxLength={30} placeholder="+1 (555) 000-0000" />
                 </label>
               </div>
               <label>
@@ -104,7 +104,7 @@ export default function BookDemo() {
               </label>
               <label>
                 <span>What would you like to verify or analyze?</span>
-                <textarea name="description" rows={6} minLength={10} maxLength={3000} value={description} onChange={handleDescription} required />
+                <textarea name="description" rows={6} minLength={10} maxLength={3000} placeholder="Describe the dataset, claim, report, or decision you need verified or analyzed…" value={description} onChange={handleDescription} required />
                 <small>{wordCount} / {MAX_WORDS} words</small>
               </label>
               {error && <p className="form-error" role="alert">{error}</p>}

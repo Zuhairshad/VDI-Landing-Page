@@ -18,6 +18,7 @@ const routes = [
   '/industries/marketing-ecommerce',
   '/industries/medical-clinical',
   '/trust-index',
+  '/business-intelligence-exercises',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

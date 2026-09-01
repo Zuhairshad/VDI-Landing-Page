@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { db } from '@/lib/supabase'
 
 const allowedIndustries = new Set([
   'Marketing and E-commerce',
@@ -46,6 +47,20 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Description must be between 10 and 3,000 characters and no more than 400 words.' }, { status: 400 })
   }
 
+  // Always save to DB first so no submission is lost even if email fails
+  const { error: dbError } = await db.from('demo_requests').insert({
+    email,
+    company,
+    phone: phone || null,
+    industry,
+    description,
+    read: false,
+  })
+
+  if (dbError) {
+    console.error('Demo request Supabase insert failed', dbError.message)
+  }
+
   const resend = new Resend(process.env.RESEND_API_KEY)
 
   try {
@@ -57,13 +72,11 @@ export async function POST(request: Request) {
     })
 
     if (error) {
-      console.error('Demo request delivery failed', error.message)
-      return NextResponse.json({ error: 'The request could not be delivered. Please try again shortly.' }, { status: 502 })
+      console.error('Demo request email delivery failed', error.message)
     }
-
-    return NextResponse.json({ success: true })
   } catch (error) {
-    console.error('Demo request delivery failed', error instanceof Error ? error.name : 'Unknown error')
-    return NextResponse.json({ error: 'The request could not be delivered. Please try again shortly.' }, { status: 502 })
+    console.error('Demo request email delivery failed', error instanceof Error ? error.name : 'Unknown error')
   }
+
+  return NextResponse.json({ success: true })
 }

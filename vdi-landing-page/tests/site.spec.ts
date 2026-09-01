@@ -14,7 +14,7 @@ const publicRoutes = [
   '/blog/provenance-confidence-scoring',
   '/blog/human-review-high-impact-decisions',
   '/blog/repeatable-market-research-workflows',
-  '/blog/business-intelligence-exercises',
+  '/business-intelligence-exercises',
   '/business-intelligence',
   '/contact',
   '/data-sorting',
@@ -67,24 +67,25 @@ test('homepage metadata points at production, not staging', async ({ page }) => 
 test('resources footer links the BI exercises article', async ({ page }) => {
   await page.goto('/')
   const resources = page.locator('footer').getByRole('heading', { name: 'Resources' }).locator('..')
-  await expect(resources.getByRole('link', { name: 'BI Practice Exercises' })).toHaveAttribute('href', '/blog/business-intelligence-exercises')
+  await expect(resources.getByRole('link', { name: 'BI Practice Exercises' })).toHaveAttribute('href', '/business-intelligence-exercises')
 })
 
 test('BI exercises article includes datasets and schema', async ({ page, request }) => {
-  await page.goto('/blog/business-intelligence-exercises')
-  await expect(page.locator('h1')).toContainText('15 Business Intelligence Exercises (With Free Practice Datasets)')
-  await expect(page.getByRole('paragraph').filter({ hasText: 'Business intelligence exercises are structured practice tasks' }).first()).toBeVisible()
+  await page.goto('/business-intelligence-exercises')
+  await expect(page.locator('h1')).toContainText('14 Business Intelligence Exercises (With Practice Datasets and Worked Checks)')
+  await expect(page.getByRole('paragraph').filter({ hasText: 'Business intelligence exercises are hands-on practice problems' }).first()).toBeVisible()
   const jsonLd = await page.locator('script[type="application/ld+json"]').textContent()
   expect(jsonLd).toContain('ItemList')
   expect(jsonLd).toContain('FAQPage')
-  expect(jsonLd).toContain('Exercise 15:')
+  expect(jsonLd).toContain('Exercise 14:')
 
-  const csv = await request.get('/practice-datasets/01-messy-sales.csv')
+  const csv = await request.get('/practice-datasets/messy_customers.csv')
   expect(csv.status()).toBe(200)
-  expect(await csv.text()).toContain('order_id')
+  expect(await csv.text()).toContain('customer_id')
 
-  const worksheet = await request.get('/practice-datasets/15-ai-claim-worksheet.csv')
-  expect(worksheet.status()).toBe(200)
+  const orders = await request.get('/practice-datasets/retail_orders.csv')
+  expect(orders.status()).toBe(200)
+  expect(await orders.text()).toContain('order_id')
 
   await expect(page.getByRole('link', { name: 'data preparation guide', exact: true })).toHaveAttribute('href', '/data-sorting')
   await expect(page.getByRole('link', { name: 'data validation guide', exact: true })).toHaveAttribute('href', '/data-validation')
@@ -107,6 +108,7 @@ test('legacy routes redirect to their approved owners', async ({ request }) => {
     ['/data-analytics', '/business-intelligence#analytics-foundation'],
     ['/business-analytics', '/business-intelligence#analytics-foundation'],
     ['/newsletter', '/blog'],
+    ['/blog/business-intelligence-exercises', '/business-intelligence-exercises'],
   ] as const
 
   for (const [source, destination] of routes) {

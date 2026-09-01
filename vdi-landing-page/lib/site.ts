@@ -20,6 +20,7 @@ export const headerNavigation = [
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'Industries', href: '/industries' },
   { label: 'Journal', href: '/blog' },
+  { label: 'AI Updates', href: '/ai-updates' },
   { label: 'Pricing', href: '/#pricing' },
 ] as const
 
@@ -42,8 +43,9 @@ export const footerNavigation = [
       { label: 'Data Preparation Guide', href: '/data-sorting' },
       { label: 'Data Validation Guide', href: '/data-validation' },
       { label: 'Trust Index Methodology', href: '/trust-index' },
-      { label: 'BI Practice Exercises', href: '/blog/business-intelligence-exercises' },
+      { label: 'BI Practice Exercises', href: '/business-intelligence-exercises' },
       { label: 'Information Quality Journal', href: '/blog' },
+      { label: 'AI Data Updates', href: '/ai-updates' },
     ],
   },
   {

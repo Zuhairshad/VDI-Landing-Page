@@ -3,6 +3,8 @@ import FinalCta from '@/components/FinalCta'
 import PageHero from '@/components/PageHero'
 import { pageMetadata } from '@/lib/site'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata = pageMetadata({
   title: 'Information Quality Journal',
   description: 'Practical guides to evidence trails, provenance, confidence, human review, and repeatable market research.',

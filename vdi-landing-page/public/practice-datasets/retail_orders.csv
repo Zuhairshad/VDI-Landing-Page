@@ -1,0 +1,1341 @@
+order_id,order_date,customer_id,channel,region,sku,product_name,category,quantity,unit_price,discount_rate,line_revenue
+500561,2024-01-01,CU2261,Web,France,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500561,2024-01-01,CU2261,Web,France,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500869,2024-01-02,CU2392,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500869,2024-01-02,CU2392,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500624,2024-01-03,CU2290,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500040,2024-01-04,CU2019,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500145,2024-01-04,CU2062,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.10,66.60
+500145,2024-01-04,CU2062,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500545,2024-01-06,CU2253,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500477,2024-01-08,CU2220,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500477,2024-01-08,CU2220,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500477,2024-01-08,CU2220,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500661,2024-01-08,CU2308,Web,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500749,2024-01-08,CU2341,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500441,2024-01-10,CU2205,Marketplace,United Kingdom,SKU-102,Trail Runner Pro,Footwear,3,139.00,0.00,417.00
+500441,2024-01-10,CU2205,Marketplace,United Kingdom,SKU-301,28L Daypack,Packs,1,74.00,0.15,62.90
+500307,2024-01-14,CU2150,Marketplace,Belgium,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500428,2024-01-14,CU2198,Web,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500849,2024-01-14,CU2383,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500849,2024-01-14,CU2383,Web,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500275,2024-01-17,CU2135,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500297,2024-01-17,CU2145,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500297,2024-01-17,CU2145,Web,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500590,2024-01-19,CU2276,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500401,2024-01-22,CU2188,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500855,2024-01-22,CU2386,Web,France,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500855,2024-01-22,CU2386,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500783,2024-01-23,CU2356,Web,United Kingdom,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500127,2024-01-24,CU2056,Retail Partner,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500127,2024-01-24,CU2056,Retail Partner,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500291,2024-01-24,CU2143,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500672,2024-01-25,CU2311,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.15,28.90
+500440,2024-01-29,CU2204,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500440,2024-01-29,CU2204,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500203,2024-01-30,CU2095,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500816,2024-01-30,CU2371,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500816,2024-01-30,CU2371,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500816,2024-01-30,CU2371,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500349,2024-01-31,CU2165,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500349,2024-01-31,CU2165,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500630,2024-01-31,CU2292,Retail Partner,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500199,2024-02-01,CU2092,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500795,2024-02-01,CU2358,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500169,2024-02-03,CU2073,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500085,2024-02-04,CU2035,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500884,2024-02-06,CU2399,Web,Netherlands,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500563,2024-02-08,CU2262,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500555,2024-02-09,CU2257,Retail Partner,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500170,2024-02-10,CU2074,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500582,2024-02-12,CU2273,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500444,2024-02-14,CU2208,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500754,2024-02-14,CU2344,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500338,2024-02-15,CU2161,Web,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.25,25.50
+500338,2024-02-15,CU2161,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500574,2024-02-15,CU2268,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500568,2024-02-19,CU2264,Web,United Kingdom,SKU-301,28L Daypack,Packs,1,74.00,0.15,62.90
+500568,2024-02-19,CU2264,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500911,2024-02-24,CU2411,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500511,2024-02-25,CU2237,Web,United Kingdom,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500511,2024-02-25,CU2237,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500647,2024-02-25,CU2302,Web,Germany,SKU-101,Trail Runner 2,Footwear,2,89.00,0.10,160.20
+500230,2024-02-26,CU2111,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500799,2024-02-26,CU2361,Web,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500799,2024-02-26,CU2361,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500799,2024-02-26,CU2361,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500308,2024-02-29,CU2150,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500308,2024-02-29,CU2150,Web,United Kingdom,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500159,2024-03-01,CU2068,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,3,49.00,0.00,147.00
+500159,2024-03-01,CU2068,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500789,2024-03-01,CU2357,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500789,2024-03-01,CU2357,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500789,2024-03-01,CU2357,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500211,2024-03-05,CU2100,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500211,2024-03-05,CU2100,Web,France,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500298,2024-03-05,CU2146,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500298,2024-03-05,CU2146,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500535,2024-03-05,CU2250,Retail Partner,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.25,104.25
+500535,2024-03-05,CU2250,Retail Partner,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500894,2024-03-06,CU2404,Web,France,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500031,2024-03-08,CU2015,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500031,2024-03-08,CU2015,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,2,165.00,0.25,247.50
+500037,2024-03-09,CU2017,Web,United Kingdom,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500099,2024-03-09,CU2042,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500503,2024-03-10,CU2235,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500870,2024-03-10,CU2392,Marketplace,France,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500870,2024-03-10,CU2392,Marketplace,France,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500870,2024-03-10,CU2392,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500458,2024-03-13,CU2212,Marketplace,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500134,2024-03-14,CU2058,Web,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500237,2024-03-14,CU2116,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500627,2024-03-14,CU2291,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500753,2024-03-17,CU2343,Retail Partner,Germany,SKU-202,Rain Shell,Apparel,3,119.00,0.00,357.00
+500753,2024-03-17,CU2343,Retail Partner,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500753,2024-03-17,CU2343,Retail Partner,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500128,2024-03-19,CU2056,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500128,2024-03-19,CU2056,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.15,140.25
+500128,2024-03-19,CU2056,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500271,2024-03-19,CU2133,Web,Germany,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500817,2024-03-19,CU2371,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.25,36.75
+500817,2024-03-19,CU2371,Web,United Kingdom,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500646,2024-03-20,CU2301,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500122,2024-03-21,CU2054,Web,France,SKU-201,Merino Base Layer,Apparel,3,59.00,0.00,177.00
+500750,2024-03-21,CU2342,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500781,2024-03-22,CU2355,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500781,2024-03-22,CU2355,Web,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.15,62.90
+500781,2024-03-22,CU2355,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500875,2024-03-22,CU2395,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.00,0.15,151.30
+500350,2024-03-25,CU2165,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500369,2024-03-25,CU2174,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500635,2024-03-28,CU2294,Web,Netherlands,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500635,2024-03-28,CU2294,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.15,202.30
+500442,2024-03-29,CU2206,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500700,2024-03-29,CU2321,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500700,2024-03-29,CU2321,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500784,2024-03-29,CU2356,Marketplace,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500709,2024-03-30,CU2326,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500709,2024-03-30,CU2326,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500214,2024-04-01,CU2102,Web,Belgium,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500717,2024-04-01,CU2329,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500717,2024-04-01,CU2329,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,119.89,0.00,239.78
+500924,2024-04-01,CU2416,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500924,2024-04-01,CU2416,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500117,2024-04-06,CU2051,Web,Belgium,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500117,2024-04-06,CU2051,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500559,2024-04-06,CU2259,Retail Partner,Germany,SKU-202,Rain Shell,Apparel,2,119.89,0.00,239.78
+500559,2024-04-06,CU2259,Retail Partner,Germany,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500708,2024-04-06,CU2325,Marketplace,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500822,2024-04-06,CU2374,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500822,2024-04-06,CU2374,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500504,2024-04-08,CU2235,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.26,0.00,68.52
+500504,2024-04-08,CU2235,Web,Netherlands,SKU-302,55L Trek Pack,Packs,2,166.24,0.00,332.48
+500504,2024-04-08,CU2235,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500598,2024-04-08,CU2279,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.15,141.30
+500598,2024-04-08,CU2279,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.67,0.15,76.22
+500790,2024-04-08,CU2357,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500484,2024-04-10,CU2226,Web,Belgium,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500146,2024-04-11,CU2062,Retail Partner,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.26,0.00,68.52
+500782,2024-04-11,CU2355,Web,Germany,SKU-301,28L Daypack,Packs,3,74.56,0.00,223.68
+500714,2024-04-13,CU2328,Web,France,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500354,2024-04-14,CU2167,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500483,2024-04-16,CU2225,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500597,2024-04-16,CU2278,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500335,2024-04-17,CU2160,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,3,49.37,0.00,148.11
+500883,2024-04-17,CU2398,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.25,89.92
+500620,2024-04-18,CU2287,Marketplace,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500356,2024-04-19,CU2169,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500378,2024-04-21,CU2179,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.67,0.10,80.70
+500175,2024-04-23,CU2077,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500431,2024-04-23,CU2199,Marketplace,Belgium,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500692,2024-04-23,CU2319,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,3,140.04,0.15,357.10
+500692,2024-04-23,CU2319,Marketplace,Belgium,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500261,2024-04-24,CU2128,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500217,2024-04-25,CU2104,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500757,2024-04-26,CU2345,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500755,2024-04-28,CU2344,Web,Netherlands,SKU-301,28L Daypack,Packs,3,74.56,0.00,223.68
+500528,2024-05-01,CU2246,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500135,2024-05-04,CU2059,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,3,89.67,0.00,269.01
+500135,2024-05-04,CU2059,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500902,2024-05-04,CU2406,Retail Partner,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500687,2024-05-05,CU2316,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500083,2024-05-07,CU2033,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500487,2024-05-09,CU2228,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,2,140.04,0.00,280.08
+500487,2024-05-09,CU2228,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500377,2024-05-11,CU2178,Marketplace,Germany,SKU-202,Rain Shell,Apparel,3,119.89,0.15,305.72
+500377,2024-05-11,CU2178,Marketplace,Germany,SKU-301,28L Daypack,Packs,2,74.56,0.00,149.12
+500377,2024-05-11,CU2178,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,1,49.37,0.10,44.43
+500093,2024-05-14,CU2038,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500066,2024-05-15,CU2028,Web,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500023,2024-05-16,CU2012,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500032,2024-05-16,CU2015,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500242,2024-05-16,CU2119,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,166.24,0.15,141.30
+500416,2024-05-17,CU2196,Marketplace,United Kingdom,SKU-101,Trail Runner 2,Footwear,3,89.67,0.00,269.01
+500808,2024-05-17,CU2367,Web,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.15,141.30
+500808,2024-05-17,CU2367,Web,Germany,SKU-401,Headlamp 400,Accessories,3,34.26,0.25,77.09
+500808,2024-05-17,CU2367,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500796,2024-05-18,CU2359,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500796,2024-05-18,CU2359,Web,Germany,SKU-101,Trail Runner 2,Footwear,2,89.67,0.00,179.34
+500796,2024-05-18,CU2359,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500041,2024-05-19,CU2019,Marketplace,Germany,SKU-202,Rain Shell,Apparel,2,119.89,0.00,239.78
+500041,2024-05-19,CU2019,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500419,2024-05-21,CU2197,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500419,2024-05-21,CU2197,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500149,2024-05-22,CU2064,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500522,2024-05-25,CU2245,Marketplace,Belgium,SKU-402,Trekking Poles,Accessories,1,49.37,0.10,44.43
+500522,2024-05-25,CU2245,Marketplace,Belgium,SKU-402,Trekking Poles,Accessories,1,49.37,0.10,44.43
+500018,2024-05-26,CU2007,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500136,2024-05-26,CU2059,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500212,2024-05-26,CU2100,Web,Netherlands,SKU-302,55L Trek Pack,Packs,2,166.24,0.00,332.48
+500212,2024-05-26,CU2100,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500212,2024-05-26,CU2100,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,59.44,0.00,118.88
+500608,2024-05-26,CU2281,Retail Partner,Belgium,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500710,2024-05-27,CU2326,Retail Partner,Germany,SKU-402,Trekking Poles,Accessories,2,49.37,0.00,98.74
+500733,2024-05-31,CU2335,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.44,0.10,53.50
+500733,2024-05-31,CU2335,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500733,2024-05-31,CU2335,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500562,2024-06-01,CU2261,Retail Partner,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500429,2024-06-02,CU2198,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500070,2024-06-03,CU2029,Marketplace,Belgium,SKU-101,Trail Runner 2,Footwear,2,89.00,0.10,160.20
+500070,2024-06-03,CU2029,Marketplace,Belgium,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500357,2024-06-06,CU2170,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500357,2024-06-06,CU2170,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500357,2024-06-06,CU2170,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500588,2024-06-06,CU2274,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500588,2024-06-06,CU2274,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,3,49.00,0.15,124.95
+500409,2024-06-13,CU2194,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500905,2024-06-13,CU2408,Web,Germany,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500880,2024-06-14,CU2397,Web,France,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500880,2024-06-14,CU2397,Web,France,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500611,2024-06-15,CU2283,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.25,36.75
+500611,2024-06-15,CU2283,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500823,2024-06-15,CU2375,Web,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500827,2024-06-15,CU2377,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.15,140.25
+500827,2024-06-15,CU2377,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500827,2024-06-15,CU2377,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500276,2024-06-16,CU2135,Web,France,SKU-301,28L Daypack,Packs,2,74.00,0.15,125.80
+500326,2024-06-16,CU2155,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500268,2024-06-18,CU2130,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500299,2024-06-20,CU2146,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500514,2024-06-22,CU2239,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.10,53.10
+500042,2024-06-25,CU2019,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500042,2024-06-25,CU2019,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,2,74.00,0.10,133.20
+500202,2024-06-26,CU2094,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500345,2024-06-28,CU2162,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500345,2024-06-28,CU2162,Web,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500631,2024-07-01,CU2292,Retail Partner,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500800,2024-07-03,CU2362,Web,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500017,2024-07-09,CU2006,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500606,2024-07-10,CU2280,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500673,2024-07-10,CU2312,Web,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500258,2024-07-13,CU2127,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500546,2024-07-13,CU2253,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500546,2024-07-13,CU2253,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500253,2024-07-14,CU2124,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500747,2024-07-15,CU2340,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500402,2024-07-16,CU2189,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.15,101.15
+500270,2024-07-17,CU2132,Marketplace,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500693,2024-07-19,CU2319,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500693,2024-07-19,CU2319,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500856,2024-07-19,CU2386,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500856,2024-07-19,CU2386,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500283,2024-07-20,CU2138,Web,France,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500282,2024-07-21,CU2137,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500282,2024-07-21,CU2137,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500282,2024-07-21,CU2137,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500489,2024-07-23,CU2229,Retail Partner,United Kingdom,SKU-402,Trekking Poles,Accessories,2,49.00,0.10,88.20
+500560,2024-07-23,CU2260,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500339,2024-07-24,CU2161,Web,United Kingdom,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500636,2024-07-24,CU2294,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500285,2024-07-25,CU2140,Web,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500086,2024-07-27,CU2035,Marketplace,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500445,2024-07-27,CU2209,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500479,2024-07-28,CU2222,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500302,2024-07-29,CU2148,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500474,2024-07-29,CU2219,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500474,2024-07-29,CU2219,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,3,49.00,0.00,147.00
+500137,2024-07-30,CU2059,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500137,2024-07-30,CU2059,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500137,2024-07-30,CU2059,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500417,2024-07-31,CU2196,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500689,2024-07-31,CU2317,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,2,59.00,0.10,106.20
+500689,2024-07-31,CU2317,Marketplace,Belgium,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500067,2024-08-01,CU2028,Marketplace,France,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500192,2024-08-01,CU2088,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500192,2024-08-01,CU2088,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500665,2024-08-01,CU2310,Web,Netherlands,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500665,2024-08-01,CU2310,Web,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500686,2024-08-01,CU2315,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500686,2024-08-01,CU2315,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500686,2024-08-01,CU2315,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.25,178.50
+500396,2024-08-02,CU2185,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500396,2024-08-02,CU2185,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.25,89.25
+500774,2024-08-03,CU2354,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500774,2024-08-03,CU2354,Web,Germany,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500774,2024-08-03,CU2354,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500909,2024-08-04,CU2409,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500925,2024-08-05,CU2417,Retail Partner,United Kingdom,SKU-302,55L Trek Pack,Packs,3,165.00,0.00,495.00
+500925,2024-08-05,CU2417,Retail Partner,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500024,2024-08-06,CU2013,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.25,36.75
+500112,2024-08-06,CU2048,Web,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500112,2024-08-06,CU2048,Web,Belgium,SKU-402,Trekking Poles,Accessories,3,49.00,0.15,124.95
+500309,2024-08-06,CU2150,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500309,2024-08-06,CU2150,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500062,2024-08-07,CU2025,Retail Partner,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500062,2024-08-07,CU2025,Retail Partner,United Kingdom,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500432,2024-08-07,CU2200,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500432,2024-08-07,CU2200,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500432,2024-08-07,CU2200,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500760,2024-08-07,CU2347,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500336,2024-08-08,CU2160,Web,United Kingdom,SKU-301,28L Daypack,Packs,1,74.00,0.15,62.90
+500336,2024-08-08,CU2160,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500336,2024-08-08,CU2160,Web,United Kingdom,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500351,2024-08-08,CU2165,Retail Partner,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500351,2024-08-08,CU2165,Retail Partner,France,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500033,2024-08-09,CU2015,Web,United Kingdom,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500033,2024-08-09,CU2015,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500144,2024-08-11,CU2061,Retail Partner,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500186,2024-08-11,CU2086,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500929,2024-08-11,CU2418,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500573,2024-08-12,CU2267,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500573,2024-08-12,CU2267,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500573,2024-08-12,CU2267,Web,Netherlands,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500300,2024-08-14,CU2146,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500076,2024-08-15,CU2030,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500625,2024-08-15,CU2290,Web,Germany,SKU-201,Merino Base Layer,Apparel,2,59.00,0.15,100.30
+500625,2024-08-15,CU2290,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500895,2024-08-15,CU2404,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500200,2024-08-16,CU2093,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500113,2024-08-17,CU2049,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.10,214.20
+500177,2024-08-17,CU2079,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500554,2024-08-17,CU2256,Marketplace,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500554,2024-08-17,CU2256,Marketplace,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500569,2024-08-17,CU2264,Retail Partner,Netherlands,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500490,2024-08-18,CU2229,Web,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500490,2024-08-18,CU2229,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500818,2024-08-18,CU2371,Retail Partner,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500818,2024-08-18,CU2371,Retail Partner,Belgium,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500228,2024-08-19,CU2110,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500262,2024-08-19,CU2128,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500541,2024-08-22,CU2252,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500185,2024-08-23,CU2085,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500185,2024-08-23,CU2085,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500185,2024-08-23,CU2085,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500864,2024-08-24,CU2388,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500591,2024-08-28,CU2276,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500756,2024-08-28,CU2344,Web,Germany,SKU-301,28L Daypack,Packs,2,74.00,0.15,125.80
+500050,2024-08-29,CU2021,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500078,2024-09-01,CU2031,Retail Partner,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500537,2024-09-01,CU2251,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500537,2024-09-01,CU2251,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500713,2024-09-01,CU2327,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500871,2024-09-01,CU2393,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500871,2024-09-01,CU2393,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500516,2024-09-02,CU2241,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500516,2024-09-02,CU2241,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500068,2024-09-03,CU2028,Marketplace,France,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500068,2024-09-03,CU2028,Marketplace,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500068,2024-09-03,CU2028,Marketplace,France,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500529,2024-09-03,CU2246,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500529,2024-09-03,CU2246,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500572,2024-09-03,CU2266,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500572,2024-09-03,CU2266,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500572,2024-09-03,CU2266,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500801,2024-09-04,CU2362,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500147,2024-09-05,CU2062,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,2,59.00,0.10,106.20
+500556,2024-09-05,CU2258,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500556,2024-09-05,CU2258,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500556,2024-09-05,CU2258,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.00,0.10,160.20
+500478,2024-09-06,CU2221,Retail Partner,Netherlands,SKU-402,Trekking Poles,Accessories,3,49.00,0.00,147.00
+500926,2024-09-06,CU2417,Retail Partner,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500913,2024-09-07,CU2413,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500488,2024-09-08,CU2228,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,3,165.00,0.25,371.25
+500488,2024-09-08,CU2228,Marketplace,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500310,2024-09-11,CU2150,Web,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500310,2024-09-11,CU2150,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500310,2024-09-11,CU2150,Web,Belgium,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500846,2024-09-12,CU2382,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500043,2024-09-13,CU2019,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500171,2024-09-14,CU2074,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500171,2024-09-14,CU2074,Web,Netherlands,SKU-301,28L Daypack,Packs,3,74.00,0.00,222.00
+500236,2024-09-14,CU2115,Retail Partner,United Kingdom,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500236,2024-09-14,CU2115,Retail Partner,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500384,2024-09-14,CU2182,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500384,2024-09-14,CU2182,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500400,2024-09-14,CU2187,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500811,2024-09-15,CU2368,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.25,44.25
+500811,2024-09-15,CU2368,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500806,2024-09-18,CU2366,Marketplace,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500806,2024-09-18,CU2366,Marketplace,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500806,2024-09-18,CU2366,Marketplace,France,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500828,2024-09-18,CU2377,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500094,2024-09-19,CU2038,Marketplace,France,SKU-201,Merino Base Layer,Apparel,1,59.00,0.10,53.10
+500150,2024-09-20,CU2064,Web,Germany,SKU-301,28L Daypack,Packs,3,74.00,0.00,222.00
+500160,2024-09-23,CU2068,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500536,2024-09-26,CU2250,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500536,2024-09-26,CU2250,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500581,2024-09-26,CU2272,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500628,2024-09-26,CU2291,Web,France,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500718,2024-09-26,CU2329,Web,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500316,2024-09-27,CU2152,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.15,140.25
+500751,2024-09-27,CU2342,Web,Germany,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500284,2024-09-28,CU2139,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500599,2024-09-30,CU2279,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500208,2024-10-01,CU2097,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500208,2024-10-01,CU2097,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500903,2024-10-02,CU2406,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500292,2024-10-05,CU2143,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500103,2024-10-06,CU2046,Retail Partner,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500711,2024-10-06,CU2326,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500711,2024-10-06,CU2326,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500064,2024-10-07,CU2027,Marketplace,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500064,2024-10-07,CU2027,Marketplace,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500213,2024-10-07,CU2101,Marketplace,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500725,2024-10-07,CU2331,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.25,55.50
+500838,2024-10-07,CU2381,Retail Partner,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500838,2024-10-07,CU2381,Retail Partner,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500098,2024-10-08,CU2041,Retail Partner,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500152,2024-10-08,CU2066,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.15,101.15
+500420,2024-10-08,CU2197,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500403,2024-10-11,CU2190,Web,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500403,2024-10-11,CU2190,Web,France,SKU-201,Merino Base Layer,Apparel,1,59.00,0.25,44.25
+500824,2024-10-14,CU2375,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500194,2024-10-15,CU2089,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500194,2024-10-15,CU2089,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500084,2024-10-16,CU2034,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500269,2024-10-16,CU2131,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500583,2024-10-17,CU2273,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500071,2024-10-19,CU2029,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500071,2024-10-19,CU2029,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500092,2024-10-21,CU2037,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500092,2024-10-21,CU2037,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500123,2024-10-21,CU2054,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.15,140.25
+500505,2024-10-21,CU2235,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500505,2024-10-21,CU2235,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500930,2024-10-21,CU2419,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500930,2024-10-21,CU2419,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500022,2024-10-22,CU2011,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500715,2024-10-23,CU2328,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500654,2024-10-24,CU2305,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500654,2024-10-24,CU2305,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500654,2024-10-24,CU2305,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500666,2024-10-25,CU2310,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500803,2024-10-27,CU2364,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500803,2024-10-27,CU2364,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500178,2024-10-28,CU2080,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500178,2024-10-28,CU2080,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500688,2024-10-28,CU2316,Retail Partner,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500732,2024-10-29,CU2334,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500732,2024-10-29,CU2334,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,2,34.00,0.10,61.20
+500732,2024-10-29,CU2334,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500288,2024-10-30,CU2142,Retail Partner,France,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500288,2024-10-30,CU2142,Retail Partner,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500288,2024-10-30,CU2142,Retail Partner,France,SKU-301,28L Daypack,Packs,3,74.00,0.00,222.00
+500813,2024-11-03,CU2369,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.86,0.15,42.38
+500813,2024-11-03,CU2369,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500726,2024-11-05,CU2332,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,121.08,0.20,193.73
+500238,2024-11-06,CU2116,Retail Partner,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500238,2024-11-06,CU2116,Retail Partner,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500332,2024-11-09,CU2159,Retail Partner,Belgium,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500065,2024-11-10,CU2027,Marketplace,Germany,SKU-101,Trail Runner 2,Footwear,2,90.56,0.20,144.90
+500065,2024-11-10,CU2027,Marketplace,Germany,SKU-101,Trail Runner 2,Footwear,3,90.56,0.00,271.68
+500115,2024-11-12,CU2050,Retail Partner,France,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500727,2024-11-12,CU2333,Web,France,SKU-101,Trail Runner 2,Footwear,2,90.56,0.00,181.12
+500791,2024-11-12,CU2357,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500791,2024-11-12,CU2357,Web,Germany,SKU-302,55L Trek Pack,Packs,1,167.89,0.20,134.31
+500791,2024-11-12,CU2357,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.00,141.43
+500433,2024-11-14,CU2200,Retail Partner,Netherlands,SKU-302,55L Trek Pack,Packs,3,167.89,0.00,503.67
+500876,2024-11-16,CU2395,Web,France,SKU-101,Trail Runner 2,Footwear,1,90.56,0.25,67.92
+500885,2024-11-17,CU2400,Web,France,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500885,2024-11-17,CU2400,Web,France,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500330,2024-11-19,CU2157,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,2,49.86,0.15,84.76
+500385,2024-11-20,CU2182,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500385,2024-11-20,CU2182,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,121.08,0.00,121.08
+500385,2024-11-20,CU2182,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500372,2024-11-22,CU2176,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500626,2024-11-22,CU2290,Web,United Kingdom,SKU-301,28L Daypack,Packs,1,75.30,0.00,75.30
+500459,2024-11-27,CU2213,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,167.89,0.20,134.31
+500459,2024-11-27,CU2213,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.86,0.15,42.38
+500614,2024-11-27,CU2286,Web,Netherlands,SKU-301,28L Daypack,Packs,1,75.30,0.00,75.30
+500143,2024-11-28,CU2060,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500785,2024-11-28,CU2356,Web,France,SKU-101,Trail Runner 2,Footwear,1,90.56,0.20,72.45
+500785,2024-11-28,CU2356,Web,France,SKU-302,55L Trek Pack,Packs,1,167.89,0.20,134.31
+500820,2024-11-28,CU2372,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500820,2024-11-28,CU2372,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.86,0.15,42.38
+500837,2024-11-29,CU2380,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,2,90.56,0.20,144.90
+500397,2024-11-30,CU2185,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.20,48.02
+500397,2024-11-30,CU2185,Web,Germany,SKU-301,28L Daypack,Packs,1,75.30,0.20,60.24
+500397,2024-11-30,CU2185,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500847,2024-12-01,CU2382,Web,Belgium,SKU-101,Trail Runner 2,Footwear,1,90.56,0.20,72.45
+500868,2024-12-02,CU2391,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,2,60.03,0.00,120.06
+500906,2024-12-02,CU2408,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,3,141.43,0.20,339.43
+500234,2024-12-03,CU2114,Retail Partner,United Kingdom,SKU-302,55L Trek Pack,Packs,3,167.89,0.00,503.67
+500180,2024-12-04,CU2082,Web,France,SKU-202,Rain Shell,Apparel,1,121.08,0.00,121.08
+500370,2024-12-04,CU2174,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,167.89,0.00,167.89
+500077,2024-12-05,CU2030,Marketplace,France,SKU-101,Trail Runner 2,Footwear,1,90.56,0.20,72.45
+500077,2024-12-05,CU2030,Marketplace,France,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500077,2024-12-05,CU2030,Marketplace,France,SKU-302,55L Trek Pack,Packs,1,167.89,0.10,151.10
+500138,2024-12-05,CU2059,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,60.03,0.20,48.02
+500812,2024-12-05,CU2368,Web,Germany,SKU-102,Trail Runner Pro,Footwear,2,141.43,0.20,226.29
+500557,2024-12-07,CU2258,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500741,2024-12-08,CU2339,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,60.03,0.00,120.06
+500741,2024-12-08,CU2339,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500741,2024-12-08,CU2339,Web,Netherlands,SKU-301,28L Daypack,Packs,1,75.30,0.00,75.30
+500592,2024-12-09,CU2276,Marketplace,United Kingdom,SKU-202,Rain Shell,Apparel,2,121.08,0.00,242.16
+500857,2024-12-09,CU2386,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500012,2024-12-10,CU2004,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500352,2024-12-10,CU2165,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.59,0.20,55.34
+500421,2024-12-10,CU2197,Retail Partner,Germany,SKU-301,28L Daypack,Packs,1,75.30,0.20,60.24
+500752,2024-12-10,CU2342,Web,France,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.10,127.29
+500371,2024-12-11,CU2175,Web,France,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.25,106.07
+500371,2024-12-11,CU2175,Web,France,SKU-202,Rain Shell,Apparel,2,121.08,0.00,242.16
+500888,2024-12-11,CU2402,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500888,2024-12-11,CU2402,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,2,167.89,0.00,335.78
+500030,2024-12-12,CU2014,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,60.03,0.00,120.06
+500463,2024-12-12,CU2214,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.10,127.29
+500463,2024-12-12,CU2214,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,3,90.56,0.15,230.93
+500584,2024-12-13,CU2273,Retail Partner,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.20,48.02
+500584,2024-12-13,CU2273,Retail Partner,Germany,SKU-402,Trekking Poles,Accessories,1,49.86,0.00,49.86
+500584,2024-12-13,CU2273,Retail Partner,Germany,SKU-302,55L Trek Pack,Packs,1,167.89,0.20,134.31
+500179,2024-12-14,CU2081,Web,Germany,SKU-302,55L Trek Pack,Packs,1,167.89,0.25,125.92
+500819,2024-12-14,CU2371,Retail Partner,United Kingdom,SKU-302,55L Trek Pack,Packs,1,167.89,0.20,134.31
+500819,2024-12-14,CU2371,Retail Partner,United Kingdom,SKU-402,Trekking Poles,Accessories,2,49.86,0.20,79.78
+500861,2024-12-14,CU2387,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.59,0.20,27.67
+500001,2024-12-15,CU2000,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,3,141.43,0.00,424.29
+500001,2024-12-15,CU2000,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500001,2024-12-15,CU2000,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,121.08,0.25,90.81
+500255,2024-12-15,CU2125,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500886,2024-12-15,CU2400,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,1,49.86,0.15,42.38
+500886,2024-12-15,CU2400,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.59,0.15,29.40
+500874,2024-12-16,CU2394,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500355,2024-12-17,CU2168,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,167.89,0.20,134.31
+500355,2024-12-17,CU2168,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,75.30,0.00,75.30
+500538,2024-12-22,CU2251,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,3,167.89,0.20,402.94
+500815,2024-12-22,CU2370,Marketplace,Belgium,SKU-202,Rain Shell,Apparel,3,121.08,0.00,363.24
+500815,2024-12-22,CU2370,Marketplace,Belgium,SKU-402,Trekking Poles,Accessories,2,49.86,0.00,99.72
+500907,2024-12-22,CU2408,Web,Germany,SKU-302,55L Trek Pack,Packs,2,167.89,0.00,335.78
+500907,2024-12-22,CU2408,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500807,2024-12-23,CU2366,Marketplace,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500016,2024-12-24,CU2005,Web,France,SKU-401,Headlamp 400,Accessories,1,34.59,0.15,29.40
+500016,2024-12-24,CU2005,Web,France,SKU-202,Rain Shell,Apparel,1,121.08,0.20,96.86
+500809,2024-12-25,CU2367,Retail Partner,France,SKU-301,28L Daypack,Packs,1,75.30,0.15,64.00
+500705,2024-12-26,CU2324,Retail Partner,Netherlands,SKU-302,55L Trek Pack,Packs,1,167.89,0.00,167.89
+500927,2024-12-27,CU2417,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,121.08,0.00,121.08
+500927,2024-12-27,CU2417,Web,United Kingdom,SKU-202,Rain Shell,Apparel,3,121.08,0.00,363.24
+500927,2024-12-27,CU2417,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,121.08,0.20,96.86
+500301,2024-12-28,CU2147,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,90.56,0.15,76.98
+500301,2024-12-28,CU2147,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.20,48.02
+500301,2024-12-28,CU2147,Web,Germany,SKU-301,28L Daypack,Packs,1,75.30,0.00,75.30
+500399,2024-12-28,CU2186,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,2,90.56,0.00,181.12
+500325,2024-12-29,CU2154,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500331,2024-12-29,CU2158,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500331,2024-12-29,CU2158,Web,Germany,SKU-302,55L Trek Pack,Packs,1,167.89,0.00,167.89
+500346,2024-12-29,CU2163,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.00,141.43
+500346,2024-12-29,CU2163,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.86,0.15,42.38
+500481,2024-12-29,CU2223,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,121.08,0.10,108.97
+500139,2024-12-31,CU2059,Retail Partner,Belgium,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500139,2024-12-31,CU2059,Retail Partner,Belgium,SKU-302,55L Trek Pack,Packs,2,167.89,0.00,335.78
+500139,2024-12-31,CU2059,Retail Partner,Belgium,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500866,2024-12-31,CU2390,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.59,0.20,27.67
+500607,2025-01-01,CU2280,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500607,2025-01-01,CU2280,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500607,2025-01-01,CU2280,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500118,2025-01-03,CU2052,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500126,2025-01-03,CU2055,Retail Partner,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500327,2025-01-03,CU2155,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500422,2025-01-03,CU2197,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500422,2025-01-03,CU2197,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.10,30.60
+500839,2025-01-05,CU2381,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500124,2025-01-06,CU2054,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500358,2025-01-07,CU2171,Retail Partner,Netherlands,SKU-401,Headlamp 400,Accessories,3,34.00,0.10,91.80
+500862,2025-01-07,CU2387,Marketplace,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500862,2025-01-07,CU2387,Marketplace,United Kingdom,SKU-101,Trail Runner 2,Footwear,3,89.00,0.00,267.00
+500890,2025-01-10,CU2403,Retail Partner,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500890,2025-01-10,CU2403,Retail Partner,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500667,2025-01-11,CU2310,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500667,2025-01-11,CU2310,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.25,44.25
+500723,2025-01-11,CU2330,Web,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500475,2025-01-12,CU2219,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.10,53.10
+500475,2025-01-12,CU2219,Web,Germany,SKU-302,55L Trek Pack,Packs,2,165.00,0.10,297.00
+500229,2025-01-14,CU2110,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500570,2025-01-14,CU2264,Retail Partner,Belgium,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500231,2025-01-15,CU2112,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500231,2025-01-15,CU2112,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500446,2025-01-17,CU2209,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500446,2025-01-17,CU2209,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500210,2025-01-18,CU2099,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500210,2025-01-18,CU2099,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500748,2025-01-19,CU2340,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500748,2025-01-19,CU2340,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500430,2025-01-20,CU2198,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500674,2025-01-21,CU2312,Marketplace,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.10,53.10
+500438,2025-01-23,CU2203,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500423,2025-01-24,CU2197,Retail Partner,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500091,2025-01-25,CU2036,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500091,2025-01-25,CU2036,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500534,2025-01-25,CU2249,Marketplace,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500534,2025-01-25,CU2249,Marketplace,France,SKU-301,28L Daypack,Packs,1,74.00,0.25,55.50
+500622,2025-01-25,CU2289,Marketplace,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500482,2025-01-26,CU2224,Web,France,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500523,2025-01-26,CU2245,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500821,2025-01-26,CU2373,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.25,36.75
+500821,2025-01-26,CU2373,Web,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.10,88.20
+500193,2025-01-27,CU2088,Web,Belgium,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500193,2025-01-27,CU2088,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.25,208.50
+500095,2025-01-28,CU2039,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,3,34.00,0.00,102.00
+500359,2025-01-28,CU2171,Marketplace,Belgium,SKU-301,28L Daypack,Packs,1,74.00,0.10,66.60
+500359,2025-01-28,CU2171,Marketplace,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500359,2025-01-28,CU2171,Marketplace,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500407,2025-01-28,CU2193,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500407,2025-01-28,CU2193,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500410,2025-01-28,CU2194,Retail Partner,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500410,2025-01-28,CU2194,Retail Partner,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500410,2025-01-28,CU2194,Retail Partner,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500632,2025-01-29,CU2292,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500762,2025-01-29,CU2349,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500762,2025-01-29,CU2349,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.15,101.15
+500742,2025-01-31,CU2339,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500742,2025-01-31,CU2339,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500840,2025-02-01,CU2381,Marketplace,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500840,2025-02-01,CU2381,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500858,2025-02-01,CU2386,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500391,2025-02-02,CU2184,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500391,2025-02-02,CU2184,Marketplace,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500391,2025-02-02,CU2184,Marketplace,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500219,2025-02-03,CU2106,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500303,2025-02-04,CU2148,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500775,2025-02-04,CU2354,Web,United Kingdom,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500006,2025-02-05,CU2002,Marketplace,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500548,2025-02-05,CU2254,Retail Partner,Belgium,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500340,2025-02-07,CU2161,Marketplace,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500340,2025-02-07,CU2161,Marketplace,United Kingdom,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500460,2025-02-10,CU2213,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500460,2025-02-10,CU2213,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500460,2025-02-10,CU2213,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500659,2025-02-10,CU2307,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500914,2025-02-10,CU2413,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500914,2025-02-10,CU2413,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500914,2025-02-10,CU2413,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500600,2025-02-12,CU2279,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500004,2025-02-13,CU2001,Marketplace,Germany,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500004,2025-02-13,CU2001,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500044,2025-02-13,CU2019,Web,France,SKU-301,28L Daypack,Packs,1,74.00,0.15,62.90
+500087,2025-02-13,CU2035,Marketplace,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500218,2025-02-13,CU2105,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500515,2025-02-13,CU2240,Marketplace,Belgium,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500515,2025-02-13,CU2240,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500716,2025-02-13,CU2328,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500889,2025-02-14,CU2402,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500571,2025-02-15,CU2265,Web,Germany,SKU-201,Merino Base Layer,Apparel,3,59.00,0.00,177.00
+500571,2025-02-15,CU2265,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500265,2025-02-16,CU2129,Marketplace,United Kingdom,SKU-302,55L Trek Pack,Packs,3,165.00,0.00,495.00
+500265,2025-02-16,CU2129,Marketplace,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500034,2025-02-17,CU2015,Retail Partner,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500056,2025-02-17,CU2024,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500398,2025-02-17,CU2185,Marketplace,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500418,2025-02-17,CU2196,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.25,55.50
+500547,2025-02-18,CU2253,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500769,2025-02-21,CU2351,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500919,2025-02-21,CU2414,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.10,30.60
+500226,2025-02-22,CU2109,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500226,2025-02-22,CU2109,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500235,2025-02-22,CU2114,Web,Germany,SKU-201,Merino Base Layer,Apparel,2,59.00,0.10,106.20
+500235,2025-02-22,CU2114,Web,Germany,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500593,2025-02-22,CU2276,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500804,2025-02-23,CU2364,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500259,2025-02-24,CU2127,Retail Partner,Netherlands,SKU-401,Headlamp 400,Accessories,3,34.00,0.00,102.00
+500259,2025-02-24,CU2127,Retail Partner,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500317,2025-02-24,CU2152,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500491,2025-02-24,CU2229,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.10,30.60
+500850,2025-02-26,CU2384,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500881,2025-02-26,CU2397,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500021,2025-02-27,CU2010,Web,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500021,2025-02-27,CU2010,Web,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500021,2025-02-27,CU2010,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500035,2025-02-27,CU2016,Retail Partner,France,SKU-202,Rain Shell,Apparel,3,119.00,0.00,357.00
+500580,2025-02-27,CU2271,Retail Partner,Netherlands,SKU-302,55L Trek Pack,Packs,3,165.00,0.00,495.00
+500719,2025-02-27,CU2329,Web,Germany,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500719,2025-02-27,CU2329,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500013,2025-02-28,CU2004,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500051,2025-02-28,CU2021,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500051,2025-02-28,CU2021,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500694,2025-03-01,CU2319,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500187,2025-03-02,CU2086,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500306,2025-03-03,CU2149,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500306,2025-03-03,CU2149,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500306,2025-03-03,CU2149,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500825,2025-03-04,CU2375,Web,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.10,66.60
+500872,2025-03-05,CU2393,Web,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500872,2025-03-05,CU2393,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.25,25.50
+500872,2025-03-05,CU2393,Web,France,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500304,2025-03-06,CU2148,Web,Germany,SKU-201,Merino Base Layer,Apparel,3,59.00,0.00,177.00
+500025,2025-03-07,CU2013,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500348,2025-03-07,CU2164,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500623,2025-03-09,CU2289,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500623,2025-03-09,CU2289,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500623,2025-03-09,CU2289,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500209,2025-03-10,CU2098,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500209,2025-03-10,CU2098,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,3,89.00,0.00,267.00
+500810,2025-03-10,CU2367,Web,Netherlands,SKU-301,28L Daypack,Packs,3,74.00,0.10,199.80
+500887,2025-03-11,CU2401,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500887,2025-03-11,CU2401,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500887,2025-03-11,CU2401,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500254,2025-03-13,CU2124,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500254,2025-03-13,CU2124,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.00,0.15,151.30
+500333,2025-03-14,CU2159,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500333,2025-03-14,CU2159,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500333,2025-03-14,CU2159,Web,Germany,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500439,2025-03-14,CU2203,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,3,89.00,0.10,240.30
+500675,2025-03-14,CU2312,Marketplace,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500539,2025-03-15,CU2251,Retail Partner,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500690,2025-03-15,CU2318,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.15,41.65
+500690,2025-03-15,CU2318,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500690,2025-03-15,CU2318,Web,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500243,2025-03-17,CU2120,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500797,2025-03-17,CU2360,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500054,2025-03-18,CU2023,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500263,2025-03-19,CU2128,Marketplace,France,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500908,2025-03-19,CU2408,Web,Belgium,SKU-301,28L Daypack,Packs,2,74.00,0.15,125.80
+500728,2025-03-20,CU2333,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500116,2025-03-21,CU2050,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500116,2025-03-21,CU2050,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500153,2025-03-21,CU2066,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500153,2025-03-21,CU2066,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500406,2025-03-23,CU2192,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500415,2025-03-23,CU2195,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500415,2025-03-23,CU2195,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.25,25.50
+500277,2025-03-25,CU2136,Retail Partner,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.10,66.60
+500492,2025-03-26,CU2230,Web,France,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500501,2025-03-26,CU2234,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500501,2025-03-26,CU2234,Retail Partner,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.15,101.15
+500655,2025-03-27,CU2305,Web,Belgium,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500805,2025-03-28,CU2365,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500096,2025-03-29,CU2039,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500434,2025-03-29,CU2200,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500826,2025-03-29,CU2376,Web,Netherlands,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500411,2025-03-30,CU2194,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.10,53.10
+500480,2025-03-31,CU2222,Retail Partner,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500480,2025-03-31,CU2222,Retail Partner,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500161,2025-04-01,CU2069,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500201,2025-04-01,CU2093,Marketplace,Belgium,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500151,2025-04-02,CU2065,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500151,2025-04-02,CU2065,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.67,0.25,67.25
+500882,2025-04-02,CU2397,Web,Belgium,SKU-101,Trail Runner 2,Footwear,2,89.67,0.00,179.34
+500114,2025-04-04,CU2049,Web,Netherlands,SKU-301,28L Daypack,Packs,2,74.56,0.00,149.12
+500289,2025-04-04,CU2142,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.26,0.10,30.83
+500293,2025-04-04,CU2143,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500293,2025-04-04,CU2143,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.10,107.90
+500629,2025-04-07,CU2291,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500629,2025-04-07,CU2291,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500542,2025-04-08,CU2252,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.15,141.30
+500247,2025-04-09,CU2121,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500247,2025-04-09,CU2121,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.15,41.96
+500251,2025-04-10,CU2123,Web,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500353,2025-04-10,CU2166,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.15,141.30
+500353,2025-04-10,CU2166,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,1,49.37,0.10,44.43
+500668,2025-04-10,CU2310,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500765,2025-04-11,CU2350,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500014,2025-04-12,CU2004,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500493,2025-04-12,CU2231,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500148,2025-04-13,CU2063,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500658,2025-04-13,CU2306,Web,France,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.10,126.04
+500658,2025-04-13,CU2306,Web,France,SKU-102,Trail Runner Pro,Footwear,2,140.04,0.00,280.08
+500684,2025-04-13,CU2314,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500007,2025-04-14,CU2002,Web,France,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500904,2025-04-14,CU2407,Web,France,SKU-402,Trekking Poles,Accessories,3,49.37,0.00,148.11
+500904,2025-04-14,CU2407,Web,France,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500904,2025-04-14,CU2407,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500931,2025-04-16,CU2419,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500469,2025-04-17,CU2217,Web,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.10,149.62
+500469,2025-04-17,CU2217,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500337,2025-04-18,CU2160,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500814,2025-04-18,CU2369,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.67,0.10,80.70
+500443,2025-04-19,CU2207,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500615,2025-04-19,CU2286,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500896,2025-04-20,CU2404,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500896,2025-04-20,CU2404,Web,United Kingdom,SKU-202,Rain Shell,Apparel,2,119.89,0.00,239.78
+500069,2025-04-21,CU2028,Retail Partner,Netherlands,SKU-302,55L Trek Pack,Packs,2,166.24,0.00,332.48
+500564,2025-04-22,CU2263,Web,France,SKU-401,Headlamp 400,Accessories,1,34.26,0.15,29.12
+500173,2025-04-23,CU2076,Web,Belgium,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500589,2025-04-24,CU2275,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500589,2025-04-24,CU2275,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500841,2025-04-24,CU2381,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500517,2025-04-25,CU2242,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,2,140.04,0.00,280.08
+500517,2025-04-25,CU2242,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500517,2025-04-25,CU2242,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500829,2025-04-25,CU2377,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500829,2025-04-25,CU2377,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.10,107.90
+500829,2025-04-25,CU2377,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500512,2025-04-26,CU2238,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500290,2025-04-27,CU2142,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500364,2025-04-27,CU2172,Web,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500447,2025-04-27,CU2209,Web,France,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500792,2025-04-27,CU2357,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500792,2025-04-27,CU2357,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500792,2025-04-27,CU2357,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500873,2025-04-27,CU2393,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,1,49.37,0.15,41.96
+500519,2025-04-28,CU2243,Web,Belgium,SKU-401,Headlamp 400,Accessories,1,34.26,0.15,29.12
+500519,2025-04-28,CU2243,Web,Belgium,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500585,2025-04-29,CU2273,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.26,0.10,30.83
+500585,2025-04-29,CU2273,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500833,2025-04-29,CU2378,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500833,2025-04-29,CU2378,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500833,2025-04-29,CU2378,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500863,2025-04-29,CU2387,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500104,2025-04-30,CU2046,Web,France,SKU-201,Merino Base Layer,Apparel,1,59.44,0.25,44.58
+500376,2025-05-02,CU2177,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500476,2025-05-02,CU2219,Web,France,SKU-201,Merino Base Layer,Apparel,2,59.44,0.00,118.88
+500476,2025-05-02,CU2219,Web,France,SKU-402,Trekking Poles,Accessories,2,49.37,0.10,88.87
+500239,2025-05-04,CU2117,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500239,2025-05-04,CU2117,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500594,2025-05-05,CU2277,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,3,59.44,0.00,178.32
+500594,2025-05-05,CU2277,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,3,74.56,0.00,223.68
+500594,2025-05-05,CU2277,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500404,2025-05-07,CU2190,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500404,2025-05-07,CU2190,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500176,2025-05-10,CU2078,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500176,2025-05-10,CU2078,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500616,2025-05-10,CU2286,Web,Germany,SKU-402,Trekking Poles,Accessories,3,49.37,0.00,148.11
+500036,2025-05-11,CU2016,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500045,2025-05-11,CU2019,Web,Belgium,SKU-301,28L Daypack,Packs,1,74.56,0.10,67.10
+500472,2025-05-11,CU2218,Web,Netherlands,SKU-301,28L Daypack,Packs,2,74.56,0.10,134.21
+500368,2025-05-12,CU2173,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.67,0.10,161.41
+500502,2025-05-15,CU2234,Web,France,SKU-402,Trekking Poles,Accessories,2,49.37,0.10,88.87
+500502,2025-05-15,CU2234,Web,France,SKU-402,Trekking Poles,Accessories,2,49.37,0.00,98.74
+500502,2025-05-15,CU2234,Web,France,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500549,2025-05-17,CU2254,Marketplace,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500734,2025-05-20,CU2336,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500518,2025-05-21,CU2242,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.10,149.62
+500392,2025-05-22,CU2184,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.37,0.00,98.74
+500506,2025-05-22,CU2235,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.37,0.00,98.74
+500506,2025-05-22,CU2235,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500506,2025-05-22,CU2235,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500227,2025-05-24,CU2109,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500227,2025-05-24,CU2109,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500530,2025-05-24,CU2247,Web,France,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500706,2025-05-24,CU2324,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500706,2025-05-24,CU2324,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500724,2025-05-24,CU2330,Retail Partner,Belgium,SKU-402,Trekking Poles,Accessories,2,49.37,0.00,98.74
+500311,2025-05-25,CU2150,Web,Netherlands,SKU-402,Trekking Poles,Accessories,3,49.37,0.00,148.11
+500373,2025-05-25,CU2176,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,2,34.26,0.00,68.52
+500010,2025-05-26,CU2003,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500729,2025-05-26,CU2333,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500729,2025-05-26,CU2333,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500729,2025-05-26,CU2333,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500026,2025-05-27,CU2013,Web,Belgium,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500026,2025-05-27,CU2013,Web,Belgium,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500079,2025-05-27,CU2032,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500181,2025-05-27,CU2082,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500181,2025-05-27,CU2082,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.25,105.03
+500776,2025-05-27,CU2354,Retail Partner,Netherlands,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500038,2025-05-29,CU2018,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.37,0.15,41.96
+500038,2025-05-29,CU2018,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500038,2025-05-29,CU2018,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500105,2025-05-29,CU2046,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500637,2025-05-29,CU2295,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500072,2025-05-30,CU2029,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500158,2025-05-30,CU2067,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500158,2025-05-30,CU2067,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500158,2025-05-30,CU2067,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500119,2025-05-31,CU2052,Web,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.10,67.10
+500119,2025-05-31,CU2052,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500119,2025-05-31,CU2052,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.10,126.04
+500204,2025-05-31,CU2096,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,2,89.67,0.00,179.34
+500679,2025-06-03,CU2313,Retail Partner,France,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500679,2025-06-03,CU2313,Retail Partner,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500318,2025-06-04,CU2152,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500387,2025-06-04,CU2183,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500387,2025-06-04,CU2183,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.10,53.10
+500102,2025-06-05,CU2045,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500102,2025-06-05,CU2045,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500621,2025-06-06,CU2288,Retail Partner,United Kingdom,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500621,2025-06-06,CU2288,Retail Partner,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500334,2025-06-07,CU2159,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500334,2025-06-07,CU2159,Marketplace,Germany,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500334,2025-06-07,CU2159,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500224,2025-06-08,CU2107,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500613,2025-06-08,CU2285,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500008,2025-06-09,CU2002,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500915,2025-06-09,CU2413,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500244,2025-06-10,CU2120,Retail Partner,Belgium,SKU-301,28L Daypack,Packs,2,74.00,0.10,133.20
+500244,2025-06-10,CU2120,Retail Partner,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500220,2025-06-11,CU2106,Web,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500272,2025-06-12,CU2134,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500435,2025-06-12,CU2200,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500435,2025-06-12,CU2200,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500435,2025-06-12,CU2200,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500129,2025-06-13,CU2057,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500712,2025-06-13,CU2326,Web,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500712,2025-06-13,CU2326,Web,Germany,SKU-401,Headlamp 400,Accessories,2,34.00,0.10,61.20
+500712,2025-06-13,CU2326,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500743,2025-06-14,CU2339,Web,France,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500347,2025-06-15,CU2163,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500405,2025-06-15,CU2191,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500920,2025-06-15,CU2415,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.15,41.65
+500920,2025-06-15,CU2415,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500702,2025-06-16,CU2323,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500761,2025-06-16,CU2348,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500761,2025-06-16,CU2348,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500020,2025-06-17,CU2009,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500020,2025-06-17,CU2009,Marketplace,Belgium,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500080,2025-06-18,CU2032,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500080,2025-06-18,CU2032,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500015,2025-06-19,CU2004,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500494,2025-06-20,CU2231,Web,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.00,0.25,66.75
+500494,2025-06-20,CU2231,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500676,2025-06-20,CU2312,Web,Germany,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500676,2025-06-20,CU2312,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.15,41.65
+500676,2025-06-20,CU2312,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500039,2025-06-22,CU2018,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,3,139.00,0.10,375.30
+500039,2025-06-22,CU2018,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500379,2025-06-24,CU2180,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500379,2025-06-24,CU2180,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500055,2025-06-25,CU2023,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500055,2025-06-25,CU2023,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500264,2025-06-25,CU2128,Web,France,SKU-301,28L Daypack,Packs,1,74.00,0.10,66.60
+500609,2025-06-25,CU2282,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500182,2025-06-27,CU2083,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500910,2025-06-27,CU2410,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500019,2025-06-28,CU2008,Marketplace,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500232,2025-06-28,CU2113,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500437,2025-06-28,CU2202,Retail Partner,Germany,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500879,2025-06-28,CU2396,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500386,2025-06-29,CU2182,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500386,2025-06-29,CU2182,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500125,2025-07-01,CU2054,Retail Partner,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.10,30.60
+500453,2025-07-01,CU2211,Web,Germany,SKU-302,55L Trek Pack,Packs,2,165.00,0.10,297.00
+500720,2025-07-01,CU2329,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500720,2025-07-01,CU2329,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500057,2025-07-03,CU2024,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500197,2025-07-03,CU2091,Marketplace,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500197,2025-07-03,CU2091,Marketplace,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.10,30.60
+500172,2025-07-04,CU2075,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500172,2025-07-04,CU2075,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500313,2025-07-04,CU2151,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500645,2025-07-04,CU2300,Web,Belgium,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500854,2025-07-04,CU2385,Web,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500854,2025-07-04,CU2385,Web,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500901,2025-07-04,CU2405,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500901,2025-07-04,CU2405,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500928,2025-07-04,CU2417,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500252,2025-07-05,CU2123,Retail Partner,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500408,2025-07-05,CU2193,Marketplace,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500408,2025-07-05,CU2193,Marketplace,Belgium,SKU-202,Rain Shell,Apparel,2,119.00,0.10,214.20
+500912,2025-07-05,CU2412,Web,Germany,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500424,2025-07-07,CU2197,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500221,2025-07-09,CU2106,Marketplace,France,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500221,2025-07-09,CU2106,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500865,2025-07-11,CU2389,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500648,2025-07-12,CU2303,Retail Partner,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500011,2025-07-13,CU2003,Retail Partner,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500011,2025-07-13,CU2003,Retail Partner,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.10,214.20
+500701,2025-07-13,CU2322,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500701,2025-07-13,CU2322,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500701,2025-07-13,CU2322,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500932,2025-07-14,CU2419,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500848,2025-07-15,CU2382,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.25,208.50
+500027,2025-07-16,CU2013,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500106,2025-07-16,CU2046,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.25,123.75
+500205,2025-07-16,CU2096,Web,France,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500558,2025-07-16,CU2258,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500586,2025-07-16,CU2273,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500691,2025-07-19,CU2318,Marketplace,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500691,2025-07-19,CU2318,Marketplace,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500786,2025-07-20,CU2356,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500921,2025-07-20,CU2415,Web,France,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500921,2025-07-20,CU2415,Web,France,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500677,2025-07-21,CU2312,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500677,2025-07-21,CU2312,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500677,2025-07-21,CU2312,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500165,2025-07-22,CU2071,Web,France,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500188,2025-07-23,CU2087,Retail Partner,France,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500188,2025-07-23,CU2087,Retail Partner,France,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500575,2025-07-23,CU2269,Web,France,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500633,2025-07-23,CU2293,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500877,2025-07-24,CU2395,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500322,2025-07-25,CU2153,Marketplace,France,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500322,2025-07-25,CU2153,Marketplace,France,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500286,2025-07-27,CU2141,Web,Germany,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500467,2025-07-27,CU2216,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500467,2025-07-27,CU2216,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500662,2025-07-27,CU2309,Web,Germany,SKU-101,Trail Runner 2,Footwear,2,89.00,0.00,178.00
+500662,2025-07-27,CU2309,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500662,2025-07-27,CU2309,Web,Germany,SKU-201,Merino Base Layer,Apparel,2,59.00,0.15,100.30
+500278,2025-07-28,CU2136,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500278,2025-07-28,CU2136,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500638,2025-07-29,CU2296,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500380,2025-07-30,CU2181,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.25,44.25
+500058,2025-07-31,CU2024,Web,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500328,2025-08-01,CU2156,Marketplace,France,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500798,2025-08-01,CU2360,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500798,2025-08-01,CU2360,Web,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.10,88.20
+500550,2025-08-02,CU2255,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500550,2025-08-02,CU2255,Web,Belgium,SKU-401,Headlamp 400,Accessories,2,34.00,0.15,57.80
+500121,2025-08-05,CU2053,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500184,2025-08-05,CU2084,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500305,2025-08-05,CU2148,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500305,2025-08-05,CU2148,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500360,2025-08-05,CU2171,Retail Partner,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500312,2025-08-06,CU2150,Web,Belgium,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500507,2025-08-06,CU2236,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500341,2025-08-07,CU2161,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500842,2025-08-07,CU2381,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,2,89.00,0.10,160.20
+500496,2025-08-08,CU2232,Marketplace,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500496,2025-08-08,CU2232,Marketplace,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500451,2025-08-09,CU2210,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500601,2025-08-09,CU2279,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500601,2025-08-09,CU2279,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500049,2025-08-10,CU2020,Web,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500063,2025-08-10,CU2026,Marketplace,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500063,2025-08-10,CU2026,Marketplace,United Kingdom,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500771,2025-08-11,CU2353,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500241,2025-08-12,CU2118,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500241,2025-08-12,CU2118,Web,Belgium,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500454,2025-08-12,CU2211,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500002,2025-08-13,CU2000,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500140,2025-08-13,CU2059,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500738,2025-08-13,CU2338,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500052,2025-08-14,CU2022,Marketplace,Belgium,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500195,2025-08-14,CU2090,Retail Partner,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500195,2025-08-14,CU2090,Retail Partner,Germany,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500579,2025-08-14,CU2270,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500859,2025-08-16,CU2386,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,3,59.00,0.15,150.45
+500859,2025-08-16,CU2386,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500461,2025-08-18,CU2213,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500028,2025-08-19,CU2013,Web,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500851,2025-08-20,CU2384,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500851,2025-08-20,CU2384,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500215,2025-08-21,CU2103,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500436,2025-08-22,CU2201,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500436,2025-08-22,CU2201,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500499,2025-08-22,CU2233,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,2,49.00,0.25,73.50
+500046,2025-08-23,CU2019,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500130,2025-08-24,CU2057,Retail Partner,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.15,140.25
+500009,2025-08-25,CU2002,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500225,2025-08-25,CU2108,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.25,66.75
+500381,2025-08-25,CU2181,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500162,2025-08-27,CU2070,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500162,2025-08-27,CU2070,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500361,2025-08-27,CU2171,Marketplace,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500485,2025-08-28,CU2227,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500005,2025-08-30,CU2001,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500005,2025-08-30,CU2001,Web,Belgium,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500266,2025-08-30,CU2129,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500587,2025-08-31,CU2273,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500644,2025-08-31,CU2299,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.15,140.25
+500168,2025-09-01,CU2072,Marketplace,United Kingdom,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500425,2025-09-01,CU2197,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500531,2025-09-05,CU2248,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500531,2025-09-05,CU2248,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500758,2025-09-05,CU2346,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.10,53.10
+500867,2025-09-06,CU2390,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500100,2025-09-09,CU2043,Web,France,SKU-301,28L Daypack,Packs,1,74.00,0.10,66.60
+500830,2025-09-09,CU2377,Web,Belgium,SKU-301,28L Daypack,Packs,3,74.00,0.15,188.70
+500455,2025-09-10,CU2211,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500101,2025-09-11,CU2044,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500101,2025-09-11,CU2044,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500521,2025-09-12,CU2244,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500521,2025-09-12,CU2244,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500521,2025-09-12,CU2244,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500737,2025-09-12,CU2337,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.15,101.15
+500737,2025-09-12,CU2337,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.25,25.50
+500737,2025-09-12,CU2337,Web,Germany,SKU-302,55L Trek Pack,Packs,2,165.00,0.15,280.50
+500109,2025-09-14,CU2047,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500109,2025-09-14,CU2047,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500897,2025-09-14,CU2404,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500524,2025-09-17,CU2245,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.15,101.15
+500770,2025-09-17,CU2352,Retail Partner,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500770,2025-09-17,CU2352,Retail Partner,Germany,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500097,2025-09-19,CU2040,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500294,2025-09-19,CU2144,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,2,49.00,0.00,98.00
+500643,2025-09-19,CU2298,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500696,2025-09-19,CU2320,Retail Partner,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500696,2025-09-19,CU2320,Retail Partner,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500763,2025-09-19,CU2349,Marketplace,France,SKU-201,Merino Base Layer,Apparel,2,59.00,0.00,118.00
+500763,2025-09-19,CU2349,Marketplace,France,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500891,2025-09-20,CU2403,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500651,2025-09-21,CU2304,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500256,2025-09-22,CU2126,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500256,2025-09-22,CU2126,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500256,2025-09-22,CU2126,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500612,2025-09-22,CU2284,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500248,2025-09-24,CU2122,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500448,2025-09-24,CU2209,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500393,2025-09-25,CU2184,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500393,2025-09-25,CU2184,Marketplace,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500617,2025-09-25,CU2286,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500617,2025-09-25,CU2286,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500802,2025-09-25,CU2363,Retail Partner,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500641,2025-09-26,CU2297,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500680,2025-09-26,CU2313,Web,Netherlands,SKU-402,Trekking Poles,Accessories,3,49.00,0.00,147.00
+500735,2025-09-26,CU2336,Marketplace,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500735,2025-09-26,CU2336,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500735,2025-09-26,CU2336,Marketplace,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.10,30.60
+500216,2025-09-27,CU2103,Web,France,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500216,2025-09-27,CU2103,Web,France,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500216,2025-09-27,CU2103,Web,France,SKU-402,Trekking Poles,Accessories,1,49.00,0.25,36.75
+500495,2025-09-29,CU2231,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500495,2025-09-29,CU2231,Web,Germany,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500495,2025-09-29,CU2231,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.15,140.25
+500260,2025-09-30,CU2127,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500834,2025-09-30,CU2379,Web,France,SKU-201,Merino Base Layer,Apparel,3,59.00,0.00,177.00
+500464,2025-10-01,CU2215,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500610,2025-10-04,CU2282,Marketplace,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500154,2025-10-05,CU2066,Retail Partner,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500695,2025-10-05,CU2319,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500660,2025-10-06,CU2307,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.15,101.15
+500174,2025-10-07,CU2076,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500174,2025-10-07,CU2076,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.25,89.25
+500174,2025-10-07,CU2076,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500329,2025-10-07,CU2156,Marketplace,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500329,2025-10-07,CU2156,Marketplace,France,SKU-402,Trekking Poles,Accessories,2,49.00,0.25,73.50
+500388,2025-10-07,CU2183,Web,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500382,2025-10-11,CU2181,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500382,2025-10-11,CU2181,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500382,2025-10-11,CU2181,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500634,2025-10-11,CU2293,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500634,2025-10-11,CU2293,Retail Partner,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500634,2025-10-11,CU2293,Retail Partner,Netherlands,SKU-302,55L Trek Pack,Packs,2,165.00,0.10,297.00
+500088,2025-10-13,CU2035,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500073,2025-10-15,CU2029,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500073,2025-10-15,CU2029,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500257,2025-10-15,CU2126,Marketplace,Belgium,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500183,2025-10-17,CU2083,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500462,2025-10-18,CU2213,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500766,2025-10-18,CU2350,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500166,2025-10-19,CU2071,Web,Germany,SKU-401,Headlamp 400,Accessories,3,34.00,0.00,102.00
+500273,2025-10-21,CU2134,Web,France,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500656,2025-10-23,CU2305,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,3,89.00,0.15,226.95
+500656,2025-10-23,CU2305,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500656,2025-10-23,CU2305,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.10,250.20
+500233,2025-10-26,CU2113,Web,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500412,2025-10-28,CU2194,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500412,2025-10-28,CU2194,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500412,2025-10-28,CU2194,Web,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500540,2025-10-31,CU2251,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500500,2025-11-04,CU2233,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.59,0.00,69.18
+500500,2025-11-04,CU2233,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500107,2025-11-05,CU2046,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500155,2025-11-07,CU2066,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500543,2025-11-07,CU2252,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500543,2025-11-07,CU2252,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500198,2025-11-08,CU2091,Web,Germany,SKU-202,Rain Shell,Apparel,1,121.08,0.00,121.08
+500198,2025-11-08,CU2091,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500198,2025-11-08,CU2091,Web,Germany,SKU-301,28L Daypack,Packs,1,75.30,0.20,60.24
+500565,2025-11-08,CU2263,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.00,141.43
+500565,2025-11-08,CU2263,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,75.30,0.00,75.30
+500878,2025-11-08,CU2395,Web,France,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500878,2025-11-08,CU2395,Web,France,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.10,127.29
+500878,2025-11-08,CU2395,Web,France,SKU-202,Rain Shell,Apparel,1,121.08,0.20,96.86
+500110,2025-11-10,CU2047,Retail Partner,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.20,48.02
+500110,2025-11-10,CU2047,Retail Partner,Germany,SKU-101,Trail Runner 2,Footwear,1,90.56,0.15,76.98
+500240,2025-11-10,CU2117,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.25,67.92
+500196,2025-11-11,CU2090,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,1,75.30,0.20,60.24
+500196,2025-11-11,CU2090,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,167.89,0.00,167.89
+500342,2025-11-13,CU2161,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,2,167.89,0.00,335.78
+500449,2025-11-17,CU2209,Retail Partner,United Kingdom,SKU-202,Rain Shell,Apparel,1,121.08,0.00,121.08
+500449,2025-11-17,CU2209,Retail Partner,United Kingdom,SKU-101,Trail Runner 2,Footwear,2,90.56,0.20,144.90
+500576,2025-11-17,CU2269,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,121.08,0.20,96.86
+500053,2025-11-20,CU2022,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.20,72.45
+500245,2025-11-22,CU2120,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.00,141.43
+500513,2025-11-22,CU2238,Web,Germany,SKU-301,28L Daypack,Packs,3,75.30,0.10,203.31
+500513,2025-11-22,CU2238,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500744,2025-11-22,CU2339,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.86,0.25,37.39
+500787,2025-11-22,CU2356,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,167.89,0.00,167.89
+500787,2025-11-22,CU2356,Web,Belgium,SKU-302,55L Trek Pack,Packs,1,167.89,0.25,125.92
+500898,2025-11-25,CU2404,Web,Belgium,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500520,2025-11-26,CU2243,Web,France,SKU-301,28L Daypack,Packs,1,75.30,0.00,75.30
+500520,2025-11-26,CU2243,Web,France,SKU-402,Trekking Poles,Accessories,1,49.86,0.10,44.87
+500703,2025-11-26,CU2323,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,60.03,0.20,48.02
+500059,2025-11-28,CU2024,Marketplace,Belgium,SKU-101,Trail Runner 2,Footwear,1,90.56,0.20,72.45
+500059,2025-11-28,CU2024,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.00,141.43
+500652,2025-11-28,CU2304,Marketplace,France,SKU-402,Trekking Poles,Accessories,1,49.86,0.20,39.89
+500669,2025-11-29,CU2310,Web,Netherlands,SKU-301,28L Daypack,Packs,2,75.30,0.15,128.01
+500669,2025-11-29,CU2310,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500279,2025-11-30,CU2136,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.25,106.07
+500279,2025-11-30,CU2136,Marketplace,Belgium,SKU-401,Headlamp 400,Accessories,1,34.59,0.00,34.59
+500657,2025-11-30,CU2305,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.86,0.00,49.86
+500473,2025-12-01,CU2218,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,121.08,0.00,121.08
+500473,2025-12-01,CU2218,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,2,167.89,0.20,268.62
+500274,2025-12-02,CU2134,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.59,0.20,27.67
+500274,2025-12-02,CU2134,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.20,48.02
+500274,2025-12-02,CU2134,Web,Germany,SKU-401,Headlamp 400,Accessories,2,34.59,0.25,51.89
+500426,2025-12-02,CU2197,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,121.08,0.00,121.08
+500843,2025-12-03,CU2381,Web,Germany,SKU-301,28L Daypack,Packs,2,75.30,0.20,120.48
+500189,2025-12-04,CU2087,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.00,141.43
+500602,2025-12-06,CU2279,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,90.56,0.20,72.45
+500595,2025-12-09,CU2277,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,90.56,0.20,72.45
+500383,2025-12-11,CU2181,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.59,0.20,55.34
+500383,2025-12-11,CU2181,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.20,113.14
+500663,2025-12-12,CU2309,Web,Germany,SKU-302,55L Trek Pack,Packs,1,167.89,0.15,142.71
+500663,2025-12-12,CU2309,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500730,2025-12-12,CU2333,Retail Partner,Netherlands,SKU-301,28L Daypack,Packs,1,75.30,0.00,75.30
+500249,2025-12-13,CU2122,Marketplace,Germany,SKU-101,Trail Runner 2,Footwear,1,90.56,0.20,72.45
+500739,2025-12-13,CU2338,Retail Partner,Germany,SKU-302,55L Trek Pack,Packs,1,167.89,0.00,167.89
+500707,2025-12-15,CU2324,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.00,141.43
+500470,2025-12-18,CU2217,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,60.03,0.20,48.02
+500772,2025-12-18,CU2353,Web,France,SKU-101,Trail Runner 2,Footwear,1,90.56,0.00,90.56
+500772,2025-12-18,CU2353,Web,France,SKU-201,Merino Base Layer,Apparel,1,60.03,0.00,60.03
+500685,2025-12-19,CU2314,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.86,0.00,49.86
+500532,2025-12-21,CU2248,Marketplace,France,SKU-402,Trekking Poles,Accessories,1,49.86,0.20,39.89
+500639,2025-12-23,CU2296,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.86,0.00,49.86
+500639,2025-12-23,CU2296,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,1,167.89,0.20,134.31
+500916,2025-12-28,CU2413,Retail Partner,Belgium,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.15,120.22
+500922,2025-12-28,CU2415,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,141.43,0.10,127.29
+500047,2025-12-29,CU2019,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,2,141.43,0.00,282.86
+500452,2026-01-01,CU2210,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500452,2026-01-01,CU2210,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500452,2026-01-01,CU2210,Web,United Kingdom,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500793,2026-01-03,CU2357,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500365,2026-01-07,CU2172,Marketplace,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500365,2026-01-07,CU2172,Marketplace,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500365,2026-01-07,CU2172,Marketplace,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500374,2026-01-10,CU2176,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500374,2026-01-10,CU2176,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500413,2026-01-12,CU2194,Retail Partner,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500120,2026-01-13,CU2052,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.10,53.10
+500120,2026-01-13,CU2052,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500246,2026-01-13,CU2120,Web,Belgium,SKU-202,Rain Shell,Apparel,2,119.00,0.25,178.50
+500649,2026-01-15,CU2303,Retail Partner,United Kingdom,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500649,2026-01-15,CU2303,Retail Partner,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500649,2026-01-15,CU2303,Retail Partner,United Kingdom,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500618,2026-01-18,CU2286,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500141,2026-01-19,CU2059,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500141,2026-01-19,CU2059,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500497,2026-01-19,CU2232,Web,France,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500362,2026-01-20,CU2171,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500640,2026-01-25,CU2296,Web,France,SKU-302,55L Trek Pack,Packs,2,165.00,0.00,330.00
+500860,2026-01-25,CU2386,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500860,2026-01-25,CU2386,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500860,2026-01-25,CU2386,Web,Netherlands,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500917,2026-01-26,CU2413,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500468,2026-01-29,CU2216,Retail Partner,Belgium,SKU-301,28L Daypack,Packs,2,74.00,0.00,148.00
+500029,2026-01-31,CU2013,Marketplace,United Kingdom,SKU-301,28L Daypack,Packs,3,74.00,0.00,222.00
+500029,2026-01-31,CU2013,Marketplace,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500678,2026-01-31,CU2312,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500678,2026-01-31,CU2312,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500678,2026-01-31,CU2312,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.15,118.15
+500319,2026-02-03,CU2152,Marketplace,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500319,2026-02-03,CU2152,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500777,2026-02-04,CU2354,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500777,2026-02-04,CU2354,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500156,2026-02-05,CU2066,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500721,2026-02-11,CU2329,Web,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500287,2026-02-18,CU2141,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500697,2026-02-20,CU2320,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500222,2026-02-23,CU2106,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500267,2026-02-23,CU2129,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500267,2026-02-23,CU2129,Retail Partner,Netherlands,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500323,2026-02-23,CU2153,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500852,2026-02-25,CU2384,Retail Partner,Belgium,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500003,2026-02-26,CU2000,Web,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500314,2026-02-26,CU2151,Web,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500314,2026-02-26,CU2151,Web,Belgium,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500394,2026-02-28,CU2184,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500394,2026-02-28,CU2184,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500081,2026-03-01,CU2032,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.15,101.15
+500681,2026-03-04,CU2313,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500471,2026-03-05,CU2217,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500471,2026-03-05,CU2217,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500551,2026-03-06,CU2255,Retail Partner,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500048,2026-03-07,CU2019,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500048,2026-03-07,CU2019,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500131,2026-03-07,CU2057,Web,United Kingdom,SKU-202,Rain Shell,Apparel,1,119.00,0.10,107.10
+500131,2026-03-07,CU2057,Web,United Kingdom,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500577,2026-03-07,CU2269,Web,France,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500577,2026-03-07,CU2269,Web,France,SKU-102,Trail Runner Pro,Footwear,2,139.00,0.00,278.00
+500577,2026-03-07,CU2269,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500892,2026-03-16,CU2403,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500892,2026-03-16,CU2403,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500745,2026-03-26,CU2339,Web,Germany,SKU-202,Rain Shell,Apparel,1,119.00,0.00,119.00
+500835,2026-03-27,CU2379,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500835,2026-03-27,CU2379,Web,France,SKU-201,Merino Base Layer,Apparel,1,59.00,0.15,50.15
+500450,2026-03-30,CU2209,Web,Germany,SKU-202,Rain Shell,Apparel,2,119.00,0.00,238.00
+500206,2026-04-02,CU2096,Marketplace,Germany,SKU-402,Trekking Poles,Accessories,2,49.37,0.25,74.05
+500508,2026-04-02,CU2236,Web,Netherlands,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500508,2026-04-02,CU2236,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500767,2026-04-05,CU2350,Retail Partner,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500767,2026-04-05,CU2350,Retail Partner,United Kingdom,SKU-101,Trail Runner 2,Footwear,3,89.67,0.00,269.01
+500759,2026-04-07,CU2346,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500486,2026-04-09,CU2227,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500764,2026-04-13,CU2349,Web,Netherlands,SKU-301,28L Daypack,Packs,1,74.56,0.10,67.10
+500089,2026-04-14,CU2035,Web,Germany,SKU-202,Rain Shell,Apparel,3,119.89,0.00,359.67
+500163,2026-04-16,CU2070,Marketplace,Germany,SKU-202,Rain Shell,Apparel,1,119.89,0.10,107.90
+500163,2026-04-16,CU2070,Marketplace,Germany,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500746,2026-04-21,CU2339,Web,France,SKU-402,Trekking Poles,Accessories,2,49.37,0.00,98.74
+500746,2026-04-21,CU2339,Web,France,SKU-402,Trekking Poles,Accessories,2,49.37,0.25,74.05
+500603,2026-04-22,CU2279,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500603,2026-04-22,CU2279,Marketplace,Netherlands,SKU-301,28L Daypack,Packs,1,74.56,0.00,74.56
+500603,2026-04-22,CU2279,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500167,2026-04-28,CU2071,Web,France,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500167,2026-04-28,CU2071,Web,France,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500736,2026-04-28,CU2336,Web,Germany,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500736,2026-04-28,CU2336,Web,Germany,SKU-401,Headlamp 400,Accessories,2,34.26,0.00,68.52
+500525,2026-04-30,CU2245,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500525,2026-04-30,CU2245,Retail Partner,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500525,2026-04-30,CU2245,Retail Partner,Netherlands,SKU-202,Rain Shell,Apparel,3,119.89,0.00,359.67
+500794,2026-05-01,CU2357,Web,Germany,SKU-202,Rain Shell,Apparel,3,119.89,0.00,359.67
+500778,2026-05-05,CU2354,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500778,2026-05-05,CU2354,Web,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.37,0.15,41.96
+500704,2026-05-06,CU2323,Web,France,SKU-202,Rain Shell,Apparel,2,119.89,0.00,239.78
+500704,2026-05-06,CU2323,Web,France,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500704,2026-05-06,CU2323,Web,France,SKU-302,55L Trek Pack,Packs,1,166.24,0.00,166.24
+500544,2026-05-07,CU2252,Marketplace,Netherlands,SKU-302,55L Trek Pack,Packs,2,166.24,0.10,299.23
+500544,2026-05-07,CU2252,Marketplace,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500552,2026-05-10,CU2255,Web,Belgium,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500552,2026-05-10,CU2255,Web,Belgium,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500427,2026-05-11,CU2197,Web,France,SKU-102,Trail Runner Pro,Footwear,3,140.04,0.00,420.12
+500533,2026-05-11,CU2248,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500295,2026-05-13,CU2144,Web,Germany,SKU-202,Rain Shell,Apparel,3,119.89,0.00,359.67
+500682,2026-05-13,CU2313,Marketplace,Germany,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500389,2026-05-14,CU2183,Retail Partner,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500389,2026-05-14,CU2183,Retail Partner,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.25,105.03
+500389,2026-05-14,CU2183,Retail Partner,United Kingdom,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500108,2026-05-16,CU2046,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,2,59.44,0.00,118.88
+500108,2026-05-16,CU2046,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.67,0.00,89.67
+500831,2026-05-18,CU2377,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500831,2026-05-18,CU2377,Web,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.44,0.00,59.44
+500831,2026-05-18,CU2377,Web,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500844,2026-05-18,CU2381,Web,Germany,SKU-302,55L Trek Pack,Packs,1,166.24,0.15,141.30
+500844,2026-05-18,CU2381,Web,Germany,SKU-401,Headlamp 400,Accessories,3,34.26,0.00,102.78
+500844,2026-05-18,CU2381,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500456,2026-05-19,CU2211,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.25,105.03
+500060,2026-05-21,CU2024,Web,Netherlands,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500060,2026-05-21,CU2024,Web,Netherlands,SKU-202,Rain Shell,Apparel,1,119.89,0.00,119.89
+500465,2026-05-27,CU2215,Marketplace,France,SKU-402,Trekking Poles,Accessories,1,49.37,0.00,49.37
+500604,2026-05-27,CU2279,Web,United Kingdom,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.10,126.04
+500604,2026-05-27,CU2279,Web,United Kingdom,SKU-101,Trail Runner 2,Footwear,1,89.67,0.15,76.22
+500619,2026-05-31,CU2286,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,140.04,0.00,140.04
+500619,2026-05-31,CU2286,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.26,0.00,34.26
+500207,2026-06-01,CU2096,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500207,2026-06-01,CU2096,Web,Germany,SKU-101,Trail Runner 2,Footwear,1,89.00,0.00,89.00
+500363,2026-06-03,CU2171,Web,Germany,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00
+500363,2026-06-03,CU2171,Web,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.10,148.50
+500642,2026-06-05,CU2297,Web,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500074,2026-06-06,CU2029,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.25,104.25
+500250,2026-06-06,CU2122,Web,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.10,80.10
+500250,2026-06-06,CU2122,Web,Netherlands,SKU-401,Headlamp 400,Accessories,2,34.00,0.00,68.00
+500296,2026-06-07,CU2144,Web,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500566,2026-06-08,CU2263,Marketplace,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500779,2026-06-08,CU2354,Marketplace,Germany,SKU-302,55L Trek Pack,Packs,1,165.00,0.15,140.25
+500779,2026-06-08,CU2354,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500779,2026-06-08,CU2354,Marketplace,Germany,SKU-202,Rain Shell,Apparel,3,119.00,0.00,357.00
+500788,2026-06-09,CU2356,Web,Germany,SKU-301,28L Daypack,Packs,1,74.00,0.00,74.00
+500132,2026-06-11,CU2057,Marketplace,Belgium,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500343,2026-06-12,CU2161,Marketplace,United Kingdom,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500280,2026-06-13,CU2136,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500280,2026-06-13,CU2136,Marketplace,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500280,2026-06-13,CU2136,Marketplace,Germany,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500509,2026-06-13,CU2236,Retail Partner,Netherlands,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500670,2026-06-13,CU2310,Web,France,SKU-401,Headlamp 400,Accessories,1,34.00,0.00,34.00
+500899,2026-06-15,CU2404,Retail Partner,Netherlands,SKU-302,55L Trek Pack,Packs,1,165.00,0.00,165.00
+500698,2026-06-17,CU2320,Retail Partner,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500698,2026-06-17,CU2320,Retail Partner,Germany,SKU-102,Trail Runner Pro,Footwear,3,139.00,0.00,417.00
+500190,2026-06-18,CU2087,Marketplace,Netherlands,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.10,125.10
+500190,2026-06-18,CU2087,Marketplace,Netherlands,SKU-101,Trail Runner 2,Footwear,1,89.00,0.15,75.65
+500190,2026-06-18,CU2087,Marketplace,Netherlands,SKU-402,Trekking Poles,Accessories,1,49.00,0.10,44.10
+500366,2026-06-19,CU2172,Marketplace,France,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500320,2026-06-21,CU2152,Web,Germany,SKU-202,Rain Shell,Apparel,2,119.00,0.25,178.50
+500320,2026-06-21,CU2152,Web,Germany,SKU-102,Trail Runner Pro,Footwear,1,139.00,0.00,139.00
+500526,2026-06-29,CU2245,Marketplace,Belgium,SKU-201,Merino Base Layer,Apparel,1,59.00,0.00,59.00
+500526,2026-06-29,CU2245,Marketplace,Belgium,SKU-402,Trekking Poles,Accessories,1,49.00,0.00,49.00

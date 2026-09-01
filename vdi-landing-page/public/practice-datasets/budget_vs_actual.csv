@@ -1,0 +1,49 @@
+month,sku,product_name,category,budget_quantity,budget_unit_price,actual_quantity,actual_unit_price
+2026-01,SKU-101,Trail Runner 2,Footwear,265,89.00,220,88.79
+2026-02,SKU-101,Trail Runner 2,Footwear,436,89.00,429,93.88
+2026-03,SKU-101,Trail Runner 2,Footwear,631,89.00,542,81.17
+2026-04,SKU-101,Trail Runner 2,Footwear,422,89.00,311,92.83
+2026-05,SKU-101,Trail Runner 2,Footwear,656,89.00,572,78.36
+2026-06,SKU-101,Trail Runner 2,Footwear,610,89.00,734,95.51
+2026-01,SKU-102,Trail Runner Pro,Footwear,467,139.00,394,121.08
+2026-02,SKU-102,Trail Runner Pro,Footwear,202,139.00,168,136.71
+2026-03,SKU-102,Trail Runner Pro,Footwear,807,139.00,980,150.16
+2026-04,SKU-102,Trail Runner Pro,Footwear,423,139.00,464,132.51
+2026-05,SKU-102,Trail Runner Pro,Footwear,363,139.00,383,127.38
+2026-06,SKU-102,Trail Runner Pro,Footwear,540,139.00,639,133.61
+2026-01,SKU-201,Merino Base Layer,Apparel,370,59.00,432,62.92
+2026-02,SKU-201,Merino Base Layer,Apparel,551,59.00,629,60.83
+2026-03,SKU-201,Merino Base Layer,Apparel,738,59.00,917,59.06
+2026-04,SKU-201,Merino Base Layer,Apparel,380,59.00,428,53.70
+2026-05,SKU-201,Merino Base Layer,Apparel,409,59.00,425,61.51
+2026-06,SKU-201,Merino Base Layer,Apparel,489,59.00,473,60.09
+2026-01,SKU-202,Rain Shell,Apparel,888,119.00,881,116.15
+2026-02,SKU-202,Rain Shell,Apparel,817,119.00,958,126.47
+2026-03,SKU-202,Rain Shell,Apparel,437,119.00,404,120.85
+2026-04,SKU-202,Rain Shell,Apparel,744,119.00,912,121.25
+2026-05,SKU-202,Rain Shell,Apparel,577,119.00,566,109.35
+2026-06,SKU-202,Rain Shell,Apparel,461,119.00,515,102.51
+2026-01,SKU-301,28L Daypack,Packs,291,74.00,334,77.57
+2026-02,SKU-301,28L Daypack,Packs,445,74.00,513,69.49
+2026-03,SKU-301,28L Daypack,Packs,261,74.00,243,70.50
+2026-04,SKU-301,28L Daypack,Packs,254,74.00,244,68.25
+2026-05,SKU-301,28L Daypack,Packs,535,74.00,475,76.06
+2026-06,SKU-301,28L Daypack,Packs,876,74.00,817,75.78
+2026-01,SKU-302,55L Trek Pack,Packs,742,165.00,923,153.11
+2026-02,SKU-302,55L Trek Pack,Packs,866,165.00,627,159.09
+2026-03,SKU-302,55L Trek Pack,Packs,757,165.00,610,151.74
+2026-04,SKU-302,55L Trek Pack,Packs,281,165.00,225,142.46
+2026-05,SKU-302,55L Trek Pack,Packs,680,165.00,714,147.42
+2026-06,SKU-302,55L Trek Pack,Packs,565,165.00,672,177.49
+2026-01,SKU-401,Headlamp 400,Accessories,217,34.00,226,33.16
+2026-02,SKU-401,Headlamp 400,Accessories,356,34.00,389,34.51
+2026-03,SKU-401,Headlamp 400,Accessories,825,34.00,1055,32.20
+2026-04,SKU-401,Headlamp 400,Accessories,486,34.00,377,31.86
+2026-05,SKU-401,Headlamp 400,Accessories,443,34.00,481,36.72
+2026-06,SKU-401,Headlamp 400,Accessories,830,34.00,700,34.73
+2026-01,SKU-402,Trekking Poles,Accessories,205,49.00,168,46.90
+2026-02,SKU-402,Trekking Poles,Accessories,847,49.00,986,45.28
+2026-03,SKU-402,Trekking Poles,Accessories,878,49.00,829,49.69
+2026-04,SKU-402,Trekking Poles,Accessories,585,49.00,606,48.23
+2026-05,SKU-402,Trekking Poles,Accessories,724,49.00,799,52.59
+2026-06,SKU-402,Trekking Poles,Accessories,819,49.00,1028,44.96

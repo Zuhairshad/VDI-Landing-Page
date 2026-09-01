@@ -35,6 +35,11 @@ const nextConfig: NextConfig = {
         destination: '/blog',
         permanent: true,
       },
+      {
+        source: '/blog/business-intelligence-exercises',
+        destination: '/business-intelligence-exercises',
+        permanent: true,
+      },
     ]
   },
 }

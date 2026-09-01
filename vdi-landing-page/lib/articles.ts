@@ -1,5 +1,3 @@
-import { biExercisesArticle } from '@/lib/bi-exercises-article'
-
 export interface ArticleSection {
   heading: string
   paragraphs: string[]
@@ -39,11 +37,11 @@ export interface Article {
   readTime: string
   sections: ArticleSection[]
   exercises?: ArticleExercise[]
+  trailingSections?: ArticleSection[]
   faqs?: ArticleFaq[]
 }
 
 export const articles: Article[] = [
-  biExercisesArticle,
   {
     slug: 'evidence-trail-ai-generated-claims',
     title: 'Building an evidence trail for AI-generated claims',

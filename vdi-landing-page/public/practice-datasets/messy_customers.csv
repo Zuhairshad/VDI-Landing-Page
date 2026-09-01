@@ -1,0 +1,200 @@
+customer_id,customer_name,email,country,segment,signup_date,monthly_revenue,seats,status
+C1095,Lucia Petrova,lucia.petrova@northwind.io,BE,smb,"Jan 17, 2025",395.02,5,ACTIVE
+C1144,  HASSAN MORENO  ,hassan.moreno@acme-parts.com,netherlands,smb,09/02/2025,104.02,12,active
+C1075,Greta Ibrahim,greta.ibrahim@bluefin.de,BE,Enterprise,"Mar 11, 2024",106.58,40,ACTIVE
+C1102,Amara Haddad,amara.haddad@verta.fr,BE,smb,2025-08-13,198.88,40,active
+C1116,  AMARA HADDAD  ,amara.haddad@hexon.co.uk,UK,enterprise,04/03/2024,124.52,2,active
+C1172,"Bergman, Diego",diego.bergman@hexon.co.uk,NL,SMB,2024-07-07,143.20,2,Paused
+C1059,  DIEGO ROMANO  ,diego.romano@verta.fr,United Kingdom,enterprise,"Sep 27, 2024",610.18,-3,Active
+C1184,"Nair, Maya",MAYA.NAIR@NORTHWIND.IO,netherlands,enterprise,"Aug 29, 2024",132.67,40,Active
+C1166,  NOOR NOVOTNY  ,noor.novotny@northwind.io,United Kingdom,Mid-Market,2025-12-29,484.08,12,Active
+C1126,Lucia Duarte,lucia.duarte@verta.fr,Belgium,Small Business,2025-06-04,EUR 383.01,8,Churned
+C1104,"Lindqvist, Ines",ines.lindqvist@kestrel-logistics.nl,Netherlands,enterprise,"Nov 24, 2024",485.68,1,active
+C1030,Ines Okafor,ines.okafor@kestrel-logistics.nl,DE,enterprise,2025-12-31,53.73,25,churned
+C1154,Noor Moreno,noor.moreno@acme-parts.com,U.K.,Mid-Market,2024-12-26,54.25,12,Churned
+C1057,  HASSAN SOKOLOV  ,hassan.sokolov@kestrel-logistics.nl,DE,enterprise,2024-02-19,EUR 891.89,25,Active
+C1034,Amara Walsh,amara.walsh@verta.fr,germany,Small Business,2024-03-04,1140.18,8,Paused
+C1028,Lucia Romano,lucia.romano@acme-parts.com,BE,smb,0000-00-00,690.64,5,churned
+C1037,Amara Weber,amara.weber@bluefin.de,Germany,SMB,2024-09-05,,25,trial
+C1106,Owen Vasquez,owen.vasquez@kestrel-logistics.nl,United Kingdom,ENT,02/03/2024,55.53,3,churned
+C1046,Noor Romano,noor.romano @ acme-parts.com,DE,Enterprise,"Apr 04, 2025",45.33,2,Paused
+C1002,Nadia Sokolov,nadia.sokolov @ northwind.io,United Kingdom,Small Business,27/05/2024,58.35,2,Paused
+C1160,Karel Karim,karel.karim@bluefin.de,netherlands,enterprise,2025-06-25,122.45 EUR,1,trial
+C1139,"Vasquez, Liam",liam.vasquez@northwind.io,NL,smb,0000-00-00,147.90,25,churned
+C1131,Bruno Duarte,bruno.duarte@verta.fr,DE,Enterprise,"Jul 18, 2025",45.11,25,Paused
+C1103,Noor Haddad,noor.haddad@northwind.io,netherlands,SMB,15/11/2025,1083.43,25,Trial
+C1187,Sofia Vasquez ,SOFIA.VASQUEZ@VERTA.FR,Germany,smb,2025-12-29,,25,trial
+C1190,"Nair, Felix ",FELIX.NAIR@ACME-PARTS.COM,France,MM,2025-10-13,,3,churned
+C1032,Lucia Costa,lucia.costa@verta.fr,germany,ENT,2025-07-17,153.15,5,trial
+C1183,Felix Okafor ,FELIX.OKAFOR@NORTHWIND.IO,netherlands,Mid-Market,19/09/2025,114.75,3,Active
+C1013,Maya Moreno,maya.moreno@northwind.io,germany,ENT,26/10/2024,553.64 EUR,40,trial
+C1151,"Novotny, Lucia",lucia.novotny@kestrel-logistics.nl,NL,Mid-Market,2024-01-28,"EUR 1,318.71",25,Churned
+C1012,Sofia Lindqvist,sofia.lindqvist@verta.fr,BE,Small Business,2024-05-10,655.31,0,active
+C1070,Bruno Ibrahim,bruno.ibrahim@northwind.io,Germany,Mid-Market,2024-04-14,137.80,5,churned
+C1072,Tomas Sokolov,tomas.sokolov@verta.fr,Belgium,Enterprise,23/09/2024,375.72,0,ACTIVE
+C1140,Felix Nair,felix.nair @ acme-parts.com,Netherlands,smb,"May 10, 2025",119.81,3,Churned
+C1111,Ines Okafor,ines.okafor@bluefin.de,Germany,smb,2024-05-28,158.23,5,Active
+C1182,Karel Haddad,karel_haddad@verta.fr,Netherlands,enterprise,2024-01-22,191.41,1,active
+C1052,"Moreno, Noor",noor.moreno@verta.fr,NL,Mid-Market,2025-11-19,562.81,8,Trial
+C1068,Greta Ferreira,greta.ferreira @ verta.fr,U.K.,Enterprise,12/07/2025,288.07,1,ACTIVE
+C1189,Karel Weber,karel_weber@bluefin.de,DE,Enterprise,2025-04-08,910.21,8,trial
+C1010,Tomas Costa,tomas.costa@northwind.io,France,SMB,2024-08-20,63.46,12,Trial
+C1105,"Walsh, Ines",ines.walsh @ verta.fr,Netherlands,SMB,09/04/2025,1198.36,1,Active
+C1055,  YUKI VASQUEZ  ,yuki.vasquez@kestrel-logistics.nl,netherlands,ENT,2025-09-20,689.70,5,ACTIVE
+C1108,  NADIA LINDQVIST  ,nadia.lindqvist@kestrel-logistics.nl,Germany,ENT,2024-11-29,63.02 EUR,40,Paused
+C1041,Greta Karim,,BE,Enterprise,2025-04-29,,25,active
+C1167,"Weber, Yuki",yuki.weber@kestrel-logistics.nl,Belgium,SMB,01/11/2024,156.78,8,Churned
+C1033,Noor Tanaka,noor.tanaka@acme-parts.com,FR,MM,2024-08-13,289.97 EUR,2,Churned
+C1180,Nadia Tanaka,nadia.tanaka@bluefin.de,France,MM,"Dec 11, 2025",1183.24,8,active
+C1112,"Novak, Amara",amara.novak@bluefin.de,United Kingdom,Mid-Market,"Sep 26, 2025",EUR 338.51,1,active
+C1014,Maya Moreno,maya.moreno@hexon.co.uk,netherlands,Small Business,2025-09-15,361.66 EUR,40,Active
+C1147,"Okafor, Ines",ines.okafor@kestrel-logistics.nl,Netherlands,Mid-Market,16/09/2025,46.24,25,Active
+C1113,Owen Karim,owen.karim@verta.fr,UK,enterprise,2025-03-07,1153.42,2,active
+C1155,  ELENA OKAFOR  ,elena.okafor@hexon.co.uk,NL,smb,2024-01-21,-120.00,5,active
+C1129,Marcus Romano,marcus.romano@northwind.io,BE,MM,21/06/2024,62.41,40,Trial
+C1121,Felix Vasquez,felix.vasquez@hexon.co.uk,France,Mid-Market,2025-06-09,60.21,2,Churned
+C1078,Elena Lindqvist,elena.lindqvist@northwind.io,FR,ENT,02/04/2024,"113,58",2,Churned
+C1165,"Novotny, Owen",owen.novotny@acme-parts.com,Belgium,SMB,10/01/2024,1036.52,2,Active
+C1105,"Walsh, Ines",ines.walsh @ verta.fr,Netherlands,SMB,09/04/2025,1198.36,1,Active
+C1017,Tomas Haddad,tomas.haddad@bluefin.de,germany,Mid-Market,2025-12-24,EUR 106.75,-3,Trial
+C1044,  TOMAS WALSH  ,tomas.walsh@acme-parts.com,DE,smb,"Mar 12, 2025",93.87,5,Churned
+C1073,Ines Okafor,ines.okafor@bluefin.de,Germany,enterprise,2024-08-11,64.86,1,Trial
+C1194,Greta Sokolov ,GRETA.SOKOLOV@ACME-PARTS.COM,United Kingdom,Small Business,02/04/2025,EUR 50.07,8,Active
+C1029,Hassan Moreno,hassan.moreno@verta.fr,Belgium,SMB,2024-08-24,89.28,3,active
+C1060,Felix Okafor,felix.okafor@northwind.io,netherlands,Mid-Market,19/09/2025,114.75,3,Active
+C1148,Amara Duarte,amara.duarte @ kestrel-logistics.nl,Germany,Small Business,0000-00-00,EUR 640.51,3,Trial
+C1109,Hassan Haddad,hassan.haddad@verta.fr,UK,ENT,2024-12-26,472.82,8,ACTIVE
+C1061,  KAREL WEBER  ,karel.weber@bluefin.de,DE,Enterprise,2025-04-08,910.21,8,trial
+C1137,Lucia Lindqvist,lucia.lindqvist@northwind.io,germany,SMB,2025-09-25,61.30,3,Churned
+C1123,  PRIYA TANAKA  ,priya.tanaka@verta.fr,Germany,Mid-Market,26/01/2024,EUR 201.60,5,Active
+C1024,Sofia Sokolov,sofia.sokolov@northwind.io,BE,Small Business,02/02/2025,188.05,25,ACTIVE
+C1092,Noor Romano,,Netherlands,SMB,"Jul 24, 2024",57.76,2,active
+C1050,  LIAM WEBER  ,liam.weber@bluefin.de,netherlands,Small Business,2025-05-31,46.77,5,Active
+C1133,  DIEGO BERGMAN  ,diego.bergman@acme-parts.com,netherlands,Small Business,2025-03-25,313.31,5,Paused
+C1152,  AMARA NAIR  ,amara.nair@verta.fr,BE,Enterprise,11/03/2025,646.41,3,Trial
+C1077,  GRETA NOVAK  ,greta.novak@hexon.co.uk,Netherlands,Enterprise,0000-00-00,"60,17",5,ACTIVE
+C1022,  DIEGO OKAFOR  ,diego.okafor@verta.fr,U.K.,ENT,"Nov 12, 2025",509.53,0,Trial
+C1171,Diego Novak,diego.novak @ northwind.io,France,Small Business,"Aug 26, 2024",202.04,5,trial
+C1040,Noor Ferreira,noor.ferreira@kestrel-logistics.nl,Belgium,enterprise,2025-04-23,EUR 167.06,25,Churned
+C1088,Greta Costa,,FR,SMB,2024-09-26,196.18,8,Paused
+C1008,Noor Okafor,,DE,enterprise,31/07/2024,539.96 EUR,40,ACTIVE
+C1067,Nadia Karim,nadia.karim@hexon.co.uk,netherlands,smb,"Aug 07, 2024",1270.57,2,trial
+C1193,Maya Moreno ,MAYA.MORENO@NORTHWIND.IO,germany,ENT,26/10/2024,553.64 EUR,40,trial
+C1018,"Costa, Maya",maya.costa@acme-parts.com,FR,Small Business,2024-04-17,190.41,8,Paused
+C1168,Felix Karim,felix.karim@verta.fr,United Kingdom,SMB,2024-12-15,1046.56,12,Paused
+C1150,Diego Vasquez,diego.vasquez@acme-parts.com,netherlands,ENT,10/07/2025,540.32 EUR,3,Churned
+C1007,Diego Ibrahim,diego.ibrahim@verta.fr,Belgium,Mid-Market,27/11/2025,55.90,40,Active
+C1141,  BRUNO IBRAHIM  ,bruno.ibrahim@kestrel-logistics.nl,germany,MM,2025-10-01,-120.00,40,Paused
+C1119,Ines Lindqvist,ines.lindqvist@acme-parts.com,Germany,Mid-Market,2025-01-31,EUR 50.94,3,ACTIVE
+C1021,"Novotny, Maya",maya.novotny@bluefin.de,United Kingdom,ENT,21/05/2025,"997,51",3,Active
+C1173,Sofia Petrova,sofia.petrova@kestrel-logistics.nl,FR,Enterprise,2024-05-23,EUR 679.79,12,churned
+C1110,  OWEN HADDAD  ,owen.haddad@hexon.co.uk,DE,smb,2025-08-08,396.43,12,trial
+C1089,  HASSAN WEBER  ,hassan.weber@hexon.co.uk,Belgium,MM,2024-08-27,"993,26",40,Trial
+C1047,Bruno Nair,bruno.nair@verta.fr,germany,Small Business,2025-09-26,"49,10",5,trial
+C1162,Hassan Novotny,hassan.novotny@northwind.io,UK,ENT,2024-09-15,58.57,8,active
+C1064,Liam Ferreira,liam.ferreira@acme-parts.com,FR,Mid-Market,"Jun 30, 2025",,2,churned
+C1174,Liam Tanaka,liam.tanaka@bluefin.de,NL,MM,22/04/2024,EUR 62.40,1,active
+C1177,Tomas Ferreira,tomas.ferreira@northwind.io,NL,smb,01/10/2025,"1177,37",1,Trial
+C1087,Yuki Walsh,yuki.walsh@bluefin.de,U.K.,enterprise,2024-10-26,EUR 630.16,25,trial
+C1192,"Romano, Ines",INES.ROMANO@HEXON.CO.UK,netherlands,Enterprise,2024-07-21,-120.00,1,Churned
+C1176,"Romano, Ines",ines.romano@hexon.co.uk,netherlands,Enterprise,2024-07-21,-120.00,1,Churned
+C1053,Lucia Ibrahim,lucia.ibrahim @ acme-parts.com,BE,Small Business,02/04/2025,EUR 328.95,40,Active
+C1071,Elena Lindqvist,elena.lindqvist@acme-parts.com,Netherlands,Small Business,"May 27, 2025",179.08,25,trial
+C1054,Diego Ferreira,diego.ferreira@kestrel-logistics.nl,FR,Small Business,"May 31, 2025",65.10,5,churned
+C1004,Diego Novotny,diego.novotny@verta.fr,BE,MM,2024-11-17,64.68,1,Paused
+C1188,Hassan Moreno ,hassan_moreno@acme-parts.com,netherlands,smb,09/02/2025,104.02,12,active
+C1099,Sofia Costa,sofia.costa@kestrel-logistics.nl,Germany,SMB,"Oct 05, 2025",61.06,12,Paused
+C1038,Hassan Vasquez,hassan.vasquez@verta.fr,United Kingdom,smb,2024-07-21,"113,64",40,churned
+C1114,Marcus Duarte,marcus.duarte@hexon.co.uk,Germany,Mid-Market,"Oct 23, 2024",92.08,-3,Active
+C1098,Diego Okafor,,Netherlands,Mid-Market,2025-06-23,102.80 EUR,5,active
+C1081,Marcus Walsh,marcus.walsh@kestrel-logistics.nl,DE,enterprise,2025-05-20,121.50,8,active
+C1143,Marcus Vasquez,marcus.vasquez@northwind.io,germany,Mid-Market,06/01/2025,138.60,40,Churned
+C1083,Yuki Haddad,yuki.haddad@acme-parts.com,FR,ENT,2024-01-14,626.28,1,Active
+C1125,Liam Sokolov,,France,smb,2024-11-22,372.95,8,trial
+C1096,Ines Vasquez,ines.vasquez@northwind.io,netherlands,SMB,2024-06-01,176.64,2,active
+C1023,"Duarte, Felix",felix.duarte@kestrel-logistics.nl,Germany,Enterprise,2024-03-26,EUR 642.77,1,Churned
+C1051,  KAREL DUARTE  ,karel.duarte@verta.fr,UK,Mid-Market,13/06/2024,660.26,25,Trial
+C1006,"Weber, Owen",owen.weber@bluefin.de,Germany,Enterprise,2024-08-24,-120.00,25,Trial
+C1066,Hassan Novotny,hassan.novotny@hexon.co.uk,Netherlands,Enterprise,"Aug 11, 2025",,40,Paused
+C1074,"Romano, Owen",owen.romano@verta.fr,DE,Mid-Market,2025-09-20,EUR 278.29,12,churned
+C1164,Bruno Petrova,bruno.petrova@verta.fr,Belgium,Mid-Market,2024-03-13,408.99,40,trial
+C1149,"Costa, Tomas",tomas.costa@verta.fr,BE,ENT,29/10/2025,-120.00,40,Trial
+C1025,Maya Ibrahim,maya.ibrahim@acme-parts.com,NL,SMB,"Nov 30, 2025",47.36,1,Churned
+C1019,"Ferreira, Ines",ines.ferreira@verta.fr,NL,Enterprise,18/01/2024,,25,ACTIVE
+C1181,"Costa, Maya",MAYA.COSTA@ACME-PARTS.COM,FR,Small Business,2024-04-17,190.41,8,Paused
+C1136,Noor Petrova,noor.petrova@kestrel-logistics.nl,United Kingdom,smb,08/07/2025,370.68,2,active
+C1120,Felix Romano,felix.romano@northwind.io,DE,MM,20/01/2025,500.11,8,Trial
+C1122,Ines Petrova,ines.petrova@acme-parts.com,NL,Enterprise,2024-10-31,143.50,40,ACTIVE
+C1169,Marcus Petrova,marcus.petrova@hexon.co.uk,Belgium,smb,"Jul 27, 2024",47.46,1,ACTIVE
+C1036,Lucia Ferreira,lucia.ferreira @ acme-parts.com,netherlands,ENT,08/02/2024,607.85,5,Active
+C1124,Bruno Tanaka,bruno.tanaka@kestrel-logistics.nl,Germany,MM,06/10/2025,1148.79,1,churned
+C1084,Karel Sokolov,karel.sokolov@acme-parts.com,Belgium,Small Business,0000-00-00,384.20,3,Active
+C1009,Noor Duarte,,Netherlands,ENT,2025-06-24,1318.35,3,Trial
+C1118,Sofia Vasquez,sofia.vasquez@verta.fr,Germany,smb,2025-12-29,,25,trial
+C1186,"Novotny, Lucia",lucia_novotny@kestrel-logistics.nl,NL,Mid-Market,2024-01-28,"EUR 1,318.71",25,Churned
+C1153,Amara Novotny,amara.novotny@northwind.io,FR,Enterprise,2025-04-08,1069.38,3,Active
+C1080,Yuki Karim,yuki.karim @ acme-parts.com,BE,MM,"Dec 04, 2024",90.78,12,Churned
+C1115,  MARCUS WEBER  ,,United Kingdom,ENT,2024-01-31,1334.30,2,active
+C1146,"Romano, Greta",greta.romano@hexon.co.uk,UK,SMB,04/09/2024,45.90,1,Active
+C1048,Hassan Tanaka,hassan.tanaka@acme-parts.com,U.K.,Small Business,2024-03-05,1155.33,8,Active
+C1015,"Petrova, Tomas",tomas.petrova@acme-parts.com,United Kingdom,Enterprise,2024-03-05,1028.21,5,churned
+C1005,Marcus Lindqvist,marcus.lindqvist @ kestrel-logistics.nl,DE,Small Business,2024-04-29,1013.57,40,ACTIVE
+C1094,  LIAM HADDAD  ,liam.haddad@acme-parts.com,BE,enterprise,2025-08-28,153.25 EUR,5,Active
+C1127,"Nair, Felix",felix.nair@acme-parts.com,France,MM,2025-10-13,,3,churned
+C1178,"Novak, Noor",noor.novak@verta.fr,germany,Mid-Market,17/04/2025,273.92,3,ACTIVE
+C1016,Felix Petrova,felix.petrova@northwind.io,U.K.,ENT,2025-11-18,66.08 EUR,3,Paused
+C1134,Owen Weber,owen.weber@northwind.io,U.K.,ENT,02/03/2024,591.60,8,Active
+C1158,Bruno Lindqvist,bruno.lindqvist@northwind.io,France,enterprise,"Feb 04, 2024",1210.88,1,Paused
+C1179,Elena Petrova,elena.petrova@verta.fr,germany,smb,2025-05-06,607.88 EUR,25,Trial
+C1185,Karel Duarte,karel_duarte@verta.fr,UK,Mid-Market,13/06/2024,660.26,25,Trial
+C1076,Karel Karim,karel.karim@northwind.io,FR,ENT,12/03/2025,152.35,2,churned
+C1069,Lucia Weber,lucia.weber@northwind.io,France,Enterprise,2024-08-24,496.90,3,Trial
+C1114,Marcus Duarte,marcus.duarte@hexon.co.uk,Germany,Mid-Market,"Oct 23, 2024",92.08,-3,Active
+C1085,"Ferreira, Noor",noor.ferreira@acme-parts.con,Netherlands,enterprise,2024-09-05,1244.21,40,churned
+C1159,Maya Duarte,maya.duarte@bluefin.de,United Kingdom,ENT,2025-01-22,613.67,5,churned
+C1020,Liam Ibrahim,liam.ibrahim@acme-parts.com,Germany,ENT,15/11/2024,-120.00,-3,Churned
+C1107,Priya Vasquez,priya.vasquez@verta.fr,United Kingdom,enterprise,2025-08-06,402.43,1,trial
+C1163,Maya Novotny,maya.novotny@northwind.io,Belgium,enterprise,"Jan 15, 2025",61.56,8,ACTIVE
+C1035,Owen Bergman,owen.bergman@acme-parts.com,NL,Mid-Market,"Apr 29, 2025",662.54,3,active
+C1191,Amara Duarte ,AMARA.DUARTE @ KESTREL-LOGISTICS.NL,Germany,Small Business,0000-00-00,EUR 640.51,3,Trial
+C1132,Owen Novotny,owen.novotny@kestrel-logistics.nl,Belgium,smb,2024-08-20,64.94,1,trial
+C1142,Bruno Novak,bruno.novak@verta.fr,UK,Small Business,"May 27, 2025",907.89,25,Trial
+C1026,  KAREL NAIR  ,karel.nair@acme-parts.com,BE,ENT,06/11/2025,"64,83",40,Paused
+C1091,Liam Novotny,liam.novotny@acme-parts.com,United Kingdom,SMB,19/11/2024,44.92,5,trial
+C1065,  KAREL HADDAD  ,karel.haddad@verta.fr,Netherlands,enterprise,2024-01-22,191.41,1,active
+C1145,Nadia Tanaka,nadia.tanaka@kestrel-logistics.nl,BE,enterprise,14/03/2025,,8,Active
+C1117,Hassan Petrova,hassan.petrova @ bluefin.de,Germany,Enterprise,2024-02-14,-120.00,40,Paused
+C1063,Amara Walsh,amara.walsh@northwind.io,netherlands,Small Business,29/09/2025,EUR 44.76,3,ACTIVE
+C1027,Marcus Novak,marcus.novak@verta.fr,UK,Small Business,29/10/2025,55.92,5,churned
+C1045,Felix Haddad,felix.haddad@kestrel-logistics.nl,Germany,Enterprise,2024-09-23,103.03,8,Churned
+C1001,Ines Moreno,ines.moreno@acme-parts.com,NL,Mid-Market,"Feb 29, 2024",EUR 279.54,2,Active
+C1003,Felix Walsh,felix.walsh@bluefin.de,UK,ENT,03/07/2024,572.63,2,Trial
+C1135,Elena Vasquez,elena.vasquez@bluefin.de,United Kingdom,Enterprise,22/07/2025,559.22,5,churned
+C1180,Nadia Tanaka,nadia.tanaka@bluefin.de,France,MM,"Dec 11, 2025",1183.24,8,active
+C1042,"Nair, Liam",liam.nair@acme-parts.com,France,enterprise,2025-09-23,156.26,0,Paused
+C1049,Marcus Sokolov,marcus.sokolov@bluefin.de,Belgium,Enterprise,07/01/2025,54.74 EUR,12,Active
+C1156,Maya Karim,maya.karim@acme-parts.com,netherlands,SMB,17/08/2024,154.14,12,Active
+C1130,Amara Karim,amara.karim@verta.fr,netherlands,SMB,2025-12-17,63.07,3,churned
+C1082,Liam Lindqvist,liam.lindqvist@bluefin.de,BE,SMB,2024-01-07,676.10,2,Paused
+C1128,Diego Moreno,diego.moreno@northwind.io,BE,Mid-Market,22/06/2024,94.77,1,active
+C1079,Diego Novotny,diego.novotny@acme-parts.com,France,SMB,2024-09-09,130.72,40,active
+C1101,Greta Sokolov,greta.sokolov@acme-parts.com,United Kingdom,Small Business,02/04/2025,EUR 50.07,8,Active
+C1157,"Weber, Lucia",lucia.weber@kestrel-logistics.nl,Belgium,Mid-Market,2024-10-02,108.26,1,churned
+C1090,Sofia Vasquez,sofia.vasquez@hexon.co.uk,Germany,Enterprise,03/05/2025,48.53,25,Churned
+C1058,"Novotny, Diego",diego.novotny @ verta.fr,Germany,Mid-Market,2024-11-07,524.24 EUR,3,Churned
+C1043,Lucia Lindqvist,lucia.lindqvist@bluefin.de,France,Small Business,"Jan 09, 2024",508.02,2,ACTIVE
+C1093,Sofia Nair,sofia.nair@northwind.io,germany,Enterprise,2025-02-06,"EUR 1,000.75",1,Paused
+C1039,Noor Costa,noor.costa@northwind.io,Belgium,SMB,"Feb 27, 2024",90.27,3,Trial
+C1086,  LIAM NOVAK  ,liam.novak@acme-parts.com,netherlands,MM,2025-02-02,464.01,3,Trial
+C1070,Bruno Ibrahim,bruno.ibrahim@northwind.io,Germany,Mid-Market,2024-04-14,137.80,5,churned
+C1100,Sofia Okafor,sofia.okafor@bluefin.de,netherlands,enterprise,"Jul 30, 2025",EUR 597.53,2,Trial
+C1048,Hassan Tanaka,hassan.tanaka@acme-parts.com,U.K.,Small Business,2024-03-05,1155.33,8,Active
+C1097,  DIEGO IBRAHIM  ,diego.ibrahim@verta.fr,germany,Mid-Market,2024-05-02,208.46,3,churned
+C1011,"Ferreira, Hassan",hassan.ferreira@northwind.io,U.K.,enterprise,"Sep 16, 2025",932.97,5,Trial
+C1161,"Walsh, Noor",noor.walsh@kestrel-logistics.nl,NL,ENT,19/06/2025,312.53,3,ACTIVE
+C1175,Owen Moreno,owen.moreno@kestrel-logistics.nl,germany,SMB,2025-01-03,1323.35,5,active
+C1056,Greta Tanaka,greta.tanaka@kestrel-logistics.nl,U.K.,enterprise,2024-09-27,352.10,25,trial
+C1031,Noor Novak,noor.novak@kestrel-logistics.nl,germany,Mid-Market,22/03/2025,63.99,5,trial
+C1062,"Nair, Maya",maya.nair@northwind.io,netherlands,enterprise,"Aug 29, 2024",132.67,40,Active
+C1138,Nadia Haddad,nadia.haddad@kestrel-logistics.nl,Germany,enterprise,2025-11-27,633.04,12,active
+C1170,Karel Vasquez,karel.vasquez@verta.fr,Germany,smb,2024-06-11,283.34,8,trial
