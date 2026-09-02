@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     title: 'Clarify Data | Evidence-Led Data Intelligence',
     description: site.description,
   },
+  verification: {
+    google: 'UZ-MlXAEH_7rkgL6HiRWRLiK_E_szy_ze3oTeHSROcQ',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
