@@ -192,7 +192,7 @@ export const businessIntelligencePage: ContentPageData = {
       items: [
         { title: 'What changed', text: 'Show added, removed, revised, and expired evidence since the prior version.' },
         { title: 'Why it matters', text: 'Identify which metrics, interpretations, assumptions, or recommendations may be affected.' },
-        { title: 'Who should review', text: 'Route the change according to impact, uncertainty, domain, and the organization’s approval process.' },
+        { title: 'Who should review', text: "Route the change according to impact, uncertainty, domain, and the organization's approval process." },
       ],
     },
   ],
@@ -254,7 +254,9 @@ export const howItWorksPage: ContentPageData = {
   eyebrow: 'How Clarify Data works',
   title: 'A connected workflow from raw information to reviewable decisions',
   intro: 'Clarify Data is designed to preserve source context through preparation, validation, verification, analysis, and accountable human review.',
-  note: 'The exact workflow is configured around the customer’s data, decision, risk level, evidence standard, and review responsibilities.',
+  note: "The exact workflow is configured around the customer's data, decision, risk level, evidence standard, and review responsibilities.",
+  bgImage: '/hero-bg-how-it-works.png',
+  bgImagePosition: '75% center',
   sections: [
     {
       eyebrow: 'The workflow',

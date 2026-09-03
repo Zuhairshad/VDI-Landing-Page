@@ -41,6 +41,7 @@ export default async function AiUpdatesPage() {
   return (
     <main id="main-content">
       <PageHero
+        bgImage="/hero-bg-ai-updates.png"
         eyebrow="AI Intelligence"
         title="AI Data Updates"
         intro="Daily updates on AI models, research breakthroughs, and industry developments that matter for data verification and business intelligence."

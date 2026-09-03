@@ -13,6 +13,9 @@ interface PageHeroProps {
   note?: ReactNode
   before?: ReactNode
   className?: string
+  bgImage?: string
+  bgImageSize?: string
+  bgImagePosition?: string
 }
 
 export default function PageHero({
@@ -23,9 +26,12 @@ export default function PageHero({
   note,
   before,
   className = '',
+  bgImage,
+  bgImageSize,
+  bgImagePosition,
 }: PageHeroProps) {
   return (
-    <ShaderHero className={className}>
+    <ShaderHero className={className} bgImage={bgImage} bgImageSize={bgImageSize} bgImagePosition={bgImagePosition}>
       {before && <div className="mb-6">{before}</div>}
 
       <div className="mb-8">

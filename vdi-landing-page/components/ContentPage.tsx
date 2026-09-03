@@ -22,6 +22,9 @@ export interface ContentPageData {
   title: string
   intro: string
   note?: string
+  bgImage?: string
+  bgImageSize?: string
+  bgImagePosition?: string
   sections: ContentSection[]
   related?: { label: string; href: string; description: string }[]
   ctaTitle?: string
@@ -65,6 +68,9 @@ export default function ContentPage({ data }: { data: ContentPageData }) {
   return (
     <main id="main-content">
       <PageHero
+        bgImage={data.bgImage}
+        bgImageSize={data.bgImageSize}
+        bgImagePosition={data.bgImagePosition}
         eyebrow={data.eyebrow}
         title={data.title}
         intro={data.intro}

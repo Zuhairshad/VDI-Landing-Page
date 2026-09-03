@@ -15,6 +15,7 @@ export default function BlogPage() {
   return (
     <main id="main-content">
       <PageHero
+        bgImage="/hero-bg-blog.png"
         eyebrow="Resources / Journal"
         title="Better methods for information people need to trust"
         intro="Detailed, practical guidance for making research, AI output, and analytical work more traceable and reviewable."

@@ -1,13 +1,18 @@
 import type { ReactNode } from 'react'
-import ShaderBackground from './ShaderBackground'
 
 export default function ShaderHero({
   id,
   className = '',
+  bgImage = '/hero-bg-default.png',
+  bgImageSize = 'cover',
+  bgImagePosition = 'center',
   children,
 }: {
   id?: string
   className?: string
+  bgImage?: string
+  bgImageSize?: string
+  bgImagePosition?: string
   children: ReactNode
 }) {
   return (
@@ -16,7 +21,16 @@ export default function ShaderHero({
       className={`relative min-h-screen flex flex-col items-center justify-center overflow-hidden ${className}`.trim()}
       style={{ background: 'rgb(28,9,2)' }}
     >
-      <ShaderBackground />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: bgImageSize,
+          backgroundPosition: bgImagePosition,
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
