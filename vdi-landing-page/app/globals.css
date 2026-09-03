@@ -508,8 +508,24 @@ a {
 .final-cta {
   padding: 104px 0;
   background: radial-gradient(ellipse 105% 95% at 50% 115%, rgba(122, 44, 8, 0.9), rgb(10, 10, 10) 67%);
-  border-top: 1px solid rgba(250, 250, 250, 0.08);
   text-align: center;
+}
+
+.journal-list,
+.ai-updates-list {
+  position: relative;
+}
+
+.journal-list::after,
+.ai-updates-list::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(to bottom, transparent, rgb(10, 10, 10));
+  pointer-events: none;
 }
 
 .final-cta-inner {
@@ -763,6 +779,10 @@ a {
   background: rgb(10, 10, 10);
 }
 
+.pricing-section {
+  padding-bottom: 24px;
+}
+
 .pricing-heading,
 .demo-layout {
   display: grid;
@@ -853,6 +873,7 @@ a {
   justify-content: space-between;
   gap: 30px;
   padding: 30px;
+  margin-top: 24px;
   background: var(--surface-card-shader);
   border: 1px solid rgba(224, 133, 76, 0.28);
   border-radius: var(--radius-card);

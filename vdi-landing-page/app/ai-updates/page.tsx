@@ -49,7 +49,7 @@ export default async function AiUpdatesPage() {
         note="Updated daily by the Clarify Data team."
       />
 
-      <section className="content-section">
+      <section className="content-section ai-updates-list">
         <div className="section-inner">
           {updates.length === 0 ? (
             <p style={{ color: 'rgba(255,255,255,0.4)', textAlign: 'center', padding: '64px 0', fontSize: 15 }}>
