@@ -21,6 +21,7 @@ export const headerNavigation = [
   { label: 'Industries', href: '/industries' },
   { label: 'Journal', href: '/blog' },
   { label: 'BI Exercises', href: '/business-intelligence-exercises' },
+  { label: 'AI Updates', href: '/ai-updates' },
   { label: 'Pricing', href: '/#pricing' },
 ] as const
 
