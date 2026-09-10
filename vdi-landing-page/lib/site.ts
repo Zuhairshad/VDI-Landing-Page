@@ -65,7 +65,25 @@ export const footerNavigation = [
       { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' },
       { label: 'Pricing', href: '/#pricing' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/clarifydataofficial/' },
+      { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61594232911806' },
+      { label: 'YouTube', href: 'https://www.youtube.com/@ClarifyData' },
     ],
+  },
+] as const
+
+export const socialLinks = [
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/clarifydataofficial/',
+  },
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/profile.php?id=61594232911806',
+  },
+  {
+    name: 'YouTube',
+    href: 'https://www.youtube.com/@ClarifyData',
   },
 ] as const
 

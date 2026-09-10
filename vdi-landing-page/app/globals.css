@@ -561,6 +561,38 @@ a {
   line-height: 1.65;
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(250, 250, 250, 0.04);
+  border: 1px solid rgba(250, 250, 250, 0.08);
+  color: rgba(250, 250, 250, 0.55);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-social-link:hover {
+  background: rgba(250, 250, 250, 0.08);
+  border-color: rgba(250, 250, 250, 0.24);
+  color: rgb(250, 250, 250);
+  transform: translateY(-2px);
+}
+
+.footer-social-link svg {
+  width: 16px;
+  height: 16px;
+}
+
 .footer-columns {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
