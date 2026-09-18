@@ -6,7 +6,7 @@ const COPPER_COLOR = 'rgb(194, 89, 24)'
 
 export default function Hero() {
   return (
-    <ShaderHero id="overview" bgImage="/hero-bg.png">
+    <ShaderHero id="overview" bgImage="/hero-bg.webp">
         <div
           className="mb-8"
         >

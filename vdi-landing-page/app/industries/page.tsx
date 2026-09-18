@@ -36,7 +36,7 @@ export default function IndustriesPage() {
   return (
     <main id="main-content">
       <PageHero
-        bgImage="/hero-bg-industries.png"
+        bgImage="/hero-bg-industries.webp"
         eyebrow="Industries"
         title="One evidence discipline, adapted to each operating context"
         intro="The relevant sources, risks, definitions, and reviewer responsibilities differ by industry. The workflow should reflect those differences."

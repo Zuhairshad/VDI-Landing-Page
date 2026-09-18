@@ -255,7 +255,7 @@ export const howItWorksPage: ContentPageData = {
   title: 'A connected workflow from raw information to reviewable decisions',
   intro: 'Clarify Data is designed to preserve source context through preparation, validation, verification, analysis, and accountable human review.',
   note: "The exact workflow is configured around the customer's data, decision, risk level, evidence standard, and review responsibilities.",
-  bgImage: '/hero-bg-how-it-works.png',
+  bgImage: '/hero-bg-how-it-works.webp',
   bgImagePosition: '75% center',
   sections: [
     {

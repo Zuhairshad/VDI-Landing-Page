@@ -46,7 +46,7 @@ export default function BiExercisesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <article>
         <PageHero
-          bgImage="/hero-bg-bi-exercises.png"
+          bgImage="/hero-bg-bi-exercises.webp"
           eyebrow="Practice"
           title={article.title}
           intro={article.lede ?? article.summary}

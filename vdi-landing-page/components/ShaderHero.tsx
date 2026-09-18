@@ -1,9 +1,10 @@
 import type { ReactNode } from 'react'
+import Image from 'next/image'
 
 export default function ShaderHero({
   id,
   className = '',
-  bgImage = '/hero-bg-default.png',
+  bgImage = '/hero-bg-default.webp',
   bgImageSize = 'cover',
   bgImagePosition = 'center',
   children,
@@ -21,16 +22,20 @@ export default function ShaderHero({
       className={`relative min-h-screen flex flex-col items-center justify-center overflow-hidden ${className}`.trim()}
       style={{ background: 'rgb(28,9,2)' }}
     >
-      <div
-        aria-hidden="true"
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: bgImageSize,
-          backgroundPosition: bgImagePosition,
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
+      <div aria-hidden="true" className="absolute inset-0">
+        <Image
+          src={bgImage}
+          alt=""
+          fill
+          priority
+          quality={85}
+          sizes="100vw"
+          style={{
+            objectFit: (bgImageSize as 'cover' | 'contain') || 'cover',
+            objectPosition: bgImagePosition,
+          }}
+        />
+      </div>
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
