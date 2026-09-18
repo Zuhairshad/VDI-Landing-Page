@@ -27,10 +27,10 @@ function AsciiCanvas() {
     const WAVE_SPEED = 3 // frames between column advances
 
     function buildGrid() {
-      canvas.width = canvas.offsetWidth
-      canvas.height = canvas.offsetHeight
-      cols = Math.floor(canvas.width / CW)
-      rows = Math.floor(canvas.height / FS)
+      canvas!.width = canvas!.offsetWidth
+      canvas!.height = canvas!.offsetHeight
+      cols = Math.floor(canvas!.width / CW)
+      rows = Math.floor(canvas!.height / FS)
       grid = Array.from({ length: rows }, () =>
         Array.from({ length: cols }, () => ({
           char: CHARS[Math.floor(Math.random() * CHARS.length)],
@@ -45,8 +45,8 @@ function AsciiCanvas() {
     buildGrid()
 
     function draw() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-      ctx.font = `${FS}px "Courier New", monospace`
+      ctx!.clearRect(0, 0, canvas!.width, canvas!.height)
+      ctx!.font = `${FS}px "Courier New", monospace`
 
       // Advance wave every WAVE_SPEED frames
       waveTick++
@@ -81,8 +81,8 @@ function AsciiCanvas() {
             cell.char = CHARS[Math.floor(Math.random() * CHARS.length)]
           }
 
-          ctx.fillStyle = `rgba(224,133,76,${Math.min(cell.op, 0.9).toFixed(3)})`
-          ctx.fillText(cell.char, c * CW, (r + 1) * FS)
+          ctx!.fillStyle = `rgba(224,133,76,${Math.min(cell.op, 0.9).toFixed(3)})`
+          ctx!.fillText(cell.char, c * CW, (r + 1) * FS)
         }
       }
 
