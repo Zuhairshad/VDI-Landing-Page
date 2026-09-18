@@ -19,6 +19,7 @@ export function robotsForPage(noIndex = false) {
 export const headerNavigation = [
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'Industries', href: '/industries' },
+  { label: 'Data Security', href: '/data-security-check' },
   { label: 'Journal', href: '/blog' },
   { label: 'BI Exercises', href: '/business-intelligence-exercises' },
   { label: 'AI Updates', href: '/ai-updates' },
@@ -35,6 +36,7 @@ export const footerNavigation = [
       { label: 'AI Claim Verification', href: '/data-verification#ai-claim-verification' },
       { label: 'Business Intelligence', href: '/business-intelligence' },
       { label: 'Dynamic Reports & Alerts', href: '/#dynamic-reports' },
+      { label: 'Data Security Check', href: '/data-security-check' },
     ],
   },
   {
@@ -68,6 +70,7 @@ export const footerNavigation = [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/clarifydataofficial/' },
       { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61594232911806' },
       { label: 'YouTube', href: 'https://www.youtube.com/@ClarifyData' },
+      { label: 'Instagram', href: 'https://www.instagram.com/clerifydata.official/' },
     ],
   },
 ] as const
@@ -84,6 +87,10 @@ export const socialLinks = [
   {
     name: 'YouTube',
     href: 'https://www.youtube.com/@ClarifyData',
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/clerifydata.official/',
   },
 ] as const
 
