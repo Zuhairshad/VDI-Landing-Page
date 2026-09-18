@@ -1,4 +1,5 @@
 import PageHero from '@/components/PageHero'
+import VideoEmbed from '@/components/VideoEmbed'
 import ArticleRichText from '@/components/ArticleRichText'
 import FinalCta from '@/components/FinalCta'
 import FaqAccordion from '@/components/FaqAccordion'
@@ -53,6 +54,14 @@ export default function BiExercisesPage() {
           noteLabel="Article details"
           note={<span className="shader-hero-meta"><time dateTime={article.publishedIso}>{article.published}</time><span>{article.readTime}</span></span>}
         />
+        <section style={{ background: 'rgb(10,10,10)', padding: '72px 0' }}>
+          <div className="section-inner">
+            <VideoEmbed
+              videoId="wv4a_99YUBo"
+              title="BI Exercises Walkthrough"
+            />
+          </div>
+        </section>
         <div className="article-column article-body">
           {article.sections.map((section) => (
             <section key={section.heading}>
