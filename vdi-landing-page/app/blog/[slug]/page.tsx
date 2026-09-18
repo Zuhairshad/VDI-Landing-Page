@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { marked } from 'marked'
 import FinalCta from '@/components/FinalCta'
@@ -83,15 +84,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         {heroImage && (
-          <>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={heroImage}
-              alt={post.title}
-              className="article-hero-img"
-              style={{ marginTop: 36 }}
-            />
-          </>
+          <Image
+            src={heroImage}
+            alt={post.title}
+            width={1200}
+            height={675}
+            className="article-hero-img"
+            style={{ marginTop: 36, width: '100%', height: 'auto' }}
+          />
         )}
 
         <hr className="article-header-divider" />

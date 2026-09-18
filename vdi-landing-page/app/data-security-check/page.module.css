@@ -1,0 +1,15 @@
+/* Only what can't be done with Tailwind or global CSS */
+.faqItem summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(224, 133, 76);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.faqItem[open] summary::after {
+  content: "–";
+}

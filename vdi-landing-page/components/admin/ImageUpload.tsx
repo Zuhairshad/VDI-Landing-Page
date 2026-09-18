@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+import Image from 'next/image'
 
 interface ImageUploadProps {
   images: string[]
@@ -47,11 +48,12 @@ export default function ImageUpload({ images, onChange, max = 4 }: ImageUploadPr
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 10 }}>
         {images.map((url, i) => (
           <div key={url} style={{ position: 'relative', width: 90, height: 70 }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={url}
               alt={`Upload ${i + 1}`}
-              style={{ width: 90, height: 70, objectFit: 'cover', borderRadius: 6, border: '1px solid rgba(255,255,255,0.12)' }}
+              width={90}
+              height={70}
+              style={{ objectFit: 'cover', borderRadius: 6, border: '1px solid rgba(255,255,255,0.12)' }}
             />
             <button
               type="button"

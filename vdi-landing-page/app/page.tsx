@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import VideoEmbed from '@/components/VideoEmbed'
 import Benefits from '@/components/Benefits'
 import Setup from '@/components/Setup'
 import Features from '@/components/Features'
@@ -15,6 +16,14 @@ export default function Home() {
   return (
       <main id="main-content">
         <Hero />
+        <section style={{ background: 'rgb(10,10,10)', padding: '72px 0' }}>
+          <div className="section-inner">
+            <VideoEmbed
+              videoId="xNJvs8C-lzo"
+              title="Why You Can't Trust ChatGPT With Data"
+            />
+          </div>
+        </section>
         <Benefits />
         <Setup />
         <Features />
