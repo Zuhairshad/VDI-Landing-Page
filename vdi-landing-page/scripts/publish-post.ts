@@ -5,6 +5,7 @@
  *
  *   node scripts/publish-post.ts <post.json> [--publish] [--dry-run]
  *   node scripts/publish-post.ts --list [blog|ai-update]
+ *   node scripts/publish-post.ts --setup-check
  *
  * Env vars (no .env file is read; pass them in, e.g. `node --env-file=.env.local ...`):
  *   NEXT_PUBLIC_SUPABASE_URL    Supabase project URL
@@ -274,6 +275,16 @@ async function listPosts(types: PostType[]) {
   }
 }
 
+/** Read-only: confirms the env vars work and both tables are reachable, so a routine fails before it writes anything. */
+async function setupCheck() {
+  const db = getClient()
+  for (const { table } of Object.values(TABLES)) {
+    const { error } = await db.from(table).select('id', { count: 'exact', head: true })
+    if (error) throw new UserError(`cannot read ${table}: ${describe(error)}`)
+  }
+  console.log('ok: connected, blog_posts and ai_updates are readable')
+}
+
 async function publish(file: string, publishNow: boolean, dryRun: boolean) {
   const post = parseInput(file)
   const { table, path } = TABLES[post.type]
@@ -307,11 +318,16 @@ async function main() {
   const args = process.argv.slice(2)
   const flags = new Set(args.filter((a) => a.startsWith('--')))
   const positional = args.filter((a) => !a.startsWith('--'))
-  const unknown = [...flags].filter((f) => !['--list', '--publish', '--dry-run', '--help'].includes(f))
+  const unknown = [...flags].filter((f) => !['--list', '--publish', '--dry-run', '--setup-check', '--help'].includes(f))
   if (unknown.length > 0) throw new UserError(`unknown flag(s): ${unknown.join(', ')}`)
 
   if (flags.has('--help') || args.length === 0) {
-    console.log('usage:\n  node scripts/publish-post.ts <post.json> [--publish] [--dry-run]\n  node scripts/publish-post.ts --list [blog|ai-update]')
+    console.log('usage:\n  node scripts/publish-post.ts <post.json> [--publish] [--dry-run]\n  node scripts/publish-post.ts --list [blog|ai-update]\n  node scripts/publish-post.ts --setup-check')
+    return
+  }
+
+  if (flags.has('--setup-check')) {
+    await setupCheck()
     return
   }
 

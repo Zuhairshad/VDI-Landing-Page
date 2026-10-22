@@ -48,6 +48,26 @@ Existing posts: run `node scripts/publish-post.ts --list`. Link as `/blog/<slug>
 
 The database has no columns for `metaTitle`, `metaDescription`, or `tags`. The script validates them but does not store them. The live page meta description comes from `excerpt`, so write the excerpt and the meta description to say the same thing.
 
+## Routine steps
+
+Follow these in order. Run all commands from the `vdi-landing-page` folder. The script needs `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` set in the environment.
+
+1. Run `node scripts/publish-post.ts --setup-check`. If it fails, stop and report the error. Do not try to work around it.
+2. Run `node scripts/publish-post.ts --list`. Pick a topic and a slug that are not already there.
+3. Write the post as a JSON file outside the repo, for example in a temp folder. Copy the format from `scripts/example-blog.json` or `scripts/example-ai-update.json`.
+4. Run `node scripts/publish-post.ts <file> --dry-run`. Fix every problem it lists and run it again until it passes.
+5. Run `node scripts/publish-post.ts <file>` for a draft, or add `--publish` if the routine is set to publish.
+6. Read the exit code.
+   - 0: done. The JSON line on stdout includes the new page path.
+   - 2: the slug already exists. Choose a new slug and retry once. If it fails again, stop and report it.
+   - 1: read the message. Fix an input problem once and retry. For a connection or database error, stop and report it.
+
+Never edit, replace, or delete an existing post. The script cannot do this and you must not try another way. Write one post per run.
+
 ## Publishing
 
 New posts are saved as drafts unless the script runs with `--publish`. Run with `--dry-run` first to check a file without writing anything.
+
+## Images
+
+The script cannot upload images. A routine post has no hero image unless someone uploads one through the admin panel afterwards. Do not invent image URLs. Leave `images` out.

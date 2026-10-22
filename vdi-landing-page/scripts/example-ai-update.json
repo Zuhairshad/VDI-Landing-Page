@@ -1,0 +1,21 @@
+{
+  "type": "ai-update",
+  "title": "Data verification checklist for small teams",
+  "slug": "example-ai-update-slug",
+  "excerpt": "Data verification checks that a figure is true before anyone acts on it. This example shows the format and passes every check the script runs.",
+  "metaTitle": "Data verification checklist for small teams",
+  "metaDescription": "Data verification checks that a figure is true before anyone acts on it. This example shows the format and passes every check the script runs.",
+  "tags": [
+    "data verification",
+    "checklist"
+  ],
+  "primaryKeyword": "data verification",
+  "content": "Data verification is the step that confirms a figure is true before anyone acts on it. Most teams skip it, and most errors slip through for that reason.\n\n## Start with the source\n\nName where each number came from. Write down who published it and when. The [how it works](/how-it-works) page shows the full flow from raw file to reviewed result.\n\n### Check the date\n\nOld data misleads. A figure that was right last year may be wrong now, so confirm the date matches the decision you are making.\n\n## Review before sharing\n\nHave a second person read anything that drives a decision. Our guide to [data validation](/data-validation) explains how this differs from verification, and the [trust index](/trust-index) shows how we score evidence.\n",
+  "category": "Research",
+  "sources": [
+    {
+      "label": "Example source title",
+      "url": "https://example.com/source"
+    }
+  ]
+}
