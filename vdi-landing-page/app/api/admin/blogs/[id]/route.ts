@@ -1,10 +1,13 @@
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/supabase'
+import { isAuthenticated } from '@/lib/admin-check'
 
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   const { id } = await params
   const { data, error } = await db
     .from('blog_posts')
@@ -23,6 +26,8 @@ export async function PUT(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   const { id } = await params
 
   let body: unknown
@@ -86,6 +91,8 @@ export async function DELETE(
   _request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   const { id } = await params
   const { error } = await db.from('blog_posts').delete().eq('id', id)
 
