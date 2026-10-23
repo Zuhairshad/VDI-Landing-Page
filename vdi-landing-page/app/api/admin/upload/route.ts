@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { v2 as cloudinary } from 'cloudinary'
+import { isAuthenticated } from '@/lib/admin-check'
 
 cloudinary.config({
   cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
@@ -10,6 +11,8 @@ cloudinary.config({
 const MAX_SIZE = 4 * 1024 * 1024 // 4 MB
 
 export async function POST(request: Request) {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
   const apiKey = process.env.CLOUDINARY_API_KEY
   const apiSecret = process.env.CLOUDINARY_API_SECRET
