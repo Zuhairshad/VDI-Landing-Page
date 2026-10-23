@@ -1,9 +1,12 @@
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/supabase'
+import { isAuthenticated } from '@/lib/admin-check'
 
 const validIndustries = new Set(['medical', 'education', 'logistics', 'ecommerce'])
 
 export async function GET(request: Request) {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   const { searchParams } = new URL(request.url)
   const industry = searchParams.get('industry')
 
@@ -25,6 +28,8 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   let body: unknown
   try {
     body = await request.json()
@@ -58,6 +63,8 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   const { searchParams } = new URL(request.url)
   const id = searchParams.get('id')
 

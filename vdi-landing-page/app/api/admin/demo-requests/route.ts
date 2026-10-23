@@ -1,7 +1,10 @@
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/supabase'
+import { isAuthenticated } from '@/lib/admin-check'
 
 export async function GET() {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   const { data, error } = await db
     .from('demo_requests')
     .select('*')
@@ -15,6 +18,8 @@ export async function GET() {
 }
 
 export async function PATCH(request: Request) {
+  if (!await isAuthenticated()) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   let body: unknown
   try {
     body = await request.json()
