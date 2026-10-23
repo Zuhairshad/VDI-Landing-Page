@@ -4,7 +4,7 @@ Every blog post and AI update follows these rules. The blog routine and the AI u
 
 ## Voice
 
-- No em dashes or en dashes. Use commas, periods, or "and".
+- No em dashes or en dashes. Use commas, periods, or "and". Do not swap in a spaced hyphen ( - ) or a double hyphen (--) either. Hyphens inside words, such as "follow-up", are fine.
 - Short sentences. Plain English. Vary the sentence length so the text does not read like a list.
 - Avoid these words: delve, landscape, leverage, robust, seamless, unlock, game-changer, tapestry, elevate. Also avoid the phrase "in today's fast-paced world".
 - No "In conclusion" endings. End when the last useful point is made.
@@ -52,6 +52,7 @@ The database has no columns for `metaTitle`, `metaDescription`, or `tags`. The s
 
 Follow these in order. Run all commands from the `vdi-landing-page` folder. The script needs `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` set in the environment.
 
+0. Needs Node 22.18 or newer. If `node_modules` is missing, run `npm ci` once. Use `npm ci`, not `npm install`, so no lockfile or dependency changes are made.
 1. Run `node scripts/publish-post.ts --setup-check`. If it fails, stop and report the error. Do not try to work around it.
 2. Run `node scripts/publish-post.ts --list`. Pick a topic and a slug that are not already there.
 3. Write the post as a JSON file outside the repo, for example in a temp folder. Copy the format from `scripts/example-blog.json` or `scripts/example-ai-update.json`.

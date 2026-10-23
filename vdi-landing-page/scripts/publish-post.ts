@@ -59,6 +59,10 @@ const INTERNAL_LINKS_RANGE = [2, 3] as const
 
 const BANNED_WORDS =
   /\b(delv\w*|landscape\w*|leverag\w*|robust\w*|seamless\w*|unlock\w*|game[- ]changer\w*|tapestry|elevat\w*)\b/i
+// Em dash, en dash, figure dash, horizontal bar, minus sign, and the rarer long dashes.
+const DASH_CHARACTERS = /[\u2012-\u2015\u2212\u2E3A\u2E3B\uFE58]/
+// ASCII stand-ins for a dash: a hyphen with spaces around it, or a double hyphen. Hyphens inside words are fine.
+const DASH_STAND_INS = /\S[ \t]-[ \t]\S|(?<!-)--(?!-)/
 const BANNED_PHRASES = [/in today['’]s fast-paced world/i, /\bin conclusion\b/i]
 
 class UserError extends Error {}
@@ -180,6 +184,11 @@ function parseInput(file: string): PostInput {
   return post
 }
 
+function findDash(value: string): string | undefined {
+  const withoutCode = value.replace(/```[\s\S]*?```|`[^`]*`/g, '')
+  return value.match(DASH_CHARACTERS)?.[0] ?? withoutCode.match(DASH_STAND_INS)?.[0]
+}
+
 /** Mechanical checks from docs/CONTENT_RULES.md. Judgement calls (tone, sentence length) stay with the writer. */
 function checkContentRules(post: PostInput): string[] {
   const errors: string[] = []
@@ -193,7 +202,8 @@ function checkContentRules(post: PostInput): string[] {
   ]
 
   for (const [name, value] of fields) {
-    if (/[–—]/.test(value)) errors.push(`"${name}" contains an em or en dash`)
+    const dash = findDash(value)
+    if (dash) errors.push(`"${name}" contains a dash: ${JSON.stringify(dash)}. Use a comma, a period, or "and"`)
     const banned = value.match(BANNED_WORDS)?.[0] ?? BANNED_PHRASES.map((p) => value.match(p)?.[0]).find(Boolean)
     if (banned) errors.push(`"${name}" contains banned wording: "${banned}"`)
     if (/\p{Extended_Pictographic}/u.test(value)) errors.push(`"${name}" contains an emoji`)
