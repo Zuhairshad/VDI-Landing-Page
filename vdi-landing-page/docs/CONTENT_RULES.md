@@ -50,7 +50,7 @@ The database has no columns for `metaTitle`, `metaDescription`, or `tags`. The s
 
 ## Routine steps
 
-Follow these in order. Run all commands from the `vdi-landing-page` folder. The script needs `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` set in the environment.
+Follow these in order. Run all commands from the `vdi-landing-page` folder. The script needs `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` set in the environment. The key must be the service_role (secret) key. The script rejects an anon key.
 
 0. Needs Node 22.18 or newer. If `node_modules` is missing, run `npm ci` once. Use `npm ci`, not `npm install`, so no lockfile or dependency changes are made.
 1. Run `node scripts/publish-post.ts --setup-check`. If it fails, stop and report the error. Do not try to work around it.

@@ -80,6 +80,18 @@ function isType(value: unknown): value is PostType {
   return value === 'blog' || value === 'ai-update'
 }
 
+/** Role named by a Supabase key: legacy JWT keys carry a role claim, new keys use a prefix. Undefined if unknown. */
+function keyRole(key: string): string | undefined {
+  if (key.startsWith('sb_publishable_')) return 'anon'
+  if (key.startsWith('sb_secret_')) return 'service_role'
+  try {
+    const payload = JSON.parse(Buffer.from(key.split('.')[1] ?? '', 'base64url').toString('utf8'))
+    return typeof payload.role === 'string' ? payload.role : undefined
+  } catch {
+    return undefined
+  }
+}
+
 function getClient() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY
@@ -89,6 +101,10 @@ function getClient() {
   ].filter(Boolean)
   if (missing.length > 0 || !url || !key) {
     throw new UserError(`missing or placeholder env var(s): ${missing.join(', ')}`)
+  }
+  const role = keyRole(key)
+  if (role === 'anon' || role === 'authenticated') {
+    throw new UserError(`SUPABASE_SERVICE_ROLE_KEY holds a "${role}" key. Use the service_role (secret) key from Project Settings, API`)
   }
   console.error(`target: ${new URL(url).host}`)
   return createClient(url, key, { auth: { persistSession: false } })
