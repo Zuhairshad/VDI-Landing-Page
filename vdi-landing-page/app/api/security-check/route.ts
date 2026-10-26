@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { db } from '@/lib/supabase'
+import { rateLimit } from '@/lib/rate-limit'
 
 function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
@@ -15,7 +16,12 @@ function isUrl(value: string) {
   }
 }
 
+const submitLimit = { scope: 'security-check', limit: 5, windowMs: 10 * 60 * 1000 }
+
 export async function POST(request: Request) {
+  const limited = rateLimit(request, submitLimit)
+  if (limited) return limited
+
   let body: unknown
 
   try {

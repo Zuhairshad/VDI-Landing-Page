@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { db } from '@/lib/supabase'
+import { rateLimit } from '@/lib/rate-limit'
 
 const allowedIndustries = new Set([
   'Marketing and E-commerce',
@@ -14,7 +15,12 @@ function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
 }
 
+const submitLimit = { scope: 'demo', limit: 5, windowMs: 10 * 60 * 1000 }
+
 export async function POST(request: Request) {
+  const limited = rateLimit(request, submitLimit)
+  if (limited) return limited
+
   let body: unknown
 
   try {

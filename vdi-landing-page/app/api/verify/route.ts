@@ -1,12 +1,35 @@
+import { timingSafeEqual } from 'node:crypto'
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/supabase'
+import { isAuthenticated } from '@/lib/admin-check'
+import { rateLimit } from '@/lib/rate-limit'
 import { runVerification } from '@/lib/verification-engine'
 import type { Claim, ClaimCategory } from '@/lib/verification-engine'
 
 const ALLOWED_INDUSTRIES = new Set(['medical', 'education', 'logistics', 'ecommerce'])
 const ALLOWED_CATEGORIES = new Set<ClaimCategory>(['statistic', 'forecast', 'causal', 'definition', 'general'])
 
+const verifyLimit = { scope: 'verify', limit: 20, windowMs: 10 * 60 * 1000 }
+
+/** Admin cookie, or `Authorization: Bearer <VERIFY_API_KEY>` for a server caller. The key is ignored unless set and 16+ characters. */
+async function isAllowed(request: Request) {
+  if (await isAuthenticated()) return true
+
+  const key = process.env.VERIFY_API_KEY
+  const header = request.headers.get('authorization') ?? ''
+  if (!key || key.length < 16 || !header.startsWith('Bearer ')) return false
+
+  const given = Buffer.from(header.slice('Bearer '.length))
+  const expected = Buffer.from(key)
+  return given.length === expected.length && timingSafeEqual(given, expected)
+}
+
 export async function POST(request: Request) {
+  if (!await isAllowed(request)) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
+  const limited = rateLimit(request, verifyLimit)
+  if (limited) return limited
+
   let body: unknown
   try {
     body = await request.json()
@@ -78,6 +101,8 @@ export async function POST(request: Request) {
 }
 
 export async function GET(request: Request) {
+  if (!await isAllowed(request)) return NextResponse.json({ error: 'Unauthorized.' }, { status: 401 })
+
   const { searchParams } = new URL(request.url)
   const jobId = searchParams.get('job_id')
   if (!jobId) return NextResponse.json({ error: 'job_id is required.' }, { status: 400 })

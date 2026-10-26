@@ -1,6 +1,12 @@
 import { NextResponse } from 'next/server'
+import { isRateLimited, recordHit } from '@/lib/rate-limit'
+
+const failedLoginLimit = { scope: 'admin-login', limit: 10, windowMs: 15 * 60 * 1000 }
 
 export async function POST(request: Request) {
+  const blocked = isRateLimited(request, failedLoginLimit)
+  if (blocked) return blocked
+
   let body: unknown
   try {
     body = await request.json()
@@ -15,6 +21,7 @@ export async function POST(request: Request) {
   const adminEmail = process.env.ADMIN_EMAIL ?? ''
 
   if (!adminPassword || !password || password !== adminPassword || (adminEmail && email !== adminEmail)) {
+    recordHit(request, failedLoginLimit)
     return NextResponse.json({ error: 'Invalid credentials.' }, { status: 401 })
   }
 
