@@ -72,7 +72,7 @@ test('resources footer links the BI exercises article', async ({ page }) => {
 
 test('BI exercises article includes datasets and schema', async ({ page, request }) => {
   await page.goto('/business-intelligence-exercises')
-  await expect(page.locator('h1')).toContainText('14 Business Intelligence Exercises (With Practice Datasets and Worked Checks)')
+  await expect(page.locator('h1')).toContainText('14 Business Intelligence Exercises With Free Practice Datasets')
   await expect(page.getByRole('paragraph').filter({ hasText: 'Business intelligence exercises are hands-on practice problems' }).first()).toBeVisible()
   const jsonLd = await page.locator('script[type="application/ld+json"]').textContent()
   expect(jsonLd).toContain('ItemList')

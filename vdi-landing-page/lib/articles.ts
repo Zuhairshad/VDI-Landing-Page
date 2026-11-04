@@ -3,6 +3,7 @@ export interface ArticleSection {
   paragraphs: string[]
   bullets?: string[]
   takeaway?: string
+  datasets?: ArticleDataset[]
 }
 
 export interface ArticleDataset {
@@ -29,11 +30,17 @@ export interface ArticleFaq {
 export interface Article {
   slug: string
   title: string
+  /** Shorter <title> for search results when the H1 is long. Falls back to title. */
+  metaTitle?: string
+  /** 140 to 160 character meta description. Falls back to summary. */
+  metaDescription?: string
   summary: string
   lede?: string
   category: string
   published: string
   publishedIso: string
+  updated?: string
+  updatedIso?: string
   readTime: string
   sections: ArticleSection[]
   exercises?: ArticleExercise[]
