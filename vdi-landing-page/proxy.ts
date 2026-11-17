@@ -1,22 +1,15 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import { ADMIN_COOKIE, verifyAdminSession } from '@/lib/admin-session'
 
-export function proxy(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   if (pathname === '/admin/login') {
     return NextResponse.next()
   }
 
-  const adminPassword = process.env.ADMIN_PASSWORD
-  if (!adminPassword || adminPassword === 'PLACEHOLDER_SET_YOUR_PASSWORD') {
-    return NextResponse.redirect(new URL('/admin/login', request.url))
-  }
-
-  const expectedToken = btoa(adminPassword + ':clarifydata-admin')
-  const cookieToken = request.cookies.get('admin_token')?.value
-
-  if (!cookieToken || cookieToken !== expectedToken) {
+  if (!(await verifyAdminSession(request.cookies.get(ADMIN_COOKIE)?.value))) {
     return NextResponse.redirect(new URL('/admin/login', request.url))
   }
 

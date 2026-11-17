@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { isRateLimited, recordHit } from '@/lib/rate-limit'
+import { ADMIN_COOKIE, ADMIN_SESSION_SECONDS, createAdminSession } from '@/lib/admin-session'
 
 const failedLoginLimit = { scope: 'admin-login', limit: 10, windowMs: 15 * 60 * 1000 }
 
@@ -25,14 +26,17 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Invalid credentials.' }, { status: 401 })
   }
 
-  const token = btoa(password + ':clarifydata-admin')
+  const token = await createAdminSession()
+  if (!token) {
+    return NextResponse.json({ error: 'Invalid credentials.' }, { status: 401 })
+  }
 
   const response = NextResponse.json({ success: true })
-  response.cookies.set('admin_token', token, {
+  response.cookies.set(ADMIN_COOKIE, token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',
-    maxAge: 86400,
+    maxAge: ADMIN_SESSION_SECONDS,
     path: '/',
   })
 
@@ -41,7 +45,7 @@ export async function POST(request: Request) {
 
 export async function DELETE() {
   const response = NextResponse.json({ success: true })
-  response.cookies.set('admin_token', '', {
+  response.cookies.set(ADMIN_COOKIE, '', {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',
