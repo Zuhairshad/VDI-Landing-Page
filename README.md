@@ -1,31 +1,21 @@
-# VDI Landing Page & Optimus AI Platform
+# Clarify Data
 
-This repository is structured as a monorepo containing two separate projects:
+This repository holds two separate Next.js apps.
 
 ## 📁 Projects
 
 1. **[`/vdi-landing-page`](./vdi-landing-page)**
-   - The original VDI Landing Page Next.js application.
+   - The public site at www.clerifydata.com, including its built-in `/admin` area.
+   - Vercel project `clarifydata`, Root Directory `vdi-landing-page`. Deploys automatically on push to `main`.
 
-2. **[`/optimus-ai-platform`](./optimus-ai-platform)**
-   - The Optimus AI Platform Next.js application.
+2. **[`/clarifydata-admin`](./clarifydata-admin)**
+   - The standalone admin dashboard at admin.clerifydata.com (Supabase auth).
+   - Vercel project `clarifydata-admin`. Not connected to Git: deploy it from this folder with `vercel --prod`.
 
 ---
 
-## 🚀 Vercel Deployment Instructions
+## Local development
 
-To deploy **both projects** on Vercel from this repository:
+Run each app from its own folder with `npm install` and `npm run dev`. Each needs its own `.env.local`.
 
-### 1. Deploy `vdi-landing-page`
-1. Go to your [Vercel Dashboard](https://vercel.com/dashboard).
-2. Select your existing VDI Landing Page project (or import this repository).
-3. Go to **Settings** > **General** > **Root Directory**.
-4. Set the Root Directory to: `vdi-landing-page`
-5. Click **Save** and trigger a new deployment.
-
-### 2. Deploy `optimus-ai-platform`
-1. Go to your [Vercel Dashboard](https://vercel.com/dashboard).
-2. Click **Add New...** > **Project**.
-3. Import the `VDI-Landing-Page` repository.
-4. Set the **Root Directory** field to: `optimus-ai-platform`
-5. Click **Deploy**.
+Keep the checkout in a path without spaces. Turbopack fails to resolve `next/font/google` when the project path contains spaces.
